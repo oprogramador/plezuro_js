@@ -23,8 +23,10 @@ package mondo.main;
 
 import java.io.IOException;
 
+import mondo.engine.InvalidTokenException;
+
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InvalidTokenException {
         new mondo.engine.Engine(args);
     }
 }

@@ -21,8 +21,12 @@
 
 package mondo.token;
 
-import java.io.IOException;
+import java.util.regex.Pattern;
 
-public interface Token {
-    String getRegex();
+public abstract class Token {
+    public abstract String getRegex();
+
+    public Pattern getPattern() {
+        return Pattern.compile(getRegex());
+    }
 }

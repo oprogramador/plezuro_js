@@ -24,7 +24,7 @@ package mondo.engine;
 import java.io.IOException;
 
 public class Engine {
-    public Engine(String[] args) throws IOException {
+    public Engine(String[] args) throws IOException, InvalidTokenException {
         for(String arg: args) new Parser(arg);
     }
 }

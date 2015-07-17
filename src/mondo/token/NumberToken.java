@@ -23,7 +23,7 @@ package mondo.token;
 
 import java.io.IOException;
 
-public class NumberToken implements Token {
+public class NumberToken extends Token {
     public String getRegex() {
         return "[0-9]+(\\.[0-9]+)?";
     }

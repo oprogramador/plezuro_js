@@ -24,22 +24,34 @@ package mondo.engine;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import mondo.token.Token;
 import mondo.token.NumberToken;
+import mondo.token.DeclarationToken;
 
 public class Tokenizer {
     private List<Token> tokenTypes = new ArrayList<Token>() {{
         add(new NumberToken());
+        add(new DeclarationToken());
     }};
 
     private List<Token> tokens = new ArrayList<Token>();
 
-    public Tokenizer(List<String> lines) {
+    public Tokenizer(List<String> lines) throws InvalidTokenException {
         for(int i=0; i<lines.size(); i++) addTokensFromLine(lines.get(i));
     }
 
-    private void addTokensFromLine(String line) {
-        System.out.println(line);
+    private void addTokensFromLine(String line) throws InvalidTokenException {
+        int index = 0;
+        while(index < line.length()) {
+            int newIndex = index;
+            for(Token tokenType: tokenTypes) {
+                Matcher matcher = tokenType.getPattern().matcher(line);
+                boolean result = matcher.find(index);
+                if(result) System.out.println("start="+matcher.start()+" end="+matcher.end());
+            }
+            if(newIndex == index) throw new InvalidTokenException();
+        }
     }
 }
