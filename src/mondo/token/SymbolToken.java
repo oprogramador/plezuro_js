@@ -19,32 +19,12 @@
  * 
  */
 
-package mondo.engine;
+package mondo.token;
 
-import java.util.List;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.charset.Charset;
 
-public class Parser {
-    private List<String> lines;
-    private String filename;
-
-    private void readFromFile() throws IOException {
-        Path path = Paths.get(filename);
-        Charset charset = Charset.forName("UTF-8");
-        try {
-            lines = Files.readAllLines(path, charset);
-        } catch(IOException e) {
-            throw new IOException("File "+filename+" does not exist.");
-        }
-    }
-
-    public Parser(String filename) throws IOException, InvalidTokenException {
-        this.filename = filename;
-        readFromFile();
-        new Tokenizer(lines);
+public class SymbolToken extends Token {
+    public String getRegex() {
+        return "[A-Za-z_]+[A-Za-z_0-9]*";
     }
 }

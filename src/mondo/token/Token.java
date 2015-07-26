@@ -23,10 +23,53 @@ package mondo.token;
 
 import java.util.regex.Pattern;
 
-public abstract class Token {
+public abstract class Token implements Cloneable {
     public abstract String getRegex();
+
+    protected String originalText;
+    protected String text;
+    protected int lineNr;
+
+    public String getOriginalText() {
+        return originalText;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public Token setOriginalText(String value) {
+        originalText = value;
+        return this;
+    }
+
+    public Token setText(String value) {
+        text = value;
+        return this;
+    }
 
     public Pattern getPattern() {
         return Pattern.compile(getRegex());
+    }
+
+    public int getLineNr() {
+        return lineNr;
+    }
+
+    public Token setLineNr(int value) {
+        lineNr = value;
+        return this;
+    }
+
+    public String toString() {
+        return "Token {lineNr: \""+lineNr+"\", type: \""+getClass().getSimpleName()+"\", originalText: \""+originalText+"\", text: \""+text+"\"}";
+    }
+
+    public Object clone() {
+        try {
+            return super.clone();
+        } catch(CloneNotSupportedException e) {
+            return null;
+        }
     }
 }

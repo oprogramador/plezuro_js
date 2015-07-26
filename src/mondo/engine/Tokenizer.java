@@ -29,29 +29,47 @@ import java.util.regex.Pattern;
 import mondo.token.Token;
 import mondo.token.NumberToken;
 import mondo.token.DeclarationToken;
+import mondo.token.WhiteSpaceToken;
+import mondo.token.OperatorToken;
+import mondo.token.SymbolToken;
 
 public class Tokenizer {
     private List<Token> tokenTypes = new ArrayList<Token>() {{
         add(new NumberToken());
         add(new DeclarationToken());
+        add(new WhiteSpaceToken());
+        add(new OperatorToken());
+        add(new SymbolToken());
     }};
 
     private List<Token> tokens = new ArrayList<Token>();
 
     public Tokenizer(List<String> lines) throws InvalidTokenException {
-        for(int i=0; i<lines.size(); i++) addTokensFromLine(lines.get(i));
+        for(int i=0; i<lines.size(); i++) addTokensFromLine(lines.get(i), i);
+        for(Token token: tokens) System.out.println(token);
     }
 
-    private void addTokensFromLine(String line) throws InvalidTokenException {
+    private void addTokensFromLine(String line, int lineNr) throws InvalidTokenException {
         int index = 0;
         while(index < line.length()) {
-            int newIndex = index;
+            int oldIndex = index;
             for(Token tokenType: tokenTypes) {
                 Matcher matcher = tokenType.getPattern().matcher(line);
                 boolean result = matcher.find(index);
-                if(result) System.out.println("start="+matcher.start()+" end="+matcher.end());
+                if(result && matcher.start() == index) {
+                    String tokenText = line.substring(matcher.start(), matcher.end());
+                    tokens.add(
+                            ((Token)tokenType.clone())
+                            .setOriginalText(tokenText)
+                            .setText(tokenText)
+                            .setLineNr(lineNr)
+                            );
+                    //System.out.println("start="+matcher.start()+" end="+matcher.end()+" type="+tokenType.getClass().getSimpleName()+" match="+line.substring(matcher.start(), matcher.end()));
+                    index = matcher.end();
+                    break;
+                }
             }
-            if(newIndex == index) throw new InvalidTokenException();
+            if(oldIndex == index && index != line.length()-1) throw new InvalidTokenException();
         }
     }
 }

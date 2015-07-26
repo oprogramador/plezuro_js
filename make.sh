@@ -1,2 +1,3 @@
+mkdir -p bin
 cd src
-javac `find -name *.java`
+javac $@ -d ../bin `find -name *.java`
