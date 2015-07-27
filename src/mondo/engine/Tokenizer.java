@@ -34,6 +34,7 @@ import mondo.token.WhiteSpaceToken;
 import mondo.token.OperatorToken;
 import mondo.token.SymbolToken;
 import mondo.token.StringToken;
+import mondo.token.BracketToken;
 
 public class Tokenizer {
     private List<Token> tokenTypes = new ArrayList<Token>() {{
@@ -43,6 +44,7 @@ public class Tokenizer {
         add(new OperatorToken());
         add(new SymbolToken());
         add(new StringToken());
+        add(new BracketToken());
     }};
 
     private List<Token> tokens = new ArrayList<Token>();
@@ -61,7 +63,6 @@ public class Tokenizer {
                 if(tokenMatcher != null) {
                     index = tokenMatcher.end();
                     tokens.add(tokenMatcher.getToken());
-                    System.out.println(tokenMatcher.getToken());
                     break;
                 }
             }

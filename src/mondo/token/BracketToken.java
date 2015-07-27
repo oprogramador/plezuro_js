@@ -23,8 +23,8 @@ package mondo.token;
 
 import java.io.IOException;
 
-public class StringToken extends Token {
+public class BracketToken extends Token {
     public String getRegex() {
-        return "('')|('.*?[^\\\\]')|(\"\")|(\".*?[^\\\\]\")";
+        return "[{\\[()\\]}]";
     }
 }
