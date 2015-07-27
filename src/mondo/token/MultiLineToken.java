@@ -25,39 +25,20 @@ import java.util.List;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
-public abstract class Token implements Cloneable {
-    protected String getRegex() {
+public abstract class MultiLineToken extends Token {
+    protected String getEndRegex() {
         return "";
     }
 
-    protected ITokenMatcher findParticular(List<String> lines, int lineNr, int index) {
-        return null;
+    private int endLineNr;
+
+    public int getEndLineNr() {
+        return endLineNr;
     }
 
-    protected String originalText;
-    protected String text;
-    protected int lineNr;
-
-    public String getOriginalText() {
-        return originalText;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public Token setOriginalText(String value) {
-        originalText = value;
+    public MultiLineToken setEndLineNr(int value) {
+        endLineNr = value;
         return this;
-    }
-
-    public Token setText(String value) {
-        text = value;
-        return this;
-    }
-
-    public Pattern getPattern() {
-        return Pattern.compile(getRegex());
     }
 
     public ITokenMatcher find(List<String> lines, int lineNr, int index) {
@@ -68,48 +49,46 @@ public abstract class Token implements Cloneable {
         Matcher matcher = getPattern().matcher(line);
         boolean result = matcher.find(index);
         if(result && matcher.start() == index) {
+            int newIndex = 0;
+            for(; lineNr<lines.size(); lineNr++) {
+                line = lines.get(lineNr);
+                matcher = getPattern().matcher(line);
+                result = matcher.find();
+                if(matcher.end() < line.length()) {
+                    newIndex = matcher.end();
+                    break;
+                }
+                if(lineNr == lines.size() - 1) {
+                    newIndex = line.length() - 1;
+                    break;
+                }
+            }
             String tokenText = line.substring(matcher.start(), matcher.end());
             final Token token = ((Token)clone())
                     .setOriginalText(tokenText)
                     .setText(tokenText)
                     .setLineNr(lineNr)
                     ;
-            int newIndex = matcher.end();
+            final int endLineNr = lineNr;
+            final int finalNewIndex = newIndex;
             return new ITokenMatcher() {
                 public Token getToken() {
                     return token;
                 }
 
                 public int getEndLineNr() {
-                    return lineNr;
+                    return endLineNr;
                 }
 
                 public int end() {
-                    return newIndex;
+                    return finalNewIndex;
                 }
             };
         }
         return null;
     }
 
-    public int getLineNr() {
-        return lineNr;
-    }
-
-    public Token setLineNr(int value) {
-        lineNr = value;
-        return this;
-    }
-
     public String toString() {
         return "Token {lineNr: \""+lineNr+"\", type: \""+getClass().getSimpleName()+"\", originalText: \""+originalText+"\", text: \""+text+"\"}";
-    }
-
-    public Object clone() {
-        try {
-            return super.clone();
-        } catch(CloneNotSupportedException e) {
-            return null;
-        }
     }
 }

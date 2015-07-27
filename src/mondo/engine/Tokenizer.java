@@ -35,9 +35,11 @@ import mondo.token.OperatorToken;
 import mondo.token.SymbolToken;
 import mondo.token.StringToken;
 import mondo.token.BracketToken;
+import mondo.token.CommentToken;
 
 public class Tokenizer {
     private List<Token> tokenTypes = new ArrayList<Token>() {{
+        add(new CommentToken());
         add(new NumberToken());
         add(new DeclarationToken());
         add(new WhiteSpaceToken());
@@ -50,23 +52,23 @@ public class Tokenizer {
     private List<Token> tokens = new ArrayList<Token>();
 
     public Tokenizer(List<String> lines) throws InvalidTokenException {
-        for(int i=0; i<lines.size(); i++) addTokensFromLine(lines.get(i), i);
-        for(Token token: tokens) System.out.println(token);
-    }
-
-    private void addTokensFromLine(String line, int lineNr) throws InvalidTokenException {
-        int index = 0;
-        while(index < line.length()) {
-            int oldIndex = index;
-            for(Token tokenType: tokenTypes) {
-                ITokenMatcher tokenMatcher = tokenType.find(line, lineNr, index);
-                if(tokenMatcher != null) {
-                    index = tokenMatcher.end();
-                    tokens.add(tokenMatcher.getToken());
-                    break;
+        for(int i=0; i<lines.size(); i++) {
+            String line = lines.get(i);
+            int index = 0;
+            while(index < line.length()) {
+                int oldIndex = index;
+                for(Token tokenType: tokenTypes) {
+                    ITokenMatcher tokenMatcher = tokenType.find(lines, i, index);
+                    if(tokenMatcher != null) {
+                        index = tokenMatcher.end();
+                        i = tokenMatcher.getEndLineNr();
+                        tokens.add(tokenMatcher.getToken());
+                        break;
+                    }
                 }
+                if(oldIndex == index && index != line.length()-1) throw new InvalidTokenException("Line: "+i);
             }
-            if(oldIndex == index && index != line.length()-1) throw new InvalidTokenException("Line: "+lineNr);
         }
+        for(Token token: tokens) System.out.println(token);
     }
 }

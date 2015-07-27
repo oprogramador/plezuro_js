@@ -21,8 +21,10 @@
 
 package mondo.token;
 
-public interface ITokenMatcher {
-    Token getToken();
-    int getEndLineNr();
-    int end();
+import java.io.IOException;
+
+public class CommentToken extends Token {
+    public String getRegex() {
+        return "\\/\\/.*";
+    }
 }
