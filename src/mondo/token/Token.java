@@ -22,9 +22,16 @@
 package mondo.token;
 
 import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 public abstract class Token implements Cloneable {
-    public abstract String getRegex();
+    protected String getRegex() {
+        return "";
+    }
+
+    protected ITokenMatcher findParticular(String line, int lineNr, int index) {
+        return null;
+    }
 
     protected String originalText;
     protected String text;
@@ -50,6 +57,33 @@ public abstract class Token implements Cloneable {
 
     public Pattern getPattern() {
         return Pattern.compile(getRegex());
+    }
+
+    public ITokenMatcher find(String line, int lineNr, int index) {
+        ITokenMatcher tokenResult = findParticular(line, lineNr, index);
+        if(tokenResult != null) return tokenResult;
+
+        Matcher matcher = getPattern().matcher(line);
+        boolean result = matcher.find(index);
+        if(result && matcher.start() == index) {
+            String tokenText = line.substring(matcher.start(), matcher.end());
+            final Token token = ((Token)clone())
+                    .setOriginalText(tokenText)
+                    .setText(tokenText)
+                    .setLineNr(lineNr)
+                    ;
+            int newIndex = matcher.end();
+            return new ITokenMatcher() {
+                public Token getToken() {
+                    return token;
+                }
+
+                public int end() {
+                    return newIndex;
+                }
+            };
+        }
+        return null;
     }
 
     public int getLineNr() {

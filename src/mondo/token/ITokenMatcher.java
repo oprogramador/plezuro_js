@@ -19,10 +19,9 @@
  * 
  */
 
-package mondo.engine;
+package mondo.token;
 
-public class InvalidTokenException extends Exception {
-    public InvalidTokenException(String msg) {
-        super(msg);
-    }
+public interface ITokenMatcher {
+    Token getToken();
+    int end();
 }

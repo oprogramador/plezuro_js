@@ -27,11 +27,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import mondo.token.Token;
+import mondo.token.ITokenMatcher;
 import mondo.token.NumberToken;
 import mondo.token.DeclarationToken;
 import mondo.token.WhiteSpaceToken;
 import mondo.token.OperatorToken;
 import mondo.token.SymbolToken;
+import mondo.token.StringToken;
 
 public class Tokenizer {
     private List<Token> tokenTypes = new ArrayList<Token>() {{
@@ -40,6 +42,7 @@ public class Tokenizer {
         add(new WhiteSpaceToken());
         add(new OperatorToken());
         add(new SymbolToken());
+        add(new StringToken());
     }};
 
     private List<Token> tokens = new ArrayList<Token>();
@@ -54,22 +57,15 @@ public class Tokenizer {
         while(index < line.length()) {
             int oldIndex = index;
             for(Token tokenType: tokenTypes) {
-                Matcher matcher = tokenType.getPattern().matcher(line);
-                boolean result = matcher.find(index);
-                if(result && matcher.start() == index) {
-                    String tokenText = line.substring(matcher.start(), matcher.end());
-                    tokens.add(
-                            ((Token)tokenType.clone())
-                            .setOriginalText(tokenText)
-                            .setText(tokenText)
-                            .setLineNr(lineNr)
-                            );
-                    //System.out.println("start="+matcher.start()+" end="+matcher.end()+" type="+tokenType.getClass().getSimpleName()+" match="+line.substring(matcher.start(), matcher.end()));
-                    index = matcher.end();
+                ITokenMatcher tokenMatcher = tokenType.find(line, lineNr, index);
+                if(tokenMatcher != null) {
+                    index = tokenMatcher.end();
+                    tokens.add(tokenMatcher.getToken());
+                    System.out.println(tokenMatcher.getToken());
                     break;
                 }
             }
-            if(oldIndex == index && index != line.length()-1) throw new InvalidTokenException();
+            if(oldIndex == index && index != line.length()-1) throw new InvalidTokenException("Line: "+lineNr);
         }
     }
 }

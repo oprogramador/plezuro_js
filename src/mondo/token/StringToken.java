@@ -19,10 +19,12 @@
  * 
  */
 
-package mondo.engine;
+package mondo.token;
 
-public class InvalidTokenException extends Exception {
-    public InvalidTokenException(String msg) {
-        super(msg);
+import java.io.IOException;
+
+public class StringToken extends Token {
+    public String getRegex() {
+        return "('.*?[^\\\\]')|('')|(\".*?[^\\\\]\")|(\"\")";
     }
 }
