@@ -45,15 +45,13 @@ public abstract class MultiLineToken extends Token {
         return Pattern.compile(getEndRegex());
     }
 
-    public ITokenMatcher find(List<String> lines, int lineNr, int index) {
-        ITokenMatcher tokenResult = findParticular(lines, lineNr, index);
-        if(tokenResult != null) return tokenResult;
-
+    protected Token findFromRegex(List<String> lines, int lineNr, int index) {
+        final int begLineNr = lineNr;
         Matcher matcher = getPattern().matcher(lines.get(lineNr));
         boolean result = matcher.find(index);
         if(result && matcher.start() == index) {
             String tokenText = lines.get(lineNr).substring(matcher.start(), matcher.end());
-            for(;lineNr < lines.size(); lineNr++) {
+            for(lineNr++; lineNr < lines.size(); lineNr++) {
                 matcher = getEndPattern().matcher(lines.get(lineNr));
                 result = matcher.find(index);
                 if(result) {
@@ -63,12 +61,15 @@ public abstract class MultiLineToken extends Token {
                     tokenText += "\n"+lines.get(lineNr);
                 }
             }
-            final Token token = ((Token)clone())
+            Token token = ((MultiLineToken)((Token)clone())
+                    .setBegX(matcher.start())
+                    .setEndX(matcher.end() - 1)
                     .setOriginalText(tokenText)
                     .setText(tokenText)
-                    .setLineNr(lineNr)
+                    .setLineNr(begLineNr))
+                    .setEndLineNr(lineNr)
                     ;
-            return createITokenMatcher(token, lineNr, matcher.end());
+            return token;
         }
         return null;
     }
@@ -77,6 +78,8 @@ public abstract class MultiLineToken extends Token {
         return "Token {"+
             "lineNr: "+lineNr+", "+
             "endLineNr: "+endLineNr+", "+
+            "begX: "+begX+", "+
+            "endX: "+endX+", "+
             "type: \""+getClass().getSimpleName()+"\", "+
             "originalText: \""+originalText+"\", "+
             "text: \""+text+"\""+

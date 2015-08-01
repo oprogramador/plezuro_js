@@ -27,16 +27,35 @@ import java.util.regex.Matcher;
 
 public abstract class Token implements Cloneable {
     protected String getRegex() {
-        return "";
+        throw new UnsupportedOperationException();
     }
 
-    protected ITokenMatcher findParticular(List<String> lines, int lineNr, int index) {
-        return null;
+    protected List<String> getPossibleTokens() {
+        throw new UnsupportedOperationException();
     }
+
 
     protected String originalText;
     protected String text;
-    protected int lineNr;
+    protected int lineNr, begX, endX;
+
+    public int getBegX() {
+        return begX;
+    }
+
+    public Token setBegX(int value) {
+       begX = value;
+       return this;
+    }
+
+    public int getEndX() {
+        return endX;
+    }
+
+    public Token setEndX(int value) {
+       endX = value;
+       return this;
+    }
 
     public String getOriginalText() {
         return originalText;
@@ -60,36 +79,43 @@ public abstract class Token implements Cloneable {
         return Pattern.compile(getRegex());
     }
 
-    protected ITokenMatcher createITokenMatcher(Token token, int lineNr, int end) {
-        return new ITokenMatcher() {
-            public Token getToken() {
-                return token;
-            }
-
-            public int getEndLineNr() {
-                return lineNr;
-            }
-
-            public int end() {
-                return end;
-            }
-        };
+    public Token find(List<String> lines, int lineNr, int index) {
+        try {
+            return findFromRegex(lines, lineNr, index);
+        } catch(UnsupportedOperationException e) {
+            return findFromList(lines, lineNr, index);
+        }
     }
 
-    public ITokenMatcher find(List<String> lines, int lineNr, int index) {
-        ITokenMatcher tokenResult = findParticular(lines, lineNr, index);
-        if(tokenResult != null) return tokenResult;
+    protected Token findFromList(List<String> lines, int lineNr, int index) {
+        for(String tokenText: getPossibleTokens()) {
+            if(lines.get(lineNr).indexOf(tokenText, index) == index) {
+                Token token = ((Token)clone())
+                        .setBegX(index)
+                        .setEndX(index + tokenText.length() - 1)
+                        .setOriginalText(tokenText)
+                        .setText(tokenText)
+                        .setLineNr(lineNr)
+                        ;
+                return token;
+            }
+        }
+        return null;
+    }
 
+    protected Token findFromRegex(List<String> lines, int lineNr, int index) {
         Matcher matcher = getPattern().matcher(lines.get(lineNr));
         boolean result = matcher.find(index);
         if(result && matcher.start() == index) {
             String tokenText = lines.get(lineNr).substring(matcher.start(), matcher.end());
-            final Token token = ((Token)clone())
+            Token token = ((Token)clone())
+                    .setBegX(matcher.start())
+                    .setEndX(matcher.end() - 1)
                     .setOriginalText(tokenText)
                     .setText(tokenText)
                     .setLineNr(lineNr)
                     ;
-            return createITokenMatcher(token, lineNr, matcher.end());
+            return token;
         }
         return null;
     }
@@ -103,9 +129,15 @@ public abstract class Token implements Cloneable {
         return this;
     }
 
+    public int getEndLineNr() {
+        return getLineNr();
+    }
+
     public String toString() {
         return "Token {"+
             "lineNr: "+lineNr+", "+
+            "begX: "+begX+", "+
+            "endX: "+endX+", "+
             "type: \""+getClass().getSimpleName()+"\", "+
             "originalText: \""+originalText+"\", "+
             "text: \""+text+"\""+

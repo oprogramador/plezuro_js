@@ -27,7 +27,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import mondo.token.Token;
-import mondo.token.ITokenMatcher;
 import mondo.token.NumberToken;
 import mondo.token.DeclarationToken;
 import mondo.token.WhiteSpaceToken;
@@ -55,20 +54,19 @@ public class Tokenizer {
 
     public Tokenizer(List<String> lines) throws InvalidTokenException {
         for(int i=0; i<lines.size(); i++) {
-            String line = lines.get(i);
             int index = 0;
-            while(index < line.length()) {
+            while(index < lines.get(i).length()) {
                 int oldIndex = index;
                 for(Token tokenType: tokenTypes) {
-                    ITokenMatcher tokenMatcher = tokenType.find(lines, i, index);
-                    if(tokenMatcher != null) {
-                        index = tokenMatcher.end();
-                        i = tokenMatcher.getEndLineNr();
-                        tokens.add(tokenMatcher.getToken());
+                    Token token = tokenType.find(lines, i, index);
+                    if(token != null) {
+                        index = token.getEndX() + 1;
+                        i = token.getEndLineNr();
+                        tokens.add(token);
                         break;
                     }
                 }
-                if(oldIndex == index && index != line.length()-1) throw new InvalidTokenException("Line: "+i);
+                if(oldIndex == index && index != lines.get(i).length()-1) throw new InvalidTokenException("Line: "+i+", index: "+index);
             }
         }
         for(Token token: tokens) System.out.println(token);

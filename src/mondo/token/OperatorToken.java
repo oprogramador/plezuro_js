@@ -22,9 +22,54 @@
 package mondo.token;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.ArrayList;
 
 public class OperatorToken extends Token {
-    public String getRegex() {
-        return "[~`!@#\\$%\\^&\\*-\\+=;:<,>\\.\\?\\/]+";
+    protected List<String> getPossibleTokens() {
+        return new ArrayList<String>() {{
+            add(";");
+            add(",");
+            add(":=");
+            add("=");
+            add("+=");
+            add("-=");
+            add("*=");
+            add("/=");
+            add("^=");
+            add("&=");
+            add("|=");
+            add("%=");
+            add(".=");
+            add(");"); 	
+            add("~~");
+            add("<->");
+            add("<<");
+            add(">>");	
+            add("?");	
+            add("|");	
+            add("&");	
+            add("<=>");	
+            add(">=");	
+            add(">");	
+            add("<=");	
+            add("<");	
+            add("!=");	
+            add("==");	
+            add("!==");
+            add("===");	
+            add("=~");
+            add("!~");
+            add("+");
+            add("-");	
+            add("%");	
+            add("*");
+            add("/");	
+            add("^");
+            add("^^");
+            add(".");
+            add("..");
+            add(":");	
+        }};
     }
 }
