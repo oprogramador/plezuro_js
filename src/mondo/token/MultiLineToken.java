@@ -41,54 +41,45 @@ public abstract class MultiLineToken extends Token {
         return this;
     }
 
+    public Pattern getEndPattern() {
+        return Pattern.compile(getEndRegex());
+    }
+
     public ITokenMatcher find(List<String> lines, int lineNr, int index) {
-        String line = lines.get(lineNr);
         ITokenMatcher tokenResult = findParticular(lines, lineNr, index);
         if(tokenResult != null) return tokenResult;
 
-        Matcher matcher = getPattern().matcher(line);
+        Matcher matcher = getPattern().matcher(lines.get(lineNr));
         boolean result = matcher.find(index);
         if(result && matcher.start() == index) {
-            int newIndex = 0;
-            for(; lineNr<lines.size(); lineNr++) {
-                line = lines.get(lineNr);
-                matcher = getPattern().matcher(line);
-                result = matcher.find();
-                if(matcher.end() < line.length()) {
-                    newIndex = matcher.end();
+            String tokenText = lines.get(lineNr).substring(matcher.start(), matcher.end());
+            for(;lineNr < lines.size(); lineNr++) {
+                matcher = getEndPattern().matcher(lines.get(lineNr));
+                result = matcher.find(index);
+                if(result) {
+                    tokenText += "\n"+lines.get(lineNr).substring(matcher.start(), matcher.end());
                     break;
-                }
-                if(lineNr == lines.size() - 1) {
-                    newIndex = line.length() - 1;
-                    break;
+                } else {
+                    tokenText += "\n"+lines.get(lineNr);
                 }
             }
-            String tokenText = line.substring(matcher.start(), matcher.end());
             final Token token = ((Token)clone())
                     .setOriginalText(tokenText)
                     .setText(tokenText)
                     .setLineNr(lineNr)
                     ;
-            final int endLineNr = lineNr;
-            final int finalNewIndex = newIndex;
-            return new ITokenMatcher() {
-                public Token getToken() {
-                    return token;
-                }
-
-                public int getEndLineNr() {
-                    return endLineNr;
-                }
-
-                public int end() {
-                    return finalNewIndex;
-                }
-            };
+            return createITokenMatcher(token, lineNr, matcher.end());
         }
         return null;
     }
 
     public String toString() {
-        return "Token {lineNr: \""+lineNr+"\", type: \""+getClass().getSimpleName()+"\", originalText: \""+originalText+"\", text: \""+text+"\"}";
+        return "Token {"+
+            "lineNr: "+lineNr+", "+
+            "endLineNr: "+endLineNr+", "+
+            "type: \""+getClass().getSimpleName()+"\", "+
+            "originalText: \""+originalText+"\", "+
+            "text: \""+text+"\""+
+        "}";
     }
 }

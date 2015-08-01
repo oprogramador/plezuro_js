@@ -60,34 +60,36 @@ public abstract class Token implements Cloneable {
         return Pattern.compile(getRegex());
     }
 
+    protected ITokenMatcher createITokenMatcher(Token token, int lineNr, int end) {
+        return new ITokenMatcher() {
+            public Token getToken() {
+                return token;
+            }
+
+            public int getEndLineNr() {
+                return lineNr;
+            }
+
+            public int end() {
+                return end;
+            }
+        };
+    }
+
     public ITokenMatcher find(List<String> lines, int lineNr, int index) {
-        String line = lines.get(lineNr);
         ITokenMatcher tokenResult = findParticular(lines, lineNr, index);
         if(tokenResult != null) return tokenResult;
 
-        Matcher matcher = getPattern().matcher(line);
+        Matcher matcher = getPattern().matcher(lines.get(lineNr));
         boolean result = matcher.find(index);
         if(result && matcher.start() == index) {
-            String tokenText = line.substring(matcher.start(), matcher.end());
+            String tokenText = lines.get(lineNr).substring(matcher.start(), matcher.end());
             final Token token = ((Token)clone())
                     .setOriginalText(tokenText)
                     .setText(tokenText)
                     .setLineNr(lineNr)
                     ;
-            int newIndex = matcher.end();
-            return new ITokenMatcher() {
-                public Token getToken() {
-                    return token;
-                }
-
-                public int getEndLineNr() {
-                    return lineNr;
-                }
-
-                public int end() {
-                    return newIndex;
-                }
-            };
+            return createITokenMatcher(token, lineNr, matcher.end());
         }
         return null;
     }
@@ -102,7 +104,12 @@ public abstract class Token implements Cloneable {
     }
 
     public String toString() {
-        return "Token {lineNr: \""+lineNr+"\", type: \""+getClass().getSimpleName()+"\", originalText: \""+originalText+"\", text: \""+text+"\"}";
+        return "Token {"+
+            "lineNr: "+lineNr+", "+
+            "type: \""+getClass().getSimpleName()+"\", "+
+            "originalText: \""+originalText+"\", "+
+            "text: \""+text+"\""+
+        "}";
     }
 
     public Object clone() {

@@ -36,10 +36,12 @@ import mondo.token.SymbolToken;
 import mondo.token.StringToken;
 import mondo.token.BracketToken;
 import mondo.token.CommentToken;
+import mondo.token.MultiLineCommentToken;
 
 public class Tokenizer {
     private List<Token> tokenTypes = new ArrayList<Token>() {{
         add(new CommentToken());
+        add(new MultiLineCommentToken());
         add(new NumberToken());
         add(new DeclarationToken());
         add(new WhiteSpaceToken());
