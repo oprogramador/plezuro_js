@@ -23,12 +23,12 @@ package mondo.token;
 
 import java.io.IOException;
 
-public class NumberToken extends Token {
-    public String getRegex() {
-        return "[0-9]+(\\.[0-9]+)?";
-    }
-
-    public void convert() {
-        text = "("+originalText+")";
+public class NewLineToken extends Token {
+    public NewLineToken(int lineNr, int x) {
+        this.lineNr = lineNr;
+        begX = x;
+        endX = x;
+        originalText = "\n";
+        text = "\n";
     }
 }

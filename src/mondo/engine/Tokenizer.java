@@ -36,6 +36,7 @@ import mondo.token.StringToken;
 import mondo.token.BracketToken;
 import mondo.token.CommentToken;
 import mondo.token.MultiLineCommentToken;
+import mondo.token.NewLineToken;
 
 public class Tokenizer {
     private List<Token> tokenTypes = new ArrayList<Token>() {{
@@ -51,6 +52,10 @@ public class Tokenizer {
     }};
 
     private List<Token> tokens = new ArrayList<Token>();
+
+    public List<Token> getTokens() {
+        return tokens;
+    }
 
     public Tokenizer(List<String> lines) throws InvalidTokenException {
         for(int i=0; i<lines.size(); i++) {
@@ -68,6 +73,7 @@ public class Tokenizer {
                 }
                 if(oldIndex == index && index != lines.get(i).length()-1) throw new InvalidTokenException("Line: "+i+", index: "+index);
             }
+            tokens.add(new NewLineToken(i, lines.get(i).length()));
         }
         for(Token token: tokens) System.out.println(token);
     }

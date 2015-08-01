@@ -34,6 +34,9 @@ public abstract class Token implements Cloneable {
         throw new UnsupportedOperationException();
     }
 
+    public void convert() {
+    }
+
 
     protected String originalText;
     protected String text;

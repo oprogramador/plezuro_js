@@ -23,14 +23,29 @@ package mondo.engine;
 
 import java.util.List;
 import java.io.IOException;
+import java.io.Writer;
+import java.io.BufferedWriter;
+import java.io.OutputStreamWriter;
+import java.io.FileOutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.charset.Charset;
 
+import mondo.token.Token;
+
 public class Parser {
     private List<String> lines;
     private String filename;
+    private Tokenizer tokenizer;
+
+    public Tokenizer getTokenizer() {
+        return tokenizer;
+    }
+
+    protected String getOutputFileName() {
+        return filename+".js";
+    }
 
     private void readFromFile() throws IOException {
         Path path = Paths.get(filename);
@@ -42,9 +57,18 @@ public class Parser {
         }
     }
 
+    private void writeToFile() throws IOException {
+        try(Writer writer = new BufferedWriter(new OutputStreamWriter(
+                      new FileOutputStream(getOutputFileName()), "utf-8"))) {
+            for(Token token: tokenizer.getTokens()) writer.write(token.getText());
+        }
+    }
+
     public Parser(String filename) throws IOException, InvalidTokenException {
         this.filename = filename;
         readFromFile();
-        new Tokenizer(lines);
+        tokenizer = new Tokenizer(lines);
+        for(Token token: tokenizer.getTokens()) token.convert();
+        writeToFile();
     }
 }
