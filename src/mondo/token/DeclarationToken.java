@@ -27,4 +27,8 @@ public class DeclarationToken extends Token {
     public String getRegex() {
         return "\\$[A-Za-z_]+[A-Za-z_0-9]*";
     }
+
+    public void convert() {
+        text = "var "+originalText.substring(1)+";"+originalText.substring(1);
+    }
 }

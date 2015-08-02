@@ -22,9 +22,33 @@
 package mondo.token;
 
 import java.io.IOException;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.function.Function;
 
 public class BracketToken extends Token {
-    public String getRegex() {
-        return "[{\\[()\\]}]";
+    protected List<String> getPossibleTokens() {
+        return new ArrayList<String>() {{
+            add("[");
+            add("]");
+            add("(");
+            add(")");
+            add("{");
+            add("}");
+        }};
+    }
+
+    private Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
+        put("{", (String x) -> "function() { return (");
+        put("}", (String x) -> "); }");
+    }};
+
+    public void convert() {
+        try {
+            text = functionMap.get(originalText).apply(originalText);
+        } catch(NullPointerException e) {
+        }
     }
 }

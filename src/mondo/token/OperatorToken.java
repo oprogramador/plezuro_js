@@ -24,6 +24,10 @@ package mondo.token;
 import java.io.IOException;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.function.Function;
+
 
 public class OperatorToken extends Token {
     protected List<String> getPossibleTokens() {
@@ -41,7 +45,6 @@ public class OperatorToken extends Token {
             add("|=");
             add("%=");
             add(".=");
-            add(");"); 	
             add("~~");
             add("<->");
             add("<<");
@@ -71,5 +74,16 @@ public class OperatorToken extends Token {
             add("..");
             add(":");	
         }};
+    }
+
+    private Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
+        put(";", (String x) -> ",");
+    }};
+
+    public void convert() {
+        try {
+            text = functionMap.get(originalText).apply(originalText);
+        } catch(NullPointerException e) {
+        }
     }
 }

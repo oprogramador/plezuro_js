@@ -1,10 +1,10 @@
-$x = (21212) + ((0.12) + ((982))) / (12) + (3);//1111.222;
+var x = (21212) + ((0.12) + ((982))) / (12) + (3);//1111.222;
 x++;
-$y = 'abc' + 'abc\nxyz' + 'uu\'bb' + 'ooo';
+var y = 'abc' + 'abc\nxyz' + 'uu\'bb' + 'ooo';
 y += '' + "mmmmm" + ('cv' + "vfg'ee'ww") + "www\"www\nvvv" + 'ww"ddd"' + "\n";
-y += ("" + 'wef' + "") + //"oop\"ww" + '';
+y += ("" + 'wef' + "") + '';//"oop\"ww" + '';
 x+=/*blabla
 qwe
 qrw*/(21);
-$f = {this*(2)+(1)};
+var f = function() {this*(2)+(1)};
 [''+x+y, f((21))]
