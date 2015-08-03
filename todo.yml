@@ -1,0 +1,10 @@
+todo:
+    condition: yes
+    loop: yes
+    function: yes
+    class: no
+    inheritance: no
+    module: no
+    import: no
+    method_without_closing: no
+    validation: no

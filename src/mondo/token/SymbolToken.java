@@ -22,9 +22,25 @@
 package mondo.token;
 
 import java.io.IOException;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.function.Function;
 
 public class SymbolToken extends Token {
     public String getRegex() {
         return "[A-Za-z_]+[A-Za-z_0-9]*";
+    }
+
+    private Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
+        put("args", (String x) -> "arguments");
+    }};
+
+    public void convert() {
+        try {
+            text = functionMap.get(originalText).apply(originalText);
+        } catch(NullPointerException e) {
+        }
     }
 }

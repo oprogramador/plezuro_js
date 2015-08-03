@@ -64,11 +64,15 @@ public class Parser {
         }
     }
 
+    private void convert() {
+        for(Token token: tokenizer.getTokens()) token.convert();
+    }
+
     public Parser(String filename) throws IOException, InvalidTokenException {
         this.filename = filename;
         readFromFile();
         tokenizer = new Tokenizer(lines);
-        for(Token token: tokenizer.getTokens()) token.convert();
+        convert();
         writeToFile();
     }
 }
