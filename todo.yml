@@ -8,3 +8,4 @@ todo:
     import: no
     method_without_closing: no
     validation: no
+    parallel: no
