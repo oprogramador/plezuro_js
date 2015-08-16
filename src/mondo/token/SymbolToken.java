@@ -39,15 +39,14 @@ public class SymbolToken extends Token {
 
     private Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
         put("args", (String x) -> "arguments");
+        put("this", (String x) -> "arguments[0]");
+        put("first", (String x) -> "arguments[1]");
+        put("second", (String x) -> "arguments[2]");
+        put("third", (String x) -> "arguments[3]");
+        put("rand", (String x) -> "Math.random()");
     }};
 
     private boolean insertBracketAfterEventually(ITokenizer tokenizer) {
-        //if(getText().equals("do")) {
-            //System.out.println("yes");
-            //System.out.println("current="+tokenizer.getCurrent());
-            //System.out.println("previous="+tokenizer.getPreviousNotBlank());
-            //System.out.println("previous="+tokenizer.getPreviousNotBlank());
-        //}
         if(tokenizer.getPreviousNotBlank().getText() != OperatorToken.getOperatorDot().getText()) return false;
 
         tokenizer.resetToThis();

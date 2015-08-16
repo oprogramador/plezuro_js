@@ -8,6 +8,13 @@ todo:
     inheritance: no
     module: no
     import: no
-    method_without_closing: no
-    validation: no
+    method_without_closing: yes
     parallel: no
+    collections:
+        list: yes
+        tuple: no
+        dictionary: no
+        associative_array: no
+        set: yes
+        range: no
+    unit_test: no

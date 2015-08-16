@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import mondo.token.ITokenizer;
+import mondo.token.AbstractTokenizer;
 import mondo.token.Token;
 import mondo.token.NumberToken;
 import mondo.token.DeclarationToken;
@@ -39,7 +39,7 @@ import mondo.token.CommentToken;
 import mondo.token.MultiLineCommentToken;
 import mondo.token.NewLineToken;
 
-public class Tokenizer implements ITokenizer {
+public class Tokenizer extends AbstractTokenizer {
     private List<Token> tokenTypes = new ArrayList<Token>() {{
         add(new CommentToken());
         add(new MultiLineCommentToken());
@@ -80,20 +80,6 @@ public class Tokenizer implements ITokenizer {
     public Token getPrevious() {
         tokenIndex--;
         if(tokenIndex >= 0) return tokens.get(tokenIndex);
-        return null;
-    }
-
-    public Token getNextNotBlank() {
-        for(tokenIndex++; tokenIndex < tokens.size(); tokenIndex++) {
-            if(!tokens.get(tokenIndex).isBlank()) return tokens.get(tokenIndex);
-        }
-        return null;
-    }
-
-    public Token getPreviousNotBlank() {
-        for(tokenIndex--; tokenIndex >= 0; tokenIndex--) {
-            if(!tokens.get(tokenIndex).isBlank()) return tokens.get(tokenIndex);
-        }
         return null;
     }
 

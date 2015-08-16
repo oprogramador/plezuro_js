@@ -32,4 +32,6 @@ public interface ITokenizer {
     Token getPrevious();
     Token getPreviousNotBlank();
     void insertAfter(Token token);
+    void insertBefore(Token token);
+    Token getMatchingCloseBracket();
 }

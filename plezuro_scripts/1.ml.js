@@ -6,5 +6,5 @@
 x+=/*blabla
 qwe
 qrw*/(21),
-var f;f = function() { return (this*(2)+(1)); },
+var f;f = (function() { return (arguments[0]*(2)+(1)); }),
 [''+x+y, f((21))]

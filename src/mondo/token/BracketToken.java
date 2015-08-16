@@ -49,17 +49,28 @@ public class BracketToken extends Token {
             add(")");
             add("{");
             add("}");
+            add("#(");
+            add("$(");
+            add("%(");
         }};
     }
 
-    private Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
-        put("{", (String x) -> "(function() { return (");
-        put("}", (String x) -> "); })");
+    private static String matchSet(ITokenizer tokenizer) {
+        tokenizer.getMatchingCloseBracket();
+        tokenizer.insertBefore(new BracketToken().setText("]"));
+        return "new Set([";
+    }
+
+    private Map<String, Function<ITokenizer, String>> functionMap = new HashMap<String, Function<ITokenizer, String>>() {{
+        put("{", (ITokenizer t) -> "(function() { return (");
+        put("}", (ITokenizer t) -> "); })");
+        put("$(", BracketToken::matchSet);
+
     }};
 
     public void convert(ITokenizer tokenizer) {
         try {
-            text = functionMap.get(originalText).apply(originalText);
+            text = functionMap.get(originalText).apply(tokenizer);
         } catch(NullPointerException e) {
         }
     }
