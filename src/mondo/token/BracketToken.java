@@ -61,11 +61,35 @@ public class BracketToken extends Token {
         return "new Set([";
     }
 
-    private Map<String, Function<ITokenizer, String>> functionMap = new HashMap<String, Function<ITokenizer, String>>() {{
-        put("{", (ITokenizer t) -> "(function() { return (");
-        put("}", (ITokenizer t) -> "); })");
-        put("$(", BracketToken::matchSet);
+    private static String matchAssociativeArray(ITokenizer tokenizer) {
+        tokenizer.getMatchingCloseBracket().setText("}");
+        return "{";
+    }
 
+    private static String matchFunctionBegin(ITokenizer tokenizer) {
+        tokenizer.getCurrent().setRole(new FunctionToken());
+        return "(function () {";
+    }
+
+    private static String matchFunctionEnd(ITokenizer tokenizer) {
+        for(Token token = tokenizer.getPrevious(); token != null; token = tokenizer.getPrevious()) {
+            if(token.getText() == OperatorToken.getOperatorSemicolon().getText()) {
+                token.setText("; return");
+                break;
+            }
+            if(token.getRole() instanceof FunctionToken) {
+                tokenizer.insertAfter(new SymbolToken().setText("return "));
+                break;
+            }
+        }
+        return "})";
+    }
+
+    private Map<String, Function<ITokenizer, String>> functionMap = new HashMap<String, Function<ITokenizer, String>>() {{
+        put("{", BracketToken::matchFunctionBegin);
+        put("}", BracketToken::matchFunctionEnd);
+        put("$(", BracketToken::matchSet);
+        put("%(", BracketToken::matchAssociativeArray);
     }};
 
     public void convert(ITokenizer tokenizer) {

@@ -50,7 +50,7 @@ public class SymbolToken extends Token {
         if(tokenizer.getPreviousNotBlank().getText() != OperatorToken.getOperatorDot().getText()) return false;
 
         tokenizer.resetToThis();
-        if(tokenizer.getNextNotBlank().getText() == BracketToken.getOperatorBracketOpen().getText()) return false;
+        if(!(tokenizer.getNextNotBlank() instanceof OperatorToken)) return false;
 
         tokenizer.resetToThis();
         tokenizer.insertAfter(BracketToken.getOperatorBracketOpen());

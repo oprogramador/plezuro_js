@@ -65,9 +65,8 @@ public class Parser {
     }
 
     private void convert() {
-        for(int i = 0; i < tokenizer.getTokens().size(); i++) {
-            tokenizer.setTokenIndex(i);
-            tokenizer.getTokens().get(i).convert(tokenizer);
+        for(Token token = tokenizer.getCurrent(); token != null; token = tokenizer.hardNext()) {
+            if(token.getOriginalText() != null) token.convert(tokenizer);
         }
     }
 

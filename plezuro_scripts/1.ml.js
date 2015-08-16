@@ -5,6 +5,6 @@
 //y += ("" + 'wef' + "") + '';//"oop\"ww" + '';
 x+=/*blabla
 qwe
-qrw*/(21),
-var f;f = (function() { return (arguments[0]*(2)+(1)); }),
+qrw*/(21);
+var f;f = (function () {return arguments[0]*(2)+(1)});
 [''+x+y, f((21))]

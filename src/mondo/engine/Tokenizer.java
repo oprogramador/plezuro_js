@@ -43,13 +43,13 @@ public class Tokenizer extends AbstractTokenizer {
     private List<Token> tokenTypes = new ArrayList<Token>() {{
         add(new CommentToken());
         add(new MultiLineCommentToken());
+        add(new BracketToken());
         add(new NumberToken());
         add(new DeclarationToken());
         add(new WhiteSpaceToken());
         add(new OperatorToken());
         add(new SymbolToken());
         add(new StringToken());
-        add(new BracketToken());
     }};
 
     private List<Token> tokens = new ArrayList<Token>();
@@ -57,9 +57,11 @@ public class Tokenizer extends AbstractTokenizer {
     private int hardTokenIndex = 0;
     private int tokenIndex = 0;
 
-    void setTokenIndex(int value) {
-        hardTokenIndex = value;
-        tokenIndex = value;
+    Token hardNext() {
+        hardTokenIndex++;
+        tokenIndex = hardTokenIndex;
+        if(tokenIndex < tokens.size()) return tokens.get(tokenIndex);
+        return null;
     }
 
     public Token resetToThis() {
@@ -85,6 +87,7 @@ public class Tokenizer extends AbstractTokenizer {
 
     public void insertAfter(Token token) {
         tokens.add(tokenIndex + 1, token);
+        hardTokenIndex++;
         tokenIndex++;
     }
 

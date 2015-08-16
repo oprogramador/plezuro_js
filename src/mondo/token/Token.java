@@ -43,6 +43,16 @@ public abstract class Token implements Cloneable {
     protected String originalText;
     protected String text;
     protected int lineNr, begX, endX;
+    protected Token role;
+
+    public Token getRole() {
+        return role;
+    }
+
+    public Token setRole(Token value) {
+        role = value;
+        return this;
+    }
 
     public int getBegX() {
         return begX;
