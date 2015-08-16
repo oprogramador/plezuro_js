@@ -41,8 +41,8 @@ public class BracketToken extends Token {
     }
 
     private Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
-        put("{", (String x) -> "function() { return (");
-        put("}", (String x) -> "); }");
+        put("{", (String x) -> "(function() { return (");
+        put("}", (String x) -> "); })");
     }};
 
     public void convert() {

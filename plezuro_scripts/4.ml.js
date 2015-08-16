@@ -1,2 +1,2 @@
-var f;f = function() { return (arguments[(0)] + arguments[(1)]); },
-f((2), (4))
+var f;f = function() { return ((3)*arguments[(0)] + arguments[(1)] / arguments[(2)]); },
+f((2), (4), (10))

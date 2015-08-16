@@ -1,4 +1,6 @@
 todo:
+    error_checking:
+        bracket: no
     condition: yes
     loop: yes
     function: yes
