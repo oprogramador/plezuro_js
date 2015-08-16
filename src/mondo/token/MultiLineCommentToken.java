@@ -24,6 +24,10 @@ package mondo.token;
 import java.io.IOException;
 
 public class MultiLineCommentToken extends MultiLineToken {
+    public boolean isBlank() {
+        return true;
+    }
+
     public String getRegex() {
         return "\\/\\*.*";
     }

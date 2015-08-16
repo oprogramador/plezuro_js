@@ -26,6 +26,8 @@ import java.util.regex.Pattern;
 import java.util.regex.Matcher;
 
 public abstract class Token implements Cloneable {
+    public abstract boolean isBlank();
+
     protected String getRegex() {
         throw new UnsupportedOperationException();
     }
@@ -34,7 +36,7 @@ public abstract class Token implements Cloneable {
         throw new UnsupportedOperationException();
     }
 
-    public void convert() {
+    public void convert(ITokenizer tokenizer) {
     }
 
 

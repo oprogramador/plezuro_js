@@ -65,7 +65,10 @@ public class Parser {
     }
 
     private void convert() {
-        for(Token token: tokenizer.getTokens()) token.convert();
+        for(int i = 0; i < tokenizer.getTokens().size(); i++) {
+            tokenizer.setTokenIndex(i);
+            tokenizer.getTokens().get(i).convert(tokenizer);
+        }
     }
 
     public Parser(String filename) throws IOException, InvalidTokenException {

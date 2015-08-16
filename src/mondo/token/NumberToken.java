@@ -24,11 +24,15 @@ package mondo.token;
 import java.io.IOException;
 
 public class NumberToken extends Token {
+    public boolean isBlank() {
+        return false;
+    }
+
     public String getRegex() {
         return "[0-9]+(\\.[0-9]+)?";
     }
 
-    public void convert() {
+    public void convert(ITokenizer tokenizer) {
         text = "("+originalText+")";
     }
 }

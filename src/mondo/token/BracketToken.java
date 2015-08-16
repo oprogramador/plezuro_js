@@ -29,6 +29,18 @@ import java.util.ArrayList;
 import java.util.function.Function;
 
 public class BracketToken extends Token {
+    public boolean isBlank() {
+        return false;
+    }
+
+    static Token getOperatorBracketOpen() {
+        return new BracketToken().setText("(");
+    }
+
+    static Token getOperatorBracketClose() {
+        return new BracketToken().setText(")");
+    }
+
     protected List<String> getPossibleTokens() {
         return new ArrayList<String>() {{
             add("[");
@@ -45,7 +57,7 @@ public class BracketToken extends Token {
         put("}", (String x) -> "); })");
     }};
 
-    public void convert() {
+    public void convert(ITokenizer tokenizer) {
         try {
             text = functionMap.get(originalText).apply(originalText);
         } catch(NullPointerException e) {

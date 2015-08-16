@@ -26,6 +26,7 @@ import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import mondo.token.ITokenizer;
 import mondo.token.Token;
 import mondo.token.NumberToken;
 import mondo.token.DeclarationToken;
@@ -38,7 +39,7 @@ import mondo.token.CommentToken;
 import mondo.token.MultiLineCommentToken;
 import mondo.token.NewLineToken;
 
-public class Tokenizer {
+public class Tokenizer implements ITokenizer {
     private List<Token> tokenTypes = new ArrayList<Token>() {{
         add(new CommentToken());
         add(new MultiLineCommentToken());
@@ -52,6 +53,54 @@ public class Tokenizer {
     }};
 
     private List<Token> tokens = new ArrayList<Token>();
+
+    private int hardTokenIndex = 0;
+    private int tokenIndex = 0;
+
+    void setTokenIndex(int value) {
+        hardTokenIndex = value;
+        tokenIndex = value;
+    }
+
+    public Token resetToThis() {
+        tokenIndex = hardTokenIndex;
+        return tokens.get(tokenIndex);
+    }
+
+    public Token getCurrent() {
+        return tokens.get(tokenIndex);
+    }
+
+    public Token getNext() {
+        tokenIndex++;
+        if(tokenIndex < tokens.size()) return tokens.get(tokenIndex);
+        return null;
+    }
+
+    public Token getPrevious() {
+        tokenIndex--;
+        if(tokenIndex >= 0) return tokens.get(tokenIndex);
+        return null;
+    }
+
+    public Token getNextNotBlank() {
+        for(tokenIndex++; tokenIndex < tokens.size(); tokenIndex++) {
+            if(!tokens.get(tokenIndex).isBlank()) return tokens.get(tokenIndex);
+        }
+        return null;
+    }
+
+    public Token getPreviousNotBlank() {
+        for(tokenIndex--; tokenIndex >= 0; tokenIndex--) {
+            if(!tokens.get(tokenIndex).isBlank()) return tokens.get(tokenIndex);
+        }
+        return null;
+    }
+
+    public void insertAfter(Token token) {
+        tokens.add(tokenIndex + 1, token);
+        tokenIndex++;
+    }
 
     public List<Token> getTokens() {
         return tokens;
@@ -75,6 +124,5 @@ public class Tokenizer {
             }
             tokens.add(new NewLineToken(i, lines.get(i).length()));
         }
-        for(Token token: tokens) System.out.println(token);
     }
 }

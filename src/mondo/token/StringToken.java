@@ -24,6 +24,10 @@ package mondo.token;
 import java.io.IOException;
 
 public class StringToken extends Token {
+    public boolean isBlank() {
+        return false;
+    }
+
     public String getRegex() {
         return "('')|('.*?[^\\\\]')|(\"\")|(\".*?[^\\\\]\")";
     }

@@ -24,6 +24,10 @@ package mondo.token;
 import java.io.IOException;
 
 public class CommentToken extends Token {
+    public boolean isBlank() {
+        return true;
+    }
+
     public String getRegex() {
         return "\\/\\/.*";
     }

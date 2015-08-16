@@ -21,18 +21,15 @@
 
 package mondo.token;
 
-import java.io.IOException;
+import java.util.List;
 
-public class DeclarationToken extends Token {
-    public boolean isBlank() {
-        return false;
-    }
-
-    public String getRegex() {
-        return "\\$[A-Za-z_]+[A-Za-z_0-9]*";
-    }
-
-    public void convert(ITokenizer tokenizer) {
-        text = "var "+originalText.substring(1)+";"+originalText.substring(1);
-    }
+public interface ITokenizer {
+    List<Token> getTokens();
+    Token resetToThis();
+    Token getCurrent();
+    Token getNext();
+    Token getNextNotBlank();
+    Token getPrevious();
+    Token getPreviousNotBlank();
+    void insertAfter(Token token);
 }

@@ -24,6 +24,10 @@ package mondo.token;
 import java.io.IOException;
 
 public class NewLineToken extends Token {
+    public boolean isBlank() {
+        return true;
+    }
+
     public NewLineToken(int lineNr, int x) {
         this.lineNr = lineNr;
         begX = x;

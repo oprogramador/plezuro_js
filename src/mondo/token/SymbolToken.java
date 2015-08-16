@@ -29,6 +29,10 @@ import java.util.ArrayList;
 import java.util.function.Function;
 
 public class SymbolToken extends Token {
+    public boolean isBlank() {
+        return false;
+    }
+
     public String getRegex() {
         return "[A-Za-z_]+[A-Za-z_0-9]*";
     }
@@ -37,10 +41,30 @@ public class SymbolToken extends Token {
         put("args", (String x) -> "arguments");
     }};
 
-    public void convert() {
+    private boolean insertBracketAfterEventually(ITokenizer tokenizer) {
+        //if(getText().equals("do")) {
+            //System.out.println("yes");
+            //System.out.println("current="+tokenizer.getCurrent());
+            //System.out.println("previous="+tokenizer.getPreviousNotBlank());
+            //System.out.println("previous="+tokenizer.getPreviousNotBlank());
+        //}
+        if(tokenizer.getPreviousNotBlank().getText() != OperatorToken.getOperatorDot().getText()) return false;
+
+        tokenizer.resetToThis();
+        if(tokenizer.getNextNotBlank().getText() == BracketToken.getOperatorBracketOpen().getText()) return false;
+
+        tokenizer.resetToThis();
+        tokenizer.insertAfter(BracketToken.getOperatorBracketOpen());
+        tokenizer.insertAfter(BracketToken.getOperatorBracketClose());
+        return true;
+    }
+
+    public void convert(ITokenizer tokenizer) {
         try {
+            insertBracketAfterEventually(tokenizer);
             text = functionMap.get(originalText).apply(originalText);
         } catch(NullPointerException e) {
+            //e.printStackTrace();
         }
     }
 }
