@@ -82,6 +82,8 @@ public class BracketToken extends Token {
                 break;
             }
         }
+        Token next = tokenizer.getNext();
+        if(next instanceof NewLineToken) next.setText(" ");
         return "})";
     }
 

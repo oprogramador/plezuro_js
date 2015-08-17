@@ -1,6 +1,7 @@
 todo:
     error_checking:
         bracket: no
+        semicolon: no
     condition: yes
     loop: yes
     function: yes
@@ -18,3 +19,6 @@ todo:
         set: yes
         range: no
     unit_test: no
+    return_group: no
+    bugs:
+        endline_before_return: no
