@@ -1,24 +1,24 @@
 todo:
+    bugs:
+        endline_before_return: yes
+        return_group: yes
+    class: no
+    collections:
+        associative_array: yes
+        dictionary: yes
+        list: yes
+        range: no
+        set: yes
+        tuple: no
+    condition: yes
     error_checking:
         bracket: no
         semicolon: no
-    condition: yes
-    loop: yes
     function: yes
-    class: no
-    inheritance: no
-    module: no
     import: no
+    inheritance: no
+    loop: yes
     method_without_closing: yes
-    parallel: no
-    collections:
-        list: yes
-        tuple: no
-        dictionary: no
-        associative_array: yes
-        set: yes
-        range: no
+    module: no
+    operators: no
     unit_test: no
-    return_group: no
-    bugs:
-        endline_before_return: no

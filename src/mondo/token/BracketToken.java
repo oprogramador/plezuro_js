@@ -61,9 +61,16 @@ public class BracketToken extends Token {
         return "new Set([";
     }
 
+    private static String matchDictionary(ITokenizer tokenizer) {
+        tokenizer.getMatchingCloseBracket();
+        tokenizer.insertBefore(new BracketToken().setText("]"));
+        return "new Dictionary([";
+    }
+
     private static String matchAssociativeArray(ITokenizer tokenizer) {
-        tokenizer.getMatchingCloseBracket().setText("}");
-        return "{";
+        tokenizer.getMatchingCloseBracket();
+        tokenizer.insertBefore(new BracketToken().setText("]"));
+        return "new AssocArray([";
     }
 
     private static String matchFunctionBegin(ITokenizer tokenizer) {
@@ -96,6 +103,7 @@ public class BracketToken extends Token {
         put("}", BracketToken::matchFunctionEnd);
         put("$(", BracketToken::matchSet);
         put("%(", BracketToken::matchAssociativeArray);
+        put("#(", BracketToken::matchDictionary);
     }};
 
     public void convert(ITokenizer tokenizer) {

@@ -89,7 +89,7 @@ public class OperatorToken extends Token {
     }
 
     private Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
-        //put(";", (String x) -> ",");
+        put(":", (String x) -> ",");
     }};
 
     public void convert(ITokenizer tokenizer) {
