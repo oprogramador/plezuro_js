@@ -88,6 +88,25 @@ public class OperatorToken extends Token {
         }};
     }
 
+    private matchOperatorMethod(ITokenizer tokenizer) {
+
+    }
+
+    private Map<String, String> operatorMethodNames = new HashMap<String, String>() {{
+        put("<<", "__leftShift");
+        put(">>", "__rightShift");
+        put("|", "__or");
+        put("&", "__and");
+        put("=~", "__equiv");
+        put("+", "__add");
+        put("-", "__sub");
+        put("%", "__mod");
+        put("*", "__mul");
+        put("/", "__div");
+        put("^", "__pow");
+        put("..", "__range");
+    }};
+
     private Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
         put(":", (String x) -> ",");
     }};
@@ -96,6 +115,7 @@ public class OperatorToken extends Token {
         try {
             text = functionMap.get(originalText).apply(originalText);
         } catch(NullPointerException e) {
+            matchOperatorMethod(tokenizer);
         }
     }
 }

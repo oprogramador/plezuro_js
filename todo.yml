@@ -10,6 +10,7 @@ todo:
         range: no
         set: yes
         tuple: no
+    compare_with_array: no
     condition: yes
     error_checking:
         bracket: no

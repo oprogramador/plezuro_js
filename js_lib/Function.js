@@ -6,3 +6,9 @@ Function.prototype.if = function(cmd) {
 Function.prototype.do = function() {
     while(this());
 }
+
+Function.prototype.while = function(loop) {
+    while(this()) {
+        loop();
+    }
+}
