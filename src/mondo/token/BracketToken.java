@@ -72,12 +72,16 @@ public class BracketToken extends Token {
     }
 
     private static String matchFunctionEnd(ITokenizer tokenizer) {
+        tokenizer.getCurrent().setRole(new FunctionEndToken());
+        int counter = 1;
         for(Token token = tokenizer.getPrevious(); token != null; token = tokenizer.getPrevious()) {
             if(token.getText() == OperatorToken.getOperatorSemicolon().getText()) {
                 token.setText("; return");
                 break;
             }
-            if(token.getRole() instanceof FunctionToken) {
+            if(token.getRole() instanceof FunctionToken) counter--;
+            if(token.getRole() instanceof FunctionEndToken) counter++;
+            if(counter == 0) {
                 tokenizer.insertAfter(new SymbolToken().setText("return "));
                 break;
             }
