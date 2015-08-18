@@ -26,6 +26,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.function.Function;
 
 
@@ -43,6 +44,10 @@ public class OperatorToken extends Token {
     }
 
     protected List<String> getPossibleTokens() {
+        return getPossibleTokens_static();
+    }
+
+    protected static List<String> getPossibleTokens_static() {
         return new ArrayList<String>() {{
             add(";");
             add(",");
@@ -88,7 +93,15 @@ public class OperatorToken extends Token {
         }};
     }
 
-    private matchOperatorMethod(ITokenizer tokenizer) {
+    private static Map<String, Integer> operatorOrder;
+
+    static {
+        List<String> operators = getPossibleTokens_static();
+        operatorOrder = new TreeMap<String, Integer>();
+        for(int i = 0; i < operators.size(); i++) operatorOrder.put(operators.get(i), i); 
+    }
+
+    private void matchOperatorMethod(ITokenizer tokenizer) {
 
     }
 

@@ -56,24 +56,28 @@ public class BracketToken extends Token {
     }
 
     private static String matchSet(ITokenizer tokenizer) {
+        tokenizer.getCurrent().setRole(new BracketOpenToken());
         tokenizer.getMatchingCloseBracket();
         tokenizer.insertBefore(new BracketToken().setText("]"));
         return "new Set([";
     }
 
     private static String matchDictionary(ITokenizer tokenizer) {
+        tokenizer.getCurrent().setRole(new BracketOpenToken());
         tokenizer.getMatchingCloseBracket();
         tokenizer.insertBefore(new BracketToken().setText("]"));
         return "new Dictionary([";
     }
 
     private static String matchAssociativeArray(ITokenizer tokenizer) {
+        tokenizer.getCurrent().setRole(new BracketOpenToken());
         tokenizer.getMatchingCloseBracket();
         tokenizer.insertBefore(new BracketToken().setText("]"));
         return "new AssocArray([";
     }
 
     private static String matchFunctionBegin(ITokenizer tokenizer) {
+        tokenizer.getCurrent().setRole(new BracketOpenToken());
         tokenizer.getCurrent().setRole(new FunctionToken());
         return "(function () {";
     }
@@ -99,6 +103,10 @@ public class BracketToken extends Token {
     }
 
     private Map<String, Function<ITokenizer, String>> functionMap = new HashMap<String, Function<ITokenizer, String>>() {{
+        put("[", (ITokenizer t) -> {t.getCurrent().setRole(new SquareBracketOpenToken()); return "[";});
+        put("]", (ITokenizer t) -> {t.getCurrent().setRole(new SquareBracketCloseToken()); return "]";});
+        put("(", (ITokenizer t) -> {t.getCurrent().setRole(new BracketOpenToken()); return "(";});
+        put(")", (ITokenizer t) -> {t.getCurrent().setRole(new BracketCloseToken()); return ")";});
         put("{", BracketToken::matchFunctionBegin);
         put("}", BracketToken::matchFunctionEnd);
         put("$(", BracketToken::matchSet);
