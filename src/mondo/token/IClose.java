@@ -21,8 +21,8 @@
 
 package mondo.token;
 
-public class SquareBracketCloseToken extends BracketToken implements IClose {
-    public Class<?> getOpenClass() {
-        return SquareBracketOpenToken.class;
-    }
+import java.util.List;
+
+public interface IClose {
+    Class<?> getOpenClass();
 }

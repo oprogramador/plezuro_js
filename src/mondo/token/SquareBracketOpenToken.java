@@ -21,6 +21,6 @@
 
 package mondo.token;
 
-public class SquareBracketOpenToken extends BracketToken {
+public class SquareBracketOpenToken extends BracketToken implements IOpen {
 
 }

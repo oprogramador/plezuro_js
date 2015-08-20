@@ -21,6 +21,8 @@
 
 package mondo.token;
 
-public class BracketCloseToken extends BracketToken {
-
+public class BracketCloseToken extends BracketToken implements IClose {
+    public Class<?> getOpenClass() {
+        return BracketOpenToken.class;
+    }
 }

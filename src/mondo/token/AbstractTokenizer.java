@@ -22,6 +22,8 @@
 package mondo.token;
 
 import java.util.List;
+import java.util.Map;
+import java.util.HashMap;
 
 public abstract class AbstractTokenizer implements ITokenizer {
     public abstract List<Token> getTokens();
@@ -49,6 +51,12 @@ public abstract class AbstractTokenizer implements ITokenizer {
     public void insertBefore(Token token) {
         getPrevious();
         insertAfter(token);
+    }
+
+    public Token getNextAtSameBracketLevel() {
+        Map<Class<?>, Integer> map = new HashMap<Class<?>, Integer>();
+
+        return null;
     }
 
     public Token getMatchingCloseBracket() {
