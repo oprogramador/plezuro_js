@@ -2,6 +2,7 @@ todo:
     bugs:
         endline_before_return: yes
         return_group: yes
+        indxe_operator: no
     class: no
     collections:
         associative_array: yes

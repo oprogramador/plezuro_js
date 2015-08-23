@@ -65,7 +65,7 @@ public class OperatorToken extends Token {
         return new HashMap<String, Function<String,String>>();
     }
 
-    private void matchOperatorMethod(ITokenizer tokenizer) {
+    protected void matchOperatorMethod(ITokenizer tokenizer) {
     }
 
     public void convert(ITokenizer tokenizer) {

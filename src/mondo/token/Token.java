@@ -104,9 +104,7 @@ public abstract class Token implements Cloneable {
 
     protected Token findFromList(List<String> lines, int lineNr, int index) {
         Token result = null;
-        System.out.println("---");
         for(String tokenText: getPossibleTokens()) {
-            System.out.println("tokenText="+tokenText);
             if((result == null || tokenText.length() > result.getOriginalText().length()) && lines.get(lineNr).indexOf(tokenText, index) == index) {
                 result = getObjectOfSuitableSubclass(tokenText)
                         .setBegX(index)
@@ -115,7 +113,6 @@ public abstract class Token implements Cloneable {
                         .setText(tokenText)
                         .setLineNr(lineNr)
                         ;
-                System.out.println("result="+result);
             }
         }
         return result;

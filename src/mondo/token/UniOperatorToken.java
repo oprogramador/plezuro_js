@@ -46,7 +46,14 @@ public class UniOperatorToken extends OperatorToken {
     }
 
     private Map<String, String> operatorMethodNames = new HashMap<String, String>() {{
-        put("++", "__incr");
-        put("--", "__decr");
+        //put("++", "__incr");
+        //put("--", "__decr");
     }};
+
+    protected void matchOperatorMethod(ITokenizer tokenizer) {
+        if(operatorMethodNames.get(tokenizer.getCurrent().getOriginalText()) == null) return;
+
+        tokenizer.getCurrent().setText("."+operatorMethodNames.get(tokenizer.getCurrent().getOriginalText())+"(");
+        tokenizer.insertAfter(BracketToken.getOperatorBracketClose());
+    }
 }

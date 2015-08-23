@@ -76,7 +76,6 @@ public class BiOperatorToken extends OperatorToken {
         add(".");
         add("..");
         add(":");	
-        add("++");
     }};
 
     private static Map<String, Integer> operatorOrder;
@@ -86,9 +85,13 @@ public class BiOperatorToken extends OperatorToken {
         for(int i = 0; i < possibleTokens.size(); i++) operatorOrder.put(possibleTokens.get(i), i); 
     }
 
-    private Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
+    private static Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
         put(":", (String x) -> ",");
     }};
+
+    protected Map<String, Function<String,String>> getFunctionMap() {
+        return functionMap;
+    }
 
     private Map<String, String> operatorMethodNames = new HashMap<String, String>() {{
         put("<<", "__leftShift");
@@ -105,7 +108,7 @@ public class BiOperatorToken extends OperatorToken {
         put("..", "__range");
     }};
 
-    private void matchOperatorMethod(ITokenizer tokenizer) {
+    protected void matchOperatorMethod(ITokenizer tokenizer) {
         if(operatorMethodNames.get(tokenizer.getCurrent().getOriginalText()) == null) return;
 
         Integer myOrder = operatorOrder.get(tokenizer.getCurrent().getOriginalText());

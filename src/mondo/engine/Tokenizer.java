@@ -113,6 +113,5 @@ public class Tokenizer extends AbstractTokenizer {
             }
             tokens.add(new NewLineToken(i, lines.get(i).length()));
         }
-        for(Token token: tokens) System.out.println(token);
     }
 }
