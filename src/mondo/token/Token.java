@@ -103,19 +103,22 @@ public abstract class Token implements Cloneable {
     }
 
     protected Token findFromList(List<String> lines, int lineNr, int index) {
+        Token result = null;
+        System.out.println("---");
         for(String tokenText: getPossibleTokens()) {
-            if(lines.get(lineNr).indexOf(tokenText, index) == index) {
-                Token token = ((Token)clone())
+            System.out.println("tokenText="+tokenText);
+            if((result == null || tokenText.length() > result.getOriginalText().length()) && lines.get(lineNr).indexOf(tokenText, index) == index) {
+                result = getObjectOfSuitableSubclass(tokenText)
                         .setBegX(index)
                         .setEndX(index + tokenText.length() - 1)
                         .setOriginalText(tokenText)
                         .setText(tokenText)
                         .setLineNr(lineNr)
                         ;
-                return token;
+                System.out.println("result="+result);
             }
         }
-        return null;
+        return result;
     }
 
     protected Token findFromRegex(List<String> lines, int lineNr, int index) {
@@ -123,7 +126,7 @@ public abstract class Token implements Cloneable {
         boolean result = matcher.find(index);
         if(result && matcher.start() == index) {
             String tokenText = lines.get(lineNr).substring(matcher.start(), matcher.end());
-            Token token = ((Token)clone())
+            Token token = getObjectOfSuitableSubclass(tokenText)
                     .setBegX(matcher.start())
                     .setEndX(matcher.end() - 1)
                     .setOriginalText(tokenText)
@@ -157,6 +160,10 @@ public abstract class Token implements Cloneable {
             "originalText: \""+originalText+"\", "+
             "text: \""+text+"\""+
         "}";
+    }
+
+    public Token getObjectOfSuitableSubclass(String tokenText) {
+        return (Token)clone();
     }
 
     public Object clone() {

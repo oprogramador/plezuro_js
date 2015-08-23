@@ -53,8 +53,26 @@ public abstract class AbstractTokenizer implements ITokenizer {
         insertAfter(token);
     }
 
+    private static <T> void incrementMap(Map<T, Integer> map, T object) {
+        map.put(object, map.get(object) + 1);
+    }
+
+    private static <T> void decrementMap(Map<T, Integer> map, T object) {
+        map.put(object, map.get(object) - 1);
+    }
+
+    private static <T> boolean allEqualsZero(Map<T, Integer> map) {
+        for(Integer i: map.values()) if(i != 0) return false;
+        return true;
+    }
+
     public Token getNextAtSameBracketLevel() {
         Map<Class<?>, Integer> map = new HashMap<Class<?>, Integer>();
+        for(Token token = getNext(); token != null; token = getNext()) {
+            if(token instanceof IOpen) incrementMap(map, token.getClass());
+            else if(token instanceof IClose) decrementMap(map, ((IClose)token).getOpenClass());
+            if(allEqualsZero(map)) return getNext();         
+        }
 
         return null;
     }

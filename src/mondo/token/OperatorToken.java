@@ -29,7 +29,6 @@ import java.util.HashMap;
 import java.util.TreeMap;
 import java.util.function.Function;
 
-
 public class OperatorToken extends Token {
     public boolean isBlank() {
         return false;
@@ -43,92 +42,42 @@ public class OperatorToken extends Token {
         return new OperatorToken().setText(";");
     }
 
-    protected List<String> getPossibleTokens() {
-        return getPossibleTokens_static();
-    }
-
-    protected static List<String> getPossibleTokens_static() {
-        return new ArrayList<String>() {{
-            add(";");
-            add(",");
-            add(":=");
-            add("=");
-            add("+=");
-            add("-=");
-            add("*=");
-            add("/=");
-            add("^=");
-            add("&=");
-            add("|=");
-            add("%=");
-            add(".=");
-            add("~~");
-            add("<->");
-            add("<<");
-            add(">>");	
-            add("?");	
-            add("|");	
-            add("&");	
-            add("<=>");	
-            add(">=");	
-            add(">");	
-            add("<=");	
-            add("<");	
-            add("!=");	
-            add("==");	
-            add("!==");
-            add("===");	
-            add("=~");
-            add("!~");
-            add("+");
-            add("-");	
-            add("%");	
-            add("*");
-            add("/");	
-            add("^");
-            add("^^");
-            add(".");
-            add("..");
-            add(":");	
-        }};
-    }
-
-    private static Map<String, Integer> operatorOrder;
+    private static List<OperatorToken> activeSubtypes = new ArrayList<OperatorToken>() {{
+        add(new BiOperatorToken());
+        add(new UniOperatorToken());
+    }};
+    private static List<String> possibleTokens;
 
     static {
-        List<String> operators = getPossibleTokens_static();
-        operatorOrder = new TreeMap<String, Integer>();
-        for(int i = 0; i < operators.size(); i++) operatorOrder.put(operators.get(i), i); 
+        possibleTokens = new ArrayList<String>();
+        for(OperatorToken token: activeSubtypes) possibleTokens.addAll(token.getOnlyPossibleTokens());
+    }
+
+    protected List<String> getPossibleTokens() {
+        return possibleTokens;
+    }
+
+    protected List<String> getOnlyPossibleTokens() {
+        return new ArrayList<String>();
+    }
+
+    protected Map<String, Function<String,String>> getFunctionMap() {
+        return new HashMap<String, Function<String,String>>();
     }
 
     private void matchOperatorMethod(ITokenizer tokenizer) {
-
     }
-
-    private Map<String, String> operatorMethodNames = new HashMap<String, String>() {{
-        put("<<", "__leftShift");
-        put(">>", "__rightShift");
-        put("|", "__or");
-        put("&", "__and");
-        put("=~", "__equiv");
-        put("+", "__add");
-        put("-", "__sub");
-        put("%", "__mod");
-        put("*", "__mul");
-        put("/", "__div");
-        put("^", "__pow");
-        put("..", "__range");
-    }};
-
-    private Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
-        put(":", (String x) -> ",");
-    }};
 
     public void convert(ITokenizer tokenizer) {
         try {
-            text = functionMap.get(originalText).apply(originalText);
+            text = getFunctionMap().get(originalText).apply(originalText);
         } catch(NullPointerException e) {
             matchOperatorMethod(tokenizer);
         }
+    }
+
+    public Token getObjectOfSuitableSubclass(String tokenText) {
+        for(OperatorToken token: activeSubtypes) if(token.getOnlyPossibleTokens().contains(tokenText)) return (Token)token.clone();
+        return new OperatorToken();
     }
 }

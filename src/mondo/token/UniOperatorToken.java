@@ -21,18 +21,32 @@
 
 package mondo.token;
 
+import java.io.IOException;
 import java.util.List;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.TreeMap;
+import java.util.function.Function;
 
-public interface ITokenizer {
-    List<Token> getTokens();
-    Token resetToThis();
-    Token getCurrent();
-    Token getNext();
-    Token getNextNotBlank();
-    Token getPrevious();
-    Token getPreviousNotBlank();
-    void insertAfter(Token token);
-    void insertBefore(Token token);
-    Token getMatchingCloseBracket();
-    Token getNextAtSameBracketLevel();
+public class UniOperatorToken extends OperatorToken {
+    protected List<String> getOnlyPossibleTokens() {
+        List<String> list = new ArrayList<String>() {{
+            add("!");	
+            add("&&");	
+            add("**");	
+            add("#");	
+            add("++");	
+            add("--");
+            add("@");
+            add("~");
+            add("=>");
+        }};
+        return list;
+    }
+
+    private Map<String, String> operatorMethodNames = new HashMap<String, String>() {{
+        put("++", "__incr");
+        put("--", "__decr");
+    }};
 }
