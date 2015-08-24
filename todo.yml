@@ -5,6 +5,7 @@ todo:
         index_operator:
             get: yes
             set: no
+        iterator: no
         operator_func_args: no
         operator_order: no
         return_group: yes
