@@ -33,6 +33,10 @@ public class SymbolToken extends Token {
         return false;
     }
 
+    public boolean isEntity() {
+        return true;
+    }
+
     public String getRegex() {
         return "[A-Za-z_]+[A-Za-z_0-9]*";
     }

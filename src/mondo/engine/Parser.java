@@ -65,8 +65,17 @@ public class Parser {
     }
 
     private void convert() {
-        for(Token token = tokenizer.getCurrent(); token != null; token = tokenizer.hardNext()) {
-            if(token.getOriginalText() != null) token.convert(tokenizer);
+        for(Token token = tokenizer.hardReset(); token != null; token = tokenizer.hardNext()) {
+            if(token.getOriginalText() != null && token.getOriginalText().equals(token.getText())) token.convert(tokenizer);
+        }
+    }
+
+    private void eventuallyChangeTokenType(Tokenizer tokenizer) {
+        tokenizer.hardReset();
+        List<Token> tokens = tokenizer.getTokens();
+        for(int i = 0; i < tokens.size(); i++) {
+            tokens.set(i, tokens.get(i).eventuallyChangeType(tokenizer));
+            tokenizer.hardNext();
         }
     }
 
@@ -74,6 +83,8 @@ public class Parser {
         this.filename = filename;
         readFromFile();
         tokenizer = new Tokenizer(lines);
+        eventuallyChangeTokenType(tokenizer);
+        for(Token token: tokenizer.getTokens()) System.out.println(token);
         convert();
         writeToFile();
     }

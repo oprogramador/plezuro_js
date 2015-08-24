@@ -34,6 +34,10 @@ public class OperatorToken extends Token {
         return false;
     }
 
+    public boolean isEntity() {
+        return false;
+    }
+
     static Token getOperatorDot() {
         return new OperatorToken().setText(".");
     }

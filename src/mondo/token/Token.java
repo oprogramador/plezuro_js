@@ -28,6 +28,11 @@ import java.util.regex.Matcher;
 public abstract class Token implements Cloneable {
     public abstract boolean isBlank();
 
+    public boolean isEntity() {
+        if(isBlank()) return false;
+        throw new UnsupportedOperationException();
+    }
+
     protected String getRegex() {
         throw new UnsupportedOperationException();
     }
@@ -39,20 +44,13 @@ public abstract class Token implements Cloneable {
     public void convert(ITokenizer tokenizer) {
     }
 
+    public Token eventuallyChangeType(ITokenizer tokenizer) {
+        return this;
+    }
 
     protected String originalText;
     protected String text;
     protected int lineNr, begX, endX;
-    protected Token role;
-
-    public Token getRole() {
-        return role;
-    }
-
-    public Token setRole(Token value) {
-        role = value;
-        return this;
-    }
 
     public int getBegX() {
         return begX;
@@ -161,6 +159,15 @@ public abstract class Token implements Cloneable {
 
     public Token getObjectOfSuitableSubclass(String tokenText) {
         return (Token)clone();
+    }
+
+    public Token copyAll(Token token) {
+        setBegX(token.begX);
+        setEndX(token.endX);
+        setLineNr(token.lineNr);
+        setOriginalText(token.originalText);
+        setText(token.text);
+        return this;
     }
 
     public Object clone() {

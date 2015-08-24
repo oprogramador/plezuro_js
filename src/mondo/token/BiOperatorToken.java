@@ -115,14 +115,16 @@ public class BiOperatorToken extends OperatorToken {
         tokenizer.getCurrent().setText("."+operatorMethodNames.get(tokenizer.getCurrent().getOriginalText())+"(");
         for(Token token = tokenizer.getNextAtSameBracketLevel(); token != null; token = tokenizer.getNextAtSameBracketLevel()) {
             try {
-                if(operatorOrder.get(token.getOriginalText()) > myOrder) {
+                if(token instanceof BiOperatorToken && operatorOrder.get(token.getOriginalText()) > myOrder) {
                     tokenizer.insertBefore(BracketToken.getOperatorBracketClose());
                     return;
                 }
             } catch(NullPointerException e) {
-                tokenizer.insertBefore(BracketToken.getOperatorBracketClose());
+                System.out.println("e token="+token);
+                e.printStackTrace();
                 return;
             }
         }
+        tokenizer.insertBefore(BracketToken.getOperatorBracketClose());
     }
 }

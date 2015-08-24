@@ -64,6 +64,12 @@ public class Tokenizer extends AbstractTokenizer {
         return null;
     }
 
+    public Token hardReset() {
+        hardTokenIndex = 0;
+        tokenIndex = hardTokenIndex;
+        return tokens.get(tokenIndex);
+    }
+
     public Token resetToThis() {
         tokenIndex = hardTokenIndex;
         return tokens.get(tokenIndex);
@@ -93,6 +99,11 @@ public class Tokenizer extends AbstractTokenizer {
 
     public List<Token> getTokens() {
         return tokens;
+    }
+
+    public void replaceToken(Token token) {
+        System.out.println("replace token="+token);
+        tokens.set(tokenIndex, token);
     }
 
     public Tokenizer(List<String> lines) throws InvalidTokenException {

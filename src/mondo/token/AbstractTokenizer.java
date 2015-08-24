@@ -54,11 +54,13 @@ public abstract class AbstractTokenizer implements ITokenizer {
     }
 
     private static <T> void incrementMap(Map<T, Integer> map, T object) {
-        map.put(object, map.get(object) + 1);
+        if(map.containsKey(object)) map.put(object, map.get(object) + 1);
+        else map.put(object, 1);
     }
 
     private static <T> void decrementMap(Map<T, Integer> map, T object) {
-        map.put(object, map.get(object) - 1);
+        if(map.containsKey(object)) map.put(object, map.get(object) - 1);
+        else map.put(object, -1);
     }
 
     private static <T> boolean allEqualsZero(Map<T, Integer> map) {
@@ -68,20 +70,23 @@ public abstract class AbstractTokenizer implements ITokenizer {
 
     public Token getNextAtSameBracketLevel() {
         Map<Class<?>, Integer> map = new HashMap<Class<?>, Integer>();
-        for(Token token = getNext(); token != null; token = getNext()) {
+        for(Token token = getNextNotBlank(); token != null; token = getNextNotBlank()) {
             if(token instanceof IOpen) incrementMap(map, token.getClass());
             else if(token instanceof IClose) decrementMap(map, ((IClose)token).getOpenClass());
-            if(allEqualsZero(map)) return getNext();         
+            if(allEqualsZero(map)) return getNext();
         }
 
         return null;
     }
 
     public Token getMatchingCloseBracket() {
+        if(!(getCurrent() instanceof IOpen)) return null;
+
+        Class<?> neededClass = getCurrent().getClass();
         int counter = 1;
-        for(Token token = getNext(); token != null; token = getNext()) {
-            if(token.getText() == BracketToken.getOperatorBracketOpen().getText()) counter++;
-            if(token.getText() == BracketToken.getOperatorBracketClose().getText()) counter--;
+        for(Token token = getNextNotBlank(); token != null; token = getNextNotBlank()) {
+            if(neededClass.isInstance(token)) counter++;
+            if(token instanceof IClose && ((IClose)token).getOpenClass().equals(neededClass)) counter--;
             if(counter == 0) return token;
         }
         return null;

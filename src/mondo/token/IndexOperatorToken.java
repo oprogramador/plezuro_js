@@ -22,17 +22,27 @@
 package mondo.token;
 
 import java.io.IOException;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.TreeMap;
+import java.util.function.Function;
 
-public class StringToken extends Token {
-    public boolean isBlank() {
-        return false;
+public class IndexOperatorToken extends OperatorToken {
+    private Token getMatchingCloseBracket(ITokenizer tokenizer) {
+        int counter = 1;
+        for(Token token = tokenizer.getNext(); token != null; token = tokenizer.getNext()) {
+            if(token.getOriginalText().equals("[")) counter++;
+            if(token.getOriginalText().equals("]")) counter--;
+            if(counter == 0) return token;
+        }
+        return null;
     }
 
-    public boolean isEntity() {
-        return true;
-    }
-
-    public String getRegex() {
-        return "('')|('.*?[^\\\\]')|(\"\")|(\".*?[^\\\\]\")";
+    protected void matchOperatorMethod(ITokenizer tokenizer) {
+        tokenizer.getCurrent().setText(".__index(");
+        Token endToken = getMatchingCloseBracket(tokenizer);
+        tokenizer.replaceToken(new FunctionEndToken().copyAll(endToken).setText(")"));
     }
 }

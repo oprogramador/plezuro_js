@@ -1,8 +1,13 @@
 todo:
     bugs:
+        bracket_delete_with_operators: no
         endline_before_return: yes
+        index_operator:
+            get: yes
+            set: no
+        operator_func_args: no
+        operator_order: no
         return_group: yes
-        indxe_operator: no
     class: no
     collections:
         associative_array: yes
@@ -22,5 +27,6 @@ todo:
     loop: yes
     method_without_closing: yes
     module: no
-    operators: no
+    operators: yes
+    to_string: no
     unit_test: no

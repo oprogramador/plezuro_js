@@ -28,11 +28,17 @@ public class NumberToken extends Token {
         return false;
     }
 
+    public boolean isEntity() {
+        return true;
+    }
+
     public String getRegex() {
         return "[0-9]+(\\.[0-9]+)?";
     }
 
     public void convert(ITokenizer tokenizer) {
-        text = "("+originalText+")";
+        tokenizer.insertBefore(BracketToken.getOperatorBracketOpen());
+        tokenizer.resetToThis();
+        tokenizer.insertAfter(BracketToken.getOperatorBracketClose());
     }
 }

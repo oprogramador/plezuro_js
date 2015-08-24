@@ -33,6 +33,10 @@ public class BracketToken extends Token {
         return false;
     }
 
+    public boolean isEntity() {
+        return false;
+    }
+
     static Token getOperatorBracketOpen() {
         return new BracketToken().setText("(");
     }
@@ -56,42 +60,36 @@ public class BracketToken extends Token {
     }
 
     private static String matchSet(ITokenizer tokenizer) {
-        tokenizer.getCurrent().setRole(new BracketOpenToken());
         tokenizer.getMatchingCloseBracket();
         tokenizer.insertBefore(new BracketToken().setText("]"));
         return "new Set([";
     }
 
     private static String matchDictionary(ITokenizer tokenizer) {
-        tokenizer.getCurrent().setRole(new BracketOpenToken());
         tokenizer.getMatchingCloseBracket();
         tokenizer.insertBefore(new BracketToken().setText("]"));
         return "new Dictionary([";
     }
 
     private static String matchAssociativeArray(ITokenizer tokenizer) {
-        tokenizer.getCurrent().setRole(new BracketOpenToken());
         tokenizer.getMatchingCloseBracket();
         tokenizer.insertBefore(new BracketToken().setText("]"));
         return "new AssocArray([";
     }
 
     private static String matchFunctionBegin(ITokenizer tokenizer) {
-        tokenizer.getCurrent().setRole(new BracketOpenToken());
-        tokenizer.getCurrent().setRole(new FunctionToken());
         return "(function () {";
     }
 
     private static String matchFunctionEnd(ITokenizer tokenizer) {
-        tokenizer.getCurrent().setRole(new FunctionEndToken());
         int counter = 1;
         for(Token token = tokenizer.getPrevious(); token != null; token = tokenizer.getPrevious()) {
             if(token.getText() == OperatorToken.getOperatorSemicolon().getText()) {
                 token.setText("; return");
                 break;
             }
-            if(token.getRole() instanceof FunctionToken) counter--;
-            if(token.getRole() instanceof FunctionEndToken) counter++;
+            if(token instanceof FunctionToken) counter--;
+            if(token instanceof FunctionEndToken) counter++;
             if(counter == 0) {
                 tokenizer.insertAfter(new SymbolToken().setText("return "));
                 break;
@@ -103,10 +101,10 @@ public class BracketToken extends Token {
     }
 
     private Map<String, Function<ITokenizer, String>> functionMap = new HashMap<String, Function<ITokenizer, String>>() {{
-        put("[", (ITokenizer t) -> {t.getCurrent().setRole(new SquareBracketOpenToken()); return "[";});
-        put("]", (ITokenizer t) -> {t.getCurrent().setRole(new SquareBracketCloseToken()); return "]";});
-        put("(", (ITokenizer t) -> {t.getCurrent().setRole(new BracketOpenToken()); return "(";});
-        put(")", (ITokenizer t) -> {t.getCurrent().setRole(new BracketCloseToken()); return ")";});
+        put("[", (ITokenizer t) -> "[");
+        put("]", (ITokenizer t) -> "]");
+        put("(", (ITokenizer t) -> "(");
+        put(")", (ITokenizer t) -> ")");
         put("{", BracketToken::matchFunctionBegin);
         put("}", BracketToken::matchFunctionEnd);
         put("$(", BracketToken::matchSet);
@@ -114,10 +112,37 @@ public class BracketToken extends Token {
         put("#(", BracketToken::matchDictionary);
     }};
 
+    private Map<String, Class<?>> classMap = new HashMap<String, Class<?>>() {{
+        put("[", SquareBracketOpenToken.class);
+        put("]", SquareBracketCloseToken.class);
+        put("(", BracketOpenToken.class);
+        put(")", BracketCloseToken.class);
+        put("{", FunctionToken.class);
+        put("}", FunctionEndToken.class);
+        put("$(", BracketOpenToken.class);
+        put("%(", BracketOpenToken.class);
+        put("#(", BracketOpenToken.class);
+    }};
+
     public void convert(ITokenizer tokenizer) {
         try {
             text = functionMap.get(originalText).apply(tokenizer);
         } catch(NullPointerException e) {
         }
+    }
+
+    public Token eventuallyChangeType(ITokenizer tokenizer) {
+        Token previous = tokenizer.getPrevious();
+        if(originalText.equals("[") && previous != null && previous.isEntity()) {
+            return new IndexOperatorToken().copyAll(this);
+        }
+        if(classMap.containsKey(originalText)) {
+            try {
+                return ((Token)classMap.get(originalText).newInstance()).copyAll(this);
+            } catch(InstantiationException | IllegalAccessException e) {
+                e.printStackTrace();
+            }
+        }
+        return this;
     }
 }
