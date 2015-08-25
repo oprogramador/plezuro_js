@@ -1,6 +1,7 @@
 todo:
     bugs:
         bracket_delete_with_operators: no
+        double_minus: no
         endline_before_return: yes
         index_operator:
             get: yes
