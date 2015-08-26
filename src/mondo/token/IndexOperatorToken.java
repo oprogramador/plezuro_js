@@ -33,8 +33,8 @@ public class IndexOperatorToken extends OperatorToken {
     private Token getMatchingCloseBracket(ITokenizer tokenizer) {
         int counter = 1;
         for(Token token = tokenizer.getNext(); token != null; token = tokenizer.getNext()) {
-            if(token.getOriginalText().equals("[")) counter++;
-            if(token.getOriginalText().equals("]")) counter--;
+            if(token.getOriginalText() != null && token.getOriginalText().equals("[")) counter++;
+            if(token.getOriginalText() != null && token.getOriginalText().equals("]")) counter--;
             if(counter == 0) return token;
         }
         return null;

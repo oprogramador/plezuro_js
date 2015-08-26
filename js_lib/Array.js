@@ -1,3 +1,3 @@
-Array.prototype.__index = function(x) {
+Object.prototype.__index = function(x) {
     return this[x];
 }

@@ -15,6 +15,9 @@ todo:
         associative_array: yes
         dictionary: yes
         list: yes
+        native:
+            map: no
+            set: no
         range: no
         set: yes
         tuple: no
