@@ -1,4 +1,8 @@
 todo:
+    api:
+        cordova: no
+        node: no
+        web: no
     bugs:
         bracket_delete_with_operators: yes
         double_minus: yes

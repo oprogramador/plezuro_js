@@ -1,15 +1,4 @@
-Object.prototype.__index = function(x) {
-    return this[x];
-}
-function AssocArray(args) {
-    var list = []; 
-    for(var i = 0; i < args.length - 1; i += 2) {
-        list[args[i]] = args[i+1];
-    }
-    return Object.apply(this, [list]);
-}
 
-AssocArray.prototype = Object.create(Object.prototype);
 function Dictionary(args) {
     var list = []; 
     for(var i = 0; i < args.length - 1; i += 2) {
@@ -32,13 +21,6 @@ Function.prototype.while = function(loop) {
     while(this()) {
         loop();
     }
-}
-function importModule(name, callback) {
-    $.getScript(name+'.js', function(data, textStatus, jqxhr) {
-        callback(eval(data));
-    }).fail(function(jqxhr, settings, exception) {
-        callback(new Error('failed to load '+name));
-    });
 }
 Number.prototype.sin = function() {
     return Math.sin(this);
@@ -79,6 +61,26 @@ Number.prototype.__pow = function(x) {
 Number.prototype.__incr = function() {
     return this;
 }
+Object.prototype.__index = function(x) {
+    return this[x];
+}
+
+function importModule(name, callback) {
+    $.getScript(name+'.js', function(data, textStatus, jqxhr) {
+        callback(eval(data));
+    }).fail(function(jqxhr, settings, exception) {
+        callback(new Error('failed to load '+name));
+    });
+}
+function AssocArray(args) {
+    var list = []; 
+    for(var i = 0; i < args.length - 1; i += 2) {
+        list[args[i]] = args[i+1];
+    }
+    return Object.apply(this, [list]);
+}
+
+AssocArray.prototype = Object.create(Object.prototype);
 String.prototype.load = function(name, callback) {
     $.get(name, function(data) {
         callback(data);

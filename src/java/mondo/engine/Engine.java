@@ -25,6 +25,9 @@ import java.io.IOException;
 
 public class Engine {
     public Engine(String[] args) throws IOException, InvalidTokenException {
-        for(String arg: args) new Parser(arg);
+        for(int i = 0; i < args.length; i += 2) {
+            if(i + 1 < args.length) new Parser(args[i], args[i+1]);
+            else new Parser(args[i]);
+        }
     }
 }

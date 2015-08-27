@@ -37,6 +37,7 @@ import mondo.token.Token;
 public class Parser {
     private List<String> lines;
     private String filename;
+    private String outFilename;
     private Tokenizer tokenizer;
 
     public Tokenizer getTokenizer() {
@@ -44,7 +45,7 @@ public class Parser {
     }
 
     protected String getOutputFileName() {
-        return filename+".js";
+        return outFilename == null ? filename+".js" : outFilename;
     }
 
     private void readFromFile() throws IOException {
@@ -80,7 +81,12 @@ public class Parser {
     }
 
     public Parser(String filename) throws IOException, InvalidTokenException {
+        this(filename, null);
+    }
+
+    public Parser(String filename, String outFilename) throws IOException, InvalidTokenException {
         this.filename = filename;
+        this.outFilename = outFilename;
         readFromFile();
         tokenizer = new Tokenizer(lines);
         eventuallyChangeTokenType(tokenizer);
