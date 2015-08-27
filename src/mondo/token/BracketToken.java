@@ -83,7 +83,7 @@ public class BracketToken extends Token {
 
     private static String matchFunctionEnd(ITokenizer tokenizer) {
         int counter = 1;
-        for(Token token = tokenizer.getPrevious(); token != null; token = tokenizer.getPrevious()) {
+        for(Token token = tokenizer.getPreviousNotBlank(); token != null; token = tokenizer.getPreviousNotBlank()) {
             if(token.getText() == OperatorToken.getOperatorSemicolon().getText()) {
                 token.setText("; return");
                 break;
@@ -138,7 +138,8 @@ public class BracketToken extends Token {
         }
         if(classMap.containsKey(originalText)) {
             try {
-                return ((Token)classMap.get(originalText).newInstance()).copyAll(this);
+                Token result = ((Token)classMap.get(originalText).newInstance()).copyAll(this);
+                return result;
             } catch(InstantiationException | IllegalAccessException e) {
                 e.printStackTrace();
             }

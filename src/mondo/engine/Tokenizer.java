@@ -59,7 +59,6 @@ public class Tokenizer extends AbstractTokenizer {
 
     Token hardNext() {
         hardTokenIndex++;
-        System.out.println("hardTokenIndex="+hardTokenIndex);
         tokenIndex = hardTokenIndex;
         if(tokenIndex < tokens.size()) return tokens.get(tokenIndex);
         return null;
@@ -82,7 +81,6 @@ public class Tokenizer extends AbstractTokenizer {
 
     public Token getNext() {
         tokenIndex++;
-        System.out.println("tokenIndex="+tokenIndex);
         if(tokenIndex < tokens.size()) return tokens.get(tokenIndex);
         return null;
     }
@@ -104,7 +102,6 @@ public class Tokenizer extends AbstractTokenizer {
     }
 
     public void replaceToken(Token token) {
-        System.out.println("replace token="+token);
         tokens.set(tokenIndex, token);
     }
 

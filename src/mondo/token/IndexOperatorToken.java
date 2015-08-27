@@ -43,6 +43,6 @@ public class IndexOperatorToken extends OperatorToken {
     protected void matchOperatorMethod(ITokenizer tokenizer) {
         tokenizer.getCurrent().setText(".__index(");
         Token endToken = getMatchingCloseBracket(tokenizer);
-        tokenizer.replaceToken(new FunctionEndToken().copyAll(endToken).setText(")"));
+        tokenizer.replaceToken(new BracketCloseToken().copyAll(endToken).setText(")"));
     }
 }

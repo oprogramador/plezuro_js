@@ -6,5 +6,5 @@
 x+=/*blabla
 qwe
 qrw*/(21);
-var f;f = (function () {return arguments[0].__mul((2)).__add((1))});
-[''.__add(x).__add(y), f((21))]
+var f;f = (function () {return arguments[0].__mul((2)).__add((1)});
+['').__add(x).__add(y), f((21))]

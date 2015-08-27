@@ -66,13 +66,8 @@ public class Parser {
 
     private void convert() {
         for(Token token = tokenizer.hardReset(); token != null; token = tokenizer.hardNext()) {
-            System.out.println("convert token="+token);
-            for(Token t: tokenizer.getTokens()) System.out.println(t);
-            System.out.println("\n");
             if(token.getOriginalText() != null && token.getOriginalText().equals(token.getText())) token.convert(tokenizer);
         }
-        for(Token token: tokenizer.getTokens()) System.out.println(token);
-        System.out.println("\n");
     }
 
     private void eventuallyChangeTokenType(Tokenizer tokenizer) {
@@ -89,7 +84,6 @@ public class Parser {
         readFromFile();
         tokenizer = new Tokenizer(lines);
         eventuallyChangeTokenType(tokenizer);
-        for(Token token: tokenizer.getTokens()) System.out.println(token);
         convert();
         writeToFile();
     }

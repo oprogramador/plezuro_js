@@ -21,6 +21,6 @@
 
 package mondo.token;
 
-public class FunctionToken extends BracketToken {
+public class FunctionToken extends BracketToken implements IOpen {
 
 }

@@ -1,14 +1,14 @@
 todo:
     bugs:
-        bracket_delete_with_operators: no
-        double_minus: no
+        bracket_delete_with_operators: yes
+        double_minus: yes
         endline_before_return: yes
         index_operator:
             get: yes
             set: no
-        iterator: no
-        operator_func_args: no
-        operator_order: no
+        iterator: yes
+        operator_func_args: yes
+        operator_order: yes
         return_group: yes
     class: no
     collections:
