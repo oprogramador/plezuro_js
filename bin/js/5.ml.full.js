@@ -94,3 +94,6 @@ String.prototype.load = function(name, callback) {
         callback(data);
     });
 }
+var x;x = (21);
+x = x.sin().cos().tan() .__add( Math.random());
+x

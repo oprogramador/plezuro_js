@@ -14,6 +14,7 @@ todo:
         operator_func_args: yes
         operator_order: yes
         return_group: yes
+        semicolon_and_function_without_close: no
     class: no
     collections:
         associative_array: yes
