@@ -54,7 +54,9 @@ public class SymbolToken extends Token {
         if(tokenizer.getPreviousNotBlank().getText() != OperatorToken.getOperatorDot().getText()) return false;
 
         tokenizer.resetToThis();
-        if(!(tokenizer.getNextNotBlank() instanceof OperatorToken)) return false;
+        Token next = tokenizer.getNextNotBlank();
+        System.out.println("next="+next);
+        if(next != null && !(next instanceof OperatorToken || next instanceof IClose)) return false;
 
         tokenizer.resetToThis();
         tokenizer.insertAfter(BracketToken.getOperatorBracketOpen());

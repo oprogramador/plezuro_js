@@ -49,11 +49,11 @@ public class BracketToken extends Token {
     }
 
     static Token getOperatorBracketOpen() {
-        return new BracketToken().setText("(");
+        return new BracketOpenToken().setText("(");
     }
 
     static Token getOperatorBracketClose() {
-        return new BracketToken().setText(")");
+        return new BracketCloseToken().setText(")");
     }
 
     protected List<String> getPossibleTokens() {

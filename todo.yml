@@ -4,17 +4,18 @@ todo:
         node: no
         web: no
     bugs:
+        auto_close_bracket_at_end: yes
         bracket_delete_with_operators: yes
         double_minus: yes
         endline_before_return: yes
         index_operator:
             get: yes
-            set: no
+            set: yes
         iterator: yes
         operator_func_args: yes
         operator_order: yes
         return_group: yes
-        semicolon_and_function_without_close: no
+        semicolon_and_function_without_close: yes
     class: no
     collections:
         associative_array: yes
