@@ -29,6 +29,17 @@ import java.util.ArrayList;
 import java.util.function.Function;
 
 public class BracketToken extends Token {
+    private Token role;
+
+    public BracketToken setRole(Token token) {
+        role = token;
+        return this;
+    }
+
+    public Token getRole() {
+        return role;
+    }
+
     public boolean isBlank() {
         return false;
     }
@@ -134,7 +145,7 @@ public class BracketToken extends Token {
     public Token eventuallyChangeType(ITokenizer tokenizer) {
         Token previous = tokenizer.getPrevious();
         if(originalText.equals("[") && previous != null && previous.isEntity()) {
-            return new IndexOperatorToken().copyAll(this);
+            setRole(new IndexOperatorToken());
         }
         if(classMap.containsKey(originalText)) {
             try {

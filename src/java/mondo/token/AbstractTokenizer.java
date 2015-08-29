@@ -70,7 +70,10 @@ public abstract class AbstractTokenizer implements ITokenizer {
 
     public Token getNextAtSameBracketLevel() {
         Map<Class<?>, Integer> map = new HashMap<Class<?>, Integer>();
+        System.out.println("getNextAtSameBracketLevel initToken="+getCurrent());
         for(Token token = getNextNotBlank(); token != null; token = getNextNotBlank()) {
+            System.out.println("getNextNotBlank token="+token);
+            System.out.println("open: "+(token instanceof IOpen)+" close:"+(token instanceof IClose));
             if(token instanceof IOpen) incrementMap(map, token.getClass());
             else if(token instanceof IClose) decrementMap(map, ((IClose)token).getOpenClass());
             if(allEqualsZero(map)) return getNextNotBlank();

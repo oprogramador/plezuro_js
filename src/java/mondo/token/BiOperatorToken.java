@@ -114,9 +114,10 @@ public class BiOperatorToken extends OperatorToken {
         Integer myOrder = operatorOrder.get(tokenizer.getCurrent().getOriginalText());
         tokenizer.getCurrent().setText("."+operatorMethodNames.get(tokenizer.getCurrent().getOriginalText())+"(");
         for(Token token = tokenizer.getNextAtSameBracketLevel(); token != null; token = tokenizer.getNextAtSameBracketLevel()) {
+            System.out.println("token="+token);
             try {
-                if((token instanceof IClose && !(token instanceof BracketCloseToken)) 
-                        || (token instanceof BiOperatorToken && operatorOrder.get(token.getOriginalText()) <= myOrder)) {
+                if(token instanceof IClose || (token instanceof BiOperatorToken && operatorOrder.get(token.getOriginalText()) <= myOrder)) {
+                    System.out.println("right token");
                     tokenizer.insertBefore(BracketToken.getOperatorBracketClose());
                     return;
                 }

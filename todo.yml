@@ -38,5 +38,6 @@ todo:
     method_without_closing: yes
     module: no
     operators: yes
+    stdlib: no
     to_string: no
     unit_test: no

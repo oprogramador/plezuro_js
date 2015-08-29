@@ -21,25 +21,8 @@
 
 package mondo.token;
 
-import java.io.IOException;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.TreeMap;
-import java.util.function.Function;
-
-public class IndexOperatorToken extends SquareBracketOpenToken {
-    public Token getMatchingCloseBracket(ITokenizer tokenizer) {
-        int counter = 1;
-        for(Token token = tokenizer.getNext(); token != null; token = tokenizer.getNext()) {
-            if(token.getOriginalText() != null && token.getOriginalText().equals("[")) counter++;
-            if(token.getOriginalText() != null && token.getOriginalText().equals("]")) counter--;
-            if(counter == 0) return token;
-        }
-        return null;
-    }
-
-    protected void matchOperatorMethod(ITokenizer tokenizer) {
+public class IndexOperatorCloseToken extends SquareBracketCloseToken {
+    public Class<?> getOpenClass() {
+        return IndexOperatorToken.class;
     }
 }
