@@ -55,7 +55,6 @@ public class SymbolToken extends Token {
 
         tokenizer.resetToThis();
         Token next = tokenizer.getNextNotBlank();
-        System.out.println("next="+next);
         if(next != null && !(next instanceof OperatorToken || next instanceof IClose)) return false;
 
         tokenizer.resetToThis();

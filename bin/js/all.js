@@ -1,4 +1,5 @@
-
+if(typeof Set === 'undefined') var Set = require('collections/set');
+if(typeof Map === 'undefined') var Map = require('collections/map');
 function Dictionary(args) {
     var list = []; 
     for(var i = 0; i < args.length - 1; i += 2) {
