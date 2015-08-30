@@ -36,7 +36,7 @@ public class NumberToken extends Token {
         return "[0-9]+(\\.[0-9]+)?";
     }
 
-    public void convert(ITokenizer tokenizer) {
+    protected void doConvert(ITokenizer tokenizer) {
         tokenizer.insertBefore(BracketToken.getOperatorBracketOpen());
         tokenizer.resetToThis();
         tokenizer.insertAfter(BracketToken.getOperatorBracketClose());

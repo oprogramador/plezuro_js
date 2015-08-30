@@ -135,7 +135,7 @@ public class BracketToken extends Token {
         put("#(", BracketOpenToken.class);
     }};
 
-    public void convert(ITokenizer tokenizer) {
+    protected void doConvert(ITokenizer tokenizer) {
         try {
             text = functionMap.get(originalText).apply(tokenizer);
         } catch(NullPointerException e) {

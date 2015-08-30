@@ -36,7 +36,7 @@ public class DeclarationToken extends Token {
         return "\\$[A-Za-z_]+[A-Za-z_0-9]*";
     }
 
-    public void convert(ITokenizer tokenizer) {
+    protected void doConvert(ITokenizer tokenizer) {
         text = "var "+originalText.substring(1)+";"+originalText.substring(1);
     }
 }

@@ -72,7 +72,7 @@ public class OperatorToken extends Token {
     protected void matchOperatorMethod(ITokenizer tokenizer) {
     }
 
-    public void convert(ITokenizer tokenizer) {
+    protected void doConvert(ITokenizer tokenizer) {
         try {
             text = getFunctionMap().get(originalText).apply(originalText);
         } catch(NullPointerException e) {

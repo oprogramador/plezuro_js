@@ -77,6 +77,11 @@ Object.prototype.dumpl = function() {
     }
     return this.toString();
 }
+
+Object.prototype.exports = function() {
+    if(typeof module === 'object') module.exports = this;
+    return this;
+}
 function importModule(name, callback) {
     $.getScript(name+'.js', function(data, textStatus, jqxhr) {
         callback(eval(data));

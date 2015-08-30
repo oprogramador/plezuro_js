@@ -41,7 +41,11 @@ public abstract class Token implements Cloneable {
         throw new UnsupportedOperationException();
     }
 
-    public void convert(ITokenizer tokenizer) {
+    public final void convert(ITokenizer tokenizer) {
+        doConvert(tokenizer);
+    }
+
+    protected void doConvert(ITokenizer tokenizer) {
     }
 
     public Token eventuallyChangeType(ITokenizer tokenizer) {

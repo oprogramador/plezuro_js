@@ -10,3 +10,8 @@ Object.prototype.dumpl = function() {
     }
     return this.toString();
 }
+
+Object.prototype.exports = function() {
+    if(typeof module === 'object') module.exports = this;
+    return this;
+}

@@ -28,7 +28,12 @@ todo:
         set: yes
         tuple: no
     compare_with_array: no
+    compilation_options:
+        no_comment: no
+        uglify: no
     condition: yes
+    exception:
+        custom: no
     error_checking:
         bracket: no
         semicolon: no
@@ -36,9 +41,14 @@ todo:
     import: no
     inheritance: no
     loop: yes
+    magick_constants:
+        file: no
+        line: no
     method_without_closing: yes
     module: no
     operators: yes
+    security_of_eventual_native_code:
+        global_variables: no
     stdlib: no
     to_string: no
     unit_test: no

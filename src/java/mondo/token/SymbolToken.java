@@ -63,7 +63,7 @@ public class SymbolToken extends Token {
         return true;
     }
 
-    public void convert(ITokenizer tokenizer) {
+    protected void doConvert(ITokenizer tokenizer) {
         try {
             insertBracketAfterEventually(tokenizer);
             text = functionMap.get(originalText).apply(originalText);
