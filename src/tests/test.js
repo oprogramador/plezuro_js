@@ -28,6 +28,7 @@ a = require('../../bin/js/9.ml.js');
 assert.equal(JSON.stringify(a), '[[[["a",123],["ghj",[9,3]],[[90,3],"oo"]],[["a",123],["ghj",[9,3]],[[90,3],"oo"]]]]');
 
 a = require('../../bin/js/10.ml.js');
+assert.equal(a, 4484.833333333334);
 
 a = require('../../bin/js/11.ml.js');
 assert.equal(a, '21.75');

@@ -68,7 +68,7 @@ public class Parser {
 
     private void convert() {
         for(Token token = tokenizer.hardReset(); token != null; token = tokenizer.hardNext()) {
-            if(token.getOriginalText() != null && token.getOriginalText().equals(token.getText())) token.convert(tokenizer);
+            token.convert(tokenizer);
         }
     }
 

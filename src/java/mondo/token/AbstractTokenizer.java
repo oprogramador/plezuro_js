@@ -26,6 +26,16 @@ import java.util.Map;
 import java.util.HashMap;
 
 public abstract class AbstractTokenizer implements ITokenizer {
+    protected boolean finished;
+
+    public void finish() {
+        finished = true;
+    }
+
+    public boolean isFinished() {
+        return finished;
+    }
+
     public abstract List<Token> getTokens();
     public abstract Token resetToThis();
     public abstract Token getCurrent();

@@ -43,7 +43,8 @@ public abstract class Token implements Cloneable {
     }
 
     public final void convert(ITokenizer tokenizer) {
-        doConvert(tokenizer);
+        if(tokenizer.isFinished()) return;
+        if(getOriginalText() != null && getText().equals(getOriginalText())) doConvert(tokenizer);
         tokenizer.resetToThis();
         if(tokenizer.getNext() == null) {
             tokenizer.resetToThis();
@@ -52,6 +53,7 @@ public abstract class Token implements Cloneable {
             tokenizer.insertAfter(BracketToken.getOperatorBracketOpen());
             tokenizer.insertAfter(new SymbolToken().setText("typeof module !== 'undefined' ? module : null"));
             tokenizer.insertAfter(BracketToken.getOperatorBracketClose());
+            tokenizer.finish();
         }
     }
 

@@ -4,7 +4,7 @@ todo:
         node: no
         web: no
     bugs:
-        10_no_return: no
+        10_no_return: yes
         auto_close_bracket_at_end: yes
         bracket_delete_with_operators: yes
         double_minus: yes
@@ -23,8 +23,8 @@ todo:
         dictionary: yes
         list: yes
         native:
-            map: no
-            set: no
+            map: yes
+            set: yes
         range: no
         set: yes
         tuple: no
@@ -65,5 +65,5 @@ todo:
     stdlib: no
     tests:
         iron_plezuro_scripts: no
-        unit_test: no
+        unit_test: yes
     to_string: no

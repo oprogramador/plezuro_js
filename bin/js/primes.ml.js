@@ -9,4 +9,4 @@ var n;n =(0);
     (function () {return ispr}).if(function () {return n++}); return     i++
 });
 i.__sub((1)
-)
+).exports(typeof module !== 'undefined' ? module : null)
