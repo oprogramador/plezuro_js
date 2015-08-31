@@ -11,7 +11,11 @@ Object.prototype.dumpl = function() {
     return this.toString();
 }
 
-Object.prototype.exports = function() {
-    if(typeof module === 'object') module.exports = this;
+Object.prototype.exports = function(module) {
+    if(typeof module === 'object' && module !== null) module.exports = this;
     return this;
+}
+
+Object.prototype.class = function() {
+    return this.constructor;
 }

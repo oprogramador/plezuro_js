@@ -48,6 +48,14 @@ public class SymbolToken extends Token {
         put("second", (String x) -> "arguments[2]");
         put("third", (String x) -> "arguments[3]");
         put("rand", (String x) -> "Math.random()");
+        put("null", (String x) -> "new Null()");
+    }};
+
+    private Map<String, Function<Token,String>> tokenFunctionMap = new HashMap<String, Function<Token,String>>() {{
+        put("__line__", (Token t) -> "("+t.getLineNr()+")");
+        put("__pos__", (Token t) -> "("+t.getBegX()+")");
+        put("__file__", (Token t) -> "\""+t.getFileName()+"\"");
+        put("__dir__", (Token t) -> "\""+t.getDirName()+"\"");
     }};
 
     private boolean insertBracketAfterEventually(ITokenizer tokenizer) {
@@ -68,7 +76,10 @@ public class SymbolToken extends Token {
             insertBracketAfterEventually(tokenizer);
             text = functionMap.get(originalText).apply(originalText);
         } catch(NullPointerException e) {
-            //e.printStackTrace();
+            try {
+                text = tokenFunctionMap.get(originalText).apply(this);
+            } catch(NullPointerException ee) {
+            }
         }
     }
 }

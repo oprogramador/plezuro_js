@@ -31,14 +31,21 @@ todo:
     compilation_options:
         no_comment: no
         uglify: no
-    condition: yes
+    condition:
+        if: yes
+        else: no
+        elseif: no
     exception:
         custom: no
     error_checking:
         bracket: no
         semicolon: no
+    file_io: no
     function: yes
-    import: no
+    import:
+        node: yes
+        script_args: no
+        web: no
     inheritance: no
     loop: yes
     magick_constants:
@@ -46,9 +53,17 @@ todo:
         line: no
     method_without_closing: yes
     module: no
-    operators: yes
-    security_of_eventual_native_code:
-        global_variables: no
+    native_binding:
+        check_for_null: no
+        global_variables_restrictions: no
+    operators:
+        basic: yes
+        joint: no
+        dot_equal: no
+    serialization:
+        json: no
     stdlib: no
+    tests:
+        iron_plezuro_scripts: no
+        unit_test: no
     to_string: no
-    unit_test: no

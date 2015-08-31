@@ -4,3 +4,4 @@ var f;f = (function () {
     }); return     [a, b]
 });
 f()
+.exports(typeof module !== 'undefined' ? module : null)

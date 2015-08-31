@@ -4,6 +4,10 @@ String.prototype.load = function(name, callback) {
     });
 }
 
+String.prototype.import = function() {
+    return require(this.toString());
+}
+
 String.prototype.__add = function(x) {
     return this + x;
 }

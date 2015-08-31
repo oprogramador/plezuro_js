@@ -78,16 +78,16 @@ Object.prototype.dumpl = function() {
     return this.toString();
 }
 
-Object.prototype.exports = function() {
-    if(typeof module === 'object') module.exports = this;
+Object.prototype.exports = function(module) {
+    if(typeof module === 'object' && module !== null) module.exports = this;
     return this;
 }
-function importModule(name, callback) {
-    $.getScript(name+'.js', function(data, textStatus, jqxhr) {
-        callback(eval(data));
-    }).fail(function(jqxhr, settings, exception) {
-        callback(new Error('failed to load '+name));
-    });
+
+Object.prototype.class = function() {
+    return this.constructor;
+}
+var Null = function() {
+
 }
 function AssocArray(args) {
     var list = []; 
@@ -102,6 +102,10 @@ String.prototype.load = function(name, callback) {
     $.get(name, function(data) {
         callback(data);
     });
+}
+
+String.prototype.import = function() {
+    return require(this.toString());
 }
 
 String.prototype.__add = function(x) {

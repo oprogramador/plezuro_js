@@ -4,3 +4,4 @@ var a;a = new Dictionary([
     [(90), (3)], 'oo'
 ]);
 new Dictionary([a, a])
+.exports(typeof module !== 'undefined' ? module : null)

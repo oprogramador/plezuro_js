@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.io.File;
 
 import mondo.token.AbstractTokenizer;
 import mondo.token.Token;
@@ -105,13 +106,13 @@ public class Tokenizer extends AbstractTokenizer {
         tokens.set(tokenIndex, token);
     }
 
-    public Tokenizer(List<String> lines) throws InvalidTokenException {
+    public Tokenizer(File file, List<String> lines) throws InvalidTokenException {
         for(int i=0; i<lines.size(); i++) {
             int index = 0;
             while(index < lines.get(i).length()) {
                 int oldIndex = index;
                 for(Token tokenType: tokenTypes) {
-                    Token token = tokenType.find(lines, i, index);
+                    Token token = tokenType.setFile(file).find(lines, i, index);
                     if(token != null) {
                         index = token.getEndX() + 1;
                         i = token.getEndLineNr();

@@ -22,6 +22,7 @@
 package mondo.engine;
 
 import java.util.List;
+import java.io.File;
 import java.io.IOException;
 import java.io.Writer;
 import java.io.BufferedWriter;
@@ -88,7 +89,7 @@ public class Parser {
         this.filename = filename;
         this.outFilename = outFilename;
         readFromFile();
-        tokenizer = new Tokenizer(lines);
+        tokenizer = new Tokenizer(new File(filename), lines);
         eventuallyChangeTokenType(tokenizer);
         convert();
         writeToFile();

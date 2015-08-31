@@ -24,6 +24,7 @@ package mondo.token;
 import java.util.List;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+import java.io.File;
 
 public abstract class Token implements Cloneable {
     public abstract boolean isBlank();
@@ -43,6 +44,15 @@ public abstract class Token implements Cloneable {
 
     public final void convert(ITokenizer tokenizer) {
         doConvert(tokenizer);
+        tokenizer.resetToThis();
+        if(tokenizer.getNext() == null) {
+            tokenizer.resetToThis();
+            tokenizer.insertAfter(OperatorToken.getOperatorDot());
+            tokenizer.insertAfter(new SymbolToken().setText("exports"));
+            tokenizer.insertAfter(BracketToken.getOperatorBracketOpen());
+            tokenizer.insertAfter(new SymbolToken().setText("typeof module !== 'undefined' ? module : null"));
+            tokenizer.insertAfter(BracketToken.getOperatorBracketClose());
+        }
     }
 
     protected void doConvert(ITokenizer tokenizer) {
@@ -54,7 +64,21 @@ public abstract class Token implements Cloneable {
 
     protected String originalText;
     protected String text;
+    protected File file;
     protected int lineNr, begX, endX;
+
+    public String getFileName() {
+        return file.getName();
+    }
+
+    public String getDirName() {
+        return file.getParentFile().getAbsolutePath();
+    }
+
+    public Token setFile(File value) {
+        file = value;
+        return this;
+    }
 
     public int getBegX() {
         return begX;
@@ -171,6 +195,7 @@ public abstract class Token implements Cloneable {
         setLineNr(token.lineNr);
         setOriginalText(token.originalText);
         setText(token.text);
+        setFile(token.file);
         return this;
     }
 

@@ -2,3 +2,4 @@
         )})
     })
 })
+.exports(typeof module !== 'undefined' ? module : null)
