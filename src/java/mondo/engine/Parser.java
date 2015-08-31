@@ -33,6 +33,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.charset.Charset;
 
+import mondo.invalidToken.InvalidTokenException;
 import mondo.token.Token;
 
 public class Parser {
@@ -81,17 +82,22 @@ public class Parser {
         }
     }
 
-    public Parser(String filename) throws IOException, InvalidTokenException {
+    public Parser(String filename) throws IOException {
         this(filename, null);
     }
 
-    public Parser(String filename, String outFilename) throws IOException, InvalidTokenException {
+    public Parser(String filename, String outFilename) throws IOException {
         this.filename = filename;
         this.outFilename = outFilename;
-        readFromFile();
-        tokenizer = new Tokenizer(new File(filename), lines);
-        eventuallyChangeTokenType(tokenizer);
-        convert();
-        writeToFile();
+        try {
+            readFromFile();
+            tokenizer = new Tokenizer(new File(filename), lines);
+            new Validator(tokenizer);
+            eventuallyChangeTokenType(tokenizer);
+            convert();
+            writeToFile();
+        } catch(InvalidTokenException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -19,12 +19,7 @@
  * 
  */
 
-package mondo.main;
+package mondo.invalidToken;
 
-import java.io.IOException;
-
-public class Main {
-    public static void main(String[] args) throws IOException {
-        new mondo.engine.Engine(args);
-    }
+public class NonExistentTokenException extends InvalidTokenException {
 }

@@ -27,6 +27,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.io.File;
 
+import mondo.invalidToken.InvalidTokenException;
+import mondo.invalidToken.NonExistentTokenException;
 import mondo.token.AbstractTokenizer;
 import mondo.token.Token;
 import mondo.token.NumberToken;
@@ -121,7 +123,7 @@ public class Tokenizer extends AbstractTokenizer {
                         break;
                     }
                 }
-                if(oldIndex == index && index != lines.get(i).length()-1) throw new InvalidTokenException("Line: "+i+", index: "+index);
+                if(oldIndex == index && index != lines.get(i).length()-1) throw InvalidTokenException.create(NonExistentTokenException.class, i, index);
             }
             tokens.add(new NewLineToken(i, lines.get(i).length()));
         }
