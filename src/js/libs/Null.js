@@ -1,3 +1,3 @@
-var Null = function() {
+function Null() {
 
 }

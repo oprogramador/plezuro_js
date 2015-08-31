@@ -86,7 +86,7 @@ Object.prototype.exports = function(module) {
 Object.prototype.class = function() {
     return this.constructor;
 }
-var Null = function() {
+function Null() {
 
 }
 function AssocArray(args) {

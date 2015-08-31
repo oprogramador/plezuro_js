@@ -4,6 +4,7 @@ todo:
         node: no
         web: no
     bugs:
+        10_no_return: no
         auto_close_bracket_at_end: yes
         bracket_delete_with_operators: yes
         double_minus: yes
@@ -48,9 +49,7 @@ todo:
         web: no
     inheritance: no
     loop: yes
-    magick_constants:
-        file: no
-        line: no
+    magick_constants: yes
     method_without_closing: yes
     module: no
     native_binding:
@@ -60,6 +59,7 @@ todo:
         basic: yes
         joint: no
         dot_equal: no
+        identity_comparison: no
     serialization:
         json: no
     stdlib: no
