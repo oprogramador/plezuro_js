@@ -21,8 +21,13 @@
 
 package mondo.invalidToken;
 
+import java.util.List;
+import java.util.ArrayList;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
+
+import mondo.token.Token;
+import mondo.token.SymbolToken;
 
 public class InvalidTokenException extends Exception {
     public static InvalidTokenException create(Class<?> aClass, int lineNr, int position) {
@@ -40,6 +45,12 @@ public class InvalidTokenException extends Exception {
 
     private int lineNr;
     private int position;
+
+    public List<Token> getTokens() {
+        return new ArrayList<Token>() {{
+            add(new SymbolToken().setText("throw new InvalidTokenException('"+getClass().getName()+"', "+lineNr+", "+position+", '"+getMessage()+"');"));
+        }};
+    }
 
     public int getLineNr() {
         return lineNr;

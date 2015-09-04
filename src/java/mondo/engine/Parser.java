@@ -61,9 +61,13 @@ public class Parser {
     }
 
     private void writeToFile() throws IOException {
+        writeToFile(tokenizer.getTokens());
+    }
+
+    private void writeToFile(List<Token> tokens) throws IOException {
         try(Writer writer = new BufferedWriter(new OutputStreamWriter(
                       new FileOutputStream(getOutputFileName()), "utf-8"))) {
-            for(Token token: tokenizer.getTokens()) writer.write(token.getText());
+            for(Token token: tokens) writer.write(token.getText());
         }
     }
 
@@ -95,9 +99,8 @@ public class Parser {
             new Validator(tokenizer);
             eventuallyChangeTokenType(tokenizer);
             convert();
-            writeToFile();
         } catch(InvalidTokenException e) {
-            e.printStackTrace();
+            writeToFile(e.getTokens());
         }
     }
 }

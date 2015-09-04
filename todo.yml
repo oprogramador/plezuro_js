@@ -41,6 +41,7 @@ todo:
     error_checking:
         bracket: no
         semicolon: no
+        file_info: no
     file_io: no
     function: yes
     import:

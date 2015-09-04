@@ -1,0 +1,1 @@
+throw new InvalidTokenException('mondo.invalidToken.InvalidTokenException$1', 0, 3, 'class mondo.invalidToken.OperatorAfterOperatorException at line 0, position 3');
