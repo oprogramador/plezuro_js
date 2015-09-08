@@ -1,1 +1,1 @@
-throw new InvalidTokenException('mondo.invalidToken.InvalidTokenException$1', 1, 6, 'class mondo.invalidToken.OperatorAfterOperatorException at line 1, position 6');
+throw InvalidTokenException.create('mondo__invalidToken__OperatorAfterOperatorException', '/home/pierre/pierre_copy/programming/java/plezuro_js/bin/java/../../src/plezuro/4.ml', 1, 6, 'class mondo.invalidToken.OperatorAfterOperatorException in /home/pierre/pierre_copy/programming/java/plezuro_js/bin/java/../../src/plezuro/4.ml at line 1, position 6');

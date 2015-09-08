@@ -45,7 +45,7 @@ public class Validator {
         for(Token token = tokenizer.hardReset(); token != null; ) {
             Token next = tokenizer.getNext();
             if(token instanceof OperatorToken && next instanceof OperatorToken) {
-                throw InvalidTokenException.create(OperatorAfterOperatorException.class, next.getLineNr(), next.getBegX());
+                throw InvalidTokenException.create(OperatorAfterOperatorException.class, next.getFullFilename(), next.getLineNr(), next.getBegX());
             }
             token = next;
         }

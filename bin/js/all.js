@@ -98,7 +98,13 @@ function AssocArray(args) {
 }
 
 AssocArray.prototype = Object.create(Object.prototype);
-function InvalidTokenException(lineNr, position, message) {
+function InvalidTokenException(filename, lineNr, position, message) {
+    Error.apply(this, [message]);
+
+    function getFilename() {
+        return filename;
+    }
+
     function getLineNr() {
         return lineNr;
     }
@@ -107,24 +113,24 @@ function InvalidTokenException(lineNr, position, message) {
         return position;
     }
 
-
+    this.getFilename = getFilename;
     this.getLineNr = getLineNr;
     this.getPosition = getPosition;
-
-    return Error.apply(this, [message]);
 }
 
 InvalidTokenException.prototype = Object.create(Error.prototype);
+InvalidTokenException.prototype.constructor = InvalidTokenException;
 
-InvalidTokenException.create = function(className, lineNr, position, message) {
+InvalidTokenException.create = function(className, filename, lineNr, position, message) {
     var constructor;
 
     function init() {
-        constructor = function() {
-            Object.defineProperty(this, 'name', {value: className});
-            return new InvalidTokenException(lineNr, position, message);
-        }
+        if(!/^[A-Za-z_][A-Za-z_0-9]*Exception$/.test(className)) throw new Error('invalid class name: '+className);
+        eval( 'constructor = function ' + className + ' () {' +
+            'InvalidTokenException.apply(this, [filename, lineNr, position, message]);' +
+        '}' );
         constructor.prototype = Object.create(InvalidTokenException.prototype);
+        constructor.prototype.constructor = constructor;
     }
 
     init();

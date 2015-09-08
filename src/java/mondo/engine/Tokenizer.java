@@ -110,6 +110,7 @@ public class Tokenizer extends AbstractTokenizer {
     }
 
     public Tokenizer(File file, List<String> lines) throws InvalidTokenException {
+        Token.setStaticFilename(file.getAbsolutePath());
         for(int i=0; i<lines.size(); i++) {
             int index = 0;
             while(index < lines.get(i).length()) {
@@ -123,9 +124,11 @@ public class Tokenizer extends AbstractTokenizer {
                         break;
                     }
                 }
-                if(oldIndex == index && index != lines.get(i).length()-1) throw InvalidTokenException.create(NonExistentTokenException.class, i, index);
+                if(oldIndex == index && index != lines.get(i).length()-1) {
+                    throw InvalidTokenException.create(NonExistentTokenException.class, file.getAbsolutePath(), i, index);
+                }
             }
-            tokens.add(new NewLineToken(i, lines.get(i).length()));
+            tokens.add(new NewLineToken(i, lines.get(i).length()).setFile(file));
         }
     }
 }

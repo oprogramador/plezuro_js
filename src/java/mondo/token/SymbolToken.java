@@ -54,7 +54,7 @@ public class SymbolToken extends Token {
     private Map<String, Function<Token,String>> tokenFunctionMap = new HashMap<String, Function<Token,String>>() {{
         put("__line__", (Token t) -> "("+t.getLineNr()+")");
         put("__pos__", (Token t) -> "("+t.getBegX()+")");
-        put("__file__", (Token t) -> "\""+t.getFileName()+"\"");
+        put("__file__", (Token t) -> "\""+t.getFilename()+"\"");
         put("__dir__", (Token t) -> "\""+t.getDirName()+"\"");
     }};
 

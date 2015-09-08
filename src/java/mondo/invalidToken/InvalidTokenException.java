@@ -30,26 +30,39 @@ import mondo.token.Token;
 import mondo.token.SymbolToken;
 
 public class InvalidTokenException extends Exception {
-    public static InvalidTokenException create(Class<?> aClass, int lineNr, int position) {
+    public static InvalidTokenException create(Class<?> aClass, String filename, int lineNr, int position) {
         try {
             Constructor<?> constructor = aClass.getConstructor(); 
             InvalidTokenException result = ((InvalidTokenException)constructor.newInstance())
                 .setLineNr(lineNr)
-                .setPosition(position);
+                .setPosition(position)
+                .setFilename(filename)
+                ;
             return result;
         } catch(NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
-            return new InvalidTokenException("something occurred at line "+lineNr+", position "+position);
+            return new InvalidTokenException("something occurred in "+filename+" at line "+lineNr+", position "+position);
         }
     }
 
     private int lineNr;
     private int position;
+    private String filename;
 
     public List<Token> getTokens() {
+        String className = this.getClass().getName().replace(".", "__");
         return new ArrayList<Token>() {{
-            add(new SymbolToken().setText("throw new InvalidTokenException('"+getClass().getName()+"', "+lineNr+", "+position+", '"+getMessage()+"');"));
+            add(new SymbolToken().setText("throw InvalidTokenException.create('"+className+"', '"+filename+"', "+lineNr+", "+position+", '"+getMessage()+"');"));
         }};
+    }
+
+    public String getFilename() {
+        return filename;
+    }
+
+    public InvalidTokenException setFilename(String value) {
+        filename = value;
+        return this;
     }
 
     public int getLineNr() {
@@ -71,7 +84,7 @@ public class InvalidTokenException extends Exception {
     }
 
     public String getMessage() {
-        return this.getClass()+" at line "+lineNr+", position "+position;
+        return this.getClass()+" in "+filename+" at line "+lineNr+", position "+position;
     }
 
     public InvalidTokenException(String msg) {

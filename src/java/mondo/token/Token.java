@@ -29,6 +29,12 @@ import java.io.File;
 public abstract class Token implements Cloneable {
     public abstract boolean isBlank();
 
+    private static String staticFilename;
+
+    public static void setStaticFilename(String value) {
+        staticFilename = value;
+    }
+
     public boolean isEntity() {
         if(isBlank()) return false;
         throw new UnsupportedOperationException();
@@ -69,7 +75,12 @@ public abstract class Token implements Cloneable {
     protected File file;
     protected int lineNr, begX, endX;
 
-    public String getFileName() {
+    public String getFullFilename() {
+        if(file != null) return getDirName()+getFilename();
+        return staticFilename;
+    }
+
+    public String getFilename() {
         return file.getName();
     }
 
