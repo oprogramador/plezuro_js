@@ -33,15 +33,53 @@ todo:
         no_comment: no
         uglify: no
     condition:
-        if: yes
         else: no
         elseif: no
+        if: yes
+    error_checking:
+        after_bracket_close_only_operator_or_bracket_close:
+            done: no
+            examples:
+                fail:
+                    - ')2'
+                    - ']"w"'
+        after_bracket_open_no_operator_excluding_begin_operators:
+            done: no
+            examples:
+                correct:
+                    - '(-'
+                    - '{+'
+                fail:
+                    - '(/'
+                    - '[*'
+        before_bracket_close_no_operator:
+            done: no
+            examples:
+                fail:
+                    - '+)'
+        open_and_close_brackets_stack:
+            done: no
+            examples:
+                fail:
+                    - '(['
+                    - '())'
+        operator_after_operator:
+            done: no
+            examples:
+                correct:
+                    - '=-'
+                    - ';+'
+                    - '>-'
+                fail:
+                    - '+-'
+        value_after_value:
+            done: no
+            examples:
+                fail:
+                    - '2 1'
+                    - '21"op"'
     exception:
         custom: no
-    error_checking:
-        bracket: no
-        semicolon: no
-        file_info: no
     file_io: no
     function: yes
     import:
@@ -58,9 +96,9 @@ todo:
         global_variables_restrictions: no
     operators:
         basic: yes
-        joint: no
         dot_equal: no
         identity_comparison: no
+        joint: no
     serialization:
         json: no
     stdlib: no
