@@ -99,6 +99,7 @@ public class Parser {
             new Validator(tokenizer);
             eventuallyChangeTokenType(tokenizer);
             convert();
+            writeToFile();
         } catch(InvalidTokenException e) {
             writeToFile(e.getTokens());
         }

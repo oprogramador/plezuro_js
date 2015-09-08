@@ -98,17 +98,7 @@ function AssocArray(args) {
 }
 
 AssocArray.prototype = Object.create(Object.prototype);
-function InvalidTokenException(className, lineNr, position, message) {
-    var constructor;
-
-    function init() {
-        constructor = function(msg) {
-            return new Error(msg);
-        }
-        constructor.prototype = Object.create(InvalidTokenException.prototype);
-        Object.defineProperty(constructor, 'name', {value: className});
-    }
-
+function InvalidTokenException(lineNr, position, message) {
     function getLineNr() {
         return lineNr;
     }
@@ -117,15 +107,29 @@ function InvalidTokenException(className, lineNr, position, message) {
         return position;
     }
 
-    init();
 
     this.getLineNr = getLineNr;
     this.getPosition = getPosition;
 
-    //return new constructor(message);
+    return Error.apply(this, [message]);
 }
 
-//InvalidTokenException.prototype = Object.create(Error.prototype);
+InvalidTokenException.prototype = Object.create(Error.prototype);
+
+InvalidTokenException.create = function(className, lineNr, position, message) {
+    var constructor;
+
+    function init() {
+        constructor = function() {
+            Object.defineProperty(this, 'name', {value: className});
+            return new InvalidTokenException(lineNr, position, message);
+        }
+        constructor.prototype = Object.create(InvalidTokenException.prototype);
+    }
+
+    init();
+    return new constructor();
+}
 String.prototype.load = function(name, callback) {
     $.get(name, function(data) {
         callback(data);
