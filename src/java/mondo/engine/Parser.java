@@ -96,8 +96,8 @@ public class Parser {
         try {
             readFromFile();
             tokenizer = new Tokenizer(new File(filename), lines);
-            new Validator(tokenizer);
             eventuallyChangeTokenType(tokenizer);
+            new Validator(tokenizer);
             convert();
             writeToFile();
         } catch(InvalidTokenException e) {

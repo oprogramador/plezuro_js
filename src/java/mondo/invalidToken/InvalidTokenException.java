@@ -30,13 +30,14 @@ import mondo.token.Token;
 import mondo.token.SymbolToken;
 
 public class InvalidTokenException extends Exception {
-    public static InvalidTokenException create(Class<?> aClass, String filename, int lineNr, int position) {
+    public static InvalidTokenException create(Class<?> aClass, String filename, int lineNr, int position, String extraMessage) {
         try {
             Constructor<?> constructor = aClass.getConstructor(); 
             InvalidTokenException result = ((InvalidTokenException)constructor.newInstance())
                 .setLineNr(lineNr)
                 .setPosition(position)
                 .setFilename(filename)
+                .setExtraMessage(extraMessage)
                 ;
             return result;
         } catch(NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException e) {
@@ -45,15 +46,29 @@ public class InvalidTokenException extends Exception {
         }
     }
 
+    public static InvalidTokenException create(Class<?> aClass, String filename, int lineNr, int position) {
+        return create(aClass, filename, lineNr, position, "");
+    }
+
     private int lineNr;
     private int position;
     private String filename;
+    private String extraMessage;
 
     public List<Token> getTokens() {
         String className = this.getClass().getName().replace(".", "__");
         return new ArrayList<Token>() {{
             add(new SymbolToken().setText("throw InvalidTokenException.create('"+className+"', '"+filename+"', "+lineNr+", "+position+", '"+getMessage()+"');"));
         }};
+    }
+
+    public String getExtraMessage() {
+        return extraMessage;
+    }
+
+    public InvalidTokenException setExtraMessage(String value) {
+        extraMessage = value;
+        return this;
     }
 
     public String getFilename() {
@@ -84,7 +99,7 @@ public class InvalidTokenException extends Exception {
     }
 
     public String getMessage() {
-        return this.getClass()+" in "+filename+" at line "+lineNr+", position "+position;
+        return this.getClass()+" in "+filename+" at line "+lineNr+", position "+position+(extraMessage == "" ? "" : ", message: "+extraMessage);
     }
 
     public InvalidTokenException(String msg) {

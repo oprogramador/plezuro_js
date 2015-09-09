@@ -1,1 +1,5 @@
-throw InvalidTokenException.create('mondo__invalidToken__OperatorAfterOperatorException', '/home/pierre/pierre_copy/programming/java/plezuro_js/bin/java/../../src/plezuro/4.ml', 1, 6, 'class mondo.invalidToken.OperatorAfterOperatorException in /home/pierre/pierre_copy/programming/java/plezuro_js/bin/java/../../src/plezuro/4.ml at line 1, position 6');
+var x;x = [(4), (52), (21212), (33)];
+x[(0)]++;
+var f;f = (function () {return arguments[(1)].__add(arguments[(2)])});
+[f((2), (4), (10)), x]
+.exports(typeof module !== 'undefined' ? module : null)

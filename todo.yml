@@ -64,7 +64,7 @@ todo:
                     - '(['
                     - '())'
         operator_after_operator:
-            done: no
+            done: yes
             examples:
                 correct:
                     - '=-'
@@ -73,7 +73,7 @@ todo:
                 fail:
                     - '+-'
         value_after_value:
-            done: no
+            done: yes
             examples:
                 fail:
                     - '2 1'

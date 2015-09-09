@@ -24,6 +24,8 @@ package mondo.token;
 import java.io.IOException;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Set;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.HashMap;
 import java.util.TreeMap;
@@ -33,6 +35,29 @@ public class BiOperatorToken extends OperatorToken {
     protected List<String> getOnlyPossibleTokens() {
         return possibleTokens;
     }
+
+    public boolean isArithmetic() {
+        return arithmeticTokens.contains(originalText);
+    }
+
+    public boolean isAllowedAtBegin() {
+        return tokensAllowedAtBegin.contains(originalText);
+    }
+
+    private static Set<String> tokensAllowedAtBegin = new HashSet<String>() {{
+        add("+");
+        add("-");	
+    }};
+
+    private static Set<String> arithmeticTokens = new HashSet<String>() {{
+        add("+");
+        add("-");	
+        add("%");	
+        add("*");
+        add("/");	
+        add("^");
+        add(".");
+    }};
 
     private static List<String> possibleTokens = new ArrayList<String>() {{
         add(";");

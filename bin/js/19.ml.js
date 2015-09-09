@@ -1,0 +1,1 @@
+throw InvalidTokenException.create('mondo__invalidToken__BracketStackException', '/home/pierre/pierre_copy/programming/java/plezuro_js/bin/java/../../src/plezuro19.ml', 1, 6, 'class mondo.invalidToken.BracketStackException in /home/pierre/pierre_copy/programming/java/plezuro_js/bin/java/../../src/plezuro19.ml at line 1, position 6, message: not empty bracket stack at the end');

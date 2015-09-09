@@ -50,3 +50,48 @@ assert.strictEqual(a.pos, 11);
 assert.strictEqual(a.line, 2);
 assert.strictEqual(a.file, '16.ml');
 assert.strictEqual(a.dir, '/home/pierre/pierre_copy/programming/java/plezuro_js/bin/java/../../src/plezuro');
+
+try {
+    require('../../bin/js/17.ml.js');
+    assert.fail('should throw an exception');
+} catch(e) {
+   assert.strictEqual(e.constructor.name, 'mondo__invalidToken__OperatorAfterOperatorException');
+   assert.strictEqual(e.getLineNr(), 0);
+   assert.strictEqual(e.getPosition(), 4);
+}
+
+try {
+    require('../../bin/js/18.ml.js');
+    assert.fail('should throw an exception');
+} catch(e) {
+   assert.strictEqual(e.constructor.name, 'mondo__invalidToken__ValueAfterValueException');
+   assert.strictEqual(e.getLineNr(), 1);
+   assert.strictEqual(e.getPosition(), 3);
+}
+
+try {
+    require('../../bin/js/19.ml.js');
+    assert.fail('should throw an exception');
+} catch(e) {
+   assert.strictEqual(e.constructor.name, 'mondo__invalidToken__BracketStackException');
+   assert.strictEqual(e.getLineNr(), 1);
+   assert.strictEqual(e.getPosition(), 6);
+}
+
+try {
+    require('../../bin/js/20.ml.js');
+    assert.fail('should throw an exception');
+} catch(e) {
+   assert.strictEqual(e.constructor.name, 'mondo__invalidToken__BracketStackException');
+   assert.strictEqual(e.getLineNr(), 0);
+   assert.strictEqual(e.getPosition(), 11);
+}
+
+try {
+    require('../../bin/js/21.ml.js');
+    assert.fail('should throw an exception');
+} catch(e) {
+   assert.strictEqual(e.constructor.name, 'mondo__invalidToken__BracketStackException');
+   assert.strictEqual(e.getLineNr(), 0);
+   assert.strictEqual(e.getPosition(), 13);
+}
