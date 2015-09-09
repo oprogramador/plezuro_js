@@ -38,13 +38,13 @@ todo:
         if: yes
     error_checking:
         after_bracket_close_only_operator_or_bracket_close:
-            done: no
+            done: yes
             examples:
                 fail:
                     - ')2'
                     - ']"w"'
         after_bracket_open_no_operator_excluding_begin_operators:
-            done: no
+            done: yes
             examples:
                 correct:
                     - '(-'
@@ -53,12 +53,12 @@ todo:
                     - '(/'
                     - '[*'
         before_bracket_close_no_operator:
-            done: no
+            done: yes
             examples:
                 fail:
                     - '+)'
         open_and_close_brackets_stack:
-            done: no
+            done: yes
             examples:
                 fail:
                     - '(['

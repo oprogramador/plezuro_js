@@ -39,6 +39,9 @@ import mondo.invalidToken.InvalidTokenException;
 import mondo.invalidToken.OperatorAfterOperatorException;
 import mondo.invalidToken.ValueAfterValueException;
 import mondo.invalidToken.BracketStackException;
+import mondo.invalidToken.OperatorAfterBracketOpenException;
+import mondo.invalidToken.OperatorBeforeBracketCloseException;
+import mondo.invalidToken.OperatorAfterBracketCloseException;
 import mondo.token.Token;
 import mondo.token.IOpen;
 import mondo.token.IClose;
@@ -53,7 +56,7 @@ public class Validator {
             Token next = tokenizer.getNextNotBlank();
             if(next == null) return;
             if(token instanceof BiOperatorToken && next instanceof BiOperatorToken) {
-                if(!((BiOperatorToken)token).isArithmetic() || !((BiOperatorToken)token).isAllowedAtBegin()) {
+                if(!((BiOperatorToken)token).isArithmetic() || !((BiOperatorToken)next).isAllowedAtBegin()) {
                     throw InvalidTokenException.create(OperatorAfterOperatorException.class, next.getFullFilename(), next.getLineNr(), next.getBegX());
                 }
             }
@@ -67,6 +70,39 @@ public class Validator {
             if(next == null) return;
             if(token.isEntity() && next.isEntity()) {
                 throw InvalidTokenException.create(ValueAfterValueException.class, next.getFullFilename(), next.getLineNr(), next.getBegX());
+            }
+            token = next;
+        }
+    }
+
+    private void checkAfterBracketOpen() throws InvalidTokenException {
+        for(Token token = tokenizer.hardReset(); token != null; ) {
+            Token next = tokenizer.getNextNotBlank();
+            if(next == null) return;
+            if(token instanceof IOpen && next instanceof BiOperatorToken && !((BiOperatorToken)next).isAllowedAtBegin()) {
+                throw InvalidTokenException.create(OperatorAfterBracketOpenException.class, next.getFullFilename(), next.getLineNr(), next.getBegX());
+            }
+            token = next;
+        }
+    }
+
+    private void checkBeforeBracketClose() throws InvalidTokenException {
+        for(Token token = tokenizer.hardReset(); token != null; ) {
+            Token next = tokenizer.getNextNotBlank();
+            if(next == null) return;
+            if(token instanceof BiOperatorToken && next instanceof IClose) {
+                throw InvalidTokenException.create(OperatorBeforeBracketCloseException.class, next.getFullFilename(), next.getLineNr(), next.getBegX());
+            }
+            token = next;
+        }
+    }
+
+    private void checkAfterBracketClose() throws InvalidTokenException {
+        for(Token token = tokenizer.hardReset(); token != null; ) {
+            Token next = tokenizer.getNextNotBlank();
+            if(next == null) return;
+            if(token instanceof IClose && next.isEntity()) {
+                throw InvalidTokenException.create(OperatorAfterBracketCloseException.class, next.getFullFilename(), next.getLineNr(), next.getBegX());
             }
             token = next;
         }
@@ -118,5 +154,8 @@ public class Validator {
         checkForOperatorAfterOperator();
         checkValueAfterValue();
         checkBracketStack();
+        checkAfterBracketOpen();
+        checkBeforeBracketClose();
+        checkAfterBracketClose();
     }
 }

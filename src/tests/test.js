@@ -57,7 +57,7 @@ try {
 } catch(e) {
    assert.strictEqual(e.constructor.name, 'mondo__invalidToken__OperatorAfterOperatorException');
    assert.strictEqual(e.getLineNr(), 0);
-   assert.strictEqual(e.getPosition(), 4);
+   assert.strictEqual(e.getPosition(), 3);
 }
 
 try {
@@ -94,4 +94,31 @@ try {
    assert.strictEqual(e.constructor.name, 'mondo__invalidToken__BracketStackException');
    assert.strictEqual(e.getLineNr(), 0);
    assert.strictEqual(e.getPosition(), 13);
+}
+
+try {
+    require('../../bin/js/22.ml.js');
+    assert.fail('should throw an exception');
+} catch(e) {
+   assert.strictEqual(e.constructor.name, 'mondo__invalidToken__OperatorAfterBracketOpenException');
+   assert.strictEqual(e.getLineNr(), 2);
+   assert.strictEqual(e.getPosition(), 5);
+}
+
+try {
+    require('../../bin/js/23.ml.js');
+    assert.fail('should throw an exception');
+} catch(e) {
+   assert.strictEqual(e.constructor.name, 'mondo__invalidToken__OperatorBeforeBracketCloseException');
+   assert.strictEqual(e.getLineNr(), 1);
+   assert.strictEqual(e.getPosition(), 12);
+}
+
+try {
+    require('../../bin/js/24.ml.js');
+    assert.fail('should throw an exception');
+} catch(e) {
+   assert.strictEqual(e.constructor.name, 'mondo__invalidToken__OperatorAfterBracketCloseException');
+   assert.strictEqual(e.getLineNr(), 1);
+   assert.strictEqual(e.getPosition(), 4);
 }
