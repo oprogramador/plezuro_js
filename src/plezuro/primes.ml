@@ -1,6 +1,7 @@
-$i =2;
-$n =0;
-{n < first}.while{
+$i = 2;
+$n = 0;
+$max = first;
+{n < max}.while{
     $k = 2;
     $ispr = true;
     {k*k <= i}.while{

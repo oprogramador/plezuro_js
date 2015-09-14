@@ -92,7 +92,7 @@ public class BracketToken extends Token {
         return "(function () {";
     }
 
-    private static String matchFunctionEnd(ITokenizer tokenizer) {
+    public static String matchFunctionEnd(ITokenizer tokenizer) {
         int counter = 1;
         for(Token token = tokenizer.getPreviousNotBlank(); token != null; token = tokenizer.getPreviousNotBlank()) {
             if(token.getText() == OperatorToken.getOperatorSemicolon().getText()) {

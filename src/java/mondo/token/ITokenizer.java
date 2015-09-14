@@ -25,6 +25,7 @@ import java.util.List;
 
 public interface ITokenizer {
     List<Token> getTokens();
+    Token reset();
     Token resetToThis();
     Token getCurrent();
     Token getNext();

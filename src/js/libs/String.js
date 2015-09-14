@@ -1,11 +1,5 @@
-String.prototype.load = function(name, callback) {
-    $.get(name, function(data) {
-        callback(data);
-    });
-}
-
 String.prototype.import = function() {
-    return require(this.toString());
+    return require(this.toString()).apply(null, [this.toString()].concat(arguments.toArray()));
 }
 
 String.prototype.__add = function(x) {

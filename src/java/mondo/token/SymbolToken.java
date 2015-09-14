@@ -42,7 +42,7 @@ public class SymbolToken extends Token {
     }
 
     private Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
-        put("args", (String x) -> "arguments");
+        put("args", (String x) -> "arguments.toArray()");
         put("this", (String x) -> "arguments[0]");
         put("first", (String x) -> "arguments[1]");
         put("second", (String x) -> "arguments[2]");
@@ -59,7 +59,8 @@ public class SymbolToken extends Token {
     }};
 
     private boolean insertBracketAfterEventually(ITokenizer tokenizer) {
-        if(tokenizer.getPreviousNotBlank().getText() != OperatorToken.getOperatorDot().getText()) return false;
+        Token previous = tokenizer.getPreviousNotBlank();
+        if(previous == null || previous.getText() != OperatorToken.getOperatorDot().getText()) return false;
 
         tokenizer.resetToThis();
         Token next = tokenizer.getNextNotBlank();
@@ -72,8 +73,8 @@ public class SymbolToken extends Token {
     }
 
     protected void doConvert(ITokenizer tokenizer) {
+        insertBracketAfterEventually(tokenizer);
         try {
-            insertBracketAfterEventually(tokenizer);
             text = functionMap.get(originalText).apply(originalText);
         } catch(NullPointerException e) {
             try {

@@ -26,6 +26,18 @@ Function.prototype.while = function(loop) {
         loop();
     }
 }
+
+Function.prototype.new = function() {
+    return Object.create(this.prototype);
+}
+
+Function.prototype.try = function(callback) {
+    try {
+        this();
+    } catch(e) {
+        callback(e);
+    }
+}
 Number.prototype.sin = function() {
     return Math.sin(this);
 }
@@ -86,6 +98,13 @@ Object.prototype.exports = function(module) {
 Object.prototype.class = function() {
     return this.constructor;
 }
+
+Object.prototype.toArray = function() {
+    var that = this;
+    return Object.keys(this).map(function(x) {
+        return that[x];
+    });
+}
 function Null() {
 
 }
@@ -136,14 +155,8 @@ InvalidTokenException.create = function(className, filename, lineNr, position, m
     init();
     return new constructor();
 }
-String.prototype.load = function(name, callback) {
-    $.get(name, function(data) {
-        callback(data);
-    });
-}
-
 String.prototype.import = function() {
-    return require(this.toString());
+    return require(this.toString()).apply(null, [this.toString()].concat(arguments.toArray()));
 }
 
 String.prototype.__add = function(x) {
@@ -152,4 +165,7 @@ String.prototype.__add = function(x) {
 
 String.prototype.len = function(x) {
     return this.length;
+}
+Error.prototype.throw = function() {
+    throw this;
 }

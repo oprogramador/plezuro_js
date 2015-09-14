@@ -1,3 +1,2 @@
-//$x = './14.ml.js'.import;
-$x = require('./14.ml.js');
+$x = './14.ml.js'.import;
 x

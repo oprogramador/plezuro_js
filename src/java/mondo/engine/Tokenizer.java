@@ -74,6 +74,11 @@ public class Tokenizer extends AbstractTokenizer {
         return tokens.get(tokenIndex);
     }
 
+    public Token reset() {
+        tokenIndex = 0;
+        return tokens.get(tokenIndex);
+    }
+
     public Token resetToThis() {
         tokenIndex = hardTokenIndex;
         return tokens.get(tokenIndex);

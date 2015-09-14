@@ -8,6 +8,8 @@ todo:
         auto_close_bracket_at_end: yes
         bracket_delete_with_operators: yes
         double_minus: yes
+        empty_file: no
+        empty_function: no
         endline_before_return: yes
         index_operator:
             get: yes
@@ -84,7 +86,7 @@ todo:
     function: yes
     import:
         node: yes
-        script_args: no
+        script_args: yes
         web: no
     inheritance: no
     loop: yes

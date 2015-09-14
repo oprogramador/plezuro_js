@@ -19,3 +19,10 @@ Object.prototype.exports = function(module) {
 Object.prototype.class = function() {
     return this.constructor;
 }
+
+Object.prototype.toArray = function() {
+    var that = this;
+    return Object.keys(this).map(function(x) {
+        return that[x];
+    });
+}

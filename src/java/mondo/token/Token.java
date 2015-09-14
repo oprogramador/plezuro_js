@@ -54,11 +54,11 @@ public abstract class Token implements Cloneable {
         tokenizer.resetToThis();
         if(tokenizer.getNext() == null) {
             tokenizer.resetToThis();
-            tokenizer.insertAfter(OperatorToken.getOperatorDot());
-            tokenizer.insertAfter(new SymbolToken().setText("exports"));
-            tokenizer.insertAfter(BracketToken.getOperatorBracketOpen());
-            tokenizer.insertAfter(new SymbolToken().setText("typeof module !== 'undefined' ? module : null"));
-            tokenizer.insertAfter(BracketToken.getOperatorBracketClose());
+            tokenizer.insertAfter(new FunctionEndToken().setText("}).exports(typeof module !== 'undefined' ? module : null)"));
+            tokenizer.reset();
+            tokenizer.insertBefore(new FunctionToken().setText("(function() {"));
+            tokenizer.resetToThis();
+            BracketToken.matchFunctionEnd(tokenizer);
             tokenizer.finish();
         }
     }

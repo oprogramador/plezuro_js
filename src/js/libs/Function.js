@@ -12,3 +12,15 @@ Function.prototype.while = function(loop) {
         loop();
     }
 }
+
+Function.prototype.new = function() {
+    return Object.create(this.prototype);
+}
+
+Function.prototype.try = function(callback) {
+    try {
+        this();
+    } catch(e) {
+        callback(e);
+    }
+}

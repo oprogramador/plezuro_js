@@ -1,5 +1,5 @@
-(function () {return      (function () {return          (function () {return              (1).__add((2)
+(function() {return (function () {return      (function () {return          (function () {return              (1).__add((2)
         )})
     })
 })
-.exports(typeof module !== 'undefined' ? module : null)
+}).exports(typeof module !== 'undefined' ? module : null)
