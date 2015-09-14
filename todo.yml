@@ -35,8 +35,8 @@ todo:
         no_comment: no
         uglify: no
     condition:
-        else: no
-        elseif: no
+        else: yes
+        elif: yes
         if: yes
     error_checking:
         after_bracket_close_only_operator_or_bracket_close:
@@ -109,5 +109,6 @@ todo:
     stdlib: no
     tests:
         iron_plezuro_scripts: no
+        remote: no
         unit_test: yes
     to_string: no
