@@ -130,3 +130,6 @@ assert.strictEqual(JSON.stringify(a), '[["../../bin/js/26.ml.js",2,9,87,7,6,777]
 
 a = '../../bin/js/primes.ml.js'.import(1000);
 assert.strictEqual(a, 7919);
+
+a = '../../bin/js/27.ml.js'.import(2,9,87,7,6,777);
+assert.strictEqual(JSON.stringify(a), '["wfwfwfe is not defined","blabla"]');

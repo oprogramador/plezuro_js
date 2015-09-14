@@ -14,7 +14,7 @@ Function.prototype.while = function(loop) {
 }
 
 Function.prototype.new = function() {
-    return Object.create(this.prototype);
+    return new (this.bind.apply(this, [null].concat(arguments.toArray())));
 }
 
 Function.prototype.try = function(callback) {

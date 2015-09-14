@@ -81,7 +81,7 @@ todo:
                     - '2 1'
                     - '21"op"'
     exception:
-        custom: no
+        custom: yes
     file_io: no
     function: yes
     import:
@@ -91,9 +91,12 @@ todo:
     inheritance: no
     loop: yes
     magick_constants: yes
-    method_without_closing: yes
+    method:
+        without_brackets: no
+        without_closing: yes
     module: no
     native_binding:
+        native_code: no
         check_for_null: no
         global_variables_restrictions: no
     operators:
