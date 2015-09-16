@@ -31,9 +31,11 @@ todo:
         set: yes
         tuple: no
     compare_with_array: no
-    compilation_options:
-        no_comment: no
-        uglify: no
+    compilator:
+        include_js_lib: no
+        options:
+            no_comment: no
+            uglify: no
     condition:
         else: yes
         elif: yes
