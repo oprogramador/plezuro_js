@@ -6,5 +6,5 @@ y += ("" .__add( 'wef' ).__add( "")) .__add( '');//"oop\"ww" + '';
 x+=/*blabla
 qwe
 qrw*/(21);
-var f;f = (function () {return arguments[0].__mul((2)).__add((1))}); return [''.__add(x).__add(y), f((21))]
+var f;f = (function () {return arguments[0].__mul((2)).__add((1))}); return  [''.__add(x).__add(y), f((21))]
 }).exports(typeof module !== 'undefined' ? module : null)

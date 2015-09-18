@@ -19,6 +19,7 @@ todo:
         operator_order: yes
         return_group: yes
         semicolon_and_function_without_close: yes
+        newline_after_return: yes
     class: no
     collections:
         associative_array: yes

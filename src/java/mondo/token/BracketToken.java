@@ -96,7 +96,7 @@ public class BracketToken extends Token {
         int counter = 1;
         for(Token token = tokenizer.getPreviousNotBlank(); token != null; token = tokenizer.getPreviousNotBlank()) {
             if(token.getText() == OperatorToken.getOperatorSemicolon().getText()) {
-                token.setText("; return");
+                token.setText("; return ");
                 break;
             }
             if(token instanceof FunctionToken) counter--;
@@ -106,8 +106,9 @@ public class BracketToken extends Token {
                 break;
             }
         }
-        Token next = tokenizer.getNext();
-        if(next instanceof NewLineToken) next.setText(" ");
+        for(Token token = tokenizer.getNext(); token.isBlank(); token = tokenizer.getNext()) {
+            if(token instanceof NewLineToken) token.setText(" ");
+        }
         return "})";
     }
 

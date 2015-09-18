@@ -145,3 +145,6 @@ assert.strictEqual(JSON.stringify(a), '[7,"D"]');
 
 a = '../../bin/js/28.ml.js'.import(17);
 assert.strictEqual(JSON.stringify(a), '[336,"C"]');
+
+a = '../../bin/js/29.ml.js'.import();
+assert.strictEqual(a, 112);

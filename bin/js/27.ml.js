@@ -5,5 +5,5 @@ var y;y;
 }));
 (function () {return      Error.new('blabla').throw()
 }).try((function () {return      y = arguments[0]['message']
-})); return [x, y]
+})); return  [x, y]
 }).exports(typeof module !== 'undefined' ? module : null)
