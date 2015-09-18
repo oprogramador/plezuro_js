@@ -1,5 +1,31 @@
 String.prototype.import = function() {
-    return require(this.toString()).apply(null, [this.toString()].concat(arguments.toArray()));
+    if(typeof require !== 'undefined') {
+        return require(this.toString()).apply(null, [this.toString()].concat(arguments.toArray()));
+    } else {
+        var src = this;
+        function getScript() {
+            var script = document.createElement('script');
+            script.async = 'async';
+            script.src = src;
+            script.onload = function() {
+                var f = eval(script.innerHTML);
+                f(arguments);
+            }
+            document.getElementsByTagName('head')[0].appendChild(script);
+        }
+        function load() {
+            var req = new XMLHttpRequest();
+            req.open('GET', src, true);
+            var args = arguments;
+            req.onreadystatechange = function() {
+                if(req.readyState != 4 || req.status != 200) return;
+                var f = eval(req.responseText);
+                f(args);
+            }
+            req.send();
+        }
+        load(arguments);
+    }
 }
 
 String.prototype.__add = function(x) {
