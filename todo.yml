@@ -95,6 +95,7 @@ todo:
     loop: yes
     magick_constants: yes
     method:
+        call_js_method: yes
         without_brackets: no
         without_closing: yes
     module: no
@@ -111,6 +112,7 @@ todo:
         json: no
     stdlib: no
     tests:
+        dependent_on_user_path: no
         iron_plezuro_scripts: no
         remote: no
         unit_test: yes
