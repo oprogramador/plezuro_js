@@ -140,14 +140,22 @@ function Null() {
 
 }
 function AssocArray(args) {
-    var list = []; 
     for(var i = 0; i < args.length - 1; i += 2) {
-        list[args[i]] = args[i+1];
+        this[args[i]] = args[i+1];
     }
-    return Object.apply(this, [list]);
 }
 
 AssocArray.prototype = Object.create(Object.prototype);
+AssocArray.prototype.constructor = AssocArray;
+
+AssocArray.prototype.toJSON = function() {
+    var keys = Object.keys(this);
+    var res = {}
+    for(var i = 0; i < keys.length; i++) {
+        res[keys[i]] = this[keys[i]];
+    }
+    return res;
+}
 function InvalidTokenException(filename, lineNr, position, message) {
     Error.apply(this, [message]);
 
