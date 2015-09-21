@@ -20,7 +20,9 @@ todo:
         return_group: yes
         semicolon_and_function_without_close: yes
         newline_after_return: yes
-    class: no
+    class:
+        access_modifier: no
+        inheritance: no
     collections:
         associative_array: yes
         dictionary: yes
@@ -30,7 +32,9 @@ todo:
             set: yes
         range: no
         set: yes
-        tuple: no
+        tuple:
+            index: no
+            key: no
     compare_with_array: no
     compilator:
         include_js_lib: no
@@ -98,7 +102,8 @@ todo:
         call_js_method: yes
         without_brackets: no
         without_closing: yes
-    module: no
+    module:
+        inheritance: no
     native_binding:
         native_code: no
         check_for_null: no
@@ -110,7 +115,8 @@ todo:
         joint: no
     serialization:
         json: no
-    stdlib: no
+    stdlib:
+        randstr: no
     tests:
         dependent_on_user_path: no
         iron_plezuro_scripts: no

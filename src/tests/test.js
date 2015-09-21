@@ -17,7 +17,7 @@ assert.equal(a.constructor.name, 'Number');
 assert.ok(a >= 0);
 
 a = '../../bin/js/6.ml.js'.import();
-assert.equal(JSON.stringify(a), '[[1,3,20],[]]');
+assert.equal(JSON.stringify(a), '[[1,3,20],{\"abc\":21,\"oo\":[2,3]}]');
 
 a = '../../bin/js/7.ml.js'.import();
 assert.equal(JSON.stringify(a), '[["xx","oo","pp"],null]');
