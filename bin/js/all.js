@@ -18,6 +18,14 @@ Dictionary.prototype = Object.create(Map.prototype);
 Array.prototype.len = function(x) {
     return this.length;
 }
+
+Array.prototype.each = function(f) {
+    var res;
+    for(var i = 0; i < this.length; i++) {
+        res = f(this[i]);
+    }
+    return res;
+}
 function BooleanOper(value) {
     this.value = value;
 }
@@ -62,6 +70,15 @@ Function.prototype.try = function(callback) {
         callback(e);
     }
 }
+Number.prototype.randStr = function() {
+    var alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var res = '';
+    for(var i = 0; i < this; i++) {
+        res += alpha[Math.floor(Math.random() * alpha.length)];
+    }
+    return res;
+}
+
 Number.prototype.sin = function() {
     return Math.sin(this);
 }
@@ -103,6 +120,18 @@ Number.prototype.__incr = function() {
 }
 Object.prototype.__index = function(x) {
     return this[x];
+}
+
+Object.prototype.keys = function() {
+    return Object.keys(this);
+}
+
+Object.prototype.has = function(x) {
+    return typeof this[x] !== 'undefined';
+}
+
+Object.prototype.jsonStr = function(x) {
+    return JSON.stringify(this);
 }
 
 Object.prototype.callM = function() {
@@ -228,6 +257,10 @@ String.prototype.import = function() {
         }
         load(arguments);
     }
+}
+
+String.prototype.fromJson = function() {
+    return JSON.parse(this);
 }
 
 String.prototype.__add = function(x) {

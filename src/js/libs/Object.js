@@ -2,6 +2,18 @@ Object.prototype.__index = function(x) {
     return this[x];
 }
 
+Object.prototype.keys = function() {
+    return Object.keys(this);
+}
+
+Object.prototype.has = function(x) {
+    return typeof this[x] !== 'undefined';
+}
+
+Object.prototype.jsonStr = function(x) {
+    return JSON.stringify(this);
+}
+
 Object.prototype.callM = function() {
     var args = arguments.toArray();
     if(args.length < 1) return undefined;
