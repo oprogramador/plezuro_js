@@ -45,6 +45,7 @@ todo:
         else: yes
         elif: yes
         if: yes
+    easy_multiple_callback: no
     error_checking:
         after_bracket_close_only_operator_or_bracket_close:
             done: yes
@@ -96,7 +97,8 @@ todo:
         script_args: yes
         web: no
     inheritance: no
-    loop: yes
+    loop:
+        iterate_with_key: no
     magick_constants: yes
     method:
         call_js_method: yes

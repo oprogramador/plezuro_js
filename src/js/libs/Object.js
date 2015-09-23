@@ -51,3 +51,7 @@ Object.prototype.toArray = function() {
         return that[x];
     });
 }
+
+Object.prototype.remove = function(x) {
+    delete this[x];
+}
