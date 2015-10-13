@@ -23,6 +23,9 @@ todo:
     class:
         access_modifier: no
         inheritance: no
+        methods:
+          modify: no
+          only_info: no
     collections:
         associative_array: yes
         dictionary: yes
@@ -105,6 +108,7 @@ todo:
         without_brackets: no
         without_closing: yes
     module:
+        input_isolation: no
         inheritance: no
     native_binding:
         native_code: no
@@ -119,6 +123,8 @@ todo:
         json: no
     stdlib:
         randstr: no
+        string:
+            - interpolation: no
     tests:
         dependent_on_user_path: no
         iron_plezuro_scripts: no
