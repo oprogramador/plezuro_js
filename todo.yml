@@ -24,8 +24,13 @@ todo:
         access_modifier: no
         inheritance: no
         methods:
-          modify: no
-          only_info: no
+          doc: no
+          examples:
+            object:
+              methods: no
+          permissions:
+            modify: no
+            only_info: no
     collections:
         associative_array: yes
         dictionary: yes
@@ -40,10 +45,17 @@ todo:
             key: no
     compare_with_array: no
     compilator:
+      js:
         include_js_lib: no
         options:
             no_comment: no
             uglify: no
+      php: no
+      python: no
+      ruby: no
+      c: no
+      csharp: no
+      java: no
     condition:
         else: yes
         elif: yes
@@ -94,7 +106,11 @@ todo:
     exception:
         custom: yes
     file_io: no
-    function: yes
+    function:
+      args:
+        static_typing: no
+      concurrency: no
+      env_separation: no
     import:
         node: yes
         script_args: yes
@@ -130,4 +146,6 @@ todo:
         iron_plezuro_scripts: no
         remote: no
         unit_test: yes
+    todo_import:
+      iron_plezuro: no
     to_string: no
