@@ -7,7 +7,7 @@ $output = '';
 }).elif({a > b * 2}, {
     a *= b;
     output += 'B'
-}).elif({a % b === 4}, {
+}).elif({a % b == 4}, {
     a *= b - 1;
     output += 'C'
 }).else({

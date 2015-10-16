@@ -27,6 +27,7 @@ todo:
           doc: no
           examples:
             object:
+              freeze: no
               methods: no
           permissions:
             modify: no
@@ -149,3 +150,5 @@ todo:
     todo_import:
       iron_plezuro: no
     to_string: no
+    types:
+      regex: no

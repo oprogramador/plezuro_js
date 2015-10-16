@@ -55,3 +55,9 @@ Object.prototype.toArray = function() {
 Object.prototype.remove = function(x) {
     delete this[x];
 }
+
+Object.prototype.__call = function(method, args) {
+  args = args.slice();
+  args.unshift(this);
+  return this.myClass.methods[method].apply(args);
+}

@@ -37,8 +37,8 @@ public class NumberToken extends Token {
     }
 
     protected void doConvert(ITokenizer tokenizer) {
-        tokenizer.insertBefore(BracketToken.getOperatorBracketOpen());
+        tokenizer.insertBefore(BracketToken.getOperatorBracketOpen().setText("(new Number("));
         tokenizer.resetToThis();
-        tokenizer.insertAfter(BracketToken.getOperatorBracketClose());
+        tokenizer.insertAfter(BracketToken.getOperatorBracketClose().setText("))"));
     }
 }

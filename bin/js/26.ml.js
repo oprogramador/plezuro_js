@@ -1,2 +1,2 @@
-(function() {return [arguments.toArray(), arguments[1] .__add( arguments[2] .__mul( (2))), arguments[1] .__div( arguments[2] ).__add( arguments[3])]
+(function() {return [arguments.toArray(), arguments[1] .__add( arguments[2] .__mul( (new Number(2)))), arguments[1] .__div( arguments[2] ).__add( arguments[3])]
 }).exports(typeof module !== 'undefined' ? module : null)
