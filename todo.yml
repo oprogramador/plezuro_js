@@ -22,7 +22,8 @@ todo:
         newline_after_return: yes
     class:
         access_modifier: no
-        inheritance: no
+        inheritance:
+          basic_object: no
         methods:
           doc: no
           examples:

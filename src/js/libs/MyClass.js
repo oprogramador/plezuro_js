@@ -31,5 +31,10 @@ function MyClass(params) {
 MyClass.Global = new MyClass;
 
 MyClass.prototype.findMethod = function(name) {
-  //if(typeof(
+  if(typeof(this.methods[name]) !== 'undefined') return this.methods[name];
+  for(var i = 0; i < this.parents.length; i++) {
+    var result = this.parents[i].findMethod(name);
+    if(result !== null) return result;
+  }
+  return null;
 }
