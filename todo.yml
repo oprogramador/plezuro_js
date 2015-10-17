@@ -22,6 +22,7 @@ todo:
         newline_after_return: yes
     class:
         access_modifier: no
+        constructor: no
         inheritance:
           basic_object: no
         methods:
@@ -33,6 +34,9 @@ todo:
           permissions:
             modify: no
             only_info: no
+        static:
+          constructor: no
+          methods: no
     collections:
         associative_array: yes
         dictionary: yes
