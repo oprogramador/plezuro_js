@@ -35,4 +35,10 @@ public class StringToken extends Token {
     public String getRegex() {
         return "('')|('.*?[^\\\\]')|(\"\")|(\".*?[^\\\\]\")";
     }
+
+    protected void doConvert(ITokenizer tokenizer) {
+        tokenizer.insertBefore(BracketToken.getOperatorBracketOpen().setText("(new String("));
+        tokenizer.resetToThis();
+        tokenizer.insertAfter(BracketToken.getOperatorBracketClose().setText("))"));
+    }
 }
