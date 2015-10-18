@@ -1,2 +1,2 @@
-(function() {(((new String('alaasd')) .__add( (new String('op')) ).__add( (new Number(31)))).len() .__add( [(new Number(3)), (new Number(412)), (new Number(2))].len())).dumpl(); return  new Null()
-}).exports(typeof module !== 'undefined' ? module : null)
+(function() {(((new String('alaasd')) .__add( (new String('op')) ).__add( (new Number(31)))).__call('len' .__add( [(new Number(3)), (new Number(412)), (new Number(2))].__call('len', )).__call('dumpl'); return  new Null()
+))}).exports(typeof module !== 'undefined' ? module : null)

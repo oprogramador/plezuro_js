@@ -85,7 +85,8 @@ public class Tokenizer extends AbstractTokenizer {
     }
 
     public Token getCurrent() {
-        return tokens.get(tokenIndex);
+        if(tokenIndex < tokens.size()) return tokens.get(tokenIndex);
+        return null;
     }
 
     public Token getNext() {

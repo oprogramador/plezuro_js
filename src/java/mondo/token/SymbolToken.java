@@ -63,12 +63,16 @@ public class SymbolToken extends Token {
         if(previous == null || previous.getText() != OperatorToken.getOperatorDot().getText()) return false;
 
         tokenizer.resetToThis();
-        Token next = tokenizer.getNextNotBlank();
-        if(next != null && !(next instanceof OperatorToken || next instanceof IClose)) return false;
-
+        tokenizer.insertBefore(new SymbolToken().setText("__call('"));
         tokenizer.resetToThis();
-        tokenizer.insertAfter(BracketToken.getOperatorBracketOpen());
-        tokenizer.insertAfter(BracketToken.getOperatorBracketClose());
+        tokenizer.insertAfter(new SymbolToken().setText("'"));
+
+        Token next = tokenizer.getNextNotBlank();
+        if(next instanceof BracketCloseToken) tokenizer.insertBefore(new SymbolToken().setText(", "));
+        if(next instanceof BracketOpenToken) next.setText("");
+
+        for(Token token = tokenizer.getCurrent(); token != null && token.getText() != ";"; token = tokenizer.getNextAtSameBracketLevel());
+        tokenizer.insertBefore(BracketToken.getOperatorBracketClose());
         return true;
     }
 

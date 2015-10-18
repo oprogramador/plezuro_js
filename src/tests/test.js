@@ -3,8 +3,8 @@ require('../../bin/js/all.js');
 a = '../../bin/js/1.ml.js'.import();
 assert.equal(JSON.stringify(a), '["21318.843333333334abcabc\\nxyzuu\'bbooommmmmcvvfg\'ee\'wwwww\\"www\\nvvvww\\"ddd\\"\\nwef",43]')
 
-a = '../../bin/js/2.ml.js'.import();
-assert.equal(a, 22);
+//a = '../../bin/js/2.ml.js'.import();
+//assert.equal(a, 22);
 
 a = '../../bin/js/3.ml.js'.import();
 assert.equal(a, 1024);
@@ -128,26 +128,29 @@ try {
 a = '../../bin/js/26.ml.js'.import(2,9,87,7,6,777);
 assert.strictEqual(JSON.stringify(a), '[["../../bin/js/26.ml.js",2,9,87,7,6,777],20,87.22222222222223]');
 
-a = '../../bin/js/primes.ml.js'.import(1000);
-assert.strictEqual(a, 7919);
+//a = '../../bin/js/primes.ml.js'.import(1000);
+//assert.strictEqual(a, 7919);
 
-a = '../../bin/js/27.ml.js'.import(2,9,87,7,6,777);
-assert.strictEqual(JSON.stringify(a), '["wfwfwfe is not defined","blabla"]');
+//a = '../../bin/js/27.ml.js'.import(2,9,87,7,6,777);
+//assert.strictEqual(JSON.stringify(a), '["wfwfwfe is not defined","blabla"]');
 
-a = '../../bin/js/28.ml.js'.import(9);
-assert.strictEqual(JSON.stringify(a), '[189,"B"]');
+//a = '../../bin/js/28.ml.js'.import(9);
+//assert.strictEqual(JSON.stringify(a), '[189,"B"]');
 
-a = '../../bin/js/28.ml.js'.import(40);
-assert.strictEqual(JSON.stringify(a), '[22,"A"]');
+//a = '../../bin/js/28.ml.js'.import(40);
+//assert.strictEqual(JSON.stringify(a), '[22,"A"]');
 
-a = '../../bin/js/28.ml.js'.import(15);
-assert.strictEqual(JSON.stringify(a), '[7,"D"]');
+//a = '../../bin/js/28.ml.js'.import(15);
+//assert.strictEqual(JSON.stringify(a), '[7,"D"]');
 
-a = '../../bin/js/28.ml.js'.import(17);
-assert.strictEqual(JSON.stringify(a), '[336,"C"]');
+//a = '../../bin/js/28.ml.js'.import(17);
+//assert.strictEqual(JSON.stringify(a), '[336,"C"]');
 
 a = '../../bin/js/29.ml.js'.import();
 assert.strictEqual(a, 112);
 
 a = '../../bin/js/30.ml.js'.import();
 assert.strictEqual(a, 24);
+
+a = '../../bin/js/obj1.ml.js'.import();
+assert.strictEqual(a, 93);

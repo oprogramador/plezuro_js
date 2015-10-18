@@ -57,6 +57,8 @@ Module.create = function(params) {
   return module;
 }
 
+var module = Module.create;
+
 Module.prototype.new = function() {
   var args = Array.prototype.slice.call(arguments);
   var that = this;

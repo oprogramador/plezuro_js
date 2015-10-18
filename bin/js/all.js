@@ -85,6 +85,8 @@ Module.create = function(params) {
   return module;
 }
 
+var module = Module.create;
+
 Module.prototype.new = function() {
   var args = Array.prototype.slice.call(arguments);
   var that = this;
@@ -256,8 +258,13 @@ Object.prototype.remove = function(x) {
 Object.prototype.__call = function(methodName) {
   var args = Array.prototype.slice.call(arguments);
   args[0] = this;
-  var method = this.getMyClass().findMethod(methodName);
-  return method.apply(method, args);
+  try {
+    var method = this.getMyClass().findMethod(methodName);
+    return method.apply(method, args);
+  } catch(e) {
+    args.shift();
+    return this[methodName].apply(this, args);
+  }
 }
 function Null() {
 

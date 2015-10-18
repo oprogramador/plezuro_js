@@ -1,7 +1,7 @@
 $Person = Module.create(%('name': 'Person'));
 $Student = Module.create(%('name': 'Student', 'parents': [Person]));
-Person.methods['do'] = {
-  this['fields']['a'] + first
+Person['methods']['do'] = {
+  @['a'] + first
 };
-s = Student.new(%('a': 90));
-s.__call('do', 3, 4)
+$s = Student.new(%('a': 90));
+s.do(3, 4)
