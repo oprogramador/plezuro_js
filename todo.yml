@@ -30,10 +30,12 @@ todo:
           examples:
             object:
               freeze: no
+              encode: no
               methods: no
           permissions:
             modify: no
             only_info: no
+        operators: no
         static:
           constructor: no
           methods: no
