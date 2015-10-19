@@ -3,8 +3,8 @@ require('../../bin/js/all.js');
 a = '../../bin/js/1.ml.js'.import();
 assert.equal(JSON.stringify(a), '["21318.843333333334abcabc\\nxyzuu\'bbooommmmmcvvfg\'ee\'wwwww\\"www\\nvvvww\\"ddd\\"\\nwef",43]')
 
-//a = '../../bin/js/2.ml.js'.import();
-//assert.equal(a, 22);
+a = '../../bin/js/2.ml.js'.import();
+assert.equal(a, 22);
 
 a = '../../bin/js/3.ml.js'.import();
 assert.equal(a, 1024);
@@ -152,5 +152,5 @@ assert.strictEqual(a, 112);
 a = '../../bin/js/30.ml.js'.import();
 assert.strictEqual(a, 24);
 
-a = '../../bin/js/obj1.ml.js'.import();
-assert.strictEqual(a, 93);
+//a = '../../bin/js/obj1.ml.js'.import();
+//assert.strictEqual(a, 93);
