@@ -7,5 +7,5 @@ var Student;Student = Module.create(new AssocArray([
         )})
     ])
 ]));
-s = Student.new(new AssocArray([(new String('a')), (new Number(90))])); return  s.do((new Number(3)), (new Number(4)))
+s = Student.new(new AssocArray([(new String('a')), (new Number(90))])); return  s.do((new Number(1)), (new Number(3)), (new Number(4)))
 }).exports(typeof module !== 'undefined' ? module : null)

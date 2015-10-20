@@ -153,4 +153,4 @@ a = '../../bin/js/30.ml.js'.import();
 assert.strictEqual(a, 24);
 
 a = '../../bin/js/obj1.ml.js'.import();
-assert.strictEqual(a, 93);
+assert.strictEqual(a, 10);

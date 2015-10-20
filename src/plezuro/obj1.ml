@@ -9,4 +9,4 @@ $Student = Module.create(%(
     )
 ));
 s = Student.new(%('a': 90));
-s.do(3, 4)
+s.do(1, 3, 4)
