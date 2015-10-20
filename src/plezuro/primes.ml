@@ -1,3 +1,4 @@
+console.time;
 $i = 2;
 $n = 0;
 $max = first;
@@ -11,4 +12,5 @@ $max = first;
     {ispr}.if{n++};
     i++
 };
+console.timeEnd;
 i-1

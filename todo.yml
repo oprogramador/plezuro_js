@@ -144,6 +144,7 @@ todo:
         dot_equal: no
         identity_comparison: no
         joint: no
+    performance: no
     runtime_errors:
       no_declaration: no
     serialization:
