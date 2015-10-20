@@ -50,7 +50,15 @@ public class UniOperatorToken extends OperatorToken {
         //put("--", "__decr");
     }};
 
+    private Map<String, Function<ITokenizer, String>> functionMap = new HashMap<String, Function<ITokenizer, String>>() {{
+        put("@", (ITokenizer t) -> "arguments[0][(new String('fields'))]");
+    }};
+
     protected void matchOperatorMethod(ITokenizer tokenizer) {
+        try {
+            text = functionMap.get(originalText).apply(tokenizer);
+        } catch(NullPointerException e) {
+        }
         if(operatorMethodNames.get(tokenizer.getCurrent().getOriginalText()) == null) return;
 
         tokenizer.getCurrent().setText("."+operatorMethodNames.get(tokenizer.getCurrent().getOriginalText())+"(");
