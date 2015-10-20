@@ -25,6 +25,7 @@ todo:
         constructor: no
         inheritance:
           basic_object: no
+          dynamic: no
         methods:
           doc: no
           examples:

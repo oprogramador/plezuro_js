@@ -128,8 +128,8 @@ try {
 a = '../../bin/js/26.ml.js'.import(2,9,87,7,6,777);
 assert.strictEqual(JSON.stringify(a), '[["../../bin/js/26.ml.js",2,9,87,7,6,777],20,87.22222222222223]');
 
-a = '../../bin/js/primes.ml.js'.import(1000);
-assert.strictEqual(a, 7919);
+a = '../../bin/js/primes.ml.js'.import(100);
+assert.strictEqual(a, 541);
 
 a = '../../bin/js/27.ml.js'.import(2,9,87,7,6,777);
 assert.strictEqual(JSON.stringify(a), '["wfwfwfe is not defined","blabla"]');
@@ -151,3 +151,6 @@ assert.strictEqual(a, 112);
 
 a = '../../bin/js/30.ml.js'.import();
 assert.strictEqual(a, 24);
+
+a = '../../bin/js/obj1.ml.js'.import();
+assert.strictEqual(a, 93);
