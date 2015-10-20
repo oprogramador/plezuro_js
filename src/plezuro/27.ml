@@ -2,10 +2,12 @@ $x;
 $y;
 {
     x = wfwfwfe
-}.try{
+}.try({
     x = this['message']
-};
+});
 {
     Error.new('blabla').throw
-};
+}.try({
+    y = this['message']
+});
 [x, y]

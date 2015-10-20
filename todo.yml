@@ -8,7 +8,6 @@ todo:
         auto_close_bracket_at_end: yes
         bracket_delete_with_operators: yes
         double_minus: yes
-        declaration_at_end: no
         empty_file: no
         empty_function: no
         endline_before_return: yes
@@ -26,6 +25,7 @@ todo:
         constructor: no
         inheritance:
           basic_object: no
+          dynamic: no
         methods:
           doc: no
           examples:
@@ -144,9 +144,6 @@ todo:
         dot_equal: no
         identity_comparison: no
         joint: no
-    performance: no
-    runtime_errors:
-      no_declaration: no
     serialization:
         json: no
     stdlib:
