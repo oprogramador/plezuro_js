@@ -32,7 +32,7 @@ function Module(params) {
 (function() {
     var BasicModule = new Module;
 
-    BasicModule.name = 'BasicModule';
+    BasicModule.className = 'BasicModule';
     BasicModule.namespace = null;
     BasicModule.parents = [];
     BasicModule.staticFields = {};
@@ -49,7 +49,7 @@ function Module(params) {
 Module.init = function(that, params) {
     function init() {
         params = params || {};
-        that.name = params.name;
+        that.className = params.name;
         that.parents = params.parents || [Module.BasicModule];
         that.namespace = params.namespace || Module.BasicModule || that;
         that.staticFields = params.staticFields || {};
@@ -89,7 +89,7 @@ Module.init = function(that, params) {
     }
 
     function bindToNamespace() {
-        that.namespace.staticFields[that.name] = that;
+        that.namespace.staticFields[that.className] = that;
     }
 
     init();
