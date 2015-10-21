@@ -68,9 +68,18 @@ Module.init = function(that, params) {
     }
 
     function createPrototype() {
-      for(var key in that.methods) {
-          that.prototype[key] = that.methods[key];
-      }
+        that.allMethods = {};
+        for(var i = 0; i < that.parents.length; i++) {
+            for(var key in that.parents[i].methods) {
+                that.allMethods[key] = that.parents[i].methods[key];
+            }
+        }
+        for(var key in that.methods) {
+            that.allMethods[key] = that.methods[key];
+        }
+        for(var key in that.allMethods) {
+            that.prototype[key] = that.allMethods[key];
+        }
     }
 
     function bindToParents() {
