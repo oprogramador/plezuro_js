@@ -4,7 +4,7 @@ $Student = Module.create(%(
     'parents': [Person],
     'methods': %(
         'do' : {
-            first * 2 + second
+            this['fields']['a'] * 2 + first
         }
     )
 ));

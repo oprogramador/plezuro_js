@@ -3,7 +3,7 @@ var Student;Student = Module.create(new AssocArray([
     (new String('name')), (new String('Student')),
     (new String('parents')), [Person],
     (new String('methods')), new AssocArray([
-        (new String('do')) , (function () {return              arguments[1] .__mul( (new Number(2)) ).__add( arguments[2]
+        (new String('do')) , (function () {return              this[(new String('fields'))][(new String('a'))] .__mul( (new Number(2)) ).__add( arguments[0]
         )})
     ])
 ]));

@@ -9,8 +9,8 @@ function Module(params) {
     BasicModule.parents = [];
     BasicModule.staticFields = {};
     BasicModule.methods = {
-        init: function(obj, params) {
-            obj.fields = params;
+        init: function(params) {
+            this.fields = params;
         }
     }
     BasicModule.children = [];
@@ -27,9 +27,9 @@ Module.init = function(that, params) {
         that.staticFields = params.staticFields || {};
         that.staticMethods = params.staticMethods || {};
         that.methods = params.methods || {};
-        if(!that.methods.init) that.methods.init = function(obj, params) {
+        if(!that.methods.init) that.methods.init = function(params) {
             for(var i = 0; i < that.parents.length; i++) {
-                that.parents[i].methods.init(obj, params);
+                that.parents[i].methods.init.call(this, params);
             }
         }
         that.children = [];
@@ -61,6 +61,7 @@ Module.init = function(that, params) {
 Module.create = function(params) {
     var module = function(){};
     Module.init(module, params);
+    module.new = Module.prototype.new;
     return module;
 }
 
@@ -69,8 +70,7 @@ Module.prototype.new = function() {
     var that = this;
     var object = new this;
     object.getMyClass = function() { return that; }
-    args.unshift(object);
-    if(this.methods.init) this.methods.init.apply(null, args);
+    if(this.methods.init) this.methods.init.apply(object, args);
     return object;
 }
 

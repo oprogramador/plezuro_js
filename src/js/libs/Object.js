@@ -58,7 +58,6 @@ Object.prototype.remove = function(x) {
 
 Object.prototype.__call = function(methodName) {
   var args = Array.prototype.slice.call(arguments);
-  args[0] = this;
   var method = this.getMyClass().findMethod(methodName);
-  return method.apply(method, args);
+  return method.apply(this, args);
 }

@@ -43,10 +43,10 @@ public class SymbolToken extends Token {
 
     private Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
         put("args", (String x) -> "arguments.toArray()");
-        put("this", (String x) -> "arguments[0]");
-        put("first", (String x) -> "arguments[1]");
-        put("second", (String x) -> "arguments[2]");
-        put("third", (String x) -> "arguments[3]");
+        put("this", (String x) -> "this");
+        put("first", (String x) -> "arguments[0]");
+        put("second", (String x) -> "arguments[1]");
+        put("third", (String x) -> "arguments[2]");
         put("rand", (String x) -> "Math.random()");
         put("null", (String x) -> "new Null()");
     }};
