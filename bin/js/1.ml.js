@@ -6,5 +6,5 @@ y += ((new String("")) .__add( (new String('wef')) ).__add( (new String("")))) .
 x+=/*blabla
 qwe
 qrw*/(new Number(21));
-var f;f = (function () {return arguments[0].__mul((new Number(2))).__add((new Number(1)))}); return  [(new String('')).__add(x).__add(y), f((new Number(21)))]
+var f;f = (function () {return this.__mul((new Number(2))).__add((new Number(1)))}); return  [(new String('')).__add(x).__add(y), f.call((new Number(21)))]
 }).exports(typeof module !== 'undefined' ? module : null)

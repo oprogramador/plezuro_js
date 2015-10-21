@@ -1,5 +1,5 @@
 (function() {var a;a = (new Number(21));
-var b;b = arguments[1];
+var b;b = arguments[0];
 var output;output = (new String(''));
 (function () {return a < b}).if((function () {
     a++; return      output += (new String('A'))

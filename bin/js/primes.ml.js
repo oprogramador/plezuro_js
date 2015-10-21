@@ -1,6 +1,6 @@
 (function() {var i;i = (new Number(2));
 var n;n = (new Number(0));
-var max;max = arguments[1];
+var max;max = arguments[0];
 (function () {return n < max}).while(function () {
     var k;k = (new Number(2));
     var ispr;ispr = true;

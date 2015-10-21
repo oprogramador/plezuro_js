@@ -151,7 +151,7 @@ Function.prototype.try = function(callback) {
     try {
         this();
     } catch(e) {
-        callback(e);
+        callback.call(e);
     }
 }
 Number.prototype.randStr = function() {
@@ -325,7 +325,7 @@ InvalidTokenException.create = function(className, filename, lineNr, position, m
 }
 String.prototype.import = function() {
     if(typeof require !== 'undefined') {
-        return require(this.toString()).apply(null, [this.toString()].concat(arguments.toArray()));
+        return require(this.toString()).apply(this.toString(), arguments.toArray());
     } else {
         var src = this;
         function getScript() {

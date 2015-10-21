@@ -42,7 +42,7 @@ public class SymbolToken extends Token {
     }
 
     private Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
-        put("args", (String x) -> "arguments.toArray()");
+        put("args", (String x) -> "([this].concat(Array.prototype.slice.call(arguments)))");
         put("this", (String x) -> "this");
         put("first", (String x) -> "arguments[0]");
         put("second", (String x) -> "arguments[1]");
@@ -58,7 +58,20 @@ public class SymbolToken extends Token {
         put("__dir__", (Token t) -> "\""+t.getDirName()+"\"");
     }};
 
+    private boolean insertFunctionCallEventually(ITokenizer tokenizer) {
+        tokenizer.resetToThis();
+        Token previous = tokenizer.getPreviousNotBlank();
+        tokenizer.resetToThis();
+        Token next = tokenizer.getNextNotBlank();
+        if(previous.getText() == OperatorToken.getOperatorDot().getText() || !(next instanceof BracketOpenToken)) return false;
+
+        tokenizer.resetToThis();
+        tokenizer.insertAfter(new SymbolToken().setText(".call"));
+        return true;
+    }
+
     private boolean insertBracketAfterEventually(ITokenizer tokenizer) {
+        tokenizer.resetToThis();
         Token previous = tokenizer.getPreviousNotBlank();
         if(previous == null || previous.getText() != OperatorToken.getOperatorDot().getText()) return false;
 
@@ -74,6 +87,7 @@ public class SymbolToken extends Token {
 
     protected void doConvert(ITokenizer tokenizer) {
         insertBracketAfterEventually(tokenizer);
+        insertFunctionCallEventually(tokenizer);
         try {
             text = functionMap.get(originalText).apply(originalText);
         } catch(NullPointerException e) {

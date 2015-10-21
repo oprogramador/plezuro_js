@@ -1,6 +1,6 @@
 String.prototype.import = function() {
     if(typeof require !== 'undefined') {
-        return require(this.toString()).apply(null, [this.toString()].concat(arguments.toArray()));
+        return require(this.toString()).apply(this.toString(), arguments.toArray());
     } else {
         var src = this;
         function getScript() {

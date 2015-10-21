@@ -39,6 +39,6 @@ Function.prototype.try = function(callback) {
     try {
         this();
     } catch(e) {
-        callback(e);
+        callback.call(e);
     }
 }
