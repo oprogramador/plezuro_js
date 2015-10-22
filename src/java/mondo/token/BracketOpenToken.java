@@ -22,5 +22,22 @@
 package mondo.token;
 
 public class BracketOpenToken extends BracketToken implements IOpen {
+    private boolean insertFunctionCallEventually(ITokenizer tokenizer) {
+        tokenizer.resetToThis();
+        Token previous = tokenizer.getPreviousNotBlank();
+        if(previous == null || previous instanceof IOpen || previous instanceof OperatorToken) return false;
 
+        Token preprevious = tokenizer.getPreviousNotBlank();
+        if(preprevious != null && preprevious.getText() == ".") return false;
+
+        tokenizer.resetToThis();
+        tokenizer.insertBefore(new SymbolToken().setText(".call"));
+        return true;
+    }
+
+    protected void doConvert(ITokenizer tokenizer) {
+        super.doConvert(tokenizer);
+        tokenizer.resetToThis();
+        insertFunctionCallEventually(tokenizer);
+    }
 }

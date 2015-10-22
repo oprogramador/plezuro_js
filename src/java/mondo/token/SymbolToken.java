@@ -58,18 +58,6 @@ public class SymbolToken extends Token {
         put("__dir__", (Token t) -> "\""+t.getDirName()+"\"");
     }};
 
-    private boolean insertFunctionCallEventually(ITokenizer tokenizer) {
-        tokenizer.resetToThis();
-        Token previous = tokenizer.getPreviousNotBlank();
-        tokenizer.resetToThis();
-        Token next = tokenizer.getNextNotBlank();
-        if(previous == null || previous.getText() == OperatorToken.getOperatorDot().getText() || !(next instanceof BracketOpenToken)) return false;
-
-        tokenizer.resetToThis();
-        tokenizer.insertAfter(new SymbolToken().setText(".call"));
-        return true;
-    }
-
     private boolean insertBracketAfterEventually(ITokenizer tokenizer) {
         tokenizer.resetToThis();
         Token previous = tokenizer.getPreviousNotBlank();
@@ -87,7 +75,6 @@ public class SymbolToken extends Token {
 
     protected void doConvert(ITokenizer tokenizer) {
         insertBracketAfterEventually(tokenizer);
-        insertFunctionCallEventually(tokenizer);
         try {
             text = functionMap.get(originalText).apply(originalText);
         } catch(NullPointerException e) {

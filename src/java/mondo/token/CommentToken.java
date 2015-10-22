@@ -31,4 +31,8 @@ public class CommentToken extends Token {
     public String getRegex() {
         return "\\/\\/.*";
     }
+
+    protected void doConvert(ITokenizer tokenizer) {
+        setText("/*"+originalText.substring(2)+"*/");
+    }
 }

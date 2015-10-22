@@ -169,3 +169,9 @@ assert.strictEqual(a.class().name, 'Null');
 
 a = '../../bin/js/32.ml.js'.import();
 assert.ok(is_undefined(a()));
+
+a = '../../bin/js/33.ml.js'.import();
+assert.strictEqual(a, 7);
+
+a = '../../bin/js/34.ml.js'.import();
+assert.strictEqual(a, 24);
