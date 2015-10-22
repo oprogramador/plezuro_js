@@ -20,26 +20,6 @@ todo:
         return_group: yes
         semicolon_and_function_without_close: yes
         newline_after_return: yes
-    class:
-        access_modifier: no
-        constructor: no
-        inheritance:
-          basic_object: no
-          dynamic: no
-        methods:
-          doc: no
-          examples:
-            object:
-              freeze: no
-              encode: no
-              methods: no
-          permissions:
-            modify: no
-            only_info: no
-        operators: no
-        static:
-          constructor: no
-          methods: no
     collections:
         associative_array: yes
         dictionary: yes
@@ -69,6 +49,11 @@ todo:
         else: yes
         elif: yes
         if: yes
+    doc:
+        versions:
+            pdf: no
+            web: no
+            md: no
     easy_multiple_callback: no
     error_checking:
         after_bracket_close_only_operator_or_bracket_close:
@@ -124,7 +109,6 @@ todo:
         node: yes
         script_args: yes
         web: no
-    inheritance: no
     loop:
         iterate_with_key: no
     magick_constants: yes
@@ -133,8 +117,30 @@ todo:
         without_brackets: no
         without_closing: yes
     module:
-        input_isolation: no
-        inheritance: no
+        static:
+            input_isolation: no
+            inheritance: no
+        class:
+            access_modifier: no
+            constructor: yes
+            inheritance:
+              basic_object: yes
+              dynamic: no
+            methods:
+              doc: no
+              examples:
+                object:
+                  freeze: no
+                  encode: no
+                  methods: no
+              permissions:
+                modify: no
+                only_info: no
+            operators: no
+            static:
+              constructor: no
+              methods: no
+            to_string: no
     native_binding:
         native_code: no
         check_for_null: no
@@ -159,6 +165,5 @@ todo:
           classes: no
     todo_import:
       iron_plezuro: no
-    to_string: no
     types:
       regex: no

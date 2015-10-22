@@ -71,6 +71,20 @@ Module.create = function(params) {
     var module = function(){};
     Module.init(module, params);
     module.new = Module.prototype.new;
+    module.addMethod = function(name, method) {
+        transmitInheritance(module, name, method);
+        module.methods[name] = method;
+        
+        function transmitInheritance(mod, name, method) {
+            if(typeof mod.methods[name] !== 'undefined') return false;
+            mod.allMethods[name] = method;
+            mod.prototype[name] = method;
+            for(var i = 0; i < mod.children.length; i++) {
+                transmitInheritance(mod.children[i], name, method);
+            }
+            return true;
+        }
+    }
     return module;
 }
 
