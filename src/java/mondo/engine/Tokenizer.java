@@ -71,11 +71,13 @@ public class Tokenizer extends AbstractTokenizer {
         finished = false;
         hardTokenIndex = 0;
         tokenIndex = hardTokenIndex;
+        if(tokens.size() < 1) return null;
         return tokens.get(tokenIndex);
     }
 
     public Token reset() {
         tokenIndex = 0;
+        if(tokens.size() < 1) return null;
         return tokens.get(tokenIndex);
     }
 

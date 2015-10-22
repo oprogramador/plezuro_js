@@ -63,7 +63,7 @@ public class SymbolToken extends Token {
         Token previous = tokenizer.getPreviousNotBlank();
         tokenizer.resetToThis();
         Token next = tokenizer.getNextNotBlank();
-        if(previous.getText() == OperatorToken.getOperatorDot().getText() || !(next instanceof BracketOpenToken)) return false;
+        if(previous == null || previous.getText() == OperatorToken.getOperatorDot().getText() || !(next instanceof BracketOpenToken)) return false;
 
         tokenizer.resetToThis();
         tokenizer.insertAfter(new SymbolToken().setText(".call"));

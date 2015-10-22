@@ -4,23 +4,10 @@ todo:
         node: no
         web: no
     bugs:
-        10_no_return: yes
-        auto_close_bracket_at_end: yes
-        bracket_delete_with_operators: yes
-        double_minus: yes
-        empty_file: no
+        empty_file: yes
         empty_function: no
-        endline_before_return: yes
-        index_operator:
-            get: yes
-            set: yes
-        iterator: yes
-        operator_func_args: yes
-        operator_order: yes
-        return_group: yes
-        semicolon_and_function_without_close: yes
-        newline_after_return: yes
         one_line_comment_on_return: no
+        declaration_in_return: no
     collections:
         associative_array: yes
         dictionary: yes
@@ -38,6 +25,7 @@ todo:
       js:
         include_js_lib: no
         options:
+            beautify: no
             no_comment: no
             uglify: no
       php: no
@@ -167,4 +155,5 @@ todo:
     todo_import:
       iron_plezuro: no
     types:
+      no_undefined: no
       regex: no

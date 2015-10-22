@@ -157,3 +157,12 @@ assert.strictEqual(a, 181);
 
 a = '../../bin/js/obj2.ml.js'.import();
 assert.strictEqual(JSON.stringify(a), '[181,"person a=90","student a=90","student a=90"]');
+
+a = '../../bin/js/obj2.ml.js'.import();
+assert.strictEqual(JSON.stringify(a), '[181,"person a=90","student a=90","student a=90"]');
+
+a = '../../bin/js/obj3.ml.js'.import();
+assert.strictEqual(JSON.stringify(a), '[181,"person a=90","student a=90","student a=90","person2 a=90","Object #<AssocArray> has no method \'say\'"]');
+
+a = '../../bin/js/31.ml.js'.import();
+assert.strictEqual(a.class().name, 'Null');

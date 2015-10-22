@@ -23,5 +23,8 @@ var z1;z1 = student.say();
 Student.removeMethod((new String('say')));
 var z2;z2 = student.say();
 Person.removeMethod((new String('say')));
-var z3;z3 = student.say(); return  [x, y, z, z1, z2, z3]
+var msg;msg;
+(function () {return      student.say()
+}).try((function () {return      msg = this[(new String('message'))]
+})); return  [x, y, z, z1, z2, msg]
 }).exports(typeof module !== 'undefined' ? module : null)

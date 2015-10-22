@@ -55,6 +55,7 @@ public class Parser {
         Charset charset = Charset.forName("UTF-8");
         try {
             lines = Files.readAllLines(path, charset);
+            if(lines.size() < 1) lines.add("null");
         } catch(IOException e) {
             throw new IOException("File "+filename+" does not exist.");
         }

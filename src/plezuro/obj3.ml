@@ -27,5 +27,10 @@ $z1 = student.say;
 Student.removeMethod('say');
 $z2 = student.say;
 Person.removeMethod('say');
-$z3 = student.say;
-[x, y, z, z1, z2, z3]
+$msg;
+{
+    student.say
+}.try({
+    msg = this['message']
+});
+[x, y, z, z1, z2, msg]
