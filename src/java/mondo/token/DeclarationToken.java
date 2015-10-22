@@ -37,6 +37,8 @@ public class DeclarationToken extends Token {
     }
 
     protected void doConvert(ITokenizer tokenizer) {
-        text = "var "+originalText.substring(1)+";"+originalText.substring(1);
+        tokenizer.insertBefore(new SymbolToken().setText("var "+originalText.substring(1)));
+        tokenizer.insertAfter(new OperatorToken().setText(";"));
+        setText(originalText.substring(1));
     }
 }

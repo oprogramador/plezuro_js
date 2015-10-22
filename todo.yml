@@ -7,7 +7,7 @@ todo:
         empty_file: yes
         empty_function: yes
         one_line_comment_on_return: yes
-        declaration_in_return: no
+        declaration_in_return: yes
         composite_function_call: yes
     collections:
         associative_array: yes

@@ -175,3 +175,6 @@ assert.strictEqual(a, 7);
 
 a = '../../bin/js/34.ml.js'.import();
 assert.strictEqual(a, 24);
+
+a = '../../bin/js/35.ml.js'.import();
+assert.strictEqual(a, 5);
