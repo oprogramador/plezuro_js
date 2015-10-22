@@ -5,7 +5,7 @@ todo:
         web: no
     bugs:
         empty_file: yes
-        empty_function: no
+        empty_function: yes
         one_line_comment_on_return: no
         declaration_in_return: no
     collections:

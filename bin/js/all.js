@@ -313,6 +313,18 @@ Object.prototype.__call = function(methodName) {
   var method = this.getMyClass().findMethod(methodName);
   return method.apply(this, args);
 }
+
+Object.is_null = function(x) {
+    return x === null;
+}
+
+is_null = Object.is_null;
+
+Object.is_undefined = function(x) {
+    return typeof x === 'undefined';
+}
+
+is_undefined = Object.is_undefined;
 function Null() {
 
 }

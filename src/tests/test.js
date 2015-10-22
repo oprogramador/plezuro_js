@@ -166,3 +166,6 @@ assert.strictEqual(JSON.stringify(a), '[181,"person a=90","student a=90","studen
 
 a = '../../bin/js/31.ml.js'.import();
 assert.strictEqual(a.class().name, 'Null');
+
+a = '../../bin/js/32.ml.js'.import();
+assert.ok(is_undefined(a()));
