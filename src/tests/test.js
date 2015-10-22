@@ -156,4 +156,4 @@ a = '../../bin/js/obj1.ml.js'.import();
 assert.strictEqual(a, 181);
 
 a = '../../bin/js/obj2.ml.js'.import();
-assert.strictEqual(JSON.stringify(a), '[181,"a=90"]');
+assert.strictEqual(JSON.stringify(a), '[181,"person a=90","student a=90","student a=90"]');

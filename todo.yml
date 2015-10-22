@@ -20,6 +20,7 @@ todo:
         return_group: yes
         semicolon_and_function_without_close: yes
         newline_after_return: yes
+        one_line_comment_on_return: no
     collections:
         associative_array: yes
         dictionary: yes

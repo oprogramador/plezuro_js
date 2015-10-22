@@ -15,13 +15,17 @@ $x = student.do(1, 3, 4);
 Person.addMethod('say', {
     'person a='+this['fields']['a']
 });
-y = student.say;
+$y = student.say;
 Student.addMethod('say', {
     'student a='+this['fields']['a']
 });
-z = student.say;
+$z = student.say;
 Person.addMethod('say', {
     'person2 a='+this['fields']['a']
 });
-z1 = student.say;
-[x, y, z, z1]
+$z1 = student.say;
+Student.removeMethod('say');
+$z2 = student.say;
+Person.removeMethod('say');
+$z3 = student.say;
+[x, y, z, z1, z2, z3]

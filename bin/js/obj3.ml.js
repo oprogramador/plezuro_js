@@ -13,11 +13,15 @@ student = Student.new(new AssocArray([(new String('a')), (new Number(90))]));
 var x;x = student.do((new Number(1)), (new Number(3)), (new Number(4)));
 Person.addMethod((new String('say')), (function () {return      (new String('person a=')).__add(this[(new String('fields'))][(new String('a'))]
 )}));
-y = student.say();
+var y;y = student.say();
 Student.addMethod((new String('say')), (function () {return      (new String('student a=')).__add(this[(new String('fields'))][(new String('a'))]
 )}));
-z = student.say();
+var z;z = student.say();
 Person.addMethod((new String('say')), (function () {return      (new String('person2 a=')).__add(this[(new String('fields'))][(new String('a'))]
 )}));
-z1 = student.say(); return  [x, y, z, z1]
+var z1;z1 = student.say();
+Student.removeMethod((new String('say')));
+var z2;z2 = student.say();
+Person.removeMethod((new String('say')));
+var z3;z3 = student.say(); return  [x, y, z, z1, z2, z3]
 }).exports(typeof module !== 'undefined' ? module : null)
