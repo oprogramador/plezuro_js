@@ -38,7 +38,6 @@ public class UniOperatorToken extends OperatorToken {
             add("#");	
             add("++");	
             add("--");
-            add("@");
             add("~");
             add("=>");
         }};

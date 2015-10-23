@@ -33,6 +33,7 @@ import mondo.token.AbstractTokenizer;
 import mondo.token.Token;
 import mondo.token.NumberToken;
 import mondo.token.DeclarationToken;
+import mondo.token.ClassFieldToken;
 import mondo.token.WhiteSpaceToken;
 import mondo.token.OperatorToken;
 import mondo.token.SymbolToken;
@@ -49,6 +50,7 @@ public class Tokenizer extends AbstractTokenizer {
         add(new BracketToken());
         add(new NumberToken());
         add(new DeclarationToken());
+        add(new ClassFieldToken());
         add(new WhiteSpaceToken());
         add(new OperatorToken());
         add(new SymbolToken());

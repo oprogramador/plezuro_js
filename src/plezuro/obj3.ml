@@ -2,7 +2,7 @@ $Person = Module.create(%(
     'name': 'Person',
     'methods': %(
         'do' : {
-            this['fields']['a'] * 2 + first
+            @a * 2 + first
         }
     )
 ));

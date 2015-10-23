@@ -40,6 +40,10 @@ todo:
         elif: yes
         if: yes
     doc:
+        parts:
+            tutorial: no
+            specification: no
+            dev_specification: no
         versions:
             pdf: no
             web: no
