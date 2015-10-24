@@ -75,6 +75,7 @@ function Module(params) {
             var that = this;
             var object = new this;
             object.getMyClass = function() { return that; }
+            object.fields = {};
             if(this.methods.init) this.methods.init.apply(object, args);
             return object;
         }

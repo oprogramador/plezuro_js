@@ -178,3 +178,6 @@ assert.strictEqual(a, 24);
 
 a = '../../bin/js/35.ml.js'.import();
 assert.strictEqual(a, 5);
+
+a = '../../bin/js/obj4.ml.js'.import();
+assert.strictEqual(a, 'I am 0I am 1I am 2');
