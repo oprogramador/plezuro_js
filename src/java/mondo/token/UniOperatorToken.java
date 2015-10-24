@@ -44,9 +44,8 @@ public class UniOperatorToken extends OperatorToken {
         return list;
     }
 
-    private Map<String, String> operatorMethodNames = new HashMap<String, String>() {{
-        //put("++", "__incr");
-        //put("--", "__decr");
+    private List<String> operatorsToOverload = new ArrayList<String>() {{
+        add("~");
     }};
 
     private Map<String, Function<ITokenizer, String>> functionMap = new HashMap<String, Function<ITokenizer, String>>() {{
@@ -58,9 +57,9 @@ public class UniOperatorToken extends OperatorToken {
             text = functionMap.get(originalText).apply(tokenizer);
         } catch(NullPointerException e) {
         }
-        if(operatorMethodNames.get(tokenizer.getCurrent().getOriginalText()) == null) return;
+        if(!operatorsToOverload.contains(tokenizer.getCurrent().getOriginalText())) return;
 
-        tokenizer.getCurrent().setText("."+operatorMethodNames.get(tokenizer.getCurrent().getOriginalText())+"(");
+        tokenizer.getCurrent().setText("['"+tokenizer.getCurrent().getOriginalText()+"'](");
         tokenizer.insertAfter(BracketToken.getOperatorBracketClose());
     }
 }

@@ -1,7 +1,7 @@
 (function() {var Person;Person = Module.create(new AssocArray([
     (new String('name')), (new String('Person')),
     (new String('methods')), new AssocArray([
-        (new String('do')) , (function () {return              this[(new String('fields'))][(new String('a'))] .__mul( (new Number(2)) ).__add( arguments[0]
+        (new String('do')) , (function () {return              this[(new String('fields'))][(new String('a'))] ['*']( (new Number(2)) )['+']( arguments[0]
         )})
     ])
 ]));

@@ -1,4 +1,4 @@
-(function() {return (function () {return      (function () {return          (function () {return              (new Number(1)).__add((new Number(2))
+(function() {return (function () {return      (function () {return          (function () {return              (new Number(1))['+']((new Number(2))
         )})
     })
 })

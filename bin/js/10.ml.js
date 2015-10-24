@@ -1,2 +1,2 @@
-(function() {return (new Number(20)) .__mul( (new Number(12)) ).__add( (new Number(3)) .__div( (new Number(2)) )).__add( (new Number(134)) .__mul( ((new Number(31)) .__add( (new Number(2)).__div((new Number(3)))))
+(function() {return (new Number(20)) ['*']( (new Number(12)) )['+']( (new Number(3)) ['/']( (new Number(2)) ))['+']( (new Number(134)) ['*']( ((new Number(31)) ['+']( (new Number(2))['/']((new Number(3)))))
 ))}).exports(typeof module !== 'undefined' ? module : null)

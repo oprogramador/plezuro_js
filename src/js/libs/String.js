@@ -32,7 +32,7 @@ String.prototype.fromJson = function() {
     return JSON.parse(this);
 }
 
-String.prototype.__add = function(x) {
+String.prototype['+'] = function(x) {
     return this + x;
 }
 

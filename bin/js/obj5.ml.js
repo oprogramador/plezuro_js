@@ -5,15 +5,17 @@
         }),
         (new String('say')), (function () {return              (new String('I am '))['+'](this['fields']['age']
         )}),
-        (new String('older')), (function () {return              this['fields']['age']++
+        (new String('~')), (function () {return              this['fields']['age']++
+        }),
+        (new String('+')), (function () {return              this['fields']['age'] += arguments[0]
         })
     ])
 ]));
 var a;a = Animal.new();
 output = (new String(''));
 output += a.say();
-a.older();
+a['~']();
 output += a.say();
-a.older();
+a ['+']( (new Number(3)));
 output += a.say(); return  output
 }).exports(typeof module !== 'undefined' ? module : null)

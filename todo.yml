@@ -127,6 +127,8 @@ todo:
                   freeze: no
                   encode: no
                   methods: no
+                list:
+                  concat_operator: no
               permissions:
                 modify: no
                 only_info: no
@@ -144,6 +146,8 @@ todo:
         dot_equal: no
         identity_comparison: no
         joint: no
+        uni:
+            left: no
     serialization:
         json: no
     stdlib:

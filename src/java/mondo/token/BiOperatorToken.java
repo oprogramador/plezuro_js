@@ -118,26 +118,26 @@ public class BiOperatorToken extends OperatorToken {
         return functionMap;
     }
 
-    private Map<String, String> operatorMethodNames = new HashMap<String, String>() {{
-        put("<<", "__leftShift");
-        put(">>", "__rightShift");
-        put("|", "__or");
-        put("&", "__and");
-        put("=~", "__equiv");
-        put("+", "__add");
-        put("-", "__sub");
-        put("%", "__mod");
-        put("*", "__mul");
-        put("/", "__div");
-        put("^", "__pow");
-        put("..", "__range");
+    private List<String> operatorsToOverload = new ArrayList<String>() {{
+        add("<<");
+        add(">>");
+        add("|");
+        add("&");
+        add("=~");
+        add("+");
+        add("-");
+        add("%");
+        add("*");
+        add("/");
+        add("^");
+        add("..");
     }};
 
     protected void matchOperatorMethod(ITokenizer tokenizer) {
-        if(operatorMethodNames.get(tokenizer.getCurrent().getOriginalText()) == null) return;
+        if(!operatorsToOverload.contains(tokenizer.getCurrent().getOriginalText())) return;
 
         Integer myOrder = operatorOrder.get(tokenizer.getCurrent().getOriginalText());
-        tokenizer.getCurrent().setText("."+operatorMethodNames.get(tokenizer.getCurrent().getOriginalText())+"(");
+        tokenizer.getCurrent().setText("['"+tokenizer.getCurrent().getOriginalText()+"'](");
         for(Token token = tokenizer.getNextAtSameBracketLevel(); token != null; token = tokenizer.getNextAtSameBracketLevel()) {
             try {
                 if(token instanceof IClose || (token instanceof BiOperatorToken && operatorOrder.get(token.getOriginalText()) <= myOrder)) {

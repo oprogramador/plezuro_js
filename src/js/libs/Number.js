@@ -19,30 +19,26 @@ Number.prototype.tan = function() {
     return Math.tan(this);
 }
 
-Number.prototype.__add = function(x) {
+Number.prototype['+'] = function(x) {
     return this + x;
 }
 
-Number.prototype.__sub = function(x) {
+Number.prototype['-'] = function(x) {
     return this - x;
 }
 
-Number.prototype.__mul = function(x) {
+Number.prototype['*'] = function(x) {
     return this * x;
 }
 
-Number.prototype.__div = function(x) {
+Number.prototype['/'] = function(x) {
     return this / x;
 }
 
-Number.prototype.__mod = function(x) {
+Number.prototype['%'] = function(x) {
     return this % x;
 }
 
-Number.prototype.__pow = function(x) {
+Number.prototype['^'] = function(x) {
     return Math.pow(this, x);
-}
-
-Number.prototype.__incr = function() {
-    return this;
 }
