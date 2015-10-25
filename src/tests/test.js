@@ -186,4 +186,4 @@ a = '../../bin/js/obj5.ml.js'.import();
 assert.strictEqual(a, 'I am 0I am 1I am 4');
 
 a = '../../bin/js/obj6.ml.js'.import();
-assert.strictEqual(JSON.stringify(a), '[["Animal"],1,"a","I am 0"]');
+assert.strictEqual(JSON.stringify(a), '[["Animal","Dog"],1,"a","I am 0, dog"]');

@@ -23,9 +23,13 @@ $Animal = Module.create(%(
 $Dog = Module.create(%(
     'name': 'Dog',
     'parents': [Animal],
+    'namespace': Animals,
     'methods': %(
         'types': {
             ['a', 'b', 'c']
+        },
+        'say': {
+            Animal['methods']['say'](this)+', dog'
         }
     )
 ));
