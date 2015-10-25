@@ -9,6 +9,7 @@ todo:
         one_line_comment_on_return: yes
         declaration_in_return: yes
         composite_function_call: yes
+        method_call_and_square_bracket: no
     collections:
         associative_array: yes
         dictionary: yes
@@ -133,10 +134,12 @@ todo:
                 modify: no
                 only_info: no
             operators: no
+            parent_method_call: no
             static:
               constructor: no
               methods: no
             to_string: no
+            getter_setter: no
     native_binding:
         native_code: no
         check_for_null: no

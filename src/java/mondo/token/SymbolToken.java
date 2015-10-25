@@ -65,7 +65,7 @@ public class SymbolToken extends Token {
 
         tokenizer.resetToThis();
         Token next = tokenizer.getNextNotBlank();
-        if(next != null && !(next instanceof OperatorToken || next instanceof IClose)) return false;
+        if(next != null && !(next instanceof OperatorToken || next instanceof IClose || next instanceof SquareBracketOpenToken)) return false;
 
         tokenizer.resetToThis();
         tokenizer.insertAfter(BracketToken.getOperatorBracketOpen());
