@@ -23,7 +23,7 @@ package mondo.token;
 
 import java.io.IOException;
 
-public class ClassFieldToken extends Token {
+public class ObjectFieldToken extends Token {
     public boolean isBlank() {
         return false;
     }
@@ -33,11 +33,10 @@ public class ClassFieldToken extends Token {
     }
 
     public String getRegex() {
-        return "[A-Za-z_]+[A-Za-z_0-9]*::[A-Za-z_]+[A-Za-z_0-9]*";
+        return "@[A-Za-z_]+[A-Za-z_0-9]*";
     }
 
     protected void doConvert(ITokenizer tokenizer) {
-        String[] split = text.split("::");
-        setText(split[0]+"['staticFields']['"+split[1]+"']");
+        setText("this['fields']['"+text.substring(1)+"']");
     }
 }

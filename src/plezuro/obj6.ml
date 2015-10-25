@@ -9,7 +9,7 @@ $Animal = Module.create(%(
     ),
     'methods': %(
         'init': {
-            Animal['staticFields']['nr']++;
+            Animal::nr++;
             @age = 0
         },
         'say': {

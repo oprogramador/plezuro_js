@@ -9,7 +9,7 @@ var Animal;Animal = Module.create(new AssocArray([
     ]),
     (new String('methods')), new AssocArray([
         (new String('init')), (function () {
-            Animal[(new String('staticFields'))][(new String('nr'))]++; return              this['fields']['age'] = (new Number(0))
+            Animal['staticFields']['nr']++; return              this['fields']['age'] = (new Number(0))
         }),
         (new String('say')), (function () {return              (new String('I am '))['+'](this['fields']['age']
         )}),

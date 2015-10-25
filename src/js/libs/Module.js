@@ -9,6 +9,7 @@ function Module(params) {
         BasicModule.namespace = null;
         BasicModule.parents = [];
         BasicModule.staticFields = {};
+        BasicModule.staticMethods = {};
         BasicModule.methods = {
             init: function(params) {
                 this.fields = params;
