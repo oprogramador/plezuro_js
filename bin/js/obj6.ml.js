@@ -28,5 +28,5 @@ var Dog;Dog = Module.create(new AssocArray([
         )})
     ])
 ]));
-var dog;dog = Dog.new(); return  [Object.keys(Animals[(new String('staticFields'))]), Animal['staticFields']['nr'], dog.types()[(new Number(0))], dog.say()]
+var dog;dog = Dog.new(); return  [Animals['staticFields']['Dog'][(new String('className'))], Animals['staticFields']['Animal'][(new String('className'))], Animal['staticFields']['nr'], dog.types()[(new Number(0))], dog.say()]
 }).exports(typeof module !== 'undefined' ? module : null)

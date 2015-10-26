@@ -34,4 +34,4 @@ $Dog = Module.create(%(
     )
 ));
 $dog = Dog.new;
-[Object.keys(Animals['staticFields']), Animal::nr, dog.types[0], dog.say]
+[Animals::Dog['className'], Animals::Animal['className'], Animal::nr, dog.types[0], dog.say]

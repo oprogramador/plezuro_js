@@ -40,6 +40,21 @@ function Module(params) {
             bindToParents();
             bindToNamespace();
             createPrototype();
+            createStaticMethods();
+            createStaticFields();
+        }
+
+        function createStaticFields() {
+            that.fields = {}
+            for(var key in that.staticFields) {
+                that.fields[key] = that.staticFields[key];
+            }
+        }
+
+        function createStaticMethods() {
+            for(var key in that.staticMethods) {
+                that[key] = that.staticMethods[key];
+            }
         }
 
         function createPrototype() {
