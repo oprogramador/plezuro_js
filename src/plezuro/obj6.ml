@@ -29,9 +29,9 @@ $Dog = Module.create(%(
             ['a', 'b', 'c']
         },
         'say': {
-            Animal['methods']['say'](this)+', dog'
+            Animal::say(this)+', dog'
         }
     )
 ));
 $dog = Dog.new;
-[Object.keys(Animals['staticFields']), Animal['staticFields']['nr'], dog.types[0], dog.say]
+[Object.keys(Animals['staticFields']), Animal::nr, dog.types[0], dog.say]

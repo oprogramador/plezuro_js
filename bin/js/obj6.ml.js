@@ -24,9 +24,9 @@ var Dog;Dog = Module.create(new AssocArray([
     (new String('methods')), new AssocArray([
         (new String('types')), (function () {return              [(new String('a')), (new String('b')), (new String('c'))]
         }),
-        (new String('say')), (function () {return              Animal[(new String('methods'))][(new String('say'))].call(this)['+']((new String(', dog'))
+        (new String('say')), (function () {return              Animal['staticFields']['say'].call(this)['+']((new String(', dog'))
         )})
     ])
 ]));
-var dog;dog = Dog.new(); return  [Object.keys(Animals[(new String('staticFields'))]), Animal[(new String('staticFields'))][(new String('nr'))], dog.types()[(new Number(0))], dog.say()]
+var dog;dog = Dog.new(); return  [Object.keys(Animals[(new String('staticFields'))]), Animal['staticFields']['nr'], dog.types()[(new Number(0))], dog.say()]
 }).exports(typeof module !== 'undefined' ? module : null)

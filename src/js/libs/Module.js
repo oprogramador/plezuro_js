@@ -71,6 +71,18 @@ function Module(params) {
     }
 
     function addMethodsToModule (module) {
+        function mergeObject(a, b) {
+            var keys = Object.keys(b);
+            for(var i = 0; i < keys.length; i++) {
+                a[keys[i]] = b[keys[i]];
+            }
+            return a;
+        }
+        function constructStaticFields() {
+            mergeObject(module.staticFields, module.staticMethods);
+            mergeObject(module.staticFields, module.methods);
+        }
+        constructStaticFields();
         module.new = function() {
             var args = Array.prototype.slice.call(arguments);
             var that = this;
