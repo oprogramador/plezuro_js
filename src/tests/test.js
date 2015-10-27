@@ -190,3 +190,12 @@ assert.strictEqual(JSON.stringify(a), '["Dog","Animal",1,"a","I am 0, dog"]');
 
 a = '../../bin/js/obj7.ml.js'.import();
 assert.strictEqual(a, 1.1700876970971783);
+
+a = '../../bin/js/obj8.ml.js'.import();
+assert.strictEqual(a, 1.3108557450190208);
+
+a = '../../bin/js/obj9.ml.js'.import();
+assert.strictEqual(a, 'I am Adam\nI am Bob, my notes are: [5]\n');
+
+a = '../../bin/js/obj10.ml.js'.import();
+assert.strictEqual(a, 'I am Adam\nI am Bob, my notes are: [4]\nI am Clint\nI am working\nI am Dane, my notes are: []\nI am working\n');
