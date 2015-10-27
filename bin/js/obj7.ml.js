@@ -10,5 +10,5 @@
 ]));
 Machine.change();
 Machine.change();
-Machine.change(); return  Machine['staticFields']['state']
+Machine.change(); return  Machine['fields']['state']
 }).exports(typeof module !== 'undefined' ? module : null)

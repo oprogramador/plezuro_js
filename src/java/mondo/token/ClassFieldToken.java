@@ -38,6 +38,6 @@ public class ClassFieldToken extends Token {
 
     protected void doConvert(ITokenizer tokenizer) {
         String[] split = text.split("::");
-        setText(split[0]+"['staticFields']['"+split[1]+"']");
+        setText(split[0]+"['fields']['"+split[1]+"']");
     }
 }

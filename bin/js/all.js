@@ -30,13 +30,33 @@ function Module(params) {
 }
 
 (function() {
+    function mergeObject(a, b) {
+        var keys = Object.keys(b);
+        for(var i = 0; i < keys.length; i++) {
+            a[keys[i]] = b[keys[i]];
+        }
+        return a;
+    }
+
+    function mergeObjects() {
+        var result = {};
+        for(var i = 0; i < arguments.length; i++) {
+            var object = arguments[i];
+            var keys = Object.keys(object);
+            for(var k = 0; k < keys.length; k++) {
+                result[keys[k]] = object[keys[k]];
+            }
+        }
+        return result;
+    }
+
     (function() {
         var BasicModule = new Module;
 
         BasicModule.className = 'BasicModule';
         BasicModule.namespace = null;
         BasicModule.parents = [];
-        BasicModule.staticFields = {};
+        BasicModule.fields = {};
         BasicModule.staticMethods = {};
         BasicModule.methods = {
             init: function(params) {
@@ -55,7 +75,7 @@ function Module(params) {
             that.className = params.name;
             that.parents = params.parents || [Module.BasicModule];
             that.namespace = params.namespace || Module.BasicModule || that;
-            that.staticFields = params.staticFields || {};
+            that.fields = params.staticFields || {};
             that.staticMethods = params.staticMethods || {};
             that.methods = params.methods || {};
             if(!that.methods.init) that.methods.init = function(params) {
@@ -69,14 +89,8 @@ function Module(params) {
             bindToNamespace();
             createPrototype();
             createStaticMethods();
-            createStaticFields();
-        }
-
-        function createStaticFields() {
-            that.fields = {}
-            for(var key in that.staticFields) {
-                that.fields[key] = that.staticFields[key];
-            }
+            mergeObject(that.fields, that.staticMethods);
+            mergeObject(that.fields, that.methods);
         }
 
         function createStaticMethods() {
@@ -107,25 +121,13 @@ function Module(params) {
         }
 
         function bindToNamespace() {
-            that.namespace.staticFields[that.className] = that;
+            that.namespace.fields[that.className] = that;
         }
 
         init();
     }
 
     function addMethodsToModule (module) {
-        function mergeObject(a, b) {
-            var keys = Object.keys(b);
-            for(var i = 0; i < keys.length; i++) {
-                a[keys[i]] = b[keys[i]];
-            }
-            return a;
-        }
-        function constructStaticFields() {
-            mergeObject(module.staticFields, module.staticMethods);
-            mergeObject(module.staticFields, module.methods);
-        }
-        constructStaticFields();
         module.new = function() {
             var args = Array.prototype.slice.call(arguments);
             var that = this;

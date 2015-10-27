@@ -9,7 +9,7 @@ var Animal;Animal = Module.create(new AssocArray([
     ]),
     (new String('methods')), new AssocArray([
         (new String('init')), (function () {
-            Animal['staticFields']['nr']++; return              this['fields']['age'] = (new Number(0))
+            Animal['fields']['nr']++; return              this['fields']['age'] = (new Number(0))
         }),
         (new String('say')), (function () {return              (new String('I am '))['+'](this['fields']['age']
         )}),
@@ -24,9 +24,9 @@ var Dog;Dog = Module.create(new AssocArray([
     (new String('methods')), new AssocArray([
         (new String('types')), (function () {return              [(new String('a')), (new String('b')), (new String('c'))]
         }),
-        (new String('say')), (function () {return              Animal['staticFields']['say'].call(this)['+']((new String(', dog'))
+        (new String('say')), (function () {return              Animal['fields']['say'].call(this)['+']((new String(', dog'))
         )})
     ])
 ]));
-var dog;dog = Dog.new(); return  [Animals['staticFields']['Dog'][(new String('className'))], Animals['staticFields']['Animal'][(new String('className'))], Animal['staticFields']['nr'], dog.types()[(new Number(0))], dog.say()]
+var dog;dog = Dog.new(); return  [Animals['fields']['Dog'][(new String('className'))], Animals['fields']['Animal'][(new String('className'))], Animal['fields']['nr'], dog.types()[(new Number(0))], dog.say()]
 }).exports(typeof module !== 'undefined' ? module : null)
