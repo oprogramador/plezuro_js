@@ -1,0 +1,1 @@
+Search.setIndex({envversion:46,filenames:["index"],objects:{},objnames:{},objtypes:{},terms:{"g\u0142\u00f3wna":0,"j\u0119zyk":0,"modu\u0142\u00f3w":0,blabla:0,content:0,first:0,indek:0,javascripta:0,jest:0,kompilowalna:0,skryptowi:0,test:0,thi:0,wersja:0,wyszukiwani:0},titles:["Witamy w dokumentacji Plezuro"],titleterms:{dokumentacji:0,indeksi:0,plezuro:0,tablic:0,witami:0}})

@@ -1,0 +1,1 @@
+Search.setIndex({envversion:46,filenames:["index"],objects:{},objnames:{},objtypes:{},terms:{blabla:0,compil:0,content:0,first:0,index:0,javascript:0,languag:0,main:0,modul:0,page:0,script:0,search:0,test:0,thi:0,version:0},titles:["Welcome to Plezuro&#8217;s documentation!"],titleterms:{document:0,indic:0,plezuro:0,tabl:0,welcom:0}})

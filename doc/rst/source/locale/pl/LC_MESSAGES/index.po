@@ -13,28 +13,47 @@ msgstr ""
 
 #: ../../source/index.rst:7
 msgid "Welcome to Plezuro's documentation!"
-msgstr ""
+msgstr "Witamy w dokumentacji Plezuro"
 
 #: ../../source/index.rst:9
 msgid "Plezuro is a scripting language."
 msgstr "Plezuro to język skryptowy"
 
-#: ../../source/index.rst:11
+#: ../../source/index.rst:13
 msgid "Contents:"
 msgstr ""
 
-#: ../../source/index.rst:19
+#: ../../source/index.rst:33
 msgid "Indices and tables"
-msgstr ""
+msgstr "Indeksy i tablice"
 
-#: ../../source/index.rst:21
+#: ../../source/index.rst:35
 msgid ":ref:`genindex`"
 msgstr ""
 
-#: ../../source/index.rst:22
+#: ../../source/index.rst:36
 msgid ":ref:`modindex`"
 msgstr ""
 
-#: ../../source/index.rst:23
+#: ../../source/index.rst:37
 msgid ":ref:`search`"
 msgstr ""
+
+#: ../../source/index.rst:15
+msgid "*test*"
+msgstr ""
+
+#: ../../source/index.rst:17
+msgid "**blabla**"
+msgstr ""
+
+#: ../../source/index.rst:0
+msgid "1.ml"
+msgstr ""
+
+#: ../../source/index.rst:11
+msgid "The main version is compiled to Javascript."
+msgstr "Główna wersja jest kompilowalna do Javascripta."
+
+#~ msgid "Its main version is compiled to Javascript."
+#~ msgstr "Główna wersja jest kompilowalna do Javascripta."

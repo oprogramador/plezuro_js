@@ -1,0 +1,1 @@
+throw InvalidTokenException.create('mondo__invalidToken__ValueAfterValueException', '/home/pierre/pierre_copy/programming/java/plezuro_js/bin/java/../../src/plezuro18.plez', 1, 3, 'class mondo.invalidToken.ValueAfterValueException in /home/pierre/pierre_copy/programming/java/plezuro_js/bin/java/../../src/plezuro18.plez at line 1, position 3');

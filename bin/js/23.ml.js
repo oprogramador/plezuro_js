@@ -1,1 +1,0 @@
-throw InvalidTokenException.create('mondo__invalidToken__OperatorBeforeBracketCloseException', '/home/pierre/pierre_copy/programming/java/plezuro_js/bin/java/../../src/plezuro23.ml', 1, 12, 'class mondo.invalidToken.OperatorBeforeBracketCloseException in /home/pierre/pierre_copy/programming/java/plezuro_js/bin/java/../../src/plezuro23.ml at line 1, position 12');
