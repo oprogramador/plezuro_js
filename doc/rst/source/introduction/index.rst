@@ -5,7 +5,7 @@ Introduction
 
 This is introduction.
 
-.. class:: myclass_a
+.. rst-class:: myclass-a
 
     ghjkl
 
