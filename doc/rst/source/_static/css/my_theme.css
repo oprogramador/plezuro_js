@@ -1,0 +1,17 @@
+@import url("theme.css");
+
+.wy-side-nav-search {
+    background-color: #a0a0ff;
+}
+
+.wy-side-nav-search > a {
+    font-size: 0;
+}
+
+img.logo {
+    width: 100% !important;
+}
+
+.myclass_a {
+    background-color: yellow;
+}

@@ -6,33 +6,20 @@
 Welcome to Plezuro's documentation!
 ===================================
 
+.. image:: _static/img/logo.png
+
 Plezuro is a scripting language.
 
 The main version is compiled to Javascript.
 
-Contents:
-
+.. highlight:: ruby
 
 .. literalinclude:: ../../../src/plezuro/doc/basic.plez
-  :language: ruby
 
-:ref:`introduction`
-
-introduction_
 
 .. toctree::
-   :maxdepth: 2
+  :glob:
+  :titlesonly:
+  :maxdepth: 1
 
-   introduction/index
-   objective
-   examples
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+  */*
