@@ -154,12 +154,9 @@ todo:
         string:
             - interpolation: no
     tests:
-        dependent_on_user_path: no
+        independent_from_user_path: yes
         iron_plezuro_scripts: no
         remote: no
-        unit_test:
-          scripts: yes
-          classes: no
     todo_import:
       iron_plezuro: no
     types:

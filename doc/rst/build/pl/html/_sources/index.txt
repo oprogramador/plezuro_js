@@ -12,20 +12,20 @@ The main version is compiled to Javascript.
 
 Contents:
 
-*test*
 
-**blabla**
+.. literalinclude:: ../../../src/plezuro/doc/basic.plez
+  :language: ruby
 
-.. code-block:: ruby
-   :caption: 1.ml
-   :name: 1.ml
+:ref:`introduction`
 
-   $f = {this + first * 2};
-   f(2, f(5, 9))
-
+introduction_
 
 .. toctree::
    :maxdepth: 2
+
+   introduction/index
+   objective
+   examples
 
 
 
