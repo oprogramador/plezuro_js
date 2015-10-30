@@ -12,8 +12,6 @@ Plezuro is a scripting language.
 
 The main version is compiled to Javascript.
 
-.. highlight:: ruby
-
 .. literalinclude:: ../../../src/plezuro/doc/basic.plez
 
 

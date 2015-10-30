@@ -1,0 +1,11 @@
+// number
+$a = 34;
+
+// string
+$b = 'abc';
+
+// list
+$c = [a, b];
+
+// associative array
+$d = %('a': a, 'b': b)

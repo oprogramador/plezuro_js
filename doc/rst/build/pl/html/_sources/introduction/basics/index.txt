@@ -1,4 +1,10 @@
 Basics
 ======
 
-This is basics.
+
+.. toctree::
+  :glob:
+  :titlesonly:
+  :maxdepth: 1
+
+  */*
