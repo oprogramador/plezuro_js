@@ -1,3 +1,4 @@
 *.swp
 *.swo
+doc/rst/build
 NERD_tree_*

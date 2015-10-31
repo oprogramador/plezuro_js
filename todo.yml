@@ -37,7 +37,9 @@ todo:
         if: yes
     doc:
         parts:
-            tutorial: no
+            tutorial:
+                rules: yes
+                installation: no
             specification: no
             dev_specification: no
             contributing_to_doc: no

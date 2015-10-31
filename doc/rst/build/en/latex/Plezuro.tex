@@ -19,7 +19,7 @@
 
 
 \title{Plezuro}
-\date{October 30, 2015}
+\date{November 01, 2015}
 \release{1.0}
 \author{Piotr Sroczkowski}
 \newcommand{\sphinxlogo}{}
@@ -212,6 +212,21 @@ mm
 \section{Basics}
 \label{introduction/basics/index:basics}\label{introduction/basics/index::doc}
 
+\subsection{Conditions}
+\label{introduction/basics/conditions/index:conditions}\label{introduction/basics/conditions/index::doc}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nv+vg}{\PYGZdl{}x} \PYG{o}{=} \PYG{l+m+mi}{21}\PYG{p}{;}
+\PYG{p}{\PYGZob{}}\PYG{n}{x} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{}}\PYG{o}{.}\PYG{n}{if}\PYG{p}{(}\PYG{p}{\PYGZob{}}
+  \PYG{n}{x}\PYG{o}{+}\PYG{o}{+}
+\PYG{p}{\PYGZcb{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{elif}\PYG{p}{(}\PYG{p}{\PYGZob{}}\PYG{n}{x} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{9}\PYG{p}{\PYGZcb{}}\PYG{p}{,} \PYG{p}{\PYGZob{}}
+  \PYG{n}{x}\PYG{o}{\PYGZhy{}}\PYG{o}{\PYGZhy{}}
+\PYG{p}{\PYGZcb{}}\PYG{p}{)}\PYG{o}{.}\PYG{n}{else}\PYG{p}{(}\PYG{p}{\PYGZob{}}
+  \PYG{n}{x} \PYG{o}{*=} \PYG{l+m+mi}{2}
+\PYG{p}{\PYGZcb{}}\PYG{p}{)}\PYG{p}{;}
+\PYG{n}{x}
+\end{Verbatim}
+
+
 \subsection{Variables}
 \label{introduction/basics/variables/index:variables}\label{introduction/basics/variables/index::doc}
 Before we can use any variable, we have to declare it. It is pretty simple, just write the name of the variable and the dollar sign (`\$') immediately before it.
@@ -232,6 +247,51 @@ In Plezuro there is dynamic typing like in other dynamic languages such as Pytho
 \PYG{l+s+sr}{/}\PYG{l+s+sr}{/} \PYG{n}{associative} \PYG{n}{array}
 \PYG{n+nv+vg}{\PYGZdl{}d} \PYG{o}{=} \PYG{l+s+sx}{\PYGZpc{}(}\PYG{l+s+sx}{\PYGZsq{}a\PYGZsq{}: a, \PYGZsq{}b\PYGZsq{}: b}\PYG{l+s+sx}{)}
 \end{Verbatim}
+
+
+\section{Origin}
+\label{introduction/origin/index:origin}\label{introduction/origin/index::doc}
+Where does Plezuro come from? Basically its author was not fully satisfied with any existing programming language.
+So he thought about the inventing of a new one. The name comes from the Esperanto and means `pleasure'.
+
+
+\section{Basic rules}
+\label{introduction/rules/index::doc}\label{introduction/rules/index:basic-rules}
+Plezuro is an imperative, object-oriented, functional, procedural and reflective programming language.
+
+The main ideas are:
+\begin{enumerate}
+\item {} 
+The code should be possibly short (as long as it is human readable).
+
+\item {} 
+Very simple syntax.
+
+\item {} 
+The code should be easy to read for a beginner programmer.
+
+\item {} 
+The power of the language should be based on the standard library, not its syntax.
+
+\item {} 
+Explicit is always better than implicit.
+
+\item {} 
+Everything is a variable.
+
+\item {} 
+Everything is an object.
+
+\item {} 
+Multiple inheritance.
+
+\item {} 
+There is no difference between a module, a class and a namespace.
+
+\item {} 
+No annotations and other additional syntax - everything is based on the basic syntax of the language.
+
+\end{enumerate}
 
 
 
