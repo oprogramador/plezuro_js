@@ -1,0 +1,4 @@
+$f = {
+  this * 2 + first + second / third
+};
+f(1, 2, 3, 4)

@@ -15,10 +15,6 @@ msgstr ""
 msgid "Basics"
 msgstr "Podstawy"
 
-#: ../../source/introduction/basics/index.rst:4
-msgid "This is basics."
-msgstr ""
-
 #: ../../source/introduction/index.rst:4
 msgid "Introduction"
 msgstr "Wprowadzenie"
@@ -26,3 +22,183 @@ msgstr "Wprowadzenie"
 #: ../../source/introduction/index.rst:6
 msgid "This is introduction."
 msgstr ""
+
+#: ../../source/introduction/basics/conditions/index.rst:2
+msgid "Conditions"
+msgstr "Instrukcje warunkowe"
+
+#: ../../source/introduction/basics/conditions/index.rst:4
+msgid ""
+"At first, you should write the condition (function that return a boolean "
+"value). Then write '.if' and in brackets and curlies write the expression "
+"that will be executed when this expression is true. It is just a method of "
+"the function type. Then you can use methods 'elif' and 'else' which are not "
+"required."
+msgstr ""
+
+#: ../../source/introduction/basics/loops/index.rst:2
+msgid "Loops"
+msgstr "Pętle"
+
+#: ../../source/introduction/basics/loops/index.rst:4
+msgid ""
+"Loops look like conditional expressions. You use a method of the function "
+"type."
+msgstr ""
+
+#: ../../source/introduction/basics/variables/index.rst:2
+msgid "Variables"
+msgstr "Zmienne"
+
+#: ../../source/introduction/basics/variables/index.rst:4
+msgid ""
+"Before we can use any variable, we have to declare it. It is pretty simple, "
+"just write the name of the variable and the dollar sign ('$') immediately "
+"before it. In next occurrences of a variable, you should write it without "
+"the dollar sign."
+msgstr ""
+
+#: ../../source/introduction/basics/variables/index.rst:7
+msgid ""
+"In Plezuro there is dynamic typing like in other dynamic languages such as "
+"Python, Ruby or Javascript. Also everything is a variable (including "
+"functions and modules)."
+msgstr ""
+
+#: ../../source/introduction/index.rst:10
+msgid "ghjkl"
+msgstr ""
+
+#: ../../source/introduction/index.rst:12
+msgid "blabla"
+msgstr ""
+
+#: ../../source/introduction/index.rst:14
+msgid "ggggg"
+msgstr ""
+
+#: ../../source/introduction/index.rst:15
+msgid "hhh"
+msgstr ""
+
+#: ../../source/introduction/index.rst:17
+#: ../../source/introduction/index.rst:27
+msgid "oo"
+msgstr ""
+
+#: ../../source/introduction/index.rst:18
+#: ../../source/introduction/index.rst:28
+msgid "kk"
+msgstr ""
+
+#: ../../source/introduction/index.rst:19
+msgid "dada"
+msgstr ""
+
+#: ../../source/introduction/index.rst:21
+msgid "rr"
+msgstr ""
+
+#: ../../source/introduction/index.rst:22
+msgid "nothing"
+msgstr ""
+
+#: ../../source/introduction/index.rst:25
+msgid "A"
+msgstr ""
+
+#: ../../source/introduction/index.rst:25
+msgid "B"
+msgstr ""
+
+#: ../../source/introduction/index.rst:25
+msgid "C"
+msgstr ""
+
+#: ../../source/introduction/index.rst:27
+msgid "hh"
+msgstr ""
+
+#: ../../source/introduction/index.rst:27
+msgid "uu"
+msgstr ""
+
+#: ../../source/introduction/index.rst:28
+msgid "ll"
+msgstr ""
+
+#: ../../source/introduction/index.rst:28
+msgid "mm"
+msgstr ""
+
+#: ../../source/introduction/origin/index.rst:2
+msgid "Origin"
+msgstr ""
+
+#: ../../source/introduction/origin/index.rst:4
+msgid ""
+"Where does Plezuro come from? Basically its author was not fully satisfied "
+"with any existing programming language. So he thought about the inventing of"
+" a new one. The name comes from the Esperanto and means 'pleasure'."
+msgstr ""
+
+#: ../../source/introduction/rules/index.rst:2
+msgid "Basic rules"
+msgstr "Podstawowe zasady"
+
+#: ../../source/introduction/rules/index.rst:4
+msgid ""
+"Plezuro is an imperative, object-oriented, functional, procedural and "
+"reflective programming language."
+msgstr ""
+
+#: ../../source/introduction/rules/index.rst:6
+msgid "The main ideas are:"
+msgstr "Główne założenia są następujące:"
+
+#: ../../source/introduction/rules/index.rst:8
+msgid "The code should be possibly short (as long as it is human readable)."
+msgstr ""
+
+#: ../../source/introduction/rules/index.rst:10
+msgid "Very simple syntax."
+msgstr ""
+
+#: ../../source/introduction/rules/index.rst:12
+msgid "The code should be easy to read for a beginner programmer."
+msgstr ""
+
+#: ../../source/introduction/rules/index.rst:14
+msgid ""
+"The power of the language should be based on the standard library, not its "
+"syntax."
+msgstr ""
+
+#: ../../source/introduction/rules/index.rst:16
+msgid "Explicit is always better than implicit."
+msgstr ""
+
+#: ../../source/introduction/rules/index.rst:18
+msgid "Everything is a variable."
+msgstr ""
+
+#: ../../source/introduction/rules/index.rst:20
+msgid "Everything is an object."
+msgstr ""
+
+#: ../../source/introduction/rules/index.rst:22
+msgid "Multiple inheritance."
+msgstr ""
+
+#: ../../source/introduction/rules/index.rst:24
+msgid "There is no difference between a module, a class and a namespace."
+msgstr ""
+
+#: ../../source/introduction/rules/index.rst:26
+msgid ""
+"No annotations and other additional syntax - everything is based on the "
+"basic syntax of the language."
+msgstr ""
+
+#~ msgid "This is basics."
+#~ msgstr ""

@@ -15,17 +15,16 @@ msgstr ""
 msgid "Welcome to Plezuro's documentation!"
 msgstr "Witamy w dokumentacji Plezuro"
 
-#: ../../source/index.rst:9
+#: ../../source/index.rst:11
 msgid "Plezuro is a scripting language."
 msgstr "Plezuro to język skryptowy"
 
 #: ../../source/index.rst:13
-msgid "Contents:"
-msgstr ""
-
-#: ../../source/index.rst:11
 msgid "The main version is compiled to Javascript."
 msgstr "Główna wersja jest kompilowalna do Javascripta."
+
+#~ msgid "Contents:"
+#~ msgstr ""
 
 #~ msgid "Indices and tables"
 #~ msgstr "Indeksy i tablice"
