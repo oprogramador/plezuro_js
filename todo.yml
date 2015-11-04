@@ -103,13 +103,12 @@ todo:
         node: yes
         script_args: yes
         web: no
+        relative_path: no
     loop:
         iterate_with_key: no
     magick_constants: yes
     method:
         call_js_method: yes
-        without_brackets: no
-        without_closing: yes
     module:
         static:
             input_isolation: no
@@ -165,3 +164,8 @@ todo:
     types:
       no_undefined: no
       regex: no
+    highlighting:
+        IDE:
+            vim: no
+        docs:
+            sphinx: no

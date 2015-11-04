@@ -1,0 +1,5 @@
+$x = 15;
+x = x.sin.cos.tan;
+x += [x, x, x].length;
+x
+

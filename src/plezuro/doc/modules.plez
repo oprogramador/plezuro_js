@@ -1,0 +1,14 @@
+$Person = Module.create(%(
+    'name': 'Person',
+    'methods': %(
+        'do' : {
+            @a * 2 + first
+        }
+    )
+));
+$Student = Module.create(%(
+    'name': 'Student',
+    'parents': [Person]
+));
+$s = Student.new(%('a': 14));
+s.do(5)
