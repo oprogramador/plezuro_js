@@ -12,7 +12,7 @@ and so on.
 .. literalinclude:: ../../../../../../src/plezuro/doc/loop.plez
 
 Another maybe simpler loop is 'do'. You write the conditional function. The execution
-of the loop depend on the value returned by this function. So it iterates as long as the
+of the loop depends on the value returned by this function. So it iterates as long as the
 function returns true.
 
 .. literalinclude:: ../../../../../../src/plezuro/doc/do.plez
