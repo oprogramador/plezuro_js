@@ -13,3 +13,6 @@ because you can add, change and remove methods at the runtime.
   objects_and_methods/index
   constructor/index
   operators/index
+  inheritance/index
+  static_fields_and_methods/index
+  dynamic_module_change/index

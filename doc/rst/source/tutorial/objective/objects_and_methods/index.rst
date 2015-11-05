@@ -22,4 +22,8 @@ To call a method from another method, you write the 'this' keyword, the dot ('.'
 method name. Like in calling methods from outer objects you can omit the bracket when it is
 no arguments.
 
+Be aware that when you have an inner function (ex. a loop), the keyword 'this' has a different meaning.
+It is the zero argument of the inner function. In the same way the object fields
+work.
+
 .. literalinclude:: ../../../../../../src/plezuro/doc/objects_and_methods.plez

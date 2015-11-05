@@ -7,10 +7,12 @@ $Vector = Module.create(%(
         '+': {
             $result = [];
             $i = 0;
+            $a = this;
+            $b = first;
             {
-                result.push(@list[i] + first.list[i]);
+                result.push(a.list[i] + b.list[i]);
                 i++;
-                i < @list.len
+                i < a.list.len
             }.do;
             Vector.new(%('list': result))
         }

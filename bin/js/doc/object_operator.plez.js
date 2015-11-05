@@ -6,9 +6,11 @@
         (new String('+')), (function () {
             var result;result = [];
             var i;i = (new Number(0));
+            var a;a = this;
+            var b;b = arguments[0];
             (function () {
-                result.push(this['fields']['list'][i] ['+']( arguments[0].list()[i]));
-                i++; return                  i < this['fields']['list'].len()
+                result.push(a.list()[i] ['+']( b.list()[i]));
+                i++; return                  i < a.list().len()
             }).do(); return              Vector.new(new AssocArray([(new String('list')), result]))
         })
     ])
