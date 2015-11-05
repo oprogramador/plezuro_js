@@ -11,7 +11,7 @@ List
 The most basic one is the list. To create a list, you use square brackets ('[', ']'),
 the elements are separated by a comma (',').
 It can contain objects of different types (like list in Python, Ruby, Javascript
-or PHP as well List<Object> in Java or List<object> in c♯). It implies that a list
+or PHP as well List<Object> in Java or List<object> in csharp). It implies that a list
 can also contain other lists. Moreover a list can contain a self-reference (it
 means one of its elements is a pointer to this list) because the lists are passed
 by reference to functions and to collections.
@@ -34,7 +34,7 @@ Dictionary
 ==========
 
 Basically it is a set of pairs key-value.
-It is like dictionary in Python, hash in Ruby, Dictionary<object, object> in c♯ or
+It is like dictionary in Python, hash in Ruby, Dictionary<object, object> in csharp or
 Map<Object, Object> in Java. However there is a notably difference between the Plezuro
 dictionary and associative array in PHP or object in Javascript because in the
 dictionary the order of the items does not matter and generally it is stored

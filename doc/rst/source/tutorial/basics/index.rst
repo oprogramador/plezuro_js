@@ -11,6 +11,7 @@ Basics
   functions/index
   builtin_methods/index
   collections/index
+  operators/index
   conditions/index
   loops/index
   import/index

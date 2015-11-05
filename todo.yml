@@ -48,6 +48,7 @@ todo:
             web: no
             md: no
         ortographic_check: no
+        unicode: no
     easy_multiple_callback: no
     error_checking:
         after_bracket_close_only_operator_or_bracket_close:
