@@ -461,6 +461,9 @@ String.prototype['+'] = function(x) {
 String.prototype.len = function(x) {
     return this.length;
 }
+Set.prototype.len = function() {
+    return this.length;
+}
 Error.prototype.throw = function() {
     throw this;
 }

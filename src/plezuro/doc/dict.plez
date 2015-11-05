@@ -1,0 +1,7 @@
+$x = 'abc';
+$dict = #(
+  x: [4, 5],
+  'def': 49,
+  'ghj': 'ooo'
+);
+dict.get(x)
