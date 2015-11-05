@@ -213,6 +213,10 @@ htmlhelp_basename = 'Plezurodoc'
 
 latex_elements = {
     'babel': '\\usepackage[polish]{babel}',
+    'preamble': u'''
+    \\usepackage{newunicodechar}
+    \\newunicodechar{♯}{$\sharp$}
+    '''
 }
 
 # Grouping the document tree into LaTeX files. List of tuples

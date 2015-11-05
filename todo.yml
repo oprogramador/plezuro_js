@@ -49,7 +49,7 @@ todo:
             web: no
             md: no
         ortographic_check: no
-        unicode: no
+        unicode: yes
         edit_on_github: no
     easy_multiple_callback: no
     error_checking:
