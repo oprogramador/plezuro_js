@@ -13,6 +13,9 @@ close. So after the last element of the list you cannot put the comma and after
 the last statement of the function you cannot put the semicolon. In such a case
 it would be a syntax error.
 
+The action of an operator depends of the type of the first argument. Is behaves in
+the same way like the method call.
+
 .. literalinclude:: ../../../../../../src/plezuro/doc/operators.plez
 
 

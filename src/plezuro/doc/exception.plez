@@ -1,0 +1,13 @@
+$x;
+$y;
+{
+    x = wfwfwfe
+}.try({
+    x = this['message']
+});
+{
+    Error.new('an error').throw
+}.try({
+    y = this['message']
+});
+[x, y]

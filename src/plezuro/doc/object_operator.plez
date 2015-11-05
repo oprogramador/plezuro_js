@@ -1,0 +1,21 @@
+$Vector = Module.create(%(
+    'name': 'Vector',
+    'methods': %(
+        'list': {
+            @list
+        },
+        '+': {
+            $result = [];
+            $i = 0;
+            {
+                result.push(@list[i] + first.list[i]);
+                i++;
+                i < @list.len
+            }.do;
+            Vector.new(%('list': result))
+        }
+    )
+));
+$a = Vector.new(%('list': [3, 4, 9]));
+$b = Vector.new(%('list': [6, 0, 9]));
+a+b

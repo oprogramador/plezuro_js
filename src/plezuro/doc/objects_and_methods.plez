@@ -1,0 +1,17 @@
+$Person = Module.create(%(
+    'name': 'Person',
+    'methods': %(
+        'say' : {
+            'I am '+@name+', '+@age+' years old'
+        },
+        'long_say': {
+            'Good morning, '+this.say
+        },
+        'older': {
+            @age++
+        }
+    )
+));
+$adam = Person.new(%('name': 'Adam', 'age': 20));
+adam.older;
+[adam.say, adam.long_say]

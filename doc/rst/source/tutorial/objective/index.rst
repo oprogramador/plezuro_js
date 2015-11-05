@@ -10,3 +10,6 @@ because you can add, change and remove methods at the runtime.
   :maxdepth: 1
 
   modules/index
+  objects_and_methods/index
+  constructor/index
+  operators/index

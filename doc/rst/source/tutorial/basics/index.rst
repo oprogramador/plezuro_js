@@ -18,3 +18,4 @@ Basics
   import/index
   random/index
   magick_constants/index
+  exceptions/index

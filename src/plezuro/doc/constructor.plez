@@ -1,0 +1,14 @@
+$Person = Module.create(%(
+  'name': 'Person',
+  'methods': %(
+      'init': {
+          @age = 0;
+          @name = first
+      },
+      'say': {
+          'I am '+@name+', '+@age+' years old'
+      }
+  )
+));
+$adam = Person.new('Adam');
+adam.say
