@@ -42,15 +42,15 @@ todo:
                 rules: yes
                 installation: no
             specification: no
+            std_lib: no
             dev_specification: no
             contributing_to_doc: no
-        versions:
-            pdf: no
-            web: no
-            md: no
         ortographic_check: no
         unicode: yes
         edit_on_github: no
+        webpage:
+            docs: yes
+            jar: no
     easy_multiple_callback: no
     error_checking:
         after_bracket_close_only_operator_or_bracket_close:

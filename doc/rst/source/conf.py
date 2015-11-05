@@ -16,6 +16,8 @@ import sys
 import os
 import shlex
 
+sys.path.insert(0, os.path.abspath('_ext'))
+
 locale_dirs = ['locale/']
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -33,7 +35,11 @@ locale_dirs = ['locale/']
 # ones.
 extensions = [
     'sphinx.ext.ifconfig',
+    'edit_on_github',
 ]
+
+edit_on_github_project = 'oprogramador/plezuro_js'
+edit_on_github_branch = 'master'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -116,6 +122,7 @@ todo_include_todos = False
 html_theme = 'sphinx_rtd_theme'
 html_style = 'css/my_theme.css'
 html_logo = '_static/img/logo.png'
+latex_logo = '_static/img/logo.png'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -134,7 +141,6 @@ html_logo = '_static/img/logo.png'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -211,6 +217,8 @@ htmlhelp_basename = 'Plezurodoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
+today_fmt = '%Y-%m-%d'
+
 latex_elements = {
     'babel': '\\usepackage[polish]{babel}',
     'preamble': u'''
@@ -229,7 +237,6 @@ latex_documents = [
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.
