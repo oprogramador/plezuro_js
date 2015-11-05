@@ -1,0 +1,6 @@
+$a = rand;
+$b = rand * a + rand;
+$f = {
+  rand * this
+};
+[a, b, f(20), rand]

@@ -5,6 +5,7 @@ todo:
         web: no
     bugs:
         method_call_and_square_bracket: yes
+        at_the_end_of_script_multiline_comment_and_value: no
     collections:
         associative_array: yes
         dictionary: yes
@@ -49,6 +50,7 @@ todo:
             md: no
         ortographic_check: no
         unicode: no
+        edit_on_github: no
     easy_multiple_callback: no
     error_checking:
         after_bracket_close_only_operator_or_bracket_close:

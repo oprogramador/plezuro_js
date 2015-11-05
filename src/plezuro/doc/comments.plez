@@ -1,0 +1,7 @@
+$x = 2 + // This is a comment
+21 * 3;
+/* Another
+  comment
+*/
+x++;
+x
