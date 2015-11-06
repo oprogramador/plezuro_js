@@ -179,6 +179,15 @@ assert.strictEqual(a, 24);
 a = '../../bin/js/tests/35.plez.js'.import();
 assert.strictEqual(a, 5);
 
+try {
+    a = '../../bin/js/tests/36.plez.js'.import();
+    assert.strictEqual(a, 5);
+} catch(e) {
+   assert.strictEqual(e.constructor.name, 'mondo__invalidToken__NonExistentTokenException');
+   assert.strictEqual(e.getLineNr(), 0);
+   assert.strictEqual(e.getPosition(), 0);
+}
+
 a = '../../bin/js/tests/obj4.plez.js'.import();
 assert.strictEqual(a, 'I am 0I am 1I am 2');
 

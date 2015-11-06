@@ -7,7 +7,6 @@ Tutorial
   :titlesonly:
   :maxdepth: 1
 
-  origin/index
-  rules/index
+  about/index
   basics/index
   objective/index
