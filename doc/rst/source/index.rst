@@ -20,4 +20,5 @@ The main version is compiled to Javascript.
   :titlesonly:
   :maxdepth: 1
 
-  */*
+  tutorial/index
+  specification/index

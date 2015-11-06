@@ -21,3 +21,6 @@ is an automated support for all the Javascript libraries because you can use all
 the global variables from the Javascript. A variable cannot contain the dollar
 sign in its name in contrary to the Javascript so using jQuery instead of a
 dollar sign you should use the variable jQuery or eventually ```eval('$')```.
+
+Basic usage of the compiler:
+```plezuro.jar input.plez output.plez.js```
