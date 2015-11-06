@@ -1,2 +1,0 @@
-(function() {var a;a = new Set([(new Number(3)), (new Number(4)), [(new Number(2)), (new Number(9))], new Set([(new String('ab')), (new Number(90))])]); return  a.len()
-}).exports(typeof module !== 'undefined' ? module : null)

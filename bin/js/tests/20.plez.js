@@ -1,1 +1,0 @@
-throw InvalidTokenException.create('mondo__invalidToken__BracketStackException', '/home/pierre/pierre_copy/programming/java/plezuro_js/bin/java/../../src/plezuro/tests20.plez', 0, 11, 'class mondo.invalidToken.BracketStackException in /home/pierre/pierre_copy/programming/java/plezuro_js/bin/java/../../src/plezuro/tests20.plez at line 0, position 11, message: unexpected ]');

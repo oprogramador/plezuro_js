@@ -1,2 +1,0 @@
-(function() {return (new Number(20)) ['*']( (new Number(12)) )['+']( (new Number(3)) ['/']( (new Number(2)) ))['+']( (new Number(134)) ['*']( ((new Number(31)) ['+']( (new Number(2))['/']((new Number(3)))))
-))}).exports(typeof module !== 'undefined' ? module : null)

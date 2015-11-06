@@ -1,2 +1,0 @@
-(function() {(((new String('alaasd')) ['+']( (new String('op')) )['+']( (new Number(31)))).len() ['+']( [(new Number(3)), (new Number(412)), (new Number(2))].len())).dumpl(); return  new Null()
-}).exports(typeof module !== 'undefined' ? module : null)

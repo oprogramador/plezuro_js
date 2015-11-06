@@ -1,2 +1,0 @@
-(function() {return [([this].concat(Array.prototype.slice.call(arguments))), arguments[0] ['+']( arguments[1] ['*']( (new Number(2)))), arguments[0] ['/']( arguments[1] )['+']( arguments[2])]
-}).exports(typeof module !== 'undefined' ? module : null)

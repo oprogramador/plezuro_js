@@ -1,1 +1,0 @@
-java mondo.main.Main $@

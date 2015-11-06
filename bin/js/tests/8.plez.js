@@ -1,5 +1,0 @@
-(function() {return (function () {return      (function () {return          (function () {return              (new Number(1))['+']((new Number(2))
-        )})
-    })
-})
-}).exports(typeof module !== 'undefined' ? module : null)
