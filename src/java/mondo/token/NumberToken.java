@@ -33,7 +33,7 @@ public class NumberToken extends Token {
     }
 
     public String getRegex() {
-        return "[0-9]+(\\.[0-9]+)?";
+        return "(0x[0-9a-f]+)|(0b[01]+)|(0[0-7]+)|([0-9]+(\\.[0-9]+)?(e[\\+\\-]?[0-9]+)?)";
     }
 
     protected void doConvert(ITokenizer tokenizer) {

@@ -6,6 +6,7 @@ todo:
     bugs:
         method_call_and_square_bracket: yes
         at_the_end_of_script_multiline_comment_and_value: no
+        assign_negative: no
     collections:
         associative_array: yes
         dictionary: yes
@@ -103,9 +104,9 @@ todo:
       concurrency: no
       env_separation: no
     import:
-        node: yes
+        dynamic: yes
+        static: no
         script_args: yes
-        web: no
         relative_path: no
     loop:
         iterate_with_key: no
@@ -166,6 +167,11 @@ todo:
       iron_plezuro: no
     types:
       no_undefined: no
+      number:
+        scientific_notation: no  
+        binary: no
+        oct: no
+        hex: no
       regex: no
     highlighting:
         IDE:

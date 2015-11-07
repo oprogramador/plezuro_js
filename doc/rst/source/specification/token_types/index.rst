@@ -5,14 +5,18 @@ The first step of the compilation is the tokenization.
 
 Plezuro has the following token types:
 
-* single line comment
-* multi line comment
-* bracket
-* number
-* declaration
-* class field
-* object field
-* whitespace
-* operator
-* symbol
-* string
+======================  ============================================================================= =====================
+Type                    Regex                                                                         Example
+======================  ============================================================================= =====================
+single line comment     \\/\\/.*
+multi line comment      \\/\\*.*
+bracket                 \\[\|\\]|\\(\|\\)|\\{\|\\}\|(#\\()\|(\\$\\()\|(%\\()
+number                  '^(0x[0-9a-f]+)|(0b[01]+)|(0[0-7]+)|([0-9]+(\.[0-9]+)?(e[\+\-]?[0-9]+)?)$'
+declaration
+class field
+object field
+whitespace
+operator
+symbol
+string
+======================  ============================================================================= =====================
