@@ -168,10 +168,10 @@ todo:
     types:
       no_undefined: no
       number:
-        scientific_notation: no  
-        binary: no
-        oct: no
-        hex: no
+        scientific_notation: yes
+        binary: yes
+        oct: yes
+        hex: yes
       regex: no
     highlighting:
         IDE:

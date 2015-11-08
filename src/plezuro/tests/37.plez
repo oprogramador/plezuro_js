@@ -3,6 +3,12 @@ $y = 1.78e-21;
 $z = 9e4;
 $a = 4.52e-98;
 $b = 0b1101;
+$ba = 0b0;
+$bb = 0b10001;
+$bc = 0b0000001;
+$bd = 0b10111101;
+$be = 0b101;
+$bf = 0b11;
 $c = 0xf2ea;
 $d = 073;
-[x, y, z, a, b, c, d, x*y*z*a*b*c*d]
+[x, y, z, a, b, ba, bb, bc, bd, be, bf, c, d, x*y*z*a*b*c*d]
