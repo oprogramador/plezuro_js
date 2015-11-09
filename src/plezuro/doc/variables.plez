@@ -1,6 +1,19 @@
 // number
 $a = 34;
 
+// number - scientific notation
+$a1 = 1e34;
+$a2 = 2.34e-89;
+
+// number - binary
+$a3 = 0b10111;
+
+// number - octal
+$a4 = 052;
+
+// number - hexadecimal
+$a5 = 0xae;
+
 // string
 $b = 'abc';
 

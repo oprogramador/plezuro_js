@@ -15,42 +15,34 @@ msgstr ""
 msgid "Welcome to Plezuro's documentation!"
 msgstr "Bienvenue au documentation du Plezuro"
 
-#: ../../source/index.rst:9
+#: ../../source/index.rst:11
 msgid "Plezuro is a scripting language."
 msgstr ""
 
-#: ../../source/index.rst:11
+#: ../../source/index.rst:13
 msgid "The main version is compiled to Javascript."
 msgstr ""
 
-#: ../../source/index.rst:13
-msgid "Contents:"
-msgstr ""
+#~ msgid "Contents:"
+#~ msgstr ""
 
-#: ../../source/index.rst:15
-msgid "*test*"
-msgstr ""
+#~ msgid "*test*"
+#~ msgstr ""
 
-#: ../../source/index.rst:17
-msgid "**blabla**"
-msgstr ""
+#~ msgid "**blabla**"
+#~ msgstr ""
 
-#: ../../source/index.rst:0
-msgid "1.ml"
-msgstr ""
+#~ msgid "1.ml"
+#~ msgstr ""
 
-#: ../../source/index.rst:33
-msgid "Indices and tables"
-msgstr ""
+#~ msgid "Indices and tables"
+#~ msgstr ""
 
-#: ../../source/index.rst:35
-msgid ":ref:`genindex`"
-msgstr ""
+#~ msgid ":ref:`genindex`"
+#~ msgstr ""
 
-#: ../../source/index.rst:36
-msgid ":ref:`modindex`"
-msgstr ""
+#~ msgid ":ref:`modindex`"
+#~ msgstr ""
 
-#: ../../source/index.rst:37
-msgid ":ref:`search`"
-msgstr ""
+#~ msgid ":ref:`search`"
+#~ msgstr ""

@@ -1,0 +1,705 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Plezuro 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-09 01:49+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/specification/brackets/index.rst:2
+msgid "Brackets"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:4
+msgid "There exist following types of the brackets:"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:7
+msgid "Opening"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:7
+msgid "Closing"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:7
+msgid "Usage"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:9
+msgid "("
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:9
+#: ../../source/specification/brackets/index.rst:12
+#: ../../source/specification/brackets/index.rst:13
+#: ../../source/specification/brackets/index.rst:14
+msgid ")"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:9
+msgid "ordering of operators"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:10
+msgid "["
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:10
+msgid "]"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:10
+msgid "list creation, element access"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:11
+msgid "{"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:11
+msgid "}"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:11
+msgid "function"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:12
+msgid "$("
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:12
+msgid "set creation"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:13
+msgid "#("
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:13
+msgid "dictionary creation"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:14
+msgid "%("
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:14
+msgid "associative array creation"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:17
+msgid "The general rules between the brackets:"
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:19
+msgid "Each bracket has to be closed."
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:20
+msgid "Closing a bracket without previous opening of it throws an exception."
+msgstr ""
+
+#: ../../source/specification/brackets/index.rst:21
+msgid ""
+"Stack rule: each bracket opening is pushed to the stack, bracket closing "
+"causes popping from the stack, when the popped element does not match to the"
+" bracket closing, an exception is thrown."
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:2
+msgid "Constant tokens"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:4
+msgid ""
+"A constant token means a token which has a value and its value is set hardly"
+" in the code."
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:7
+msgid "Types of constant tokens:"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:9
+#: ../../source/specification/constant_tokens/index.rst:14
+msgid "Number"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:10
+#: ../../source/specification/constant_tokens/index.rst:32
+msgid "String"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:16
+msgid ""
+"Each number is floating point. Generally it reflects the mathematical real "
+"number."
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:19
+msgid "There exist the following notations:"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:22
+msgid "Name"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:22
+msgid "Regex"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:22
+#: ../../source/specification/token_types/index.rst:10
+msgid "Example"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:24
+msgid "Decimal (including scientific notation)"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:24
+msgid "[0-9]+(\\\\.[0-9]+)?(e[\\\\+\\\\-]?[0-9]+)?"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:24
+msgid "1.2e45"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:25
+msgid "Binary"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:25
+msgid "0b[01]+"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:25
+msgid "0b1101"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:26
+msgid "Octal"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:26
+msgid "0[0-7]+"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:26
+msgid "072"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:27
+msgid "Hexadecimal"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:27
+msgid "0x[0-9a-f]+"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:27
+msgid "0xa4f"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:34
+msgid ""
+"It is a sequence of unicode characters of any length (the only limit is the "
+"memory reserved for the application). The delimiter of the string is either "
+"single (''') or double ('\"') quote. The special characters within the "
+"string must be escaped with the backslash ('\\')."
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:39
+msgid "List of special characters:"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:41
+msgid "\\\\t - tabulator"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:42
+msgid "\\\\n - new line"
+msgstr ""
+
+#: ../../source/specification/constant_tokens/index.rst:43
+msgid "\\\\\\\\ - backslash"
+msgstr ""
+
+#: ../../source/specification/index.rst:2
+msgid "Specification"
+msgstr ""
+
+#: ../../source/specification/index.rst:4
+msgid ""
+"This is the formal specification of the Plezuro programming language. The "
+"purpose is to define the rules that have to be implemented in any version of"
+" the language."
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:2
+msgid "Operators"
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:4
+msgid "The rule to match an operator:"
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:6
+msgid ""
+"A single-argument operators (the operator at the left, the argument at the "
+"right) is one of the following:"
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:9
+msgid "\"!\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:10
+msgid "\"&&\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:11
+msgid "\"**\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:12
+msgid "\"#\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:13
+msgid "\"~\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:14
+msgid "\"=>\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:16
+msgid ""
+"A single-argument operators (the operator at the right) is one of the "
+"following:"
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:19
+msgid "\"++\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:20
+msgid "\"--\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:22
+msgid ""
+"A double-argument operators (the first argument, the operator, the second "
+"argument; from the evaluated at the end to the evaluated at the begin) is "
+"one of the following:"
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:26
+msgid "\";\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:27
+msgid "\",\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:28
+msgid "\":=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:29
+msgid "\"=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:30
+msgid "\"+=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:31
+msgid "\"-=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:32
+msgid "\"\\*=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:33
+msgid "\"/=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:34
+msgid "\"^=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:35
+msgid "\"&=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:36
+msgid "\"\\|=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:37
+msgid "\"%=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:38
+msgid "\".=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:39
+msgid "\"~~\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:40
+msgid "\"<->\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:41
+msgid "\"<<\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:42
+msgid "\">>\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:43
+msgid "\"?\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:44
+msgid "\"|\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:45
+msgid "\"&\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:46
+msgid "\"<=>\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:47
+msgid "\">=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:48
+msgid "\">\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:49
+msgid "\"<=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:50
+msgid "\"<\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:51
+msgid "\"!=\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:52
+msgid "\"==\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:53
+msgid "\"!==\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:54
+msgid "\"===\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:55
+msgid "\"=~\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:56
+msgid "\"!~\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:57
+msgid "\"+\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:58
+msgid "\"-\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:59
+msgid "\"%\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:60
+msgid "\"*\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:61
+msgid "\"/\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:62
+msgid "\"^\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:63
+msgid "\"^^\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:64
+msgid "\".\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:65
+msgid "\"..\""
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:66
+msgid "\":\""
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:2
+msgid "Symbols"
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:4
+msgid ""
+"A symbol means a name given by a programmer to anything in the program "
+"(dependently on the language it can be variable, function, class, structure,"
+" union, trait, module, interface etc.). In Plezuro everything is a variable "
+"so each symbol represents a variable."
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:9
+msgid "The rules of a naming a variable:"
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:11
+msgid "The first character must be an ASCII char or the underscore ('_')."
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:12
+msgid "The next characters must be an ASCII char, the underscore or a digit."
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:17
+msgid "Declaration"
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:19
+msgid ""
+"Eeach symbol must be declared at the first use in the source file. The "
+"declaration contains the dollar sign ('$') and the name of the symbol."
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:25
+msgid "Class fields"
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:27
+msgid ""
+"Class field (or module field) contains the name of the module the double "
+"colon ('::') and the name of the field (the same rules like for the symbol)."
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:33
+msgid "Object fields"
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:35
+msgid ""
+"Object field (or module field) contains the at character ('@') and the name "
+"of the field (the same rules like for the symbol)."
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:2
+msgid "Token types"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:4
+msgid "The first step of the compilation is the tokenization."
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:6
+msgid ""
+"Plezuro has the following token types (the order matters, when regex or "
+"condition of multiple tokens matches the first of them wins):"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:10
+msgid "Type"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:10
+msgid "Regex or condition"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:12
+msgid "single line comment"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:12
+msgid "\\\\/\\\\/.*"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:12
+msgid "//a comment"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:13
+msgid "multi line comment"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:13
+msgid "\\\\/\\\\*.*"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:13
+msgid "/\\*a comment\\*/"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:14
+msgid "bracket"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:14
+msgid "\\\\[\\|\\\\]|\\\\(\\|\\\\)|\\\\{\\|\\\\}\\|(#\\\\()\\|(\\\\$\\\\()\\|(%\\\\()"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:14
+msgid "{this + first}"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:15
+msgid "number"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:15
+msgid ""
+"'^(0x[0-9a-f]+)|(0b[01]+)|(0[0-7]+)|([0-9]+(\\.[0-9]+)?(e[\\+\\-]?[0-9]+)?)$'"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:15
+msgid "23.45e56"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:16
+msgid "declaration"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:16
+msgid "\\\\$[A-Za-z\\_]+[A-Za-z_0-9]*"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:16
+msgid "$aVariable"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:17
+msgid "class field"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:17
+msgid "[A-Za-z\\_]+[A-Za-z_0-9]*::[A-Za-z\\_]+[A-Za-z_0-9]*"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:17
+msgid "Person::totalNr"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:18
+msgid "object field"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:18
+msgid "@[A-Za-z\\_]+[A-Za-z_0-9]*"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:18
+msgid "@name"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:19
+msgid "whitespace"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:19
+msgid "[ \\\\\\t]+"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:20
+msgid "operator"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:20
+msgid "one of defined char sequences"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:20
+msgid "\\+"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:21
+msgid "symbol"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:21
+msgid "[A-Za-z\\_]+[A-Za-z_0-9]*"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:21
+msgid "aVariable"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:22
+msgid "string"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:22
+msgid "\"('')|('.*?[^\\\\\\\\]')|(\\\"\\\")|(\\\".*?[^\\\\\\\\]\\\")"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:22
+msgid "'a text'"
+msgstr ""
+
+#: ../../source/specification/variables/index.rst:2
+msgid "Variables"
+msgstr ""
+
+#: ../../source/specification/variables/index.rst:4
+msgid ""
+"Everything is possible to assign to a variable. Each variable must be "
+"declared."
+msgstr ""
+
+#: ../../source/specification/variables/index.rst:9
+msgid "Scope"
+msgstr ""
+
+#: ../../source/specification/variables/index.rst:10
+msgid ""
+"The declaration determines the scope of a variable. It is possible to hide a"
+" variable with another variable with the same name."
+msgstr ""
+
+#: ../../source/specification/whitespaces_and_comments/index.rst:2
+msgid "Whitespaces and comments"
+msgstr ""
+
+#: ../../source/specification/whitespaces_and_comments/index.rst:4
+msgid ""
+"The comments behave like they were replaced by a single space. So the code "
+"inside is not executed. Neither are the whitespaces executed. Though they "
+"have a little impact on the code: it is impossible to insert a comment (nor "
+"a whitespace) inside the symbol (variable) name; the only possibility is to "
+"insert comments between multiple tokens;"
+msgstr ""

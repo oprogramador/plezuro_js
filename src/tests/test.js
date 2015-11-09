@@ -211,3 +211,6 @@ assert.strictEqual(a, 'I am Adam\nI am Bob, my notes are: [4]\nI am Clint\nI am 
 
 a = '../../bin/js/tests/37.plez.js'.import();
 assert.strictEqual(JSON.stringify(a), '[1.2e+44,1.78e-21,90000,4.52e-98,13,0,17,1,189,5,3,62186,59,4.14448124890176e-62]');
+
+a = '../../bin/js/tests/38.plez.js'.import();
+assert.strictEqual(JSON.stringify(a), '["ąóœęππœæπœæóø@łweцущцишушщкуصثخهلهخىﻻصثخﻻص",42]');

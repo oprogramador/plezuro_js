@@ -11,3 +11,9 @@ language.
   :maxdepth: 1
 
   token_types/index
+  whitespaces_and_comments/index
+  brackets/index
+  constant_tokens/index
+  symbols/index
+  operators/index
+  variables/index

@@ -1,0 +1,877 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Plezuro 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-11-09 01:49+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../source/tutorial/about/how_to/index.rst:2
+msgid "How to"
+msgstr ""
+
+#: ../../source/tutorial/about/how_to/index.rst:4
+msgid ""
+"Currently the main version of the Plezuro is compiled to Javascript. In the "
+"future it is planned to compile it to another languages (probably c, c♯, "
+"Java, Python, Ruby and PHP, eventually Lisp and Fortran). It exists also an "
+"interpreted version implemented in c♯ which is not supported anymore. That "
+"version is not compatible in 100% with the mainstream Plezuro. It is "
+"something like a prototype of the final product."
+msgstr ""
+
+#: ../../source/tutorial/about/how_to/index.rst:13
+msgid "Plezuro.js"
+msgstr ""
+
+#: ../../source/tutorial/about/how_to/index.rst:15
+msgid ""
+"Using a plezuro.jar (download from "
+"https://plezuro.herokuapp.com/downloads/plezuro.jar) executable you can "
+"compile a script from Plezuro to Javascript. It works for entire files, not "
+"a code embedded in HTML. You can use it within a browser, in the server side"
+" (using Node.js), for the mobile development (using Cordova) or any other "
+"technology that uses Javascript. There is an automated support for all the "
+"Javascript libraries because you can use all the global variables from the "
+"Javascript. A variable cannot contain the dollar sign in its name in "
+"contrary to the Javascript so using jQuery instead of a dollar sign you "
+"should use the variable jQuery or eventually ```eval('$')```."
+msgstr ""
+
+#: ../../source/tutorial/about/how_to/index.rst:25
+msgid ""
+"Basic usage of the compiler: ```plezuro.jar input.plez output.plez.js```"
+msgstr ""
+
+#: ../../source/tutorial/about/index.rst:2
+msgid "About Plezuro"
+msgstr ""
+
+#: ../../source/tutorial/about/origin/index.rst:2
+msgid "Origin"
+msgstr ""
+
+#: ../../source/tutorial/about/origin/index.rst:4
+msgid ""
+"Where does Plezuro come from? Basically its author was not fully satisfied "
+"with any existing programming language. So he thought about the inventing of"
+" a new one. The name comes from the Esperanto and means 'pleasure'."
+msgstr ""
+
+#: ../../source/tutorial/about/rules/index.rst:2
+msgid "Basic rules"
+msgstr ""
+
+#: ../../source/tutorial/about/rules/index.rst:4
+msgid ""
+"Plezuro is an imperative, object-oriented, functional, procedural and "
+"reflective programming language."
+msgstr ""
+
+#: ../../source/tutorial/about/rules/index.rst:6
+msgid "The main ideas are:"
+msgstr ""
+
+#: ../../source/tutorial/about/rules/index.rst:8
+msgid "The code should be possibly short (as long as it is human readable)."
+msgstr ""
+
+#: ../../source/tutorial/about/rules/index.rst:10
+msgid "Very simple syntax."
+msgstr ""
+
+#: ../../source/tutorial/about/rules/index.rst:12
+msgid "The code should be easy to read for a beginner programmer."
+msgstr ""
+
+#: ../../source/tutorial/about/rules/index.rst:14
+msgid ""
+"The power of the language should be based on the standard library, not its "
+"syntax."
+msgstr ""
+
+#: ../../source/tutorial/about/rules/index.rst:16
+msgid "Explicit is always better than implicit."
+msgstr ""
+
+#: ../../source/tutorial/about/rules/index.rst:18
+msgid "Everything is a variable."
+msgstr ""
+
+#: ../../source/tutorial/about/rules/index.rst:20
+msgid "Everything is an object."
+msgstr ""
+
+#: ../../source/tutorial/about/rules/index.rst:22
+msgid "Multiple inheritance."
+msgstr ""
+
+#: ../../source/tutorial/about/rules/index.rst:24
+msgid "There is no difference between a module, a class and a namespace."
+msgstr ""
+
+#: ../../source/tutorial/about/rules/index.rst:26
+msgid ""
+"No annotations and other additional syntax - everything is based on the "
+"basic syntax of the language."
+msgstr ""
+
+#: ../../source/tutorial/basics/builtin_methods/index.rst:2
+msgid "Built-in methods"
+msgstr ""
+
+#: ../../source/tutorial/basics/builtin_methods/index.rst:4
+msgid ""
+"In further reading you will take some knowledge of modules and methods in "
+"Plezuro. However at this moment you should know how the method works. "
+"Basically it is like a function calling. Zero argument (called this object) "
+"is accessible via the keyword 'this'. Like in the function you can also use "
+"such keywords 'first', 'second', 'third', 'args'. Calling a method, at the "
+"first you write the zero argument (this object), than the dot ('.'), "
+"function name, bracket opening ('('), arguments separated by the comma (',')"
+" and the bracket closing (')'). However with no arguments the bracket is not"
+" required."
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:2
+msgid "Collections"
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:4
+msgid ""
+"One of the indispensable features of a programming language are the "
+"collections. Of course, Plezuro provides some sorts of it."
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:9
+msgid "List"
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:11
+msgid ""
+"The most basic one is the list. To create a list, you use square brackets "
+"('[', ']'), the elements are separated by a comma (','). It can contain "
+"objects of different types (like list in Python, Ruby, Javascript or PHP as "
+"well List<Object> in Java or List<object> in c♯). It implies that a list can"
+" also contain other lists. Moreover a list can contain a self-reference (it "
+"means one of its elements is a pointer to this list) because the lists are "
+"passed by reference to functions and to collections."
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:24
+msgid "Set"
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:26
+msgid ""
+"To create a set, you use dollar sign ('$') and brackets. This collections is"
+" like the mathematical set. Each value can be contained only once."
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:34
+msgid "Dictionary"
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:36
+msgid ""
+"Basically it is a set of pairs key-value. It is like dictionary in Python, "
+"hash in Ruby, Dictionary<object, object> in c♯ or Map<Object, Object> in "
+"Java. However there is a notably difference between the Plezuro dictionary "
+"and associative array in PHP or object in Javascript because in the "
+"dictionary the order of the items does not matter and generally it is stored"
+" using a binary tree. You write it with a hash sign ('#') and brackets."
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:48
+msgid "Associative array"
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:50
+msgid ""
+"It is like the associative array in PHP or object in Javascript. In the "
+"version of Plezuro compiled to Javascript the main appliance of this "
+"collection is to pass Javascript objects to methods from libraries. You "
+"write it with a percent sign ('%') and brackets."
+msgstr ""
+
+#: ../../source/tutorial/basics/comments/index.rst:2
+msgid "Comments"
+msgstr ""
+
+#: ../../source/tutorial/basics/comments/index.rst:4
+msgid ""
+"The comments are like in c++, Java, and c♯. You can comment one line using "
+"'//' or multiple lines using '/\\*' and '\\*/'."
+msgstr ""
+
+#: ../../source/tutorial/basics/conditions/index.rst:2
+msgid "Conditions"
+msgstr "Instrukcje warunkowe"
+
+#: ../../source/tutorial/basics/conditions/index.rst:4
+msgid ""
+"At first, you should write the condition (function that return a boolean "
+"value). Then write '.if' and in brackets and curlies write the expression "
+"that will be executed when this expression is true. It is just a method of "
+"the function type. Then you can use methods 'elif' and 'else' which are not "
+"required."
+msgstr ""
+
+#: ../../source/tutorial/basics/exceptions/index.rst:2
+msgid "Exceptions"
+msgstr ""
+
+#: ../../source/tutorial/basics/exceptions/index.rst:4
+msgid ""
+"One of the powerful features of a programming language is the exception "
+"handling. It is also possible in Plezuro. However the syntax is a little bit"
+" different because in this language almost all is based on the methods (even"
+" conditionals and loops)."
+msgstr ""
+
+#: ../../source/tutorial/basics/functions/index.rst:2
+msgid "Functions"
+msgstr ""
+
+#: ../../source/tutorial/basics/functions/index.rst:4
+msgid ""
+"To write a function, you use just the curlies ('{', '}'). Everything in a "
+"curly bracket is a function. It includes also conditions and loops. The zero"
+" argument is accessible via the keyword 'this' and the next ones 'first', "
+"'second' and 'third'. You have also access to the array of the arguments "
+"using the keyword 'args'."
+msgstr ""
+
+#: ../../source/tutorial/basics/functions/index.rst:9
+msgid ""
+"You can return a value with 'return' keyword. When in function execution no "
+"previous value has been returned, it returns the value of the last statement"
+" (like in Ruby)."
+msgstr ""
+
+#: ../../source/tutorial/basics/import/index.rst:2
+msgid "Import"
+msgstr ""
+
+#: ../../source/tutorial/basics/import/index.rst:4
+msgid ""
+"It is recommended to divide programming projects to multiple source files. "
+"You can do it with the 'import' method of the string type. It is also "
+"possible to pass same parameters to the imported script, it works in the "
+"same way like the function."
+msgstr ""
+
+#: ../../source/tutorial/basics/index.rst:2
+msgid "Basics"
+msgstr "Podstawy"
+
+#: ../../source/tutorial/basics/loops/index.rst:2
+msgid "Loops"
+msgstr "Pętle"
+
+#: ../../source/tutorial/basics/loops/index.rst:4
+msgid ""
+"Loops look like conditional expressions. You use a method of the function "
+"type."
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:6
+msgid ""
+"One of the loops provided in Plezuro is 'while'. At the beginning you write "
+"a function which returned value determines if the function being the first "
+"argument of the 'while' method is executed. After the first iteration the "
+"conditional function is executed again. Execution of the first argument "
+"function depends on the value from conditional function and so on."
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:14
+msgid ""
+"Another maybe simpler loop is 'do'. You write the conditional function. The "
+"execution of the loop depends on the value returned by this function. So it "
+"iterates as long as the function returns true."
+msgstr ""
+
+#: ../../source/tutorial/basics/magick_constants/index.rst:2
+msgid "Magick constants"
+msgstr ""
+
+#: ../../source/tutorial/basics/magick_constants/index.rst:4
+msgid ""
+"Similar to PHP and Ruby, Plezuro has the magick constants. What is it and "
+"why to use it? It is something a little bit like a variable and a little bit"
+" like a constant. Its value depends on the place where it is used."
+msgstr ""
+
+#: ../../source/tutorial/basics/magick_constants/index.rst:8
+msgid "So we have the following magick constants:"
+msgstr ""
+
+#: ../../source/tutorial/basics/magick_constants/index.rst:10
+msgid ""
+"__pos__ - the horizontal position in a line (counting from 0, it is position"
+" where the keyword begins)"
+msgstr ""
+
+#: ../../source/tutorial/basics/magick_constants/index.rst:13
+msgid "__line__ - the line number in a source file (counting from 0)"
+msgstr ""
+
+#: ../../source/tutorial/basics/magick_constants/index.rst:15
+msgid "__file__ - the name of the source file"
+msgstr ""
+
+#: ../../source/tutorial/basics/magick_constants/index.rst:17
+msgid "__dir__ - the real directory of the source file"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:2
+#: ../../source/tutorial/objective/operators/index.rst:2
+msgid "Operators"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:4
+msgid ""
+"One of the important features of a programming language are operators. "
+"Technically it would be possible to create a language before operators. "
+"However it facilities much the syntax. For example in an expression '1+3' we"
+" have an operator '+' which does the addition. In comparison with other "
+"languages, Plezuro has some special operators such as the comma (',') or the"
+" semicolon (';')."
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:10
+msgid ""
+"An important issue in Plezuro is you cannot have any operator immediately "
+"(excluding whitespaces and comments) before bracket (')'), square bracket "
+"(']') and curly ('}') close. So after the last element of the list you "
+"cannot put the comma and after the last statement of the function you cannot"
+" put the semicolon. In such a case it would be a syntax error."
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:16
+msgid ""
+"The action of an operator depends of the type of the first argument. Is "
+"behaves in the same way like the method call."
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:22
+msgid "Complete list of the operators:"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:24
+msgid ""
+"single-argument operators (the operator at the left, the argument at the "
+"right)"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:26
+msgid "\"!\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:27
+msgid "\"&&\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:28
+msgid "\"**\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:29
+msgid "\"#\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:30
+msgid "\"~\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:31
+msgid "\"=>\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:33
+msgid "single-argument operators (the operator at the right)"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:35
+msgid "\"++\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:36
+msgid "\"--\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:38
+msgid ""
+"double-argument operators (the first argument, the operator, the second "
+"argument; from the evaluated at the end to the evaluated at the begin)"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:41
+msgid "\";\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:42
+msgid "\",\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:43
+msgid "\":=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:44
+msgid "\"=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:45
+msgid "\"+=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:46
+msgid "\"-=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:47
+msgid "\"\\*=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:48
+msgid "\"/=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:49
+msgid "\"^=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:50
+msgid "\"&=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:51
+msgid "\"\\|=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:52
+msgid "\"%=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:53
+msgid "\".=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:54
+msgid "\"~~\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:55
+msgid "\"<->\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:56
+msgid "\"<<\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:57
+msgid "\">>\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:58
+msgid "\"?\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:59
+msgid "\"|\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:60
+msgid "\"&\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:61
+msgid "\"<=>\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:62
+msgid "\">=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:63
+msgid "\">\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:64
+msgid "\"<=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:65
+msgid "\"<\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:66
+msgid "\"!=\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:67
+msgid "\"==\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:68
+msgid "\"!==\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:69
+msgid "\"===\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:70
+msgid "\"=~\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:71
+msgid "\"!~\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:72
+msgid "\"+\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:73
+msgid "\"-\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:74
+msgid "\"%\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:75
+msgid "\"*\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:76
+msgid "\"/\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:77
+msgid "\"^\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:78
+msgid "\"^^\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:79
+msgid "\".\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:80
+msgid "\"..\""
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:81
+msgid "\":\""
+msgstr ""
+
+#: ../../source/tutorial/basics/random/index.rst:2
+msgid "Random numbers"
+msgstr ""
+
+#: ../../source/tutorial/basics/random/index.rst:4
+msgid ""
+"In computing it is useful for many purposes to generate random numbers. For "
+"example, when you write a computer player to a game or in a web application "
+"to generate registration links, local or web addreses and so on."
+msgstr ""
+
+#: ../../source/tutorial/basics/random/index.rst:9
+msgid ""
+"In Plezuro it is quite easy. You do not have to invoke any function or "
+"method (however later it is compiled to a method invokation). Just write the"
+" keyword 'rand'."
+msgstr ""
+
+#: ../../source/tutorial/basics/variables/index.rst:2
+msgid "Variables"
+msgstr ""
+
+#: ../../source/tutorial/basics/variables/index.rst:4
+msgid ""
+"Probably the most basic feature of a programing language are the variables. "
+"What is it? The variable is a block of a program memory that you can change "
+"at the runtime. You can assign it to a symbol and it works like the "
+"mathematics. The only difference is a variable can change his value. For "
+"example ```$x = 2 + 5; $y = x * 2```."
+msgstr ""
+
+#: ../../source/tutorial/basics/variables/index.rst:10
+msgid ""
+"In the Plezuro like in the majority of the programming languages a variable "
+"name can begin with a letter or an underscore ('_') and the next characters "
+"of the name can be a letter, an underscore or a digit. The case of the "
+"characters matters (like in c, Java, Python and so on, differently from SQL "
+"and HTML). You can use only the ASCII letters. It is for the readability (it"
+" would be extremely strange if someone used Arabic, Chinese characters or "
+"some mix of them). The recommended style of the naming all the variables "
+"(including functions and modules) is the camelcase (ex. "
+"```aVeryInterestingVariable```)."
+msgstr ""
+
+#: ../../source/tutorial/basics/variables/index.rst:22
+msgid "Declaration"
+msgstr ""
+
+#: ../../source/tutorial/basics/variables/index.rst:24
+msgid ""
+"Before we can use any variable, we have to declare it. It is pretty simple, "
+"just write the name of the variable and the dollar sign ('$') immediately "
+"before it. In next occurrences of a variable, you should write it without "
+"the dollar sign."
+msgstr ""
+
+#: ../../source/tutorial/basics/variables/index.rst:30
+msgid "Scope"
+msgstr ""
+
+#: ../../source/tutorial/basics/variables/index.rst:32
+msgid ""
+"The scope of a variable is limited within the curlies ('{', '}') which are "
+"used for the function (even a conditional or a loop used an inner function)."
+" So if you want to use a variable across multiple functions you have to "
+"declare it a propriate place."
+msgstr ""
+
+#: ../../source/tutorial/basics/variables/index.rst:40
+msgid "What can be a variable?"
+msgstr ""
+
+#: ../../source/tutorial/basics/variables/index.rst:42
+msgid ""
+"In Plezuro there is dynamic typing like in other dynamic languages such as "
+"Python, Ruby or Javascript. Also everything is a variable (including "
+"functions and modules). So a variable can change its type in the runtime. "
+"For example at the first it is a number, then a list and finally a function."
+msgstr ""
+
+#: ../../source/tutorial/index.rst:2
+msgid "Tutorial"
+msgstr ""
+
+#: ../../source/tutorial/objective/constructor/index.rst:2
+msgid "Constructor"
+msgstr ""
+
+#: ../../source/tutorial/objective/constructor/index.rst:4
+msgid ""
+"Technically it would be possible to create an object without constructor. "
+"You could initialize all the fields with one of multiple methods (using the "
+"builder pattern). Eventually after that you could freeze the entire object "
+"or some of its fields."
+msgstr ""
+
+#: ../../source/tutorial/objective/constructor/index.rst:8
+msgid ""
+"However for readability of the source code, it is a good idea to use "
+"constructors. What is exactly the constructor? It is a method that is "
+"invoked immediately after the memory allocation for the object. It is very "
+"explicit in Objective C when you at first allocate the memory and later you "
+"initialize it (for most cases is in the same line)."
+msgstr ""
+
+#: ../../source/tutorial/objective/constructor/index.rst:14
+msgid ""
+"In Plezuro the constructor is a method with the name 'init'. Such a method "
+"is called automatically after the object creation."
+msgstr ""
+
+#: ../../source/tutorial/objective/constructor/index.rst:19
+msgid "Default constructor"
+msgstr ""
+
+#: ../../source/tutorial/objective/constructor/index.rst:21
+msgid ""
+"However when you do not write any constructor, there exists a constructor "
+"that is invoked. It is called the default constructor. What does it exactly "
+"do? It invokes the constructors of all the parent modules. When a module "
+"does not have any explicit parents it inherits from the BasicModule so in "
+"such a situation the constructor of the BasicModule is called - it creates "
+"the fields of the object from the associative array which is passed as a "
+"first argument."
+msgstr ""
+
+#: ../../source/tutorial/objective/dynamic_module_change/index.rst:2
+msgid "Dynamic module change"
+msgstr ""
+
+#: ../../source/tutorial/objective/dynamic_module_change/index.rst:6
+msgid "Method addition/change"
+msgstr ""
+
+#: ../../source/tutorial/objective/dynamic_module_change/index.rst:8
+msgid ""
+"Except of creating a method during a module creation you can add dynamically"
+" new methods to a module later. We could say 'at the runtime' but this term "
+"is not suitable to the Plezuro because in this language everything is at the"
+" runtime. The new method is visible in the direct objects of this module "
+"(even created before the addition of a new method) as well in the objects of"
+" the child modules. You can achieve that using the method 'addMethod'."
+msgstr ""
+
+#: ../../source/tutorial/objective/dynamic_module_change/index.rst:18
+msgid "Method removing"
+msgstr ""
+
+#: ../../source/tutorial/objective/dynamic_module_change/index.rst:20
+msgid ""
+"It is even possible to remove a method. Nonetheless do not do it without any"
+" reason. To do it, use the method 'removeMethod'."
+msgstr ""
+
+#: ../../source/tutorial/objective/index.rst:2
+msgid "Objective programming"
+msgstr ""
+
+#: ../../source/tutorial/objective/index.rst:4
+msgid ""
+"Plezuro is an object-oriented language, there is multiple inheritance. It is"
+" more dynamic then Java and .NET because you can add, change and remove "
+"methods at the runtime."
+msgstr ""
+
+#: ../../source/tutorial/objective/inheritance/index.rst:2
+msgid "Inheritance"
+msgstr ""
+
+#: ../../source/tutorial/objective/inheritance/index.rst:4
+msgid ""
+"To write an object-oriented code except of classes (in Plezuro modules) it "
+"is needed to use inheritance and polymorphism. In Plezuro there is multiple "
+"inheritance like in Python, it is also similar to multiple inheritance in "
+"c++ with virtual method binding. Why multiple inheritance? It is just more "
+"similar to the real life. For example, the dog is in the same time a pet and"
+" a carnivore."
+msgstr ""
+
+#: ../../source/tutorial/objective/inheritance/index.rst:11
+msgid ""
+"How does it work? Is is pretty simple, when you invoke a method on an "
+"object, if there exists such a method directly in the module of this object,"
+" this method is called. Otherwise it is a method from one of the parents of "
+"the module (the order of finding a method is the same as the order of "
+"declaring the parents in the module. The algorithm of find a method is "
+"recursive. When no method is found, an exception is thrown. It is as you can"
+" see it. However in reality in the moment of a module creation all the "
+"methods are binded (direct ones and inherited ones), it is for the "
+"performance."
+msgstr ""
+
+#: ../../source/tutorial/objective/inheritance/index.rst:20
+msgid ""
+"What about the polymorphism? Plezuro like other dynamic languages has a duck"
+" typing. So you can invoke a method with a specific name from an object, not"
+" knowing the module of the object. On the other hand, you can use the "
+"multiple inheritance. You can create a module with a specific method and use"
+" objects of this module in other methods or functions."
+msgstr ""
+
+#: ../../source/tutorial/objective/inheritance/index.rst:28
+msgid "Calling a parent method"
+msgstr ""
+
+#: ../../source/tutorial/objective/inheritance/index.rst:30
+msgid ""
+"One of useful features is the possibility of the calling a parent method. "
+"The syntax is similar to the Python because in the case of multiple "
+"inheritance, you have to specify from which parent you want to call a "
+"method. It is also possible to call a method from a super-parent and event "
+"from any other class because of duck typing. You write a parent module name,"
+" the double colon ('::'), the method name and the 'this' keyword like the "
+"zero argument."
+msgstr ""
+
+#: ../../source/tutorial/objective/modules/index.rst:2
+msgid "Modules"
+msgstr ""
+
+#: ../../source/tutorial/objective/modules/index.rst:4
+msgid ""
+"Modules are in the same time classes and namespaces. You can use a module to"
+" create an object, you can use in statically (like static fields and methods"
+" in Java) and you can assign other modules as static fields creating "
+"namespaces. Of course you can create multiple classes in the same source "
+"file, however it is recommended to write exactly one module in one file."
+msgstr ""
+
+#: ../../source/tutorial/objective/modules/index.rst:9
+msgid ""
+"To create a module, you write 'Module.create' and you pass one argument to "
+"this method which is an associative array containing module name (field "
+"'name'), module namespace (field 'namespace', the methods (field 'methods'),"
+" the parent modules (field 'parents') - the modules from which our module "
+"inherits the methods. There are also some other fields that you can pass."
+msgstr ""
+
+#: ../../source/tutorial/objective/modules/index.rst:15
+msgid "You can create an object of a module using method 'new'."
+msgstr ""
+
+#: ../../source/tutorial/objective/objects_and_methods/index.rst:2
+msgid "Objects and methods"
+msgstr ""
+
+#: ../../source/tutorial/objective/objects_and_methods/index.rst:4
+msgid ""
+"The main purpose of creating a module is you to use it as a template to "
+"creating objects and to call methods from the objects. When you call a "
+"method the object is accessible via the keyword 'this' and like in function "
+"invocation you can use the keywords 'first', 'second', 'third' and 'args'."
+msgstr ""
+
+#: ../../source/tutorial/objective/objects_and_methods/index.rst:12
+msgid "Object fields"
+msgstr ""
+
+#: ../../source/tutorial/objective/objects_and_methods/index.rst:14
+msgid ""
+"To access an object field, you use the at sign ('@') and the field name. The"
+" fields can be created in the constructor when the object is created or "
+"later in any method."
+msgstr ""
+
+#: ../../source/tutorial/objective/objects_and_methods/index.rst:19
+msgid "Method from method call"
+msgstr ""
+
+#: ../../source/tutorial/objective/objects_and_methods/index.rst:21
+msgid ""
+"To call a method from another method, you write the 'this' keyword, the dot "
+"('.') and and the method name. Like in calling methods from outer objects "
+"you can omit the bracket when it is no arguments."
+msgstr ""
+
+#: ../../source/tutorial/objective/objects_and_methods/index.rst:25
+msgid ""
+"Be aware that when you have an inner function (ex. a loop), the keyword "
+"'this' has a different meaning. It is the zero argument of the inner "
+"function. In the same way the object fields work."
+msgstr ""
+
+#: ../../source/tutorial/objective/operators/index.rst:4
+msgid ""
+"Similar to defining method of a module, you can define actions that will be "
+"done when an object interacts with a specific operator."
+msgstr ""
+
+#: ../../source/tutorial/objective/static_fields_and_methods/index.rst:2
+msgid "Static fields and methods"
+msgstr "Pola i metody statyczne"
+
+#: ../../source/tutorial/objective/static_fields_and_methods/index.rst:4
+msgid ""
+"Except of using a module like a template to creating objects, you can use it"
+" in a static way with static fields and methods. You have to remember that "
+"the static fields and methods are not inherited. Each static field or method"
+" is binded strictly with one module."
+msgstr ""

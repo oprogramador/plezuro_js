@@ -1,0 +1,9 @@
+$x = 21;
+$y = 30;
+$f = {
+  $x = this;
+  x + 2
+};
+$a = f(x); // should return 23
+$b = f(y); // should return 32
+[a, b]
