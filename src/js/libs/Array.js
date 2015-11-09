@@ -9,3 +9,15 @@ Array.prototype.each = function(f) {
     }
     return res;
 }
+
+Array.prototype['+'] = function(x) {
+    return this.concat(x);
+}
+
+Array.prototype['*'] = function(x) {
+    var result = [];
+    for(var i = 0; i < x; i++) {
+        result = Array.prototype['+'].call(result, this);
+    }
+    return result;
+}

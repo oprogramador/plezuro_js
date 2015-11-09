@@ -36,6 +36,14 @@ String.prototype['+'] = function(x) {
     return this + x;
 }
 
+String.prototype['*'] = function(x) {
+    var result = '';
+    for(var i = 0; i < x; i++) {
+        result += this;
+    }
+    return result;
+}
+
 String.prototype.len = function(x) {
     return this.length;
 }

@@ -17,3 +17,5 @@ language.
   symbols/index
   operators/index
   variables/index
+  expressions/index
+  functions/index

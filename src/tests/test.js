@@ -214,3 +214,9 @@ assert.strictEqual(JSON.stringify(a), '[1.2e+44,1.78e-21,90000,4.52e-98,13,0,17,
 
 a = '../../bin/js/tests/38.plez.js'.import();
 assert.strictEqual(JSON.stringify(a), '["ąóœęππœæπœæóø@łweцущцишушщкуصثخهلهخىﻻصثخﻻص",42]');
+
+a = '../../bin/js/tests/39.plez.js'.import();
+assert.strictEqual(JSON.stringify(a), '["abcdabcdabcd",[1,2,5,3,4],[1,2,5,3,4,1,2,5,3,4]]');
+
+a = '../../bin/js/tests/40.plez.js'.import();
+assert.strictEqual(JSON.stringify(a), '[32,32]');
