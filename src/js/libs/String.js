@@ -28,6 +28,10 @@ String.prototype.import = function() {
     }
 }
 
+String.prototype.staticImport = function() {
+    return imports[this.toString()].apply(this.toString(), arguments.toArray());
+}
+
 String.prototype.fromJson = function() {
     return JSON.parse(this);
 }

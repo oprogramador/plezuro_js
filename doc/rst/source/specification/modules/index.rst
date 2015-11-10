@@ -24,3 +24,19 @@ The inheritance includes methods and operators (neither static fields nor static
 methods). It is possible to override what is inherited. When a module does not
 inherit explicitly, it inherits from the Module.BasicModule which is ancestor of
 all the modules.
+
+
+=========================
+Static fields and methods
+=========================
+
+Static fields and methods are associated with exactly one module. They are not inherited.
+
+===========
+Duck typing
+===========
+
+Everywhere is duck typing. It means it is possible to call a method with given
+name from an object if such a method exists in its module (directly or
+inherited). Moreover objects can be passed as zero argument to methods from
+totally different modules.
