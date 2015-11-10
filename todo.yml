@@ -122,6 +122,7 @@ todo:
             constructor: yes
             inheritance:
               basic_object: yes
+              transition_checking: no
               dynamic: no
             methods:
               doc: no

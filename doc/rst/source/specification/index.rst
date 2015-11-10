@@ -19,3 +19,5 @@ language.
   variables/index
   expressions/index
   functions/index
+  magick_constants/index
+  modules/index
