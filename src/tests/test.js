@@ -1,4 +1,4 @@
-require('../../bin/js/all.js');
+require('../../bin/js/plezuro.js');
 
 a = '../../bin/js/tests/1.plez.js'.import();
 assert.equal(JSON.stringify(a), '["21318.843333333334abcabc\\nxyzuu\'bbooommmmmcvvfg\'ee\'wwwww\\"www\\nvvvww\\"ddd\\"\\nwef",43]')

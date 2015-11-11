@@ -31,7 +31,7 @@ make_js.sh             make_js_lib.sh, compiling all      scripts/make_js.sh
                        to 'bin/js'
 
 make_js_lib.sh         joining all Javascript libraries   scripts/make_js_lib.sh
-                       into bin/js/all.js
+                       into bin/js/plezuro.js
 
 test.sh                testing Plezuro scripts            scripts/test.sh
 ====================== ================================== ============================================================

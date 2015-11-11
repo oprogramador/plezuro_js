@@ -148,6 +148,7 @@ msgid "There exist the following notations:"
 msgstr ""
 
 #: ../../source/specification/constant_tokens/index.rst:22
+#: ../../source/specification/syntax_errors/index.rst:24
 msgid "Name"
 msgstr ""
 
@@ -702,4 +703,350 @@ msgid ""
 "have a little impact on the code: it is impossible to insert a comment (nor "
 "a whitespace) inside the symbol (variable) name; the only possibility is to "
 "insert comments between multiple tokens;"
+msgstr ""
+
+#: ../../source/specification/expressions/index.rst:2
+msgid "Expressions"
+msgstr ""
+
+#: ../../source/specification/expressions/index.rst:4
+msgid ""
+"An expression is a single command separated with the ``;`` operator. "
+"Although it can be multiple instructions (ex. ``x = y = 2 + 4``). What does "
+"it mean exactly? From the Plezuro's point of view the expression is an "
+"atomic instuction but from the CPU's (or virtual and even purely theoretical"
+" CPU) point of view one expression can contain multiple instructions."
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:2
+msgid "Functions"
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:4
+msgid ""
+"A function is a set of operations that can be executed in any moment at the "
+"runtime. A function takes any number of arguments which are accessible with "
+"the following keywords:"
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:8
+msgid "this - zero argument"
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:9
+msgid "first - first argument"
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:10
+msgid "second - second argument"
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:11
+msgid "third - third argument"
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:12
+msgid "args - the list of the arguments"
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:14
+msgid ""
+"In case of an inner function the arguments of the outer one are hidden by "
+"those of the inner one."
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:17
+msgid ""
+"Each function returns a value. The type is not specified. They are two ways "
+"to return a value:"
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:20
+msgid "explicitly - with the ``return`` keyword"
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:21
+msgid "implicitly - the last expression is returned"
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:26
+msgid "Methods"
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:28
+msgid ""
+"A method works in the same way as a function. The only difference is the "
+"object (variable before the dot sign is passed as a zero argument and the "
+"next arguments are numbered from 1. In method calling when there is no "
+"arguments (except for this object) the bracket after method name is not "
+"required."
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:36
+msgid "Scripts"
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:38
+msgid ""
+"Even the scripts behave in the same manner as a function. They take "
+"arguments (the access in the same way) and they return a value."
+msgstr ""
+
+#: ../../source/specification/index.rst:8
+msgid "For whom is it?"
+msgstr ""
+
+#: ../../source/specification/index.rst:10
+msgid ""
+"This is for developpers who would like to implement other version of "
+"Plezuro, a library, extension as well to standard users who want to improve "
+"their knowledge. The tutorial is more for learning and simple understanding "
+"but the specification is more for knowing exactly how Plezuro applications "
+"should behave and therefore how compilers and interpreters should behave."
+msgstr ""
+
+#: ../../source/specification/index.rst:16
+msgid ""
+"Nonetheless the code is the best way to define exactly the behavior. So each"
+" version of Plezuro must match all the automatic tests included in the "
+"mainstream implementation."
+msgstr ""
+
+#: ../../source/specification/magick_constants/index.rst:2
+msgid "Magic constants"
+msgstr ""
+
+#: ../../source/specification/magick_constants/index.rst:4
+msgid ""
+"Eeach compiler (and even interpreter) of Plezuro must provide the following "
+"magick constants:"
+msgstr ""
+
+#: ../../source/specification/magick_constants/index.rst:6
+msgid ""
+"__pos__ - the horizontal position in a line (counting from 0, it is position"
+" where the token begins)"
+msgstr ""
+
+#: ../../source/specification/magick_constants/index.rst:9
+msgid "__line__ - the line number in a source file (counting from 0)"
+msgstr ""
+
+#: ../../source/specification/magick_constants/index.rst:11
+msgid "__file__ - the name of the source file"
+msgstr ""
+
+#: ../../source/specification/magick_constants/index.rst:13
+msgid "__dir__ - the real directory of the source file"
+msgstr ""
+
+#: ../../source/specification/magick_constants/index.rst:15
+msgid ""
+"It is recommended to replace these keywords with constant strings in the "
+"output code. There is no recommendation in the intermediate code. __dir__ "
+"does not have to return the canonical form of the path (all the "
+"subdirectories from the highest level to the lowest (ex. "
+"'/home/user/programming/plezuro/my_plezuro_project')) but must return a "
+"valid real Unix path (ex. "
+"'/home/user/programming/something/project/../../plezuro/my_plezuro_project')."
+msgstr ""
+
+#: ../../source/specification/magick_constants/index.rst:22
+msgid ""
+"Even for not Unix systems the path must be in the Unix notation (with "
+"slashes)."
+msgstr ""
+
+#: ../../source/specification/modules/index.rst:2
+msgid "Modules"
+msgstr ""
+
+#: ../../source/specification/modules/index.rst:4
+msgid ""
+"A module is in the same time a class, a namespace and a static module. The "
+"module determines the type of a variable. Each variable is associated with a"
+" module (built-in or created by a Plezuro developer). Therefore the module "
+"determines the action in a method or operator calling."
+msgstr ""
+
+#: ../../source/specification/modules/index.rst:11
+msgid "Constructor"
+msgstr ""
+
+#: ../../source/specification/modules/index.rst:13
+msgid ""
+"Always after an object creation the constructor is called. Its name is "
+"'init'."
+msgstr ""
+
+#: ../../source/specification/modules/index.rst:18
+msgid "Inheritance"
+msgstr ""
+
+#: ../../source/specification/modules/index.rst:20
+msgid ""
+"A module can inherit from multiple other modules. The relation of the "
+"inheritance is transitive not equal. It means a module cannot inherit from "
+"itself and an ancestor of a module cannot be in the same time its offspring."
+" The inheritance includes methods and operators (neither static fields nor "
+"static methods). It is possible to override what is inherited. When a module"
+" does not inherit explicitly, it inherits from the Module.BasicModule which "
+"is ancestor of all the modules."
+msgstr ""
+
+#: ../../source/specification/modules/index.rst:31
+msgid "Static fields and methods"
+msgstr ""
+
+#: ../../source/specification/modules/index.rst:33
+msgid ""
+"Static fields and methods are associated with exactly one module. They are "
+"not inherited."
+msgstr ""
+
+#: ../../source/specification/modules/index.rst:37
+msgid "Duck typing"
+msgstr ""
+
+#: ../../source/specification/modules/index.rst:39
+msgid ""
+"Everywhere is duck typing. It means it is possible to call a method with "
+"given name from an object if such a method exists in its module (directly or"
+" inherited). Moreover objects can be passed as zero argument to methods from"
+" totally different modules."
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:2
+msgid "Syntax errors"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:4
+msgid ""
+"Because of very simple syntax there are very few syntax errors. Even "
+"conditionals and loops are created with methods invoking so syntax errors "
+"are possible to occur where the tokens does not match in a proper way."
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:11
+msgid "How to handle syntax errors?"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:13
+msgid ""
+"In Plezuro there are no fatal errors. Each error is an exception. When a "
+"script containing a syntax error is imported, it should throw an exception. "
+"A compiler should create an output script (or a function in a script where "
+"the scripts are joint altogether in the output) which throws an exception."
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:21
+msgid "Total list of syntax errors"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:24
+msgid "Occurrence"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:24
+msgid "Examples"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:26
+msgid "BracketStackException"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:26
+msgid "a bracket is not closed,"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:28
+msgid "closing of another type of bracket,"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:30
+msgid "abundant bracket closing"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:26
+msgid "(2 + 3"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:28
+msgid "(3 + 1 + [)]"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:30
+msgid "4 + 5)"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:32
+msgid "NonExistentTokenException"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:32
+msgid "a token of not existing type"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:32
+msgid "$αβγ = 21"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:34
+msgid "OperatorAfterBracketCloseException"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:34
+msgid "neither operator nor another bracket closing after bracket closing"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:34
+msgid "$x=[2] \"oo\""
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:37
+msgid "OperatorAfterBracketOpenException"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:37
+msgid "not proper operator after bracket opening or begin of a script"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:37
+msgid "\\* 43"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:40
+msgid "OperatorAfterOperatorException"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:40
+msgid "an operator after another one with some exceptions"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:40
+msgid "2 + * 5"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:43
+msgid "OperatorBeforeBracketCloseException"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:43
+msgid "an operator before bracket closing"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:43
+msgid "(2 + 3 -)"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:45
+msgid "ValueAfterValueException"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:45
+msgid "a constant token after another one"
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:45
+msgid "3 + *"
 msgstr ""

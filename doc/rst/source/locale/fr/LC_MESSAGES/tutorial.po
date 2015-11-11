@@ -12,6 +12,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../source/tutorial/about/how_to/index.rst:2
+#: ../../source/tutorial/browser_programming/how_to/index.rst:2
 msgid "How to"
 msgstr ""
 
@@ -149,6 +150,8 @@ msgid ""
 msgstr ""
 
 #: ../../source/tutorial/basics/collections/index.rst:9
+#: ../../source/tutorial/basics/operators/index.rst:34
+#: ../../source/tutorial/basics/operators/index.rst:35
 msgid "List"
 msgstr ""
 
@@ -353,225 +356,219 @@ msgid ""
 " put the semicolon. In such a case it would be a syntax error."
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:16
-msgid ""
-"The action of an operator depends of the type of the first argument. Is "
-"behaves in the same way like the method call."
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:22
+#: ../../source/tutorial/basics/operators/index.rst:41
 msgid "Complete list of the operators:"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:24
+#: ../../source/tutorial/basics/operators/index.rst:43
 msgid ""
 "single-argument operators (the operator at the left, the argument at the "
 "right)"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:26
+#: ../../source/tutorial/basics/operators/index.rst:45
 msgid "\"!\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:27
+#: ../../source/tutorial/basics/operators/index.rst:46
 msgid "\"&&\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:28
+#: ../../source/tutorial/basics/operators/index.rst:47
 msgid "\"**\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:29
+#: ../../source/tutorial/basics/operators/index.rst:48
 msgid "\"#\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:30
+#: ../../source/tutorial/basics/operators/index.rst:49
 msgid "\"~\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:31
+#: ../../source/tutorial/basics/operators/index.rst:50
 msgid "\"=>\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:33
+#: ../../source/tutorial/basics/operators/index.rst:52
 msgid "single-argument operators (the operator at the right)"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:35
+#: ../../source/tutorial/basics/operators/index.rst:54
 msgid "\"++\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:36
+#: ../../source/tutorial/basics/operators/index.rst:55
 msgid "\"--\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:38
+#: ../../source/tutorial/basics/operators/index.rst:57
 msgid ""
 "double-argument operators (the first argument, the operator, the second "
 "argument; from the evaluated at the end to the evaluated at the begin)"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:41
+#: ../../source/tutorial/basics/operators/index.rst:60
 msgid "\";\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:42
+#: ../../source/tutorial/basics/operators/index.rst:61
 msgid "\",\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:43
+#: ../../source/tutorial/basics/operators/index.rst:62
 msgid "\":=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:44
+#: ../../source/tutorial/basics/operators/index.rst:63
 msgid "\"=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:45
+#: ../../source/tutorial/basics/operators/index.rst:64
 msgid "\"+=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:46
+#: ../../source/tutorial/basics/operators/index.rst:65
 msgid "\"-=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:47
+#: ../../source/tutorial/basics/operators/index.rst:66
 msgid "\"\\*=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:48
+#: ../../source/tutorial/basics/operators/index.rst:67
 msgid "\"/=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:49
+#: ../../source/tutorial/basics/operators/index.rst:68
 msgid "\"^=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:50
+#: ../../source/tutorial/basics/operators/index.rst:69
 msgid "\"&=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:51
+#: ../../source/tutorial/basics/operators/index.rst:70
 msgid "\"\\|=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:52
+#: ../../source/tutorial/basics/operators/index.rst:71
 msgid "\"%=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:53
+#: ../../source/tutorial/basics/operators/index.rst:72
 msgid "\".=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:54
+#: ../../source/tutorial/basics/operators/index.rst:73
 msgid "\"~~\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:55
+#: ../../source/tutorial/basics/operators/index.rst:74
 msgid "\"<->\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:56
+#: ../../source/tutorial/basics/operators/index.rst:75
 msgid "\"<<\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:57
+#: ../../source/tutorial/basics/operators/index.rst:76
 msgid "\">>\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:58
+#: ../../source/tutorial/basics/operators/index.rst:77
 msgid "\"?\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:59
+#: ../../source/tutorial/basics/operators/index.rst:78
 msgid "\"|\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:60
+#: ../../source/tutorial/basics/operators/index.rst:79
 msgid "\"&\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:61
+#: ../../source/tutorial/basics/operators/index.rst:80
 msgid "\"<=>\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:62
+#: ../../source/tutorial/basics/operators/index.rst:81
 msgid "\">=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:63
+#: ../../source/tutorial/basics/operators/index.rst:82
 msgid "\">\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:64
+#: ../../source/tutorial/basics/operators/index.rst:83
 msgid "\"<=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:65
+#: ../../source/tutorial/basics/operators/index.rst:84
 msgid "\"<\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:66
+#: ../../source/tutorial/basics/operators/index.rst:85
 msgid "\"!=\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:67
+#: ../../source/tutorial/basics/operators/index.rst:86
 msgid "\"==\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:68
+#: ../../source/tutorial/basics/operators/index.rst:87
 msgid "\"!==\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:69
+#: ../../source/tutorial/basics/operators/index.rst:88
 msgid "\"===\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:70
+#: ../../source/tutorial/basics/operators/index.rst:89
 msgid "\"=~\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:71
+#: ../../source/tutorial/basics/operators/index.rst:90
 msgid "\"!~\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:72
+#: ../../source/tutorial/basics/operators/index.rst:91
 msgid "\"+\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:73
+#: ../../source/tutorial/basics/operators/index.rst:92
 msgid "\"-\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:74
+#: ../../source/tutorial/basics/operators/index.rst:93
 msgid "\"%\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:75
+#: ../../source/tutorial/basics/operators/index.rst:94
 msgid "\"*\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:76
+#: ../../source/tutorial/basics/operators/index.rst:95
 msgid "\"/\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:77
+#: ../../source/tutorial/basics/operators/index.rst:96
 msgid "\"^\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:78
+#: ../../source/tutorial/basics/operators/index.rst:97
 msgid "\"^^\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:79
+#: ../../source/tutorial/basics/operators/index.rst:98
 msgid "\".\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:80
+#: ../../source/tutorial/basics/operators/index.rst:99
 msgid "\"..\""
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:81
+#: ../../source/tutorial/basics/operators/index.rst:100
 msgid "\":\""
 msgstr ""
 
@@ -875,3 +872,271 @@ msgid ""
 "the static fields and methods are not inherited. Each static field or method"
 " is binded strictly with one module."
 msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:16
+msgid ""
+"The action of an operator depends of the type of the first argument. Is "
+"behaves in the same way like the method call. It is possible to change the "
+"operators action in the runtime (even you can cause that 2+2 produce another"
+" result than 4 so it is not recommended to change it in abundance)."
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:21
+msgid ""
+"Generally we can specify some main actions of the operators (ex. for numbers"
+" and strings)."
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:24
+msgid "Type of left argument"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:24
+msgid "Operator"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:24
+msgid "Action"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:24
+msgid "Example"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:24
+msgid "Result"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:26
+#: ../../source/tutorial/basics/operators/index.rst:27
+#: ../../source/tutorial/basics/operators/index.rst:28
+#: ../../source/tutorial/basics/operators/index.rst:29
+#: ../../source/tutorial/basics/operators/index.rst:30
+#: ../../source/tutorial/basics/operators/index.rst:31
+msgid "Number"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:26
+#: ../../source/tutorial/basics/operators/index.rst:32
+#: ../../source/tutorial/basics/operators/index.rst:34
+msgid "\\+"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:26
+msgid "addition"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:26
+msgid "1+4"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:26
+msgid "5"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:27
+msgid "\\-"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:27
+msgid "subtraction"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:27
+msgid "4-7"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:27
+msgid "-3"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:28
+#: ../../source/tutorial/basics/operators/index.rst:33
+#: ../../source/tutorial/basics/operators/index.rst:35
+msgid "\\*"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:28
+#: ../../source/tutorial/basics/operators/index.rst:33
+#: ../../source/tutorial/basics/operators/index.rst:35
+msgid "multiplication"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:28
+msgid "8.5*2"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:28
+msgid "17"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:29
+msgid "/"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:29
+msgid "division"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:29
+msgid "1/4"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:29
+msgid "0.25"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:30
+msgid "^"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:30
+msgid "power"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:30
+msgid "4^3"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:30
+msgid "64"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:31
+msgid "%"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:31
+msgid "modulo"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:31
+msgid "7%3"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:31
+msgid "1"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:32
+#: ../../source/tutorial/basics/operators/index.rst:33
+msgid "String"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:32
+#: ../../source/tutorial/basics/operators/index.rst:34
+msgid "concatenation"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:32
+msgid "'a'+'b'"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:32
+msgid "'ab'"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:33
+msgid "'a'\\*3"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:33
+msgid "'aaa'"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:34
+msgid "[2,3]+[1]"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:34
+msgid "[2,3,1]"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:35
+msgid "[2,3]*2"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:35
+msgid "[2,3,2,3]"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/how_to/index.rst:4
+msgid ""
+"Contrary to Javascript, Plezuro cannot be embedded to HTML. It is not a "
+"missing feature, rather a way to maintain a readable code. So you must "
+"include a Javascript generated from Plezuro source in an HTML file. Moreover"
+" you must include the plezuro.js library."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/index.rst:2
+msgid "Web browser programming"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/index.rst:4
+msgid ""
+"As you just know, Plezuro is compiled to Javascript. So we can write "
+"applications runned in the web browser (client-side web apps)."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/index.rst:7
+msgid "What should you know first?"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/index.rst:9
+msgid ""
+"To be able to develop web apps in Plezuro, you should know HTML and CSS (at "
+"least the basics). You can read it from the following tutorials:"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/index.rst:13
+msgid "http://www.w3schools.com/html/default.asp"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/index.rst:14
+msgid "http://www.w3schools.com/css/default.asp"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/output/index.rst:2
+msgid "Output"
+msgstr ""
+
+#: ../../source/tutorial/index.rst:4
+msgid "This is tutorial of Plezuro programming language."
+msgstr ""
+
+#: ../../source/tutorial/index.rst:6
+msgid "For whom is it?"
+msgstr ""
+
+#: ../../source/tutorial/index.rst:8
+msgid ""
+"If you are a programmer who just knows another programming language (ex. c, "
+"Java, Python...), this tutorial bring you the knowledge necessary to create "
+"applications in Plezuro. Nonetheless the experience is what is the most "
+"important in programming technologies. So just try to write more and more in"
+" Plezuro."
+msgstr ""
+
+#: ../../source/tutorial/index.rst:14
+msgid ""
+"If you are new to programming, this tutorial should be readable for you "
+"because it explaines how the stuff works but if you do not understand it "
+"maybe you should learn first basics of Javascript (it is the most related to"
+" Plezuro) or eventually another programming language."
+msgstr ""
+
+#: ../../source/tutorial/index.rst:20
+msgid "Other useful materials"
+msgstr ""
+
+#: ../../source/tutorial/index.rst:22
+msgid ""
+"If you want to learn more, you can read the specification of Plezuro. It is "
+"written in a not complicated manner. This is just a view from another site. "
+"You can read Plezuro scripts on Github and try to write something similar."
+msgstr ""
+
+#~ msgid ""
+#~ "The action of an operator depends of the type of the first argument. Is "
+#~ "behaves in the same way like the method call."
+#~ msgstr ""
