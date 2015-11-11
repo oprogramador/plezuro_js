@@ -22,3 +22,4 @@ The main version is compiled to Javascript.
 
   tutorial/index
   specification/index
+  implementation/index

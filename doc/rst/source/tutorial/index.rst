@@ -3,9 +3,7 @@ Tutorial
 
 This is tutorial of Plezuro programming language.
 
-===============
 For whom is it?
-===============
 
 If you are a programmer who just knows another programming language (ex. c,
 Java, Python...), this tutorial bring you the knowledge necessary to create
@@ -19,9 +17,7 @@ you should learn first basics of Javascript (it is the most related to Plezuro)
 or eventually another programming language.
 
 
-======================
 Other useful materials
-======================
 
 If you want to learn more, you can read the specification of Plezuro. It is
 written in a not complicated manner. This is just a view from another site. You
@@ -36,3 +32,4 @@ can read Plezuro scripts on Github and try to write something similar.
   about/index
   basics/index
   objective/index
+  browser_programming/index
