@@ -8,8 +8,8 @@ so each symbol represents a variable.
 
 The rules of a naming a variable:
 
-#. The first character must be an ASCII char or the underscore ('_').
-#. The next characters must be an ASCII char, the underscore or a digit.
+#. The first character must be an ASCII letter or the underscore ('_').
+#. The next characters must be an ASCII letter, the underscore or a digit.
 
 
 ===========

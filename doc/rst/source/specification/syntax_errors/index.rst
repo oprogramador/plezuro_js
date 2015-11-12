@@ -37,8 +37,8 @@ OperatorAfterBracketCloseException           neither operator nor another bracke
 OperatorAfterBracketOpenException            not proper operator after bracket      \* 43
                                              opening or begin of a script
 
-OperatorAfterOperatorException               an operator after another one with     2 + * 5 
-                                             some exceptions
+OperatorAfterOperatorException               an operator after another one          2 + * 5 
+                                             (although there are exceptions)
 
 OperatorBeforeBracketCloseException          an operator before bracket closing     (2 + 3 -)
 

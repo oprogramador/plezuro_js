@@ -13,16 +13,16 @@ msgstr ""
 
 #: ../../source/_templates/sourcelink.html:2
 msgid "This Page"
-msgstr ""
+msgstr "Ta strona"
 
 #: ../../source/_templates/sourcelink.html:5
 msgid "Show Source"
-msgstr ""
+msgstr "Pokaż źródło"
 
 #: ../../source/_templates/sourcelink.html:8
 msgid "Show on GitHub"
-msgstr ""
+msgstr "Pokaż na Githubie"
 
 #: ../../source/_templates/sourcelink.html:12
 msgid "Edit on GitHub"
-msgstr ""
+msgstr "Edytuj na Githubie"

@@ -13,23 +13,23 @@ msgstr ""
 
 #: ../../source/specification/brackets/index.rst:2
 msgid "Brackets"
-msgstr ""
+msgstr "Nawiasy"
 
 #: ../../source/specification/brackets/index.rst:4
 msgid "There exist following types of the brackets:"
-msgstr ""
+msgstr "Istnieją następujące typy nawiasów:"
 
 #: ../../source/specification/brackets/index.rst:7
 msgid "Opening"
-msgstr ""
+msgstr "Otwarcie"
 
 #: ../../source/specification/brackets/index.rst:7
 msgid "Closing"
-msgstr ""
+msgstr "Domknięcie"
 
 #: ../../source/specification/brackets/index.rst:7
 msgid "Usage"
-msgstr ""
+msgstr "Użycie"
 
 #: ../../source/specification/brackets/index.rst:9
 msgid "("
@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../source/specification/brackets/index.rst:9
 msgid "ordering of operators"
-msgstr ""
+msgstr "porządek operatorów:"
 
 #: ../../source/specification/brackets/index.rst:10
 msgid "["
@@ -56,7 +56,7 @@ msgstr ""
 
 #: ../../source/specification/brackets/index.rst:10
 msgid "list creation, element access"
-msgstr ""
+msgstr "tworzenie listy, dostęp do elementu"
 
 #: ../../source/specification/brackets/index.rst:11
 msgid "{"
@@ -68,7 +68,7 @@ msgstr ""
 
 #: ../../source/specification/brackets/index.rst:11
 msgid "function"
-msgstr ""
+msgstr "funkcja"
 
 #: ../../source/specification/brackets/index.rst:12
 msgid "$("
@@ -76,7 +76,7 @@ msgstr ""
 
 #: ../../source/specification/brackets/index.rst:12
 msgid "set creation"
-msgstr ""
+msgstr "tworzenie zbioru"
 
 #: ../../source/specification/brackets/index.rst:13
 msgid "#("
@@ -84,7 +84,7 @@ msgstr ""
 
 #: ../../source/specification/brackets/index.rst:13
 msgid "dictionary creation"
-msgstr ""
+msgstr "tworzenie słownika"
 
 #: ../../source/specification/brackets/index.rst:14
 msgid "%("
@@ -92,40 +92,42 @@ msgstr ""
 
 #: ../../source/specification/brackets/index.rst:14
 msgid "associative array creation"
-msgstr ""
+msgstr "tworzenie tablicy asocjacyjnej"
 
 #: ../../source/specification/brackets/index.rst:17
 msgid "The general rules between the brackets:"
-msgstr ""
+msgstr "Ogólne zasady pomiędzy nawiasamy:"
 
 #: ../../source/specification/brackets/index.rst:19
 msgid "Each bracket has to be closed."
-msgstr ""
+msgstr "Każdy nawias musi być domknięty."
 
 #: ../../source/specification/brackets/index.rst:20
 msgid "Closing a bracket without previous opening of it throws an exception."
-msgstr ""
+msgstr "Domknięcie nawiasu bez wcześniejszego jego otwarcie wyrzuca wyjątek."
 
 #: ../../source/specification/brackets/index.rst:21
 msgid ""
 "Stack rule: each bracket opening is pushed to the stack, bracket closing "
 "causes popping from the stack, when the popped element does not match to the"
 " bracket closing, an exception is thrown."
-msgstr ""
+msgstr "Zadada stosu: każde otwarcie nawiasu jest wrzucane na stos, domknięcie nawiasu "
+"powoduje ściągnięcie elementu ze stosu, kiedy ściągnięty element nie pasuje "
+"do domknięcia nawiastu, wyrzucany jest wyjątek."
 
 #: ../../source/specification/constant_tokens/index.rst:2
 msgid "Constant tokens"
-msgstr ""
+msgstr "Stałe tokeny"
 
 #: ../../source/specification/constant_tokens/index.rst:4
 msgid ""
 "A constant token means a token which has a value and its value is set hardly"
 " in the code."
-msgstr ""
+msgstr "Stały token oznacza token, które wartość jest na twardo wpisana w kodzie."
 
 #: ../../source/specification/constant_tokens/index.rst:7
 msgid "Types of constant tokens:"
-msgstr ""
+msgstr "Typy stałych tokenów:"
 
 #: ../../source/specification/constant_tokens/index.rst:9
 #: ../../source/specification/constant_tokens/index.rst:14
@@ -141,16 +143,17 @@ msgstr ""
 msgid ""
 "Each number is floating point. Generally it reflects the mathematical real "
 "number."
-msgstr ""
+msgstr "Każda liczba (Number) is zmiennoprzecinkowa. Ogólnie odzwierciedla "
+"to matematyczne liczby rzeczywiste."
 
 #: ../../source/specification/constant_tokens/index.rst:19
 msgid "There exist the following notations:"
-msgstr ""
+msgstr "Istnieją następujące notacje:"
 
 #: ../../source/specification/constant_tokens/index.rst:22
 #: ../../source/specification/syntax_errors/index.rst:24
 msgid "Name"
-msgstr ""
+msgstr "Nazwa"
 
 #: ../../source/specification/constant_tokens/index.rst:22
 msgid "Regex"
@@ -159,11 +162,11 @@ msgstr ""
 #: ../../source/specification/constant_tokens/index.rst:22
 #: ../../source/specification/token_types/index.rst:10
 msgid "Example"
-msgstr ""
+msgstr "Przykład"
 
 #: ../../source/specification/constant_tokens/index.rst:24
 msgid "Decimal (including scientific notation)"
-msgstr ""
+msgstr "Dziesiętny (w tym notacja naukowa)"
 
 #: ../../source/specification/constant_tokens/index.rst:24
 msgid "[0-9]+(\\\\.[0-9]+)?(e[\\\\+\\\\-]?[0-9]+)?"
@@ -175,7 +178,7 @@ msgstr ""
 
 #: ../../source/specification/constant_tokens/index.rst:25
 msgid "Binary"
-msgstr ""
+msgstr "Binarny"
 
 #: ../../source/specification/constant_tokens/index.rst:25
 msgid "0b[01]+"
@@ -187,7 +190,7 @@ msgstr ""
 
 #: ../../source/specification/constant_tokens/index.rst:26
 msgid "Octal"
-msgstr ""
+msgstr "Ósemkowy"
 
 #: ../../source/specification/constant_tokens/index.rst:26
 msgid "0[0-7]+"
@@ -199,7 +202,7 @@ msgstr ""
 
 #: ../../source/specification/constant_tokens/index.rst:27
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Szesnastkowy"
 
 #: ../../source/specification/constant_tokens/index.rst:27
 msgid "0x[0-9a-f]+"
@@ -215,11 +218,14 @@ msgid ""
 "memory reserved for the application). The delimiter of the string is either "
 "single (''') or double ('\"') quote. The special characters within the "
 "string must be escaped with the backslash ('\\')."
-msgstr ""
+msgstr "To zbiór znaków unicode dowolnej długości (jedyny limit to pamięć "
+"zarezerwowana dla aplikacji). Znakiem ograniczającym string jest albo pojedynczy "
+"apostrof ``'`` albo cudzysłów ``\"``. Znaki specjalne wewnątrz strina muszą "
+"być zapisane za pomocą backslasha ``\\``."
 
 #: ../../source/specification/constant_tokens/index.rst:39
 msgid "List of special characters:"
-msgstr ""
+msgstr "Lista znaków specjalnych"
 
 #: ../../source/specification/constant_tokens/index.rst:41
 msgid "\\\\t - tabulator"
@@ -227,7 +233,7 @@ msgstr ""
 
 #: ../../source/specification/constant_tokens/index.rst:42
 msgid "\\\\n - new line"
-msgstr ""
+msgstr "\\\\n - nowa linia"
 
 #: ../../source/specification/constant_tokens/index.rst:43
 msgid "\\\\\\\\ - backslash"
@@ -235,28 +241,30 @@ msgstr ""
 
 #: ../../source/specification/index.rst:2
 msgid "Specification"
-msgstr ""
+msgstr "Specyfikacja"
 
 #: ../../source/specification/index.rst:4
 msgid ""
 "This is the formal specification of the Plezuro programming language. The "
 "purpose is to define the rules that have to be implemented in any version of"
 " the language."
-msgstr ""
+msgstr "To jest formalna specyfikacja języka programowania Plezuro. Celem jest "
+"zdefiniowanie zasad, które muszą być zaimplementowane w każdej wersji tego "
+"języka."
 
 #: ../../source/specification/operators/index.rst:2
 msgid "Operators"
-msgstr ""
+msgstr "Operatory"
 
 #: ../../source/specification/operators/index.rst:4
 msgid "The rule to match an operator:"
-msgstr ""
+msgstr "Reguła znajdowania operatora:"
 
 #: ../../source/specification/operators/index.rst:6
 msgid ""
 "A single-argument operators (the operator at the left, the argument at the "
 "right) is one of the following:"
-msgstr ""
+msgstr "Jednoargumentowy operator (operator po lewej, argument po prawej) jest jednym z: "
 
 #: ../../source/specification/operators/index.rst:9
 msgid "\"!\""
@@ -286,7 +294,7 @@ msgstr ""
 msgid ""
 "A single-argument operators (the operator at the right) is one of the "
 "following:"
-msgstr ""
+msgstr "Jednoargumentowy operator (operator po prawej) jest jednym z:"
 
 #: ../../source/specification/operators/index.rst:19
 msgid "\"++\""
@@ -301,7 +309,8 @@ msgid ""
 "A double-argument operators (the first argument, the operator, the second "
 "argument; from the evaluated at the end to the evaluated at the begin) is "
 "one of the following:"
-msgstr ""
+msgstr "Dwuaargumentowy operator (zerowy argument, operator, pierwszy argument, od tych "
+"wykonywanych na samym końcu do tych samym początku) jest jednym z:"
 
 #: ../../source/specification/operators/index.rst:26
 msgid "\";\""
@@ -469,7 +478,7 @@ msgstr ""
 
 #: ../../source/specification/symbols/index.rst:2
 msgid "Symbols"
-msgstr ""
+msgstr "Symbole"
 
 #: ../../source/specification/symbols/index.rst:4
 msgid ""
@@ -477,75 +486,81 @@ msgid ""
 "(dependently on the language it can be variable, function, class, structure,"
 " union, trait, module, interface etc.). In Plezuro everything is a variable "
 "so each symbol represents a variable."
-msgstr ""
+msgstr "Symbol oznacza nazwę nadaną przez programistę do czegokolwiek w programie "
+"zależnie od języka to może być zmienna, funkcja, klasa, struktura, unia, trait, interfejs "
+"itd.). W Plezuro wszystko jest zmienną, więc każdy symbol oznacza zmienną."
 
 #: ../../source/specification/symbols/index.rst:9
 msgid "The rules of a naming a variable:"
-msgstr ""
+msgstr "Reguły nazewnictwa zmiennych:"
 
 #: ../../source/specification/symbols/index.rst:11
 msgid "The first character must be an ASCII char or the underscore ('_')."
-msgstr ""
+msgstr "Pierwszy znak musi być znakiem literą z kodu ASCII, lub podkreśleniem ``_``."
 
 #: ../../source/specification/symbols/index.rst:12
 msgid "The next characters must be an ASCII char, the underscore or a digit."
-msgstr ""
+msgstr "Następne znaki muszą być literami z kodu ASCII, podkreśleniami lub cyframi."
 
 #: ../../source/specification/symbols/index.rst:17
 msgid "Declaration"
-msgstr ""
+msgstr "Deklaracja"
 
 #: ../../source/specification/symbols/index.rst:19
 msgid ""
 "Eeach symbol must be declared at the first use in the source file. The "
 "declaration contains the dollar sign ('$') and the name of the symbol."
-msgstr ""
+msgstr "Każdy symbol musi być zadeklarowany przy pierwszym użyciu w pliku "
+"źródłowym. Deklaracja zawiera znak dolara ``$`` a następnie nazwę symbolu."
 
 #: ../../source/specification/symbols/index.rst:25
 msgid "Class fields"
-msgstr ""
+msgstr "pola klasy"
 
 #: ../../source/specification/symbols/index.rst:27
 msgid ""
 "Class field (or module field) contains the name of the module the double "
 "colon ('::') and the name of the field (the same rules like for the symbol)."
-msgstr ""
+msgstr "Pole klasy (inaczej pole modułu) zawiera w swej składni nazwę modułu, podwójny "
+"dwukropek ``::`` oraz nazwę pola (tutaj te same zasady jak w przypadku symbolu)."
 
 #: ../../source/specification/symbols/index.rst:33
 msgid "Object fields"
-msgstr ""
+msgstr "Pola obiektu"
 
 #: ../../source/specification/symbols/index.rst:35
 msgid ""
 "Object field (or module field) contains the at character ('@') and the name "
 "of the field (the same rules like for the symbol)."
-msgstr ""
+msgstr "Pole obiektu (lub pole modułu) zawiera znak małpy ``@`` i nazwę pola "
+"(te same zasady jak w przypadku symbolu)"
 
 #: ../../source/specification/token_types/index.rst:2
 msgid "Token types"
-msgstr ""
+msgstr "Typy tokenów"
 
 #: ../../source/specification/token_types/index.rst:4
 msgid "The first step of the compilation is the tokenization."
-msgstr ""
+msgstr "Pierwszym etapem kompilacji jest tokenizacja."
 
 #: ../../source/specification/token_types/index.rst:6
 msgid ""
 "Plezuro has the following token types (the order matters, when regex or "
 "condition of multiple tokens matches the first of them wins):"
-msgstr ""
+msgstr "Plezuro posiada następujące typy tokenów (kolejność ma znaczenie, "
+"kiedy regex lub warunek wielu tokenów pasuje, pierwszy z nich wygrywa):"
 
 #: ../../source/specification/token_types/index.rst:10
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: ../../source/specification/token_types/index.rst:10
 msgid "Regex or condition"
-msgstr ""
+msgstr "Regex lub warunek"
 
 #: ../../source/specification/token_types/index.rst:12
 msgid "single line comment"
-msgstr ""
+msgstr "komentarz jednoliniowy"
 
 #: ../../source/specification/token_types/index.rst:12
 msgid "\\\\/\\\\/.*"
@@ -557,7 +572,7 @@ msgstr ""
 
 #: ../../source/specification/token_types/index.rst:13
 msgid "multi line comment"
-msgstr ""
+msgstr "komentarz wieloliniowy"
 
 #: ../../source/specification/token_types/index.rst:13
 msgid "\\\\/\\\\*.*"
@@ -569,7 +584,7 @@ msgstr ""
 
 #: ../../source/specification/token_types/index.rst:14
 msgid "bracket"
-msgstr ""
+msgstr "nawias"
 
 #: ../../source/specification/token_types/index.rst:14
 msgid "\\\\[\\|\\\\]|\\\\(\\|\\\\)|\\\\{\\|\\\\}\\|(#\\\\()\\|(\\\\$\\\\()\\|(%\\\\()"
@@ -581,7 +596,7 @@ msgstr ""
 
 #: ../../source/specification/token_types/index.rst:15
 msgid "number"
-msgstr ""
+msgstr "liczba"
 
 #: ../../source/specification/token_types/index.rst:15
 msgid ""
@@ -594,7 +609,7 @@ msgstr ""
 
 #: ../../source/specification/token_types/index.rst:16
 msgid "declaration"
-msgstr ""
+msgstr "deklaracja"
 
 #: ../../source/specification/token_types/index.rst:16
 msgid "\\\\$[A-Za-z\\_]+[A-Za-z_0-9]*"
@@ -606,7 +621,7 @@ msgstr ""
 
 #: ../../source/specification/token_types/index.rst:17
 msgid "class field"
-msgstr ""
+msgstr "pole klasy"
 
 #: ../../source/specification/token_types/index.rst:17
 msgid "[A-Za-z\\_]+[A-Za-z_0-9]*::[A-Za-z\\_]+[A-Za-z_0-9]*"
@@ -618,7 +633,7 @@ msgstr ""
 
 #: ../../source/specification/token_types/index.rst:18
 msgid "object field"
-msgstr ""
+msgstr "pole obiektu"
 
 #: ../../source/specification/token_types/index.rst:18
 msgid "@[A-Za-z\\_]+[A-Za-z_0-9]*"
@@ -630,7 +645,7 @@ msgstr ""
 
 #: ../../source/specification/token_types/index.rst:19
 msgid "whitespace"
-msgstr ""
+msgstr "biały znak"
 
 #: ../../source/specification/token_types/index.rst:19
 msgid "[ \\\\\\t]+"
@@ -638,11 +653,11 @@ msgstr ""
 
 #: ../../source/specification/token_types/index.rst:20
 msgid "operator"
-msgstr ""
+msgstr "operator"
 
 #: ../../source/specification/token_types/index.rst:20
 msgid "one of defined char sequences"
-msgstr ""
+msgstr "jeden ze zdefiniowanych ciągów znaków"
 
 #: ../../source/specification/token_types/index.rst:20
 msgid "\\+"
@@ -650,7 +665,7 @@ msgstr ""
 
 #: ../../source/specification/token_types/index.rst:21
 msgid "symbol"
-msgstr ""
+msgstr "symbol"
 
 #: ../../source/specification/token_types/index.rst:21
 msgid "[A-Za-z\\_]+[A-Za-z_0-9]*"
@@ -674,27 +689,28 @@ msgstr ""
 
 #: ../../source/specification/variables/index.rst:2
 msgid "Variables"
-msgstr ""
+msgstr "Zmienne"
 
 #: ../../source/specification/variables/index.rst:4
 msgid ""
 "Everything is possible to assign to a variable. Each variable must be "
 "declared."
-msgstr ""
+msgstr "Wszystko można przypisać do zmiennej. Każda zmienna musi być zadeklarowa."
 
 #: ../../source/specification/variables/index.rst:9
 msgid "Scope"
-msgstr ""
+msgstr "Zasięg"
 
 #: ../../source/specification/variables/index.rst:10
 msgid ""
 "The declaration determines the scope of a variable. It is possible to hide a"
 " variable with another variable with the same name."
-msgstr ""
+msgstr "Deklaracja określa zasięg zmiennej. Jest możliwe ukryć zmienną poprzez inną "
+"o tej samej naziwe."
 
 #: ../../source/specification/whitespaces_and_comments/index.rst:2
 msgid "Whitespaces and comments"
-msgstr ""
+msgstr "Białe znaki i komentarze"
 
 #: ../../source/specification/whitespaces_and_comments/index.rst:4
 msgid ""
@@ -703,11 +719,15 @@ msgid ""
 "have a little impact on the code: it is impossible to insert a comment (nor "
 "a whitespace) inside the symbol (variable) name; the only possibility is to "
 "insert comments between multiple tokens;"
-msgstr ""
+msgstr "Komentarze zachowują się tak jak by było zastąpione pojedynczą spacją."
+"Zatem kod wewnątrz nie jest wykonywany. Tak sam białe znaki nie są wykonywane. "
+"Chociaż mają minimalny wpływ na kod: nie można wstawić komentarza (ani białego "
+"znaku wewnątrz nazwy symbolu (zmiennej); jedyna możliwość to wstawiać komentarze "
+"pomiędzy różnymi tokenami."
 
 #: ../../source/specification/expressions/index.rst:2
 msgid "Expressions"
-msgstr ""
+msgstr "Wyrażenia"
 
 #: ../../source/specification/expressions/index.rst:4
 msgid ""
@@ -716,62 +736,70 @@ msgid ""
 "it mean exactly? From the Plezuro's point of view the expression is an "
 "atomic instuction but from the CPU's (or virtual and even purely theoretical"
 " CPU) point of view one expression can contain multiple instructions."
-msgstr ""
+msgstr "Wyrażenie to pojedyncza komenda oddzielona średnikiem ``;``. "
+"Chociaż może być wiele instrukcji (np. ``x = y = 2 + 4``). Co to znaczy "
+"dokładnie? Z punktu widzenia Plezuro, wyrażenie jest najmniejszą, niepodzielną "
+"instrukcją ale z punktu widzenia CPU (lub nawet czysto matematycznego CPU) "
+"jedno wyrażenie może zawierać wiele instrukcji."
 
 #: ../../source/specification/functions/index.rst:2
 msgid "Functions"
-msgstr ""
+msgstr "Funkcje"
 
 #: ../../source/specification/functions/index.rst:4
 msgid ""
 "A function is a set of operations that can be executed in any moment at the "
 "runtime. A function takes any number of arguments which are accessible with "
 "the following keywords:"
-msgstr ""
+msgstr "Funkcja to zbiór operacji, które mogą być wykonywane w dowolnym momencie "
+"w trakcie wykonywania programu. Funkcja bierze dowolną ilość argumentów, które to "
+"są dostępne poprzez następujące słowa kluczowe: "
 
 #: ../../source/specification/functions/index.rst:8
 msgid "this - zero argument"
-msgstr ""
+msgstr "this - zerowy argument"
 
 #: ../../source/specification/functions/index.rst:9
 msgid "first - first argument"
-msgstr ""
+msgstr "first - pierwszy argument"
 
 #: ../../source/specification/functions/index.rst:10
 msgid "second - second argument"
-msgstr ""
+msgstr "second - drugi argument"
 
 #: ../../source/specification/functions/index.rst:11
 msgid "third - third argument"
-msgstr ""
+msgstr "third - trzeci argument"
 
 #: ../../source/specification/functions/index.rst:12
 msgid "args - the list of the arguments"
-msgstr ""
+msgstr "args - lista argumentów"
 
 #: ../../source/specification/functions/index.rst:14
 msgid ""
 "In case of an inner function the arguments of the outer one are hidden by "
 "those of the inner one."
-msgstr ""
+msgstr "W przypadku funkcji wewnętrznej, argumenty zewnętrznej funkcji są "
+"ukryte argumentami wewnętrznej."
 
 #: ../../source/specification/functions/index.rst:17
 msgid ""
 "Each function returns a value. The type is not specified. They are two ways "
 "to return a value:"
-msgstr ""
+msgstr "Każda funkcja zwraca jakąś wartość. Typ nie nie jest określony. Są dwa "
+"sposoby na zwrócenie wartości: "
 
 #: ../../source/specification/functions/index.rst:20
 msgid "explicitly - with the ``return`` keyword"
-msgstr ""
+msgstr "jawnie - za pomocą słowa kluczowego ``return``"
 
 #: ../../source/specification/functions/index.rst:21
 msgid "implicitly - the last expression is returned"
-msgstr ""
+msgstr "sposób domniemany - ostatnie wyrażenie jest zwracane"
 
 #: ../../source/specification/functions/index.rst:26
 msgid "Methods"
-msgstr ""
+msgstr "Metody"
 
 #: ../../source/specification/functions/index.rst:28
 msgid ""
@@ -780,21 +808,25 @@ msgid ""
 "next arguments are numbered from 1. In method calling when there is no "
 "arguments (except for this object) the bracket after method name is not "
 "required."
-msgstr ""
+msgstr "Metoda działa w ten sam sposób co funkcja. Jedyna różnica to, że obiekt "
+"(zmienna przed kropką) jest przekazany jak zerowy argument, a następne "
+"argumenty są numerowane od 1. W wywołaniu metody kiedy nie ma argumentów (za "
+"wyjątkiem obiektu this) nawias po nazwie metody nie jest wymagany."
 
 #: ../../source/specification/functions/index.rst:36
 msgid "Scripts"
-msgstr ""
+msgstr "Skrypty"
 
 #: ../../source/specification/functions/index.rst:38
 msgid ""
 "Even the scripts behave in the same manner as a function. They take "
 "arguments (the access in the same way) and they return a value."
-msgstr ""
+msgstr "Nawet skrypty zachowują się w ten sam sposób co funkcja. Biorą argumenty "
+"(dostęp w ten sam sposób) i zwracają wartość."
 
 #: ../../source/specification/index.rst:8
 msgid "For whom is it?"
-msgstr ""
+msgstr "Dla kogo to jest?"
 
 #: ../../source/specification/index.rst:10
 msgid ""
@@ -803,42 +835,51 @@ msgid ""
 "their knowledge. The tutorial is more for learning and simple understanding "
 "but the specification is more for knowing exactly how Plezuro applications "
 "should behave and therefore how compilers and interpreters should behave."
-msgstr ""
+msgstr "Dla programistów, którzy chcieliby zaimplementować inną wersję Plezuro, "
+"bibliotekę, rozszerzenie jak również dla standardowych użytkowników, którzy "
+"pragną poszerzyć swoją wiedzę. Przewodnik jest bardziej dla nauki i prostego "
+"zrozumienia, zaś specyfikacja bardziej dla dokładnej wiedzy jak aplikacje w Plezuro "
+"powinny się zachowywać i co za tym idzie, jak kompilatory i interpretatory "
+"powinny działać."
 
 #: ../../source/specification/index.rst:16
 msgid ""
 "Nonetheless the code is the best way to define exactly the behavior. So each"
 " version of Plezuro must match all the automatic tests included in the "
 "mainstream implementation."
-msgstr ""
+msgstr "Jednak to kod jest najlepszym sposobem na dokładne zdefiniowanie zachowania. "
+"Zatem każda wersja Plezuro musi przejść pozytywnie wszystkie testy automatyczne "
+"napisane dla głównej wersji."
 
 #: ../../source/specification/magick_constants/index.rst:2
 msgid "Magic constants"
-msgstr ""
+msgstr "Magiczne stałe"
 
 #: ../../source/specification/magick_constants/index.rst:4
 msgid ""
 "Eeach compiler (and even interpreter) of Plezuro must provide the following "
 "magick constants:"
-msgstr ""
+msgstr "Każdy kompilator (a także intepretator) Plezuro, musi obsłużyż następujące "
+"magiczne stałe: "
 
 #: ../../source/specification/magick_constants/index.rst:6
 msgid ""
 "__pos__ - the horizontal position in a line (counting from 0, it is position"
 " where the token begins)"
-msgstr ""
+msgstr "__pos__  - pozioma pozycja w lini (licząc od 0, to pozycja gdzie zaczyna się "
+"słowo kluczowe)"
 
 #: ../../source/specification/magick_constants/index.rst:9
 msgid "__line__ - the line number in a source file (counting from 0)"
-msgstr ""
+msgstr "__line__ - numer lini w pliku źródłowym (licząc od 0)"
 
 #: ../../source/specification/magick_constants/index.rst:11
 msgid "__file__ - the name of the source file"
-msgstr ""
+msgstr "__file__ - nazwa pliku źródłowego"
 
 #: ../../source/specification/magick_constants/index.rst:13
 msgid "__dir__ - the real directory of the source file"
-msgstr ""
+msgstr "__dir__ - pełny folder pliku źródłowego"
 
 #: ../../source/specification/magick_constants/index.rst:15
 msgid ""
@@ -849,17 +890,23 @@ msgid ""
 "'/home/user/programming/plezuro/my_plezuro_project')) but must return a "
 "valid real Unix path (ex. "
 "'/home/user/programming/something/project/../../plezuro/my_plezuro_project')."
-msgstr ""
+msgstr "Jest zalecane zastąpić każde z powyższych słów kluczowych w kodzie "
+"wynikowym poprzez stringa. Nie ma zalecenia co do kodu pośredniego. __dir__ "
+"nie musi zwracać ścieżki w formie kanonicznej (wszystkie podfoldery od "
+"najwyższego do najniższego (np. '/home/user/programming/plezuro/my_plezuro_project') "
+"ale musi zawierać prawidłową pełnę ścieżkę unixową (np. "
+"'/home/user/programming/something/project/../../plezuro/my_plezuro_project')."
 
 #: ../../source/specification/magick_constants/index.rst:22
 msgid ""
 "Even for not Unix systems the path must be in the Unix notation (with "
 "slashes)."
-msgstr ""
+msgstr "Nawet dla systemów nie unixowych ścieżka musi być w notacji unixowej "
+"(ze slashami)."
 
 #: ../../source/specification/modules/index.rst:2
 msgid "Modules"
-msgstr ""
+msgstr "Moduły"
 
 #: ../../source/specification/modules/index.rst:4
 msgid ""
@@ -867,21 +914,24 @@ msgid ""
 "module determines the type of a variable. Each variable is associated with a"
 " module (built-in or created by a Plezuro developer). Therefore the module "
 "determines the action in a method or operator calling."
-msgstr ""
+msgstr "Moduł jest jednoczeście klasą, przestrzenią nazw i statycznym modułem. "
+"Moduł określa typ zmiennej. Każda zmienna jest związana z jakimś modułem "
+"(wbudowanym lub stworzonym przez programistę Plezuro). Zatem moduł określa "
+"akcję przy wywołaniu metody lub operatora."
 
 #: ../../source/specification/modules/index.rst:11
 msgid "Constructor"
-msgstr ""
+msgstr "Konstruktor"
 
 #: ../../source/specification/modules/index.rst:13
 msgid ""
 "Always after an object creation the constructor is called. Its name is "
 "'init'."
-msgstr ""
+msgstr "Zawsze po stworzeniu obiektu konstruktor jest wywołany. Jego nazwa to 'init'"
 
 #: ../../source/specification/modules/index.rst:18
 msgid "Inheritance"
-msgstr ""
+msgstr "Dziedziczenie"
 
 #: ../../source/specification/modules/index.rst:20
 msgid ""
@@ -892,17 +942,22 @@ msgid ""
 "static methods). It is possible to override what is inherited. When a module"
 " does not inherit explicitly, it inherits from the Module.BasicModule which "
 "is ancestor of all the modules."
-msgstr ""
+msgstr "Moduł może dziedziczyć po wielu innych modułach. Relacja dziedziczenia "
+"jest przechodnia, nierówna. To znaczy, że moduł nie może dziedziczyć po samym "
+"sobie, a także przodek modułu nie może być jednocześnie jego potomkiem. Dziedziczenie "
+"dotyczy metod i operatorów (bez pól i metod statycznych). Można nadpisywać to, "
+"co jest odziedziczone. Kiedy moduł nie dziedziczy jawnie, dziedziczy po Module.BasicModule, "
+"który to jest przodkiem wszystkich modułów."
 
 #: ../../source/specification/modules/index.rst:31
 msgid "Static fields and methods"
-msgstr ""
+msgstr "Pola i metody statyczne"
 
 #: ../../source/specification/modules/index.rst:33
 msgid ""
 "Static fields and methods are associated with exactly one module. They are "
 "not inherited."
-msgstr ""
+msgstr "Pola i metody statyczne są związane dokładnie z jednym modułem. Nie są dziedziczone."
 
 #: ../../source/specification/modules/index.rst:37
 msgid "Duck typing"
@@ -914,22 +969,27 @@ msgid ""
 "given name from an object if such a method exists in its module (directly or"
 " inherited). Moreover objects can be passed as zero argument to methods from"
 " totally different modules."
-msgstr ""
+msgstr "Wszędzie występuje duck typing. To znaczy, że da się wywołać metodę z daną "
+"nazwą z obiektu jeśli taka metoda istnieje w jego module (bezpośrednio lub "
+"jest odzedziczona). Ponadto obiekty mogą być przekazywane jako zerowy argument do metod "
+"z zupełnie niezależnych modułów."
 
 #: ../../source/specification/syntax_errors/index.rst:2
 msgid "Syntax errors"
-msgstr ""
+msgstr "Błędy składniowe"
 
 #: ../../source/specification/syntax_errors/index.rst:4
 msgid ""
 "Because of very simple syntax there are very few syntax errors. Even "
 "conditionals and loops are created with methods invoking so syntax errors "
 "are possible to occur where the tokens does not match in a proper way."
-msgstr ""
+msgstr "Z powodu bardzo prostej składni jest bardzo mało typów błędów składniowych. "
+"Nawet instrukcje warunkowe i pętle są tworzone jako wywołania metod, więc "
+"błędy składniowe mogą wystąpić jedynie, gdy tokeny nie są ułożone w odpowiedni sposób."
 
 #: ../../source/specification/syntax_errors/index.rst:11
 msgid "How to handle syntax errors?"
-msgstr ""
+msgstr "Jak wykryć błędy składniowe?"
 
 #: ../../source/specification/syntax_errors/index.rst:13
 msgid ""
@@ -937,19 +997,22 @@ msgid ""
 "script containing a syntax error is imported, it should throw an exception. "
 "A compiler should create an output script (or a function in a script where "
 "the scripts are joint altogether in the output) which throws an exception."
-msgstr ""
+msgstr "W Plezuro nie ma fatalnych błędów. Każdy błąd to wyjątek. Kiedy skrypt "
+"zawierający błąd składniowy jest importowany, wyjątek powinien zostać wyrzucony. "
+"Kompilator pownien stworzyć plik wynikowy (lub fukncję w pliku wynikowym, gdzie "
+"wszytkie skrypty są łączone razme) który wyrzuci wyjątek."
 
 #: ../../source/specification/syntax_errors/index.rst:21
 msgid "Total list of syntax errors"
-msgstr ""
+msgstr "Pełna lista błędów składniowych"
 
 #: ../../source/specification/syntax_errors/index.rst:24
 msgid "Occurrence"
-msgstr ""
+msgstr "Wystąpienie"
 
 #: ../../source/specification/syntax_errors/index.rst:24
 msgid "Examples"
-msgstr ""
+msgstr "Przykłady"
 
 #: ../../source/specification/syntax_errors/index.rst:26
 msgid "BracketStackException"
@@ -957,15 +1020,15 @@ msgstr ""
 
 #: ../../source/specification/syntax_errors/index.rst:26
 msgid "a bracket is not closed,"
-msgstr ""
+msgstr "nawias nie jest domknięty,"
 
 #: ../../source/specification/syntax_errors/index.rst:28
 msgid "closing of another type of bracket,"
-msgstr ""
+msgstr "zamknięcie nieodpowiedniego typu nawiasu,"
 
 #: ../../source/specification/syntax_errors/index.rst:30
 msgid "abundant bracket closing"
-msgstr ""
+msgstr "nadmierne domknięcie nawiasu"
 
 #: ../../source/specification/syntax_errors/index.rst:26
 msgid "(2 + 3"
@@ -985,7 +1048,7 @@ msgstr ""
 
 #: ../../source/specification/syntax_errors/index.rst:32
 msgid "a token of not existing type"
-msgstr ""
+msgstr "token nieistniejącego typu"
 
 #: ../../source/specification/syntax_errors/index.rst:32
 msgid "$αβγ = 21"
@@ -997,7 +1060,7 @@ msgstr ""
 
 #: ../../source/specification/syntax_errors/index.rst:34
 msgid "neither operator nor another bracket closing after bracket closing"
-msgstr ""
+msgstr "po zamknięciu nawiasu coś innego niż operator lub następne domknięcie nawiasu"
 
 #: ../../source/specification/syntax_errors/index.rst:34
 msgid "$x=[2] \"oo\""
@@ -1009,7 +1072,7 @@ msgstr ""
 
 #: ../../source/specification/syntax_errors/index.rst:37
 msgid "not proper operator after bracket opening or begin of a script"
-msgstr ""
+msgstr "nieodpowiedni operator po otwarciu nawiasu lub początku skryptu"
 
 #: ../../source/specification/syntax_errors/index.rst:37
 msgid "\\* 43"
@@ -1021,7 +1084,7 @@ msgstr ""
 
 #: ../../source/specification/syntax_errors/index.rst:40
 msgid "an operator after another one with some exceptions"
-msgstr ""
+msgstr "operator po operatorze (chociaż są wyjątki od tego)"
 
 #: ../../source/specification/syntax_errors/index.rst:40
 msgid "2 + * 5"
@@ -1033,7 +1096,7 @@ msgstr ""
 
 #: ../../source/specification/syntax_errors/index.rst:43
 msgid "an operator before bracket closing"
-msgstr ""
+msgstr "operator przed domknięciem nawiasu"
 
 #: ../../source/specification/syntax_errors/index.rst:43
 msgid "(2 + 3 -)"
@@ -1045,7 +1108,7 @@ msgstr ""
 
 #: ../../source/specification/syntax_errors/index.rst:45
 msgid "a constant token after another one"
-msgstr ""
+msgstr "stały token po innym stałym tokenie"
 
 #: ../../source/specification/syntax_errors/index.rst:45
 msgid "3 + *"
