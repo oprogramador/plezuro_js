@@ -8,3 +8,7 @@ include the plezuro.js library.
 
 .. literalinclude:: ../../../../../../src/plezuro/doc/web/basic/index.html
   :language: html
+  :caption: basic/index.html
+
+.. literalinclude:: ../../../../../../src/plezuro/doc/web/basic/main.plez
+  :caption: basic/main.plez

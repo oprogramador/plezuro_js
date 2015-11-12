@@ -1,0 +1,9 @@
+_jQ('#mainButton').click({
+  $a = Number.parseFloat(_jQ('#a').val);
+  $b = Number.parseFloat(_jQ('#b').val);
+  $c = a + b;
+  _jQ('#c').val(c);
+  _jQ(this).css('backgroundColor', 'rgb('+(rand*256).floor+', '+(rand*256).floor+','+(rand*256).floor+')');
+  null;
+  null
+})

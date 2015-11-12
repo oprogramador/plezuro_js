@@ -1,0 +1,6 @@
+window.alert('aa');
+document.write('bb');
+alert(window, 'cc');
+document['body']['innerHTML'] = 'dd';
+console.log('ee');
+'ff'.dumpl

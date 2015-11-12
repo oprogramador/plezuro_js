@@ -1,0 +1,8 @@
+document.getElementById('mainButton')['onclick'] = {
+  $a = Number.parseFloat(document.getElementById('a')['value']);
+  $b = Number.parseFloat(document.getElementById('b')['value']);
+  $c = a + b;
+  document.getElementById('c')['value'] = c;
+  this['style']['backgroundColor'] = 'rgb('+(rand*256).floor+', '+(rand*256).floor+', '+(rand*256).floor+')';
+  null
+}

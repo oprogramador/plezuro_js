@@ -15,18 +15,28 @@ clear.sh               deleting all generated output      scripts/clear.sh
 
 deploy_js.sh           compiling single script (into      scripts/deploy_js.sh src/plezuro/tests/1.plez
                        'bin' directory) for plezuro
-                       files, copying for other files,
+                       files,
+                       
+                       copying for other files,
+
                        recursive running the same script
                        for the directories                   
 
-export_jar.sh          Exporting .class files into single scripts/export_jar.sh
+export_jar.sh          exporting .class files into single scripts/export_jar.sh
                        .jar
 
-make.sh                build.sh, export_jar.sh, copying   scripts/make.sh
+make.sh                build.sh,                          scripts/make.sh
+
+                       export_jar.sh,
+                       
+                       copying   
                        .jar file into '/usr/bin/',
+
                        make_js.sh
 
-make_js.sh             make_js_lib.sh, compiling all      scripts/make_js.sh
+make_js.sh             make_js_lib.sh,                    scripts/make_js.sh
+
+                       compiling all      
                        Plezuro scripts from 'src/plezuro'
                        to 'bin/js'
 

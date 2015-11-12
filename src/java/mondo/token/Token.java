@@ -54,7 +54,9 @@ public abstract class Token implements Cloneable {
         tokenizer.resetToThis();
         if(tokenizer.getNext() == null) {
             tokenizer.resetToThis();
-            tokenizer.insertAfter(new FunctionEndToken().setText("}).exports(typeof module !== 'undefined' ? module : null)"));
+            tokenizer.insertAfter(new FunctionEndToken().setText(
+                        "})[typeof module !== 'undefined' ? 'exports' : 'call'](typeof module !== 'undefined' ? module : null)"
+                        ));
             tokenizer.reset();
             tokenizer.insertBefore(new FunctionToken().setText("(function() {"));
             tokenizer.resetToThis();

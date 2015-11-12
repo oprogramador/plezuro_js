@@ -20,3 +20,9 @@ You can read it from the following tutorials:
 
   how_to/index
   output/index
+  html_elements/index
+  html_dom_methods/index
+  storage/index
+  jQuery/index
+  ajax/index
+  angular/index

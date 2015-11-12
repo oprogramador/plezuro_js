@@ -168,7 +168,7 @@ a = '../../bin/js/tests/31.plez.js'.import();
 assert.strictEqual(a.class().name, 'Null');
 
 a = '../../bin/js/tests/32.plez.js'.import();
-assert.ok(is_undefined(a()));
+assert.ok(Object.isUndefined(a()));
 
 a = '../../bin/js/tests/33.plez.js'.import();
 assert.strictEqual(a, 7);
@@ -220,3 +220,6 @@ assert.strictEqual(JSON.stringify(a), '["abcdabcdabcd",[1,2,5,3,4],[1,2,5,3,4,1,
 
 a = '../../bin/js/tests/40.plez.js'.import();
 assert.strictEqual(JSON.stringify(a), '[32,32]');
+
+a = '../../bin/js/tests/42.plez.js'.import();
+assert.strictEqual(a, false);

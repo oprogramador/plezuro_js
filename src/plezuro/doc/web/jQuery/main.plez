@@ -1,0 +1,9 @@
+jQuery(null, '#mainButton'.toString).click({
+  $a = Number.parseFloat(jQuery(null, '#a'.toString).val);
+  $b = Number.parseFloat(jQuery(null, '#b'.toString).val);
+  $c = a + b;
+  jQuery(null, '#c'.toString).val(c);
+  jQuery(null, this).css('backgroundColor', 'rgb('+(rand*256).floor+', '+(rand*256).floor+','+(rand*256).floor+')');
+  null;
+  null
+})

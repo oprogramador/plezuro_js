@@ -6,7 +6,9 @@ todo:
     bugs:
         assign_negative: no
         at_the_end_of_script_multiline_comment_and_value: no
+        minus_after_bracket_opening: no
         method_call_and_square_bracket: yes
+        prepend_return: no
     collections:
         associative_array: yes
         dictionary: yes
@@ -113,6 +115,7 @@ todo:
         relative_path: no
         script_args: yes
         static: no
+    lodash_using: no
     loop:
         iterate_with_key: no
     magick_constants: yes
@@ -153,8 +156,10 @@ todo:
         check_for_null: no
         global_variables_restrictions: no
         native_code: no
+    node_modules_to_plezuro_js: no
     operators:
         basic: yes
+        '? :': no
         dot_equal: no
         identity_comparison: no
         joint: no

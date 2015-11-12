@@ -4,10 +4,12 @@ langs=(en fr pl)
 cd ../../doc/rst
 mkdir -p deploy/site/public/downloads
 cp ../../bin/plezuro.jar deploy/site/public/downloads/plezuro.jar
+cp ../../bin/js/plezuro.js deploy/site/public/downloads/plezuro.js
 dir=deploy/site/public/tutorial
 rm -rf $dir
 mkdir -p $dir
 for lang in ${langs[@]}; do
+    rm -rf $dir/$lang
     cp -r build/$lang/html $dir/$lang
     pdfDir=deploy/site/public/downloads/pdf/$lang
     mkdir -p $pdfDir

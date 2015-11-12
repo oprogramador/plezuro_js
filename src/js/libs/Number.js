@@ -19,6 +19,10 @@ Number.prototype.tan = function() {
     return Math.tan(this);
 }
 
+Number.prototype.floor = function() {
+    return Math.floor(this);
+}
+
 Number.prototype['+'] = function(x) {
     return this + x;
 }

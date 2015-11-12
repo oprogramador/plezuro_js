@@ -1,0 +1,5 @@
+_jQ('#mainButton').click({
+  _jQ('#container').load('part.html'.toString);
+  null;
+  null
+})

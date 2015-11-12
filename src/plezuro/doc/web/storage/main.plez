@@ -1,0 +1,11 @@
+document.getElementById('mainButton')['onclick'] = {
+  $counter = localStorage['counter'];
+  {Object.isUndefined(counter)}.if({
+    counter = '-1'
+  });
+  counter = Number.parseFloat(counter);
+  counter++;
+  localStorage['counter'] = counter;
+  document.getElementById('counter')['value'] = counter;
+  null
+}

@@ -29,9 +29,9 @@ Object.prototype.callM = function() {
 
 Object.prototype.dumpl = function() {
     try {
-        console.log(this);
+        console.log(this.toString());
     } catch(e) {
-        print(this);
+        print(this.toString());
     }
     return this.toString();
 }
@@ -56,20 +56,14 @@ Object.prototype.remove = function(x) {
     delete this[x];
 }
 
-Object.prototype.__call = function(methodName) {
-  var args = Array.prototype.slice.call(arguments);
-  var method = this.getMyClass().findMethod(methodName);
-  return method.apply(this, args);
-}
-
-Object.is_null = function(x) {
+Object.isNull = function(x) {
     return x === null;
 }
 
-is_null = Object.is_null;
-
-Object.is_undefined = function(x) {
+Object.isUndefined = function(x) {
     return typeof x === 'undefined';
 }
 
-is_undefined = Object.is_undefined;
+var _jQ = function() {
+    return jQuery(this.constructor.name === 'String' ? this.toString(): this);
+}
