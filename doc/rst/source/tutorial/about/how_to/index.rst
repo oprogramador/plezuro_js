@@ -12,12 +12,12 @@ mainstream Plezuro. It is something like a prototype of the final product.
 Plezuro.js
 ==========
 
-Using a plezuro.jar (download from
+Using the plezuro.jar (download from
 https://plezuro.herokuapp.com/downloads/plezuro.jar) executable you can compile a script from Plezuro to
 Javascript. It works for entire files, not a code embedded in HTML. You can use
 it within a browser, in the server side (using Node.js), for the mobile
 development (using Cordova) or any other technology that uses Javascript.
-Another important thing is to attach plezuro.js (download from
+Another important thing is to attach the plezuro.js (download from
 https://plezuro.herokuapp.com/downloads/plezuro.js) library (in HTML for browser and
 Cordova or using 'require' for Node.js). There
 is an automated support for all the Javascript libraries because you can use all

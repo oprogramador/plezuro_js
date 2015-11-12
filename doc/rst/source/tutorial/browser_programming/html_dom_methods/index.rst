@@ -76,8 +76,8 @@ For example ``element.setAttribute('name', 'age')``
 
 **style**
 
-You can change the CSS style. The only difference between the CSS property name
-and the Plezuro property name is in Plezuro you must use the camelcase. For example
+You can change the CSS style. You can use the CSS name with a hyphen ``-``
+as well the camelcase. For example
 ``element['style']['backgroundColor'] = 'red'``
 
 
@@ -138,7 +138,7 @@ It fires after a key being pressed.
 
 **onkeypress**
 
-It fires after when a key is being pressed (even multiple times).
+It fires when a key is being pressed (even multiple times).
 
 
 **onkeyup**

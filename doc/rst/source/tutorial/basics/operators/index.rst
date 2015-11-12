@@ -13,7 +13,7 @@ close. So after the last element of the list you cannot put the comma and after
 the last statement of the function you cannot put the semicolon. In such a case
 it would be a syntax error.
 
-The action of an operator depends of the type of the first argument. Is behaves in
+The action of an operator depends of the type of the zero argument. It behaves in
 the same way like the method call. It is possible to change the operators action
 in the runtime (even you can cause that 2+2 produce another result than 4 so it
 is not recommended to change it in abundance).

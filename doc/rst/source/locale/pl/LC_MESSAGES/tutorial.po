@@ -24,13 +24,13 @@ msgid ""
 "interpreted version implemented in c♯ which is not supported anymore. That "
 "version is not compatible in 100% with the mainstream Plezuro. It is "
 "something like a prototype of the final product."
-msgstr "Obecnie główna wersja Plezuro jest kompilowana do Javascripta. W "
-       "przyszłości jest planowane kompilowanie do innych języków "
-       "(prawdopodobnie c, c♯, Java, Python, Ruby i PHP, eventualnie Lisp i "
-       "Fortran). Istnieje również wersja interpretowana zaimplementowana w c♯, "
-       "która jednak nie jest dłużej rozwijana. Tamta wersja nie jest w pełni "
-       "zgodna w główną wersją Plezuro. To coś na kształt prototypu końcowego "
-       "produktu."
+msgstr ""
+"Obecnie główna wersja Plezuro jest kompilowana do Javascripta. W przyszłości"
+" jest planowane kompilowanie do innych języków (prawdopodobnie c, c♯, Java, "
+"Python, Ruby i PHP, eventualnie Lisp i Fortran). Istnieje również wersja "
+"interpretowana zaimplementowana w c♯, która jednak nie jest dłużej "
+"rozwijana. Tamta wersja nie jest w pełni zgodna w główną wersją Plezuro. To "
+"coś na kształt prototypu końcowego produktu."
 
 #: ../../source/tutorial/about/how_to/index.rst:13
 msgid "Plezuro.js"
@@ -385,8 +385,8 @@ msgid ""
 "__pos__ - the horizontal position in a line (counting from 0, it is position"
 " where the keyword begins)"
 msgstr ""
-"__pos__ - poziome położenie w obrębie linii (licząc od 0, to pozycja "
-"gdzie słowo kluczowe zaczyna się)"
+"__pos__ - poziome położenie w obrębie linii (licząc od 0, to pozycja gdzie "
+"słowo kluczowe zaczyna się)"
 
 #: ../../source/tutorial/basics/magick_constants/index.rst:13
 msgid "__line__ - the line number in a source file (counting from 0)"
@@ -412,11 +412,12 @@ msgid ""
 "(']') and curly ('}') close. So after the last element of the list you "
 "cannot put the comma and after the last statement of the function you cannot"
 " put the semicolon. In such a case it would be a syntax error."
-msgstr "Ważną sprawą w Plezuro jest to, że nie można mieć żadnego operatora "
-       "bezpośrednio (nie licząc białych znaków i komentarzy) przed zamknięciem "
-       "jakiegokolwiek nawiasu (``)``, ``]``, ``}``). Zatem po ostatnim elemencie "
-       "listy nie można postawić przecinka a także po ostatnim wyrażeniu fukncji "
-       "nie można postawić średnika. W takim przypadku doszłoby do błedu składniowego."
+msgstr ""
+"Ważną sprawą w Plezuro jest to, że nie można mieć żadnego operatora "
+"bezpośrednio (nie licząc białych znaków i komentarzy) przed zamknięciem "
+"jakiegokolwiek nawiasu (``)``, ``]``, ``}``). Zatem po ostatnim elemencie "
+"listy nie można postawić przecinka a także po ostatnim wyrażeniu fukncji nie"
+" można postawić średnika. W takim przypadku doszłoby do błedu składniowego."
 
 #: ../../source/tutorial/basics/operators/index.rst:41
 msgid "Complete list of the operators:"
@@ -463,12 +464,6 @@ msgstr ""
 #: ../../source/tutorial/basics/operators/index.rst:55
 msgid "\"--\""
 msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:57
-msgid ""
-"double-argument operators (the first argument, the operator, the second "
-"argument; from the evaluated at the end to the evaluated at the begin)"
-msgstr "dwuargumentowe operatory (zerowy argument, operator, pierwszy argument)"
 
 #: ../../source/tutorial/basics/operators/index.rst:60
 msgid "\";\""
@@ -643,18 +638,20 @@ msgid ""
 "In computing it is useful for many purposes to generate random numbers. For "
 "example, when you write a computer player to a game or in a web application "
 "to generate registration links, local or web addreses and so on."
-msgstr "W programowaniu jest użyteczne w wielu przypadkach generowanie liczb "
-       "losowych. Np. kiedy tworzysz gracza komputerowego w jakiejś grze czy "
-       "generujesz linki rejestracyjne w aplikacji webowej i tak dalej."
+msgstr ""
+"W programowaniu jest użyteczne w wielu przypadkach generowanie liczb "
+"losowych. Np. kiedy tworzysz gracza komputerowego w jakiejś grze czy "
+"generujesz linki rejestracyjne w aplikacji webowej i tak dalej."
 
 #: ../../source/tutorial/basics/random/index.rst:9
 msgid ""
 "In Plezuro it is quite easy. You do not have to invoke any function or "
 "method (however later it is compiled to a method invokation). Just write the"
 " keyword 'rand'."
-msgstr "W Plezuro to bardzo proste. Nie musisz wywoływać żadnej funkcji czy metody "
-       "(jednak później jest to kompilowane do kodu z wywołaniem metody). Po "
-       "prostu wystarczy napisać słowo kluczowe `rand`."
+msgstr ""
+"W Plezuro to bardzo proste. Nie musisz wywoływać żadnej funkcji czy metody "
+"(jednak później jest to kompilowane do kodu z wywołaniem metody). Po prostu "
+"wystarczy napisać słowo kluczowe `rand`."
 
 #: ../../source/tutorial/basics/variables/index.rst:2
 msgid "Variables"
@@ -667,12 +664,12 @@ msgid ""
 "at the runtime. You can assign it to a symbol and it works like the "
 "mathematics. The only difference is a variable can change his value. For "
 "example ```$x = 2 + 5; $y = x * 2```."
-msgstr "Prawdopodobnie najbardziej podstawową możliwością języka programowania "
-       "są zmienne. Co to jest? Zmienna to blok pamięci, który możesz zmieniać "
-       "w trakcie wykonywania programu. Możesz przypisać taki blok do symbolu "
-       "a następnie to działa jak wyrażenia matematyczne. Jedyna różnica jest "
-       "taka, że zmienna może zmieniać swoją wartość. Np. "
-       "``$x = 2 + 5; $y = x * 2``."
+msgstr ""
+"Prawdopodobnie najbardziej podstawową możliwością języka programowania są "
+"zmienne. Co to jest? Zmienna to blok pamięci, który możesz zmieniać w "
+"trakcie wykonywania programu. Możesz przypisać taki blok do symbolu a "
+"następnie to działa jak wyrażenia matematyczne. Jedyna różnica jest taka, że"
+" zmienna może zmieniać swoją wartość. Np. ``$x = 2 + 5; $y = x * 2``."
 
 #: ../../source/tutorial/basics/variables/index.rst:10
 msgid ""
@@ -685,14 +682,15 @@ msgid ""
 "some mix of them). The recommended style of the naming all the variables "
 "(including functions and modules) is the camelcase (ex. "
 "```aVeryInterestingVariable```)."
-msgstr "W Plezuro tak jak w większości języków nazwa zmiennej może zaczynać się "
-       "literą lub podkreśleniem ``_`` a następne znaki to litera, podkreślenie "
-       "lub cyfra. Wielkość liter nie ma znaczenia (tak jak w c, Javie, Pythonie "
-       "i tak dalej, przeciwnie do SQL i HTML). Można używać jedynie znaków ASCII. "
-       "Jest tak dla czytelności kodu (byłoby zupełnie dziwne jeśli ktoś użyłby "
-       "liter arabskich, chińskich czy jakiejś mieszaniny tego i tego). Zalecany "
-       "styl nazywania zmiennych to (w tym funckji i modułów) to camalcase (np. "
-       "``aVeryInterestingVariable``)."
+msgstr ""
+"W Plezuro tak jak w większości języków nazwa zmiennej może zaczynać się "
+"literą lub podkreśleniem ``_`` a następne znaki to litera, podkreślenie lub "
+"cyfra. Wielkość liter nie ma znaczenia (tak jak w c, Javie, Pythonie i tak "
+"dalej, przeciwnie do SQL i HTML). Można używać jedynie znaków ASCII. Jest "
+"tak dla czytelności kodu (byłoby zupełnie dziwne jeśli ktoś użyłby liter "
+"arabskich, chińskich czy jakiejś mieszaniny tego i tego). Zalecany styl "
+"nazywania zmiennych to (w tym funckji i modułów) to camalcase (np. "
+"``aVeryInterestingVariable``)."
 
 #: ../../source/tutorial/basics/variables/index.rst:22
 msgid "Declaration"
@@ -704,25 +702,15 @@ msgid ""
 "just write the name of the variable and the dollar sign ('$') immediately "
 "before it. In next occurrences of a variable, you should write it without "
 "the dollar sign."
-msgstr "Zanim możemy używać jakąkolwiek zmienną, musimy najpierw ją zadeklarować. "
-       "To bardzo prost, wystarczy napisać nazwę zmiennej, poprzedzając ją "
-       "bezpośrednio znakiem dolara ``$``. Przy następnych wystąpieniach zmiennej "
-       "należy jej nazwę pisać już bez dolara."
+msgstr ""
+"Zanim możemy używać jakąkolwiek zmienną, musimy najpierw ją zadeklarować. To"
+" bardzo prost, wystarczy napisać nazwę zmiennej, poprzedzając ją "
+"bezpośrednio znakiem dolara ``$``. Przy następnych wystąpieniach zmiennej "
+"należy jej nazwę pisać już bez dolara."
 
 #: ../../source/tutorial/basics/variables/index.rst:30
 msgid "Scope"
 msgstr "Zasięg"
-
-#: ../../source/tutorial/basics/variables/index.rst:32
-msgid ""
-"The scope of a variable is limited within the curlies ('{', '}') which are "
-"used for the function (even a conditional or a loop used an inner function)."
-" So if you want to use a variable across multiple functions you have to "
-"declare it a propriate place."
-msgstr "Zasięg zmiennej jest ograniczony w obrębie klamr (``{``, ``}``), które to "
-       "są używane do tworzenie funkcji (nawet instrukcja warunkowa czy pętla "
-       "to wewnętrzna funkcja). Zatem jeśli chcesz używać zmiennej w obrębie wielu "
-       "funkcji, musisz zadeklarować ją w odpowiednim miejscu."
 
 #: ../../source/tutorial/basics/variables/index.rst:40
 msgid "What can be a variable?"
@@ -734,11 +722,12 @@ msgid ""
 "Python, Ruby or Javascript. Also everything is a variable (including "
 "functions and modules). So a variable can change its type in the runtime. "
 "For example at the first it is a number, then a list and finally a function."
-msgstr "W Plezuro występuje typowanie dynamiczne tak jak w innych dynamicznych językach "
-       "takich jak Python, Ruby czy Javascript. Również wszystko jest zmienną ("
-       "uwzględniając funkcje i moduły). Zatem zmienna może zmieniać swój typ w trakcie "
-       "wykonywania programu. Np. na początku jest ona liczbą, następnie listą, "
-       "a w końcu funkcją."
+msgstr ""
+"W Plezuro występuje typowanie dynamiczne tak jak w innych dynamicznych "
+"językach takich jak Python, Ruby czy Javascript. Również wszystko jest "
+"zmienną (uwzględniając funkcje i moduły). Zatem zmienna może zmieniać swój "
+"typ w trakcie wykonywania programu. Np. na początku jest ona liczbą, "
+"następnie listą, a w końcu funkcją."
 
 #: ../../source/tutorial/index.rst:2
 msgid "Tutorial"
@@ -748,17 +737,6 @@ msgstr "Przewodnik"
 msgid "Constructor"
 msgstr "Konstruktor"
 
-#: ../../source/tutorial/objective/constructor/index.rst:4
-msgid ""
-"Technically it would be possible to create an object without constructor. "
-"You could initialize all the fields with one of multiple methods (using the "
-"builder pattern). Eventually after that you could freeze the entire object "
-"or some of its fields."
-msgstr "Technicznie byłoby możliwe stworzyć obiekt bez konstruktora. Możesz "
-       "zainicjalizować wszystkie pola jedną lub wieloma metodami (używając "
-       "wzorca builder). Ewentualnie po tym możnaby zamrozić cały obiekt lub "
-       "tylko niektóre z jego pól."
-
 #: ../../source/tutorial/objective/constructor/index.rst:8
 msgid ""
 "However for readability of the source code, it is a good idea to use "
@@ -766,18 +744,20 @@ msgid ""
 "invoked immediately after the memory allocation for the object. It is very "
 "explicit in Objective C when you at first allocate the memory and later you "
 "initialize it (for most cases is in the same line)."
-msgstr "Aczkolwiek dla czytelności kodu źródłowego, dobrym pomysłem jest użycie "
-       "konstruktorów. Czym jest dokładnie konstruktor? To metoda wywoływana "
-       "bezpośrednio po zaalokowaniu pamięci dla obiektu. Jest to bardzo jawne "
-       "w Objective C gdzie najpier w kodzie jest alokowana pamięća następnie "
-       "przebiega inicjalizacja (w większości przypadków jest to w tej samej linii)."
+msgstr ""
+"Aczkolwiek dla czytelności kodu źródłowego, dobrym pomysłem jest użycie "
+"konstruktorów. Czym jest dokładnie konstruktor? To metoda wywoływana "
+"bezpośrednio po zaalokowaniu pamięci dla obiektu. Jest to bardzo jawne w "
+"Objective C gdzie najpier w kodzie jest alokowana pamięća następnie "
+"przebiega inicjalizacja (w większości przypadków jest to w tej samej linii)."
 
 #: ../../source/tutorial/objective/constructor/index.rst:14
 msgid ""
 "In Plezuro the constructor is a method with the name 'init'. Such a method "
 "is called automatically after the object creation."
-msgstr "W Plezuro konstruktor to metoda z nazwą 'init'. Taka metoda jest wywoływana "
-       "automatycznie po stworzeniu obiektu."
+msgstr ""
+"W Plezuro konstruktor to metoda z nazwą 'init'. Taka metoda jest wywoływana "
+"automatycznie po stworzeniu obiektu."
 
 #: ../../source/tutorial/objective/constructor/index.rst:19
 msgid "Default constructor"
@@ -792,12 +772,13 @@ msgid ""
 "such a situation the constructor of the BasicModule is called - it creates "
 "the fields of the object from the associative array which is passed as a "
 "first argument."
-msgstr "Wszakże kiedy brakuje w kodzie konstruktora, istnieje pewien konstruktor "
-       "który jest wywoływany. Zwany jest konstruktorem domyślnym. Co to dokładnie "
-       "robi? Wywołuje on konstruktory wszystkich modułów macierzystych. "
-       "Kiedy moduł nie ma żadnych jawnych rodziców, dziedziczy on po BasicModule, "
-       "więc w takiej sytuacji jest wywoływany konstruktor BasicModule, który to "
-       "tworzy pola obiektu z tablicy asocjacyjnej przekazanej jako pierwszy argument."
+msgstr ""
+"Wszakże kiedy brakuje w kodzie konstruktora, istnieje pewien konstruktor "
+"który jest wywoływany. Zwany jest konstruktorem domyślnym. Co to dokładnie "
+"robi? Wywołuje on konstruktory wszystkich modułów macierzystych. Kiedy moduł"
+" nie ma żadnych jawnych rodziców, dziedziczy on po BasicModule, więc w "
+"takiej sytuacji jest wywoływany konstruktor BasicModule, który to tworzy "
+"pola obiektu z tablicy asocjacyjnej przekazanej jako pierwszy argument."
 
 #: ../../source/tutorial/objective/dynamic_module_change/index.rst:2
 msgid "Dynamic module change"
@@ -815,13 +796,14 @@ msgid ""
 " runtime. The new method is visible in the direct objects of this module "
 "(even created before the addition of a new method) as well in the objects of"
 " the child modules. You can achieve that using the method 'addMethod'."
-msgstr "Poza tworzeniem metody w czasie powstawania modułu, można również "
-       "dynamicznie dodawać nowe metody później. Możnaby powiedzieć 'w trakcje '"
-       "wykonywania programu' ale to określenie nie jest odpowiednie w przypadku "
-       "Plezuro ponieważ w tymże języku wszystko dzieje się w trakcie wykonywania "
-       "programu. Nowa metoda jest widoczna w bezpośrednich obiektach danego modułu "
-       "(stworzonych nawet przed dodaniem nowej metody) jak również w obiektach "
-       "modułów dziedziczących. Możesz zrealizować to, używając metodą 'addMethod'."
+msgstr ""
+"Poza tworzeniem metody w czasie powstawania modułu, można również "
+"dynamicznie dodawać nowe metody później. Możnaby powiedzieć 'w trakcje "
+"'wykonywania programu' ale to określenie nie jest odpowiednie w przypadku "
+"Plezuro ponieważ w tymże języku wszystko dzieje się w trakcie wykonywania "
+"programu. Nowa metoda jest widoczna w bezpośrednich obiektach danego modułu "
+"(stworzonych nawet przed dodaniem nowej metody) jak również w obiektach "
+"modułów dziedziczących. Możesz zrealizować to, używając metodą 'addMethod'."
 
 #: ../../source/tutorial/objective/dynamic_module_change/index.rst:18
 msgid "Method removing"
@@ -831,8 +813,9 @@ msgstr "Usuwanie metody"
 msgid ""
 "It is even possible to remove a method. Nonetheless do not do it without any"
 " reason. To do it, use the method 'removeMethod'."
-msgstr "Jest nawet możliwe usunąc metodę. Mimo wszystko nie rób tego bez powodu. "
-       "Aby to zrobić, użyj metody 'removeMethod'."
+msgstr ""
+"Jest nawet możliwe usunąc metodę. Mimo wszystko nie rób tego bez powodu. Aby"
+" to zrobić, użyj metody 'removeMethod'."
 
 #: ../../source/tutorial/objective/index.rst:2
 msgid "Objective programming"
@@ -843,9 +826,10 @@ msgid ""
 "Plezuro is an object-oriented language, there is multiple inheritance. It is"
 " more dynamic then Java and .NET because you can add, change and remove "
 "methods at the runtime."
-msgstr "Plezuro jest językiem obiektowym, występuje tutaj wielokrotne dziedziczenie. "
-       "Jest bardziej dynamiczny niż Java i .NET ponieważ możesz dodawać, zmieniać i "
-       "usuwać metody w trakcie wykonywania programu."
+msgstr ""
+"Plezuro jest językiem obiektowym, występuje tutaj wielokrotne dziedziczenie."
+" Jest bardziej dynamiczny niż Java i .NET ponieważ możesz dodawać, zmieniać "
+"i usuwać metody w trakcie wykonywania programu."
 
 #: ../../source/tutorial/objective/inheritance/index.rst:2
 msgid "Inheritance"
@@ -859,12 +843,14 @@ msgid ""
 "c++ with virtual method binding. Why multiple inheritance? It is just more "
 "similar to the real life. For example, the dog is in the same time a pet and"
 " a carnivore."
-msgstr "Żeby pisać kod obiektowy poza klasami (w przypadku Plezuro modułami) jest "
-       "niezbędne użycie dziedziczenia i polymorfizmu. W Plezuro występuje wielokrotne "
-       "dziedziczenie tak jak w Pythonie, jest także nieco podobne do wielokrotnego "
-       "dziedziczenia w c++ przy użyciu wirtualnego wiązania metod. Dlaczego wielokrotne "
-       "dziedziczenie? To po prostu bardziej zbliżone do prawdziwego życie. Np. pies "
-       "jest w tym samym czasie zwierzęciem domowym i drapieżnikiem.
+msgstr ""
+"Żeby pisać kod obiektowy poza klasami (w przypadku Plezuro modułami) jest "
+"niezbędne użycie dziedziczenia i polymorfizmu. W Plezuro występuje "
+"wielokrotne dziedziczenie tak jak w Pythonie, jest także nieco podobne do "
+"wielokrotnego dziedziczenia w c++ przy użyciu wirtualnego wiązania metod. "
+"Dlaczego wielokrotne dziedziczenie? To po prostu bardziej zbliżone do "
+"prawdziwego życie. Np. pies jest w tym samym czasie zwierzęciem domowym i "
+"drapieżnikiem"
 
 #: ../../source/tutorial/objective/inheritance/index.rst:11
 msgid ""
@@ -877,14 +863,16 @@ msgid ""
 " see it. However in reality in the moment of a module creation all the "
 "methods are binded (direct ones and inherited ones), it is for the "
 "performance."
-msgstr "Jak to działa? To bardzo proste, kiedy wywołujesz metodę, na obiekcie, kiedy "
-       "istnieje taka metoda bezpośrednio w module danego obiektu, metoda ta jest "
-       "wywołana. W przeciwnym razie jest to metoda z jednego z rodziców modułu (kolejność "
-       "znajdowania metody jest taki sam jak kolejność zadeklarowanych rodziców przy tworzeniu "
-       "modułu. Algorytm znajdowania metody jest rekurencyjny. Jeśli żadna metoda nie została "
-       "znaleziona, jest wyrzucany wyjątek. W taki sposób możesz to zaobserwować. Natomiast "
-       "w rzeczywistości w momencie stworzenia modułu wszystkie metody są wiązane (bezpośrednie "
-       "i dziedziczone), tak jest ze względu na wydajność"
+msgstr ""
+"Jak to działa? To bardzo proste, kiedy wywołujesz metodę, na obiekcie, kiedy"
+" istnieje taka metoda bezpośrednio w module danego obiektu, metoda ta jest "
+"wywołana. W przeciwnym razie jest to metoda z jednego z rodziców modułu "
+"(kolejność znajdowania metody jest taki sam jak kolejność zadeklarowanych "
+"rodziców przy tworzeniu modułu. Algorytm znajdowania metody jest "
+"rekurencyjny. Jeśli żadna metoda nie została znaleziona, jest wyrzucany "
+"wyjątek. W taki sposób możesz to zaobserwować. Natomiast w rzeczywistości w "
+"momencie stworzenia modułu wszystkie metody są wiązane (bezpośrednie i "
+"dziedziczone), tak jest ze względu na wydajność"
 
 #: ../../source/tutorial/objective/inheritance/index.rst:20
 msgid ""
@@ -894,25 +882,18 @@ msgid ""
 "multiple inheritance. You can create a module with a specific method and use"
 " objects of this module in other methods or functions."
 msgstr ""
+"A co o na temat polymorfizmu? W Plezuro tak jak w innych dynamicznych "
+"językach występuje duck typing. Zatem można wywołać metoda z konkretną nazwą"
+" na danym obiekcie, nie znając modułu tego obiektu. Można także używać "
+"wielokrotnego dziedziczenia. "
 
 #: ../../source/tutorial/objective/inheritance/index.rst:28
 msgid "Calling a parent method"
-msgstr ""
-
-#: ../../source/tutorial/objective/inheritance/index.rst:30
-msgid ""
-"One of useful features is the possibility of the calling a parent method. "
-"The syntax is similar to the Python because in the case of multiple "
-"inheritance, you have to specify from which parent you want to call a "
-"method. It is also possible to call a method from a super-parent and event "
-"from any other class because of duck typing. You write a parent module name,"
-" the double colon ('::'), the method name and the 'this' keyword like the "
-"zero argument."
-msgstr ""
+msgstr "Wywołanie metody rodzica"
 
 #: ../../source/tutorial/objective/modules/index.rst:2
 msgid "Modules"
-msgstr ""
+msgstr "Moduły"
 
 #: ../../source/tutorial/objective/modules/index.rst:4
 msgid ""
@@ -922,6 +903,12 @@ msgid ""
 "namespaces. Of course you can create multiple classes in the same source "
 "file, however it is recommended to write exactly one module in one file."
 msgstr ""
+"Moduły są jednocześnie klasami i przestrzeniami nazw. Można użyć moduł do "
+"stworzenia obiektu, można go użyć w sposób statyczny (tak jak pola i metody "
+"statyczne w Javie) a także przypisać inne moduły jako pola statyczne, "
+"tworząc w ten sposób przestrzenie nazw. Oczywiście da się tworzyć wiele "
+"modułów w tym samym pliku źródłowym, wszakże zalecane jest pisać dokładnie "
+"jeden moduł w jednym pliku."
 
 #: ../../source/tutorial/objective/modules/index.rst:9
 msgid ""
@@ -931,14 +918,20 @@ msgid ""
 " the parent modules (field 'parents') - the modules from which our module "
 "inherits the methods. There are also some other fields that you can pass."
 msgstr ""
+"Aby stworzyć moduł, należy użyć składni ``Module.create`` i przekazać "
+"dokładnie jeden parametr do tej metody, który to jest tablicą asocjacyjną "
+"zawierającą nazwę modułu (pole 'name'), przestrzeń nazw modułu (pole "
+"'namespace'), metody (pole 'methods'), a także rodziców (pole 'parents') - "
+"czyli moduły z których dziedziczymy. Istnieją również inne pola, które można"
+" przekazać."
 
 #: ../../source/tutorial/objective/modules/index.rst:15
 msgid "You can create an object of a module using method 'new'."
-msgstr ""
+msgstr "Aby stworzyć obiekt danego modułu, należy użyć metody 'new'."
 
 #: ../../source/tutorial/objective/objects_and_methods/index.rst:2
 msgid "Objects and methods"
-msgstr ""
+msgstr "Obiekty i metody"
 
 #: ../../source/tutorial/objective/objects_and_methods/index.rst:4
 msgid ""
@@ -947,10 +940,15 @@ msgid ""
 "method the object is accessible via the keyword 'this' and like in function "
 "invocation you can use the keywords 'first', 'second', 'third' and 'args'."
 msgstr ""
+"Głównym celem tworzenie modułu jest jego użycie jak szablonu do budowania "
+"obiektów i wywoływania metod z tychże obiektów. Kiedy wywołujesz metodę, "
+"obiekt jest dostępny poprzez słowo kluczowe 'this' i tak jak w przypadku "
+"wywołania funkcji, można używać słów kluczowych ``first``, ``second``, "
+"``third`` oraz ``args``."
 
 #: ../../source/tutorial/objective/objects_and_methods/index.rst:12
 msgid "Object fields"
-msgstr ""
+msgstr "Pola obiektów"
 
 #: ../../source/tutorial/objective/objects_and_methods/index.rst:14
 msgid ""
@@ -958,10 +956,14 @@ msgid ""
 " fields can be created in the constructor when the object is created or "
 "later in any method."
 msgstr ""
+"Aby uzyskać dostęp do pola obiektu z metody wywołanej na tym obiekcie, "
+"należy użyć znaku małpa ``@`` a bezpośrednio po nim podać nazwę pola. Pola "
+"mogą być tworzone w konstruktorze kiedy obiekt jest tworzony lub później w "
+"jakiejkolwiek metodzie."
 
 #: ../../source/tutorial/objective/objects_and_methods/index.rst:19
 msgid "Method from method call"
-msgstr ""
+msgstr "Wywołanie metody z innej metody"
 
 #: ../../source/tutorial/objective/objects_and_methods/index.rst:21
 msgid ""
@@ -969,6 +971,8 @@ msgid ""
 "('.') and and the method name. Like in calling methods from outer objects "
 "you can omit the bracket when it is no arguments."
 msgstr ""
+"Aby wywołać metodę z innej metody, należy napisać słowo kluczowe ``this``, "
+"kropkę."
 
 #: ../../source/tutorial/objective/objects_and_methods/index.rst:25
 msgid ""
@@ -976,12 +980,17 @@ msgid ""
 "'this' has a different meaning. It is the zero argument of the inner "
 "function. In the same way the object fields work."
 msgstr ""
+"Pamiętaj, w przypadku funkcji wewnętrznej (np. pętle), słowo kluczowe "
+"``this`` oznacza co innego. Wtedy jest to zerowy argument funkcji "
+"wewnętrznej. W ten sam sposób działają pola obiektu."
 
 #: ../../source/tutorial/objective/operators/index.rst:4
 msgid ""
 "Similar to defining method of a module, you can define actions that will be "
 "done when an object interacts with a specific operator."
 msgstr ""
+"Podobnie do definiowania modułu, można zdefiniować akcje, które zostaną "
+"wykonane kiedy na obiekt będzie działać odpowiedni operator."
 
 #: ../../source/tutorial/objective/static_fields_and_methods/index.rst:2
 msgid "Static fields and methods"
@@ -994,40 +1003,38 @@ msgid ""
 "the static fields and methods are not inherited. Each static field or method"
 " is binded strictly with one module."
 msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:16
-msgid ""
-"The action of an operator depends of the type of the first argument. Is "
-"behaves in the same way like the method call. It is possible to change the "
-"operators action in the runtime (even you can cause that 2+2 produce another"
-" result than 4 so it is not recommended to change it in abundance)."
-msgstr ""
+"Poza użyciem modułu jako szablon do tworzenia obiektów, możesz użyć go w "
+"statyczny sposób za pomocą pól i metod statycznych. Powinieneś pamiętać, że "
+"statyczne pola i metody nie są dziedziczone. Każde pole statyczne i każda "
+"metoda statyczna są związane dokładnie z jednym modułem."
 
 #: ../../source/tutorial/basics/operators/index.rst:21
 msgid ""
 "Generally we can specify some main actions of the operators (ex. for numbers"
 " and strings)."
 msgstr ""
+"Ogólnie możemy wyróżnić pewne główne akcje operatorów (np. dla liczb i "
+"stringów)."
 
 #: ../../source/tutorial/basics/operators/index.rst:24
 msgid "Type of left argument"
-msgstr ""
+msgstr "Typ lewego argumentu"
 
 #: ../../source/tutorial/basics/operators/index.rst:24
 msgid "Operator"
-msgstr ""
+msgstr "Operator"
 
 #: ../../source/tutorial/basics/operators/index.rst:24
 msgid "Action"
-msgstr ""
+msgstr "Akcja"
 
 #: ../../source/tutorial/basics/operators/index.rst:24
 msgid "Example"
-msgstr ""
+msgstr "Przykład"
 
 #: ../../source/tutorial/basics/operators/index.rst:24
 msgid "Result"
-msgstr ""
+msgstr "Wynik"
 
 #: ../../source/tutorial/basics/operators/index.rst:26
 #: ../../source/tutorial/basics/operators/index.rst:27
@@ -1036,7 +1043,7 @@ msgstr ""
 #: ../../source/tutorial/basics/operators/index.rst:30
 #: ../../source/tutorial/basics/operators/index.rst:31
 msgid "Number"
-msgstr ""
+msgstr "Liczba"
 
 #: ../../source/tutorial/basics/operators/index.rst:26
 #: ../../source/tutorial/basics/operators/index.rst:32
@@ -1046,7 +1053,7 @@ msgstr ""
 
 #: ../../source/tutorial/basics/operators/index.rst:26
 msgid "addition"
-msgstr ""
+msgstr "dodawanie"
 
 #: ../../source/tutorial/basics/operators/index.rst:26
 msgid "1+4"
@@ -1062,7 +1069,7 @@ msgstr ""
 
 #: ../../source/tutorial/basics/operators/index.rst:27
 msgid "subtraction"
-msgstr ""
+msgstr "odejmowanie"
 
 #: ../../source/tutorial/basics/operators/index.rst:27
 msgid "4-7"
@@ -1082,7 +1089,7 @@ msgstr ""
 #: ../../source/tutorial/basics/operators/index.rst:33
 #: ../../source/tutorial/basics/operators/index.rst:35
 msgid "multiplication"
-msgstr ""
+msgstr "mnożenie"
 
 #: ../../source/tutorial/basics/operators/index.rst:28
 msgid "8.5*2"
@@ -1098,7 +1105,7 @@ msgstr ""
 
 #: ../../source/tutorial/basics/operators/index.rst:29
 msgid "division"
-msgstr ""
+msgstr "dzielenie"
 
 #: ../../source/tutorial/basics/operators/index.rst:29
 msgid "1/4"
@@ -1114,7 +1121,7 @@ msgstr ""
 
 #: ../../source/tutorial/basics/operators/index.rst:30
 msgid "power"
-msgstr ""
+msgstr "potęga"
 
 #: ../../source/tutorial/basics/operators/index.rst:30
 msgid "4^3"
@@ -1130,7 +1137,7 @@ msgstr ""
 
 #: ../../source/tutorial/basics/operators/index.rst:31
 msgid "modulo"
-msgstr ""
+msgstr "reszta z dzielenia"
 
 #: ../../source/tutorial/basics/operators/index.rst:31
 msgid "7%3"
@@ -1148,7 +1155,7 @@ msgstr ""
 #: ../../source/tutorial/basics/operators/index.rst:32
 #: ../../source/tutorial/basics/operators/index.rst:34
 msgid "concatenation"
-msgstr ""
+msgstr "konkatenacja"
 
 #: ../../source/tutorial/basics/operators/index.rst:32
 msgid "'a'+'b'"
@@ -1189,26 +1196,36 @@ msgid ""
 "include a Javascript generated from Plezuro source in an HTML file. Moreover"
 " you must include the plezuro.js library."
 msgstr ""
+"Przeciwnie do Javascripta, Plezuro nie może być zagnieżdżony w kodzie HTML. "
+"To nie brakująca możliwość ale raczej sposób na utrzymaniu czytelnego kodu. "
+"Zatem trzeba dołączyć w pliku HTML Javascript wygenerowany ze źródła w "
+"Plezuro. Ponadto należy dołączyć bibliotekę plezuro.js."
 
 #: ../../source/tutorial/browser_programming/index.rst:2
 msgid "Web browser programming"
-msgstr ""
+msgstr "Programowanie na przeglądarkę internetową"
 
 #: ../../source/tutorial/browser_programming/index.rst:4
 msgid ""
 "As you just know, Plezuro is compiled to Javascript. So we can write "
 "applications runned in the web browser (client-side web apps)."
 msgstr ""
+"Jak już wiesz, Plezuro jest kompilowany do Javascripta. W związku z tym "
+"możemy pisać aplikacje wykonywane w przeglądarce internetowe (aplikacje "
+"webowe wykonywane po stronie klienta)."
 
 #: ../../source/tutorial/browser_programming/index.rst:7
 msgid "What should you know first?"
-msgstr ""
+msgstr "Co należy znać najpierw?"
 
 #: ../../source/tutorial/browser_programming/index.rst:9
 msgid ""
 "To be able to develop web apps in Plezuro, you should know HTML and CSS (at "
 "least the basics). You can read it from the following tutorials:"
 msgstr ""
+"Aby móc tworzyć aplikacje webowe w Plezuro, powinieneś znać HTML i CSS "
+"(przynajmniej podstawy). Możesz się nauczyć tego z następujących "
+"przewodników:"
 
 #: ../../source/tutorial/browser_programming/index.rst:13
 msgid "http://www.w3schools.com/html/default.asp"
@@ -1220,15 +1237,15 @@ msgstr ""
 
 #: ../../source/tutorial/browser_programming/output/index.rst:2
 msgid "Output"
-msgstr ""
+msgstr "Wyjście"
 
 #: ../../source/tutorial/index.rst:4
 msgid "This is tutorial of Plezuro programming language."
-msgstr ""
+msgstr "To jest przewodnik po języku programowania Plezuro"
 
 #: ../../source/tutorial/index.rst:6
 msgid "For whom is it?"
-msgstr ""
+msgstr "Dla kogo to jest?"
 
 #: ../../source/tutorial/index.rst:8
 msgid ""
@@ -1238,6 +1255,11 @@ msgid ""
 "important in programming technologies. So just try to write more and more in"
 " Plezuro."
 msgstr ""
+"Jeśli jesteś programistą, który zna już inny język programowania (np. c, "
+"Java, Python...), ten przewodnik przyniesie ci wiedzę potrzebną do tworzenia"
+" aplikacji w Plezuro. Jednakże w technologiach programistycznych to "
+"doświadczenie jest najważniejsze. Zatem po prostu próbuj pisać jak najwięcej"
+" w Plezuro."
 
 #: ../../source/tutorial/index.rst:14
 msgid ""
@@ -1246,10 +1268,15 @@ msgid ""
 "maybe you should learn first basics of Javascript (it is the most related to"
 " Plezuro) or eventually another programming language."
 msgstr ""
+"Jeśli programowanie jest czymś nowym dla ciebie, ten poradnik powinien być "
+"zrozumiały dla ciebie, ponieważ wyjaśnia on jak wszystko działa. Jeśli "
+"jednak nie rozumiesz tego, być może najpierw powinieneś najpierw nauczyć się"
+" podstwy Javascripta (ten język jest najbardziej zbliżony do Plezuro) lub "
+"ewentualnie nauczyć się jeszcze innego języka programowania"
 
 #: ../../source/tutorial/index.rst:20
 msgid "Other useful materials"
-msgstr ""
+msgstr "Inne przydatne matetiały"
 
 #: ../../source/tutorial/index.rst:22
 msgid ""
@@ -1257,32 +1284,20 @@ msgid ""
 "written in a not complicated manner. This is just a view from another site. "
 "You can read Plezuro scripts on Github and try to write something similar."
 msgstr ""
-
-#: ../../source/tutorial/about/how_to/index.rst:15
-msgid ""
-"Using a plezuro.jar (download from "
-"https://plezuro.herokuapp.com/downloads/plezuro.jar) executable you can "
-"compile a script from Plezuro to Javascript. It works for entire files, not "
-"a code embedded in HTML. You can use it within a browser, in the server side"
-" (using Node.js), for the mobile development (using Cordova) or any other "
-"technology that uses Javascript. Another important thing is to attach "
-"plezuro.js (download from "
-"https://plezuro.herokuapp.com/downloads/plezuro.js) library (in HTML for "
-"browser and Cordova or using 'require' for Node.js). There is an automated "
-"support for all the Javascript libraries because you can use all the global "
-"variables from the Javascript. A variable cannot contain the dollar sign in "
-"its name in contrary to the Javascript so using jQuery instead of a dollar "
-"sign you should use the variable jQuery or eventually ``eval('$')``."
-msgstr ""
+"Jeśli chcesz, nauczyć się więcej, powinieneś przeczytać specyfikację "
+"Plezuro. Jest ona napisana w niezbyt skomplikowany sposób. To po prostu "
+"spojrzenie z innej strony. Możesz przeglądać skrypty Plezuro na Githubie i "
+"próbować napisać coś podobnego."
 
 #: ../../source/tutorial/about/how_to/index.rst:28
 msgid "Basic usage of the compiler: ``plezuro.jar input.plez output.plez.js``"
 msgstr ""
+"Podstawowe użycie kompilatora: ``plezuro.jar input.plez output.plez.js``"
 
 #: ../../source/tutorial/browser_programming/ajax/index.rst:2
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:13
 msgid "AJAX"
-msgstr ""
+msgstr "AJAX"
 
 #: ../../source/tutorial/browser_programming/ajax/index.rst:4
 msgid ""
@@ -1296,6 +1311,17 @@ msgid ""
 "Python or Ruby is needed. Server can also return some static data (ex. "
 "images) according to their path. The best example is the Apache 2 server."
 msgstr ""
+"AJAX to skrót od Asynchronous Javascript and XML (Asynchroniczny Javascript "
+"i XML). Jest to zbiór praktyk programistycznych do tworzenia "
+"asynchronicznych aplikacji webowych. Chociaż sama nazwa mówi o XML, może być"
+" użyty jakikolwiek rodzaj danych (JSON, CSV, HTML, CSS, obrazki, "
+"Javascript). AJAX jest prawie zawsze powiązany z programowanie po stronie "
+"serwera (odpowiedź serwera zależna od żądania). Technicznie to zawsze "
+"prawda, bo wysyłasz żądanie a serwer w zależności od niego zwraca odpowiedź."
+" Tymczasem nie zawsze się to wiąże ze skryptem w języku takim jak PHP, "
+"Python czy Ruby. Jest tak ponieważ serwer może też zwrócić statyczne dane "
+"(np. obrazki) w zależności od ścieżki. Najlepszym przykłądem jest serwer "
+"Apache 2."
 
 #: ../../source/tutorial/browser_programming/ajax/index.rst:14
 msgid ""
@@ -1306,12 +1332,20 @@ msgid ""
 "(HTML, CSS, images, other Javascripts) that would be enormous if downloaded "
 "fully."
 msgstr ""
+"Z punktu widzenia programisty front-end, AJAX umożliwia komunikację z "
+"serwerem bez przeładowania strony. Np. chciałbyś przechować jakieś dane na "
+"serwerze z powodów bezpieczeństwa, sprawdzić czy dane wprowadzone przez "
+"użytkownika pasują do tych na serwerze czy też ściągnąć jakieś zasoby "
+"dynamicznie (HTML, CSS, obrazki, inne Javascripty), w przypadku których "
+"byłyby wielkie rozmiary jeśli pobierałoby się je w całości."
 
 #: ../../source/tutorial/browser_programming/ajax/index.rst:21
 msgid ""
 "Probably the best way to make an AJAX request is using jQuery at reasons of "
 "browser compatibility and code readability."
 msgstr ""
+"Prawdopodobnie najlepszy sposób do wysłania zapytania AJAX jest użycie "
+"jQuery z powodów kompatybilności między przeglądarkami i czytelności kodu."
 
 #: ../../source/tutorial/browser_programming/ajax/index.rst:0
 msgid "ajax/index.html"
@@ -1330,34 +1364,40 @@ msgid ""
 "AngularJS is a framework used mostly in single-page applications. It is a "
 "part of MEAN software stack:"
 msgstr ""
+"AngularJS to framework używane głównie w aplikacjach na jedną podstronę "
+"(single page application). Stanowi on część pakietu MEAN:"
 
 #: ../../source/tutorial/browser_programming/angular/index.rst:7
 msgid "MongoDB - a database"
-msgstr ""
+msgstr "MongoDB - baza danych"
 
 #: ../../source/tutorial/browser_programming/angular/index.rst:8
 msgid "Express.js - a back-end framework"
-msgstr ""
+msgstr "Express.js - framework back-end"
 
 #: ../../source/tutorial/browser_programming/angular/index.rst:9
 msgid "AngularJS - a front-end framework"
-msgstr ""
+msgstr "AngularJS - framework front-end"
 
 #: ../../source/tutorial/browser_programming/angular/index.rst:10
 msgid "Node.js - a back-end platform"
-msgstr ""
+msgstr "Node.js - platforma back-end"
 
 #: ../../source/tutorial/browser_programming/angular/index.rst:12
 msgid ""
 "All of these four technologies are based on Javascript so they are enable to"
 " develop in Plezuro."
 msgstr ""
+"Wszystkie spośród tychże czterech technologii są oparte na Javascripcie, "
+"więc można je używać w Plezuro."
 
 #: ../../source/tutorial/browser_programming/angular/index.rst:15
 msgid ""
 "The examples below have origin from https://angularjs.org/ and later were "
 "adapted to Plezuro."
 msgstr ""
+"Przykłady poniżej zostały wzięte z https://angularjs.org/, a następnie "
+"zaadoptowane do Plezuro."
 
 #: ../../source/tutorial/browser_programming/angular/index.rst:0
 msgid "angular/index.html"
@@ -1381,7 +1421,7 @@ msgstr ""
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:2
 msgid "HTML DOM methods and events"
-msgstr ""
+msgstr "Metody i zdarzenia HTML DOM"
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:4
 msgid ""
@@ -1389,16 +1429,22 @@ msgid ""
 "with ``doument.write``. But probably you wonder to create an interactive "
 "app. For example after button pressing an input will change his value."
 msgstr ""
+"Po pierwszych podrozdziałach, jesteś w stanie stworzyć statycznie dokument "
+"HTML przy użyciu ``document.write``. Jednak prawdopodobnie chciałbyś "
+"stworzyć interaktywną aplikację. Np. po kliknięciu na przycisk input zmieni "
+"swoją wartość."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:11
 msgid "How to get an element?"
-msgstr ""
+msgstr "Jak dostać element?"
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:13
 msgid ""
 "You can use the standard Javascript methods in Plezuro. Eventually you can "
 "use some methods from external libraries such like jQuery."
 msgstr ""
+"Możesz użyć standardowych metod Javascript w Plezuro. Ewentualnie da się "
+"użyć metod z zewnętrznych bibliotek takicj jak jQuery."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:17
 msgid "**document.getElementById**"
@@ -1409,7 +1455,7 @@ msgid ""
 "It returns the element with matching 'id' attribute. Remember if you include"
 " your script in the HEAD section, the elements are not loaded so you cannot "
 "immediately get any element, in this case you should use the proper event."
-msgstr ""
+msgstr "Zwraca element z pasującym atrybutem 'id'."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:24
 msgid "**document.getElementsByTagName**"
@@ -1421,6 +1467,9 @@ msgid ""
 "the first argument. For example ``document.getElementsByTagName('div')`` "
 "will return the collection of all divs in the document."
 msgstr ""
+"Zwraca kolekcję wszystkich elementów z nazwą tagu określoną jako pierwszy "
+"parametr. Np. ``document.getElementsByTagName('div')`` zwróci kolekcję "
+"wszystkich divów w dokumencie."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:31
 msgid "**document.getElementsByName**"
@@ -1431,6 +1480,8 @@ msgid ""
 "The collection of all the elements with the value of 'name' attribute "
 "specified as the first argument."
 msgstr ""
+"Kolekcja wszystkich elementów z wartością atrybutu 'name' określoną jako "
+"pierwszy argument."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:37
 msgid "**document.getElementsByClassName**"
@@ -1441,6 +1492,8 @@ msgid ""
 "The collection of all the elements with the value of 'class' attribute "
 "specified as the first argument."
 msgstr ""
+"Kolekcja wszystkich elementów z wartością atrybutu 'class' określoną jako "
+"pierwszy argument."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:43
 msgid "**document.getElementsByTagNameNS**"
@@ -1452,6 +1505,8 @@ msgid ""
 " the namespace and the second one the tag name. It is used rather in XML "
 "DOM."
 msgstr ""
+"Podobnie do getElementsByTagName ale pierwszy argument określa nazwę "
+"przestrzeni nazw a drugi nazwę tagu. Jest to bardziej używane w XML DOM."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:49
 msgid "**document.querySelector**"
@@ -1463,6 +1518,9 @@ msgid ""
 "argument. For example ``document.querySelector('table button')`` will return"
 " the first button in the first table that contain a button."
 msgstr ""
+"Zwraca pierwszy element, do którego pasuje selektor CSS w pierwszym "
+"argumencie. Np. ``document.querySelector('table button')`` zwróci pierwszy "
+"przycisk (button) w pierwszej tabeli, która zawiera jakikolwiek przycisk."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:56
 msgid "**document.querySelectorAll**"
@@ -1473,10 +1531,12 @@ msgid ""
 "It return the collection of all the elements that match the given CSS "
 "selector."
 msgstr ""
+"Zwraca kolekcję wszystkich elementów, dla których pasuje podany selektor "
+"CSS."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:63
 msgid "How to operate on elements?"
-msgstr ""
+msgstr "Jak działać na elementach?"
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:65
 msgid "**innerHTML**"
@@ -1488,6 +1548,9 @@ msgid ""
 "any HTML into the element. For example ``element['innerHTML'] = "
 "'<button>OK</button>'``."
 msgstr ""
+"To najprostszy sposób, aby zmienić zawartość elementu. Po prostu wstawia "
+"jakikolwiek HTML do wnętrza elementu. Np. ``element['innerHTML'] = "
+"'<button>OK</button>'``."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:72
 msgid "**setAttribute**"
@@ -1495,18 +1558,11 @@ msgstr ""
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:74
 msgid "For example ``element.setAttribute('name', 'age')``"
-msgstr ""
+msgstr "Np. ``element.setAttribute('name', 'wiek')``"
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:77
 msgid "**style**"
-msgstr ""
-
-#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:79
-msgid ""
-"You can change the CSS style. The only difference between the CSS property "
-"name and the Plezuro property name is in Plezuro you must use the camelcase."
-" For example ``element['style']['backgroundColor'] = 'red'``"
-msgstr ""
+msgstr "**styl**"
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:84
 msgid "**document.createElement**"
@@ -1516,7 +1572,8 @@ msgstr ""
 msgid ""
 "You can create an element. The first argument specifies the tag name. For "
 "example, to create a div, you write ``document.createElement('div')``."
-msgstr ""
+msgstr "Możesz stworzyć element. Pierwszy argument określa nazwę tagu. "
+"Np. aby stworzyć div, należy napisać ``document.createElement('div')``."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:90
 msgid "**document.appendChild**"
@@ -1526,7 +1583,8 @@ msgstr ""
 msgid ""
 "When you have just created an element you can add it to another element "
 "either existing in the HTML DOM or not."
-msgstr ""
+msgstr "Skoro już stworzyłeś element, możesz dodać go do innego elementu za równo "
+"istniejącego w HTML DOM lub nie."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:96
 msgid "**document.removeChild**"
@@ -1534,7 +1592,7 @@ msgstr ""
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:98
 msgid "You can remove an element specified as the first argument."
-msgstr ""
+msgstr "Możesz usunąć element przekazany jako pierwszy argument."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:101
 msgid "**document.replaceChild**"
@@ -1544,7 +1602,8 @@ msgstr ""
 msgid ""
 "You can replace an element passed as the first argument to an element passed"
 " as the second argument."
-msgstr ""
+msgstr "Możesz zastąpić element przekazany jako pierwszy argument na element "
+"przekazany jako drugi argument."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:107
 msgid "**document.createTextNode**"
@@ -1554,29 +1613,34 @@ msgstr ""
 msgid ""
 "You can create a text node with the value specified as the first argument "
 "and then append such a node to an element."
-msgstr ""
+msgstr "Możesz stworzyć węzeł tekstowy z wartością określoną jako pierwszy "
+"argument a następnie dodać taki węzeł do elementu."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:115
 msgid "How to listen to en event?"
-msgstr ""
+msgstr "Jak nasłuchiwać zdarzenia?"
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:117
 msgid ""
 "To provide some interaction it is useful to listen to the events. We can "
 "detect among others: a mouse click, a key pressing, a document being loaded,"
 " a document mutation, an object mutation, browser window resizing."
-msgstr ""
+msgstr "Aby zapewnić interakcję, przydatne jest nasłuchiwane zdarzeń. Możemy "
+"wykryć m.in.: kliknięcie myszą, wciśnięcie klawisza, załadowanie dokumentu, "
+"zmianę dokumentu, zmianę obiektu, zmianę rozmiaru okna przeglądarki."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:121
 msgid ""
 "You can see the full list of events for Firefox on "
 "https://developer.mozilla.org/en-US/docs/Web/Events, or for any browser on "
 "http://www.w3schools.com/tags/ref_eventattributes.asp."
-msgstr ""
+msgstr "Możesz zobaczyć pełną listę zdarzeń dla Firefox na "
+"https://developer.mozilla.org/en-US/docs/Web/Events, a dla dowolnej przeglądarki na "
+"http://www.w3schools.com/tags/ref_eventattributes.asp."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:125
 msgid "Let us enumerate the most important ones."
-msgstr ""
+msgstr "Wymieńmy najważniejsze z nich."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:128
 msgid "**onclick**"
@@ -1587,7 +1651,9 @@ msgid ""
 "It fires after the mouse click (pressing and releasing the mouse button). "
 "For example ``element['onclick'] = { this['parentNode'].removeChild(this); "
 "null }``"
-msgstr ""
+msgstr "Jest wywoływany po kliknięciu myszą (wciśnięcie i puszczenie przycisku myszy)."
+"Np. ``element['onclick'] = { this['parentNode'].removeChild(this); "
+"null }``"
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:134
 msgid "**onkeydown**"
@@ -1595,7 +1661,7 @@ msgstr ""
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:136
 msgid "It fires after a key being pressed."
-msgstr ""
+msgstr "Jest wywoływany po wciśnięciu klawisza."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:139
 msgid "**onkeypress**"
@@ -1603,7 +1669,7 @@ msgstr ""
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:141
 msgid "It fires after when a key is being pressed (even multiple times)."
-msgstr ""
+msgstr "Jest wywoływany kiedy klawisz jest wciśnięty (nawet wiele razy)."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:144
 msgid "**onkeyup**"
@@ -1611,7 +1677,7 @@ msgstr ""
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:146
 msgid "It fires after a key being released."
-msgstr ""
+msgstr "Jest wywoływany po puszczeniu klawisza."
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:0
 msgid "dom_methods/index.html"
@@ -1623,7 +1689,7 @@ msgstr ""
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:2
 msgid "HTML elements"
-msgstr ""
+msgstr "elementy HTML"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:4
 msgid ""
@@ -1632,14 +1698,20 @@ msgid ""
 "which are deprecated technologies) almost all you see in the browser are the"
 " HTML elements. The exceptions include alerts and different sorts of info "
 "from browser."
-msgstr ""
+msgstr "W programowaniu HTML (nie każde programowanie na przeglądarkę internetową "
+"to programowanie HTML ponieważ istnieją takie technologie jak aplety Java, "
+"Adobe Flash czy Silverlight, jednakże są one przestarzałe) prawie wszystko, co "
+"widzisz w przeglądarce to elementy HTML. Wyjątkami są alerty i różne rodzaje "
+"powiadomień z przeglądarki."
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:10
 msgid ""
 "This is a powerful tool. In the desktop application development in most of "
 "frameworks you cannot use such tool and it makes the front-end development "
 "really harder."
-msgstr ""
+msgstr "To potężne narzędzie. W programowaniu aplikacji desktopowych w większości "
+"frameworków nie ma takiego narzędzie i to czyni programowanie GUI znacznie "
+"trudniejszym."
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:17
 #: ../../source/tutorial/browser_programming/storage/index.rst:11
@@ -1649,22 +1721,26 @@ msgstr ""
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:18
 msgid ""
 "It stands for HTML Document Object Model. It represents a tree of Objects."
-msgstr ""
+msgstr "Ten skrót oznaczy Document Object Model (dokumentowy-obiektowy model). "
+"Przedstawia drzewo obiektów."
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:20
 msgid "**What is an HTML element?**"
-msgstr ""
+msgstr "**Czym jest element HTML?**"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:22
 msgid ""
 "It can an atomic part of the view you see in the browser (ex. an input, a "
 "button, a span), as well something you cannot see (because it is hidden, it "
 "has the 0 size or it contains no text) or a tree of other elements."
-msgstr ""
+msgstr "Może być najmniejszą niepodzielną częścią widoku, który widzisz w przeglądarce "
+"(np. input, button, span), jak również tym, czego nie możesz zobaczyć (ponieważ "
+"jest ukryty, ma rozmiar 0 lub nie zawiera żadnego tekstu) albo ewentualnie drzewem "
+"innych elementów."
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:26
 msgid "**What is a tree?**"
-msgstr ""
+msgstr "**Czym jest drzewo?**"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:28
 msgid ""
@@ -1672,107 +1748,116 @@ msgid ""
 "place where one branch is divided to multiple branches (in a special case "
 "still one), a leaf (where the tree ends) or the begin of the tree (where it "
 "grows out of the ground)."
-msgstr ""
+msgstr "Możemy sobie wyobrazić drzewo obiektów na kształt prawdziwego drzewa. "
+"Każdy element (węzeł) to miejsce gdzie jedna gałąź rozdziela się na wiele gałęzi "
+"(w szczególnym przypadku nadal jedno), liść (gdzie drzewo się kończy) lub "
+"początek drzewa (gdzie wyrasta z ziemi)."
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:33
 msgid "**Relations in a tree**"
-msgstr ""
+msgstr "**Relacje w drzewie**"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:35
 msgid "One element for another can be:"
-msgstr ""
+msgstr "Jeden element dla innego może być:"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:37
 msgid "child (in special case the first child)"
-msgstr ""
+msgstr "dzieckiem - child (w szczególnym przypadku pierwszym dzieckiem - first child)"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:38
 msgid "parent"
-msgstr ""
+msgstr "rodzicem - parent"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:39
 msgid "sibling (in special case the next sibling)"
-msgstr ""
+msgstr "rodzeństwem - sibling (w szczególnym przypadku następnym rodzeństwem "
+" - next sibling)"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:40
 msgid "ancestor"
-msgstr ""
+msgstr "przodkiem a- ancestor"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:41
 msgid "offspring"
-msgstr ""
+msgstr "potomkiem - offspring"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:42
 msgid "none of the above"
-msgstr ""
+msgstr "niczym z powyższych"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:44
 msgid ""
 "Let us notice a child is also an offspring, as well a parent is an ancestor."
-msgstr ""
+msgstr "Zauważmy, że dziecko jest jednocześnie potomkiem, jak również rodzic "
+"jest jednocześnie przodkiem."
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:47
 msgid ""
 "If you just know same basics of HTML, you should know the outer element is "
 "HTML. In reality there is a child of the document which is the most outer "
 "element in the whole HTML DOM."
-msgstr ""
+msgstr "Skoro już znasz podstawy HTML, powinieneś wiedzieć, że zewnętrznym elementem "
+"jest HTML. Tak na prawdę to dziecko elementu document, który to jest "
+"najbardziej zewnętrznym elementem w całym HTML DOM."
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:52
 msgid "**Why is it so important?**"
-msgstr ""
+msgstr "**Dlaczego jest to tak ważne?**"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:54
 msgid ""
 "Knowing an element, you can operate on his children, siblings, parent. You "
 "can replace the children order, copy a subtree and so on."
-msgstr ""
+msgstr "Znając element, możesz operować na jego dzieciach, rodzeństwie, rodzicu. Możesz "
+"zmieniać kolejność dzieci, kopiować poddrzewo i tak dalej."
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:57
 msgid "**What Plezuro can do?**"
-msgstr ""
+msgstr "**Co Plezuro może zrobić?**"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:59
 msgid "change HTML elements (ex. the text)"
-msgstr ""
+msgstr "zmieniać elementy HTML (np. tekst)"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:60
 msgid "add HTML elements"
-msgstr ""
+msgstr "dodawać elementy HTML"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:61
 msgid "remove HTML elements"
-msgstr ""
+msgstr "usuwać elementy HTML"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:62
 msgid "clone HTML elements"
-msgstr ""
+msgstr "klonować elementy HTML"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:63
 msgid "change HTML attributes"
-msgstr ""
+msgstr "zmieniać atrybuty HTML"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:64
 msgid "add HTML attributes"
-msgstr ""
+msgstr "dodawać atrybuty HTML"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:65
 msgid "remove HTML attributes"
-msgstr ""
+msgstr "usuwać atrybuty HTML"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:66
 msgid "change CSS styles"
-msgstr ""
+msgstr "zmieniać style CSS"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:67
 msgid "create new HTML events"
-msgstr ""
+msgstr "tworzyć nowe zdarzenia HTML"
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:69
 msgid ""
 "It implies some additional features. For example cloning, removing and "
 "adding an element, you can move it."
-msgstr ""
+msgstr "Z tego wynikają dodatkowe możliwości. Np. klonując, usuwając i "
+"dodawają element, możesz zmieniać jego położenie."
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:2
 msgid "jQuery"
@@ -1783,35 +1868,37 @@ msgid ""
 "jQuery is a powerful Javascript library which gives you all the browser "
 "features that are not included in the pure Javascript and which makes the "
 "code shorter and more readable."
-msgstr ""
+msgstr "jQuery to potężna biblioteka Javascript, która daje ci wszystkie możliwości "
+"działanie w przeglądarce, których brakuje w czystym Javascript i która czyni "
+"kod krótszym i bardziej czytelnym."
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:8
 msgid "The main features:"
-msgstr ""
+msgstr "Główne możliwości to:"
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:10
 msgid "DOM element selection"
-msgstr ""
+msgstr "selekcja elementów HTML"
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:11
 msgid "DOM manipulation"
-msgstr ""
+msgstr "manipulacja DOM"
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:12
 msgid "events"
-msgstr ""
+msgstr "zdarzenia"
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:14
 msgid "control of the asynchronous processing"
-msgstr ""
+msgstr "kontrola przetwarzania asynchronicznego"
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:15
 msgid "extensibility"
-msgstr ""
+msgstr "rozszerzalność"
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:16
 msgid "multi-browser support"
-msgstr ""
+msgstr "wsparcie w wielu przeglądarkach"
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:18
 msgid ""
@@ -1819,30 +1906,37 @@ msgid ""
 "some differences are possible, for example the selector uses the "
 "document.querySelectorAll which behaves a little bit differently depending "
 "on the browser."
-msgstr ""
+msgstr "Teoretycznie jQUery działa w taki sam sposób we wszystkich przeglądarkach. "
+"W rzeczywistości mogą się zdarzyć pewne różnice, np. selektor używa "
+"document.querySelectorAll który zachowujy się nieco różnie w zależności od przeglądarki."
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:23
 msgid "To use this library in Plezuro, be aware of:"
-msgstr ""
+msgstr "Aby używać tę bibliotekę, powinieneś być świadomy:"
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:25
 msgid ""
 "The most common use in Javascript is based on the ``$`` variable. In Plezuro"
 " it breaks the rules of the variable naming so you can access to the jQuery "
 "with the ``jQuery`` variable or eventually using ``eval('$')``."
-msgstr ""
+msgstr "Najpopularniejsze użycie w Javascript jest oparte na zmiennej ``$``. "
+"W Plezuro jest to sprzeczne z zasadami nazewnictwa zmiennych, zatem aby "
+"uzyskać dostęp do jQuery, powienieneś użyć zmiennej ``jQuery`` lub ewentualnie "
+"``eval('$')``."
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:28
 msgid ""
 "You must pass the proper variable as the first argument of ``jQuery`` "
 "function, not as the zero argument."
-msgstr ""
+msgstr "Musisz przekazać odpowiednią zmienną jako pierwszy argument funkcji jQuery, "
+"a nie jako zerowy argument."
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:30
 msgid ""
 "In Plezuro everything is an object but jQuery selector must be a true "
 "Javascript string, so you must invoke the ``toString`` method."
-msgstr ""
+msgstr "W Plezuro wszystko jest obiektem a selektor jQuery musi być prawdziwym "
+"stringiem z Javascripta, zatem musisz wywołać metodę ``toString``."
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:0
 msgid "jQuery/index.html"
@@ -1857,7 +1951,9 @@ msgid ""
 "Fortunately, there is a simpler way to call jQuery in Plezuro using a "
 "special binding. Then you use the ``_jQ`` function and the code looks in the"
 " following way:"
-msgstr ""
+msgstr "Na szczęście, istnieje prostszy sposób na wywołanie jQuery w Plezuro przy "
+"użyciu specjalnego połączenia. Wystarczy użyć funkcji ``_jQ`` i wtedy kod "
+"wygląda w następujący sposób:"
 
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:0
 msgid "jQuery_binding/main.plez"
@@ -1865,60 +1961,64 @@ msgstr ""
 
 #: ../../source/tutorial/browser_programming/output/index.rst:4
 msgid "You can use the standard Javascript ways to output:"
-msgstr ""
+msgstr "Można używać standardowych sposobów Javascripta do wyświetlania na wyjściu:"
 
 #: ../../source/tutorial/browser_programming/output/index.rst:6
 msgid "printing into an alert box, using ``window.alert()``"
-msgstr ""
+msgstr "zapis do alertu, używając ``window.alert()``"
 
 #: ../../source/tutorial/browser_programming/output/index.rst:7
 msgid "printing into the HTML output using ``document.write()``"
-msgstr ""
+msgstr "zapis do wyjście HTML, używając ``document.write()``"
 
 #: ../../source/tutorial/browser_programming/output/index.rst:8
 msgid "printing into an HTML element, using ``element.innerHTML=``"
-msgstr ""
+msgstr "zapis do elemenut HTML, używając ``element.innerHTML=``"
 
 #: ../../source/tutorial/browser_programming/output/index.rst:9
 msgid "printing into the browser console, using ``console.log()``"
-msgstr ""
+msgstr "zapis do konsoli przeglądarki, używając ``console.log()``"
 
 #: ../../source/tutorial/browser_programming/output/index.rst:11
 msgid "However the recommended is the Plezuro way using ``dumpl`` method."
-msgstr ""
+msgstr "Jednak zelacanym sposobem w Plezuro jest użycie metody ``dumpl``."
 
 #: ../../source/tutorial/browser_programming/output/index.rst:13
 msgid ""
 "It looks like Javascript but be aware ex. ``alert()`` without ``window`` "
 "will not work unless you pass the ``window`` variable as the zero argument. "
 "This is because the zero argument in Plezuro is treated like this object."
-msgstr ""
+msgstr "Wygląda to jak Javascript, ale wiedz, że ``alert`` bez ``window`` "
+"nie zadziała dopóki nie przekaże mu się zmiennej ``window`` jako zerowy argument. "
+"Jest tak ponieważ zerowy argument w Plezuro jest traktowany jako dany obiekt."
 
 #: ../../source/tutorial/browser_programming/storage/index.rst:2
 msgid "Storage"
-msgstr ""
+msgstr "Pamięć"
 
 #: ../../source/tutorial/browser_programming/storage/index.rst:4
 msgid ""
 "In programming almost all the time you need to store some data. Part of it "
 "is more durable and other part less."
-msgstr ""
+msgstr "W programowaniu prawie cały czas potrzeba zapisywać jakieś dane. Część "
+"nich jest bardziej trwała a inna część mniej."
 
 #: ../../source/tutorial/browser_programming/storage/index.rst:7
 msgid "In web browser programming you can use the following types of storage:"
-msgstr ""
+msgstr "W programowaniu na przeglądarkę internetową, dostępne są następujące "
+"rodzaje pamięci:"
 
 #: ../../source/tutorial/browser_programming/storage/index.rst:9
 msgid "Durable unless the page is reloaded or closed:"
-msgstr ""
+msgstr "Trwałe dopóki strona jest przeładowana lub zamknięta:"
 
 #: ../../source/tutorial/browser_programming/storage/index.rst:12
 msgid "Javascript memory"
-msgstr ""
+msgstr "pamięć Javascript"
 
 #: ../../source/tutorial/browser_programming/storage/index.rst:14
 msgid "More durable:"
-msgstr ""
+msgstr "Bardziej trwałe"
 
 #: ../../source/tutorial/browser_programming/storage/index.rst:16
 msgid "localStorage"
@@ -1941,7 +2041,9 @@ msgid ""
 "Naturally, in Plezuro you have the full access to all of them. Moreover "
 "there is easy memory sharing between Plezuro and Javascript with global "
 "variables or object fields (public as well private)."
-msgstr ""
+msgstr "Naturalnie, w Plezuro jest pełny dostęp do wszystkich tych rodzajów. "
+"Ponadto jest wymiana pamięci pomiędzy Plezuro a Javascript poprzez zmienne "
+"globalne lub pola obiektu (publiczne jak równie prywatne)."
 
 #: ../../source/tutorial/browser_programming/storage/index.rst:0
 msgid "storage/index.html"
@@ -1951,21 +2053,233 @@ msgstr ""
 msgid "storage/main.plez"
 msgstr ""
 
+#: ../../source/tutorial/about/how_to/index.rst:15
+#, fuzzy
+msgid ""
+"Using the plezuro.jar (download from "
+"https://plezuro.herokuapp.com/downloads/plezuro.jar) executable you can "
+"compile a script from Plezuro to Javascript. It works for entire files, not "
+"a code embedded in HTML. You can use it within a browser, in the server side"
+" (using Node.js), for the mobile development (using Cordova) or any other "
+"technology that uses Javascript. Another important thing is to attach the "
+"plezuro.js (download from "
+"https://plezuro.herokuapp.com/downloads/plezuro.js) library (in HTML for "
+"browser and Cordova or using 'require' for Node.js). There is an automated "
+"support for all the Javascript libraries because you can use all the global "
+"variables from the Javascript. A variable cannot contain the dollar sign in "
+"its name in contrary to the Javascript so using jQuery instead of a dollar "
+"sign you should use the variable jQuery or eventually ``eval('$')``."
+msgstr ""
+"Używając pliku wykonywalnego plezuro.jar (pobierz "
+"https://plezuro.herokuapp.com/downloads/plezuro.jar), możesz skompilować "
+"skrypt z Plezuro do Javascripta. Działa to dla całych plików, ale nie dla "
+"kodu zagnieżdżonego w HTML. Można używać Plezuro w Przeglądarce, po stronie "
+"serwera (używając Node.js), w tworzeniu aplikacji mobilnych (używając "
+"pakietu Cordova) lub w jakiejkolwiek innej technologii używającej "
+"Javascript. Inną ważną sprawą jest dołączenie biblioteki plezuro.js (pobierz"
+" z https://plezuro.herokuapp.com/downloads/plezuro.js). Możesz to zrobić w "
+"HTML w aplikacji na przeglądarkę lub Cordovie lub przy użyciu ``require`` w "
+"Node.js). Istnieje automatyczne wsparice dla wszystkich bibliotek "
+"Javascriptowych, bo można w Plezuro używać wszystkich zmiennych z "
+"Javascript. Zmienna nie może zawierać znaku dolara w jej nazwie w "
+"przeciwieństwie do Javascripta, więc aby użyć jQuery, zamiast znaku dolara "
+"należy użyć zmiennej jQuery lub eventualnie ``eval('$')``."
+
 #: ../../source/tutorial/basics/operators/index.rst:4
 #, fuzzy
 msgid ""
 "One of the important features of a programming language are operators. "
 "Technically it would be possible to create a language without operators. "
-"However it facilities much the syntax. For example in an expression '1+3' we"
-" have an operator '+' which does the addition. In comparison with other "
+"However it facilities much the syntax. For example in an expression ``1+3`` "
+"we have an operator ``+`` which does the addition. In comparison with other "
 "languages, Plezuro has some special operators such as the comma (',') or the"
 " semicolon (';')."
 msgstr ""
 "Jedną z ważnych możliwości języka programowania jest użycie operatorów. "
-"Technicznie byłoby możliwe stworzyć język bez operatorów. Jednak uproszczają "
-"one bardzo składnię. Na przykład w wyrażeniu ``1+3`` mamy operator ``+``, "
-"który wykonuje dodawanie. W porównaniu z innymi językami, Plezuro posiada pewne "
-"specjalne operatory takie jak przecinek ``,`` czy średnik ``;``."
+"Technicznie byłoby możliwe stworzyć język bez operatorów. Jednak uproszczają"
+" one bardzo składnię. Na przykład w wyrażeniu ``1+3`` mamy operator ``+``, "
+"który wykonuje dodawanie. W porównaniu z innymi językami, Plezuro posiada "
+"pewne specjalne operatory takie jak przecinek ``,`` czy średnik ``;``."
+
+#: ../../source/tutorial/basics/operators/index.rst:16
+#, fuzzy
+msgid ""
+"The action of an operator depends of the type of the zero argument. It "
+"behaves in the same way like the method call. It is possible to change the "
+"operators action in the runtime (even you can cause that 2+2 produce another"
+" result than 4 so it is not recommended to change it in abundance)."
+msgstr ""
+"Akcja operatora zależy od typu zerowego argumentu. Działanie jest identyczne"
+" jak w przypadku wywołania metody. Jest możliwe zmienić akcję operatorów w "
+"trakcie wykonywania programu (możesz nawet spowodować, że wyrażenie `2+2` "
+"zwróci wynik inny niż 4, więc nie jest zalecena używać tego nadmiereni)"
+
+#: ../../source/tutorial/basics/operators/index.rst:57
+#, fuzzy
+msgid ""
+"double-argument operators (the zero argument, the operator, the first "
+"argument; from the evaluated at the end to the evaluated at the begin)"
+msgstr ""
+"dwuargumentowe operatory (zerowy argument, operator, pierwszy argument)"
+
+#: ../../source/tutorial/basics/variables/index.rst:32
+#, fuzzy
+msgid ""
+"The scope of a variable is limited within the curlies ('{', '}') which are "
+"used for the function (even a conditional or a loop used an inner function)."
+" So if you want to use a variable across multiple functions, you have to "
+"declare it a propriate place."
+msgstr ""
+"Zasięg zmiennej jest ograniczony w obrębie klamr (``{``, ``}``), które to są"
+" używane do tworzenie funkcji (nawet instrukcja warunkowa czy pętla to "
+"wewnętrzna funkcja). Zatem jeśli chcesz używać zmiennej w obrębie wielu "
+"funkcji, musisz zadeklarować ją w odpowiednim miejscu."
+
+#: ../../source/tutorial/objective/constructor/index.rst:4
+#, fuzzy
+msgid ""
+"Technically it would be possible to create an object without constructor. "
+"You could initialize all the fields with one or multiple methods (using the "
+"builder pattern). Eventually after that you could freeze the entire object "
+"or some of its fields."
+msgstr ""
+"Technicznie byłoby możliwe stworzyć obiekt bez konstruktora. Możesz "
+"zainicjalizować wszystkie pola jedną lub wieloma metodami (używając wzorca "
+"builder). Ewentualnie po tym możnaby zamrozić cały obiekt lub tylko niektóre"
+" z jego pól."
+
+#: ../../source/tutorial/objective/inheritance/index.rst:30
+#, fuzzy
+msgid ""
+"One of useful features is the possibility of the calling a parent method. "
+"The syntax is similar to the Python because in the case of multiple "
+"inheritance, you have to specify from which parent you want to call a "
+"method. It is also possible to call a method from a super-parent and even "
+"from any other class because of duck typing. You write a parent module name,"
+" the double colon ('::'), the method name and the 'this' keyword like the "
+"zero argument."
+msgstr ""
+"Ważną sprawą jest możliwość wywołania metody rodzica. Składnie jest podobna "
+"do tejw Pythonie, ponieważ z powodu wielokrotnego dziedziczenia, trzeba "
+"określić, z którego rodzica metoda ma być wywołana. Jest również możliwe "
+"wywołać metodę z dalszego przodka a nawet z jakiegokolwiek innego moduły z "
+"powodu duck typing. Składnia jest następująca: najpierw nazwa modułu, "
+"następnie podwójny dwukropek `::`, nazwa metody oraz słowo ``this`` jako "
+"zerowy argument."
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:79
+msgid ""
+"You can change the CSS style. You can use the CSS name with a hyphen ``-`` "
+"as well the camelcase. For example ``element['style']['backgroundColor'] = "
+"'red'``"
+msgstr "Możesz zmienić styl CSS. Można użyć nazwy CSS z myślnikiem ``-`` "
+"jak również camelcase. Np. ``element['style']['backgroundColor'] = 'red'``"
+
+#~ msgid ""
+#~ "You can change the CSS style. The only difference between the CSS property "
+#~ "name and the Plezuro property name is in Plezuro you must use the camelcase."
+#~ " For example ``element['style']['backgroundColor'] = 'red'``"
+#~ msgstr "Możesz zmienić styl CSS. Jedyna róż"
+
+#~ msgid ""
+#~ "double-argument operators (the first argument, the operator, the second "
+#~ "argument; from the evaluated at the end to the evaluated at the begin)"
+#~ msgstr ""
+#~ "dwuargumentowe operatory (zerowy argument, operator, pierwszy argument)"
+
+#~ msgid ""
+#~ "The scope of a variable is limited within the curlies ('{', '}') which are "
+#~ "used for the function (even a conditional or a loop used an inner function)."
+#~ " So if you want to use a variable across multiple functions you have to "
+#~ "declare it a propriate place."
+#~ msgstr ""
+#~ "Zasięg zmiennej jest ograniczony w obrębie klamr (``{``, ``}``), które to są"
+#~ " używane do tworzenie funkcji (nawet instrukcja warunkowa czy pętla to "
+#~ "wewnętrzna funkcja). Zatem jeśli chcesz używać zmiennej w obrębie wielu "
+#~ "funkcji, musisz zadeklarować ją w odpowiednim miejscu."
+
+#~ msgid ""
+#~ "Technically it would be possible to create an object without constructor. "
+#~ "You could initialize all the fields with one of multiple methods (using the "
+#~ "builder pattern). Eventually after that you could freeze the entire object "
+#~ "or some of its fields."
+#~ msgstr ""
+#~ "Technicznie byłoby możliwe stworzyć obiekt bez konstruktora. Możesz "
+#~ "zainicjalizować wszystkie pola jedną lub wieloma metodami (używając wzorca "
+#~ "builder). Ewentualnie po tym możnaby zamrozić cały obiekt lub tylko niektóre"
+#~ " z jego pól."
+
+#~ msgid ""
+#~ "One of useful features is the possibility of the calling a parent method. "
+#~ "The syntax is similar to the Python because in the case of multiple "
+#~ "inheritance, you have to specify from which parent you want to call a "
+#~ "method. It is also possible to call a method from a super-parent and event "
+#~ "from any other class because of duck typing. You write a parent module name,"
+#~ " the double colon ('::'), the method name and the 'this' keyword like the "
+#~ "zero argument."
+#~ msgstr ""
+#~ "Ważną sprawą jest możliwość wywołania metody rodzica. Składnie jest podobna "
+#~ "do tejw Pythonie, ponieważ z powodu wielokrotnego dziedziczenia, trzeba "
+#~ "określić, z którego rodzica metoda ma być wywołana. Jest również możliwe "
+#~ "wywołać metodę z dalszego przodka a nawet z jakiegokolwiek innego moduły z "
+#~ "powodu duck typing. Składnia jest następująca: najpierw nazwa modułu, "
+#~ "następnie podwójny dwukropek `::`, nazwa metody oraz słowo ``this`` jako "
+#~ "zerowy argument."
+
+#~ msgid ""
+#~ "The action of an operator depends of the type of the first argument. Is "
+#~ "behaves in the same way like the method call. It is possible to change the "
+#~ "operators action in the runtime (even you can cause that 2+2 produce another"
+#~ " result than 4 so it is not recommended to change it in abundance)."
+#~ msgstr ""
+#~ "Akcja operatora zależy od typu zerowego argumentu. Działanie jest identyczne"
+#~ " jak w przypadku wywołania metody. Jest możliwe zmienić akcję operatorów w "
+#~ "trakcie wykonywania programu (możesz nawet spowodować, że wyrażenie `2+2` "
+#~ "zwróci wynik inny niż 4, więc nie jest zalecena używać tego nadmiereni)"
+
+#~ msgid ""
+#~ "Using a plezuro.jar (download from "
+#~ "https://plezuro.herokuapp.com/downloads/plezuro.jar) executable you can "
+#~ "compile a script from Plezuro to Javascript. It works for entire files, not "
+#~ "a code embedded in HTML. You can use it within a browser, in the server side"
+#~ " (using Node.js), for the mobile development (using Cordova) or any other "
+#~ "technology that uses Javascript. Another important thing is to attach "
+#~ "plezuro.js (download from "
+#~ "https://plezuro.herokuapp.com/downloads/plezuro.js) library (in HTML for "
+#~ "browser and Cordova or using 'require' for Node.js). There is an automated "
+#~ "support for all the Javascript libraries because you can use all the global "
+#~ "variables from the Javascript. A variable cannot contain the dollar sign in "
+#~ "its name in contrary to the Javascript so using jQuery instead of a dollar "
+#~ "sign you should use the variable jQuery or eventually ``eval('$')``."
+#~ msgstr ""
+#~ "Używając pliku wykonywalnego plezuro.jar (pobierz "
+#~ "https://plezuro.herokuapp.com/downloads/plezuro.jar), możesz skompilować "
+#~ "skrypt z Plezuro do Javascripta. Działa to dla całych plików, ale nie dla "
+#~ "kodu zagnieżdżonego w HTML. Można używać Plezuro w Przeglądarce, po stronie "
+#~ "serwera (używając Node.js), w tworzeniu aplikacji mobilnych (używając "
+#~ "pakietu Cordova) lub w jakiejkolwiek innej technologii używającej "
+#~ "Javascript. Inną ważną sprawą jest dołączenie biblioteki plezuro.js (pobierz"
+#~ " z https://plezuro.herokuapp.com/downloads/plezuro.js). Możesz to zrobić w "
+#~ "HTML w aplikacji na przeglądarkę lub Cordovie lub przy użyciu ``require`` w "
+#~ "Node.js). Istnieje automatyczne wsparice dla wszystkich bibliotek "
+#~ "Javascriptowych, bo można w Plezuro używać wszystkich zmiennych z "
+#~ "Javascript. Zmienna nie może zawierać znaku dolara w jej nazwie w "
+#~ "przeciwieństwie do Javascripta, więc aby użyć jQuery, zamiast znaku dolara "
+#~ "należy użyć zmiennej jQuery lub eventualnie ``eval('$')``."
+
+#~ msgid ""
+#~ "One of the important features of a programming language are operators. "
+#~ "Technically it would be possible to create a language without operators. "
+#~ "However it facilities much the syntax. For example in an expression '1+3' we"
+#~ " have an operator '+' which does the addition. In comparison with other "
+#~ "languages, Plezuro has some special operators such as the comma (',') or the"
+#~ " semicolon (';')."
+#~ msgstr ""
+#~ "Jedną z ważnych możliwości języka programowania jest użycie operatorów. "
+#~ "Technicznie byłoby możliwe stworzyć język bez operatorów. Jednak uproszczają"
+#~ " one bardzo składnię. Na przykład w wyrażeniu ``1+3`` mamy operator ``+``, "
+#~ "który wykonuje dodawanie. W porównaniu z innymi językami, Plezuro posiada "
+#~ "pewne specjalne operatory takie jak przecinek ``,`` czy średnik ``;``."
 
 #~ msgid ""
 #~ "One of the important features of a programming language are operators. "

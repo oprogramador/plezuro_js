@@ -15,7 +15,7 @@ really harder.
 ========
 HTML DOM
 ========
-It stands for HTML Document Object Model. It represents a tree of Objects. 
+It stands for HTML Document Object Model. It represents a tree of objects. 
 
 **What is an HTML element?**
 

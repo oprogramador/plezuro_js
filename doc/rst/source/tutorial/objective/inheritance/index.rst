@@ -30,7 +30,7 @@ Calling a parent method
 One of useful features is the possibility of the calling a parent method. The
 syntax is similar to the Python because in the case of multiple inheritance, you
 have to specify from which parent you want to call a method. It is also possible
-to call a method from a super-parent and event from any other class because of
+to call a method from a super-parent and even from any other class because of
 duck typing. You write a parent module name, the double colon ('::'), the method
 name and the 'this' keyword like the zero argument.
 
