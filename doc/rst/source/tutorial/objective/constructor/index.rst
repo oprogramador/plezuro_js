@@ -2,7 +2,7 @@ Constructor
 ===========
 
 Technically it would be possible to create an object without constructor. You could
-initialize all the fields with one of multiple methods (using the builder pattern).
+initialize all the fields with one or multiple methods (using the builder pattern).
 Eventually after that you could freeze the entire object or some of its fields.
 
 However for readability of the source code, it is a good idea to use constructors.

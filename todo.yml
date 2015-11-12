@@ -9,6 +9,7 @@ todo:
         minus_after_bracket_opening: no
         method_call_and_square_bracket: yes
         prepend_return: no
+        return_value: no
     collections:
         associative_array: yes
         dictionary: yes

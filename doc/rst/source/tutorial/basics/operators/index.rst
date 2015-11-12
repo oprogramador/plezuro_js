@@ -2,8 +2,8 @@ Operators
 =========
 
 One of the important features of a programming language are operators. Technically
-it would be possible to create a language before operators. However it facilities
-much the syntax. For example in an expression '1+3' we have an operator '+' which
+it would be possible to create a language without operators. However it facilities
+much the syntax. For example in an expression ``1+3`` we have an operator ``+`` which
 does the addition. In comparison with other languages, Plezuro has some special
 operators such as the comma (',') or the semicolon (';').
 
@@ -54,7 +54,7 @@ Complete list of the operators:
     * "++"	
     * "--"
 
-* double-argument operators (the first argument, the operator, the second argument;
+* double-argument operators (the zero argument, the operator, the first argument;
   from the evaluated at the end to the evaluated at the begin)
 
     * ";"

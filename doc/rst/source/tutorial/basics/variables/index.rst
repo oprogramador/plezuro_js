@@ -31,7 +31,7 @@ Scope
 
 The scope of a variable is limited within the curlies ('{', '}') which are used
 for the function (even a conditional or a loop used an inner function). So if
-you want to use a variable across multiple functions you have to declare it a
+you want to use a variable across multiple functions, you have to declare it a
 propriate place.
 
 
