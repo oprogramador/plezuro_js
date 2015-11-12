@@ -44,16 +44,17 @@ todo:
         ortographic_check: no
         parts:
             contributing_to_doc: no
-            dev_specification: no
-            specification: no
+            dev_specification: yes
+            specification: yes
             std_lib: no
             tutorial:
-                installation: no
+                installation: yes
                 rules: yes
+                regex: no
         unicode: yes
         webpage:
             docs: yes
-            jar: no
+            jar: yes
     easy_multiple_callback: no
     error_checking:
         after_bracket_close_only_operator_or_bracket_close:

@@ -30,101 +30,87 @@ msgstr ""
 msgid "Plezuro.js"
 msgstr ""
 
-#: ../../source/tutorial/about/how_to/index.rst:15
-msgid ""
-"Using a plezuro.jar (download from "
-"https://plezuro.herokuapp.com/downloads/plezuro.jar) executable you can "
-"compile a script from Plezuro to Javascript. It works for entire files, not "
-"a code embedded in HTML. You can use it within a browser, in the server side"
-" (using Node.js), for the mobile development (using Cordova) or any other "
-"technology that uses Javascript. There is an automated support for all the "
-"Javascript libraries because you can use all the global variables from the "
-"Javascript. A variable cannot contain the dollar sign in its name in "
-"contrary to the Javascript so using jQuery instead of a dollar sign you "
-"should use the variable jQuery or eventually ```eval('$')```."
-msgstr ""
-
-#: ../../source/tutorial/about/how_to/index.rst:25
-msgid ""
-"Basic usage of the compiler: ```plezuro.jar input.plez output.plez.js```"
-msgstr ""
-
 #: ../../source/tutorial/about/index.rst:2
 msgid "About Plezuro"
-msgstr ""
+msgstr "O Plezuro"
 
 #: ../../source/tutorial/about/origin/index.rst:2
 msgid "Origin"
-msgstr ""
+msgstr "Pochodzenie"
 
 #: ../../source/tutorial/about/origin/index.rst:4
 msgid ""
 "Where does Plezuro come from? Basically its author was not fully satisfied "
 "with any existing programming language. So he thought about the inventing of"
 " a new one. The name comes from the Esperanto and means 'pleasure'."
-msgstr ""
+msgstr "Skąd się wzięło Plezuro? Otóż jego autor nie był w pełni "
+"usatysfakcjonowany żadnym z dotychczas istniejących języków programowania. Zatem "
+"pomyślał o stworzeniu nowego. Nazwa pochodzi z Esperanto i znaczy 'przyjemność'."
 
 #: ../../source/tutorial/about/rules/index.rst:2
 msgid "Basic rules"
-msgstr ""
+msgstr "Podstawowe zasady"
 
 #: ../../source/tutorial/about/rules/index.rst:4
 msgid ""
 "Plezuro is an imperative, object-oriented, functional, procedural and "
 "reflective programming language."
-msgstr ""
+msgstr "Plezuro to imperatywny, obiektowy, funkcyjny, proceduralny i refleksyjny "
+"język programowania"
 
 #: ../../source/tutorial/about/rules/index.rst:6
 msgid "The main ideas are:"
-msgstr ""
+msgstr "Główna założenia to:"
 
 #: ../../source/tutorial/about/rules/index.rst:8
 msgid "The code should be possibly short (as long as it is human readable)."
-msgstr ""
+msgstr "Kod powinien być możliwie krótki."
 
 #: ../../source/tutorial/about/rules/index.rst:10
 msgid "Very simple syntax."
-msgstr ""
+msgstr "Bardzo prosta składnia."
 
 #: ../../source/tutorial/about/rules/index.rst:12
 msgid "The code should be easy to read for a beginner programmer."
-msgstr ""
+msgstr "Kod powinien być łatwy do przeczytania dla początkującego programisty."
 
 #: ../../source/tutorial/about/rules/index.rst:14
 msgid ""
 "The power of the language should be based on the standard library, not its "
 "syntax."
-msgstr ""
+msgstr "Potęga języka powinna być oparta na standardowej bibliotece, a nie na "
+"jego składni."
 
 #: ../../source/tutorial/about/rules/index.rst:16
 msgid "Explicit is always better than implicit."
-msgstr ""
+msgstr "Jawne jest zawsze lepsze niż domniemane."
 
 #: ../../source/tutorial/about/rules/index.rst:18
 msgid "Everything is a variable."
-msgstr ""
+msgstr "Wszystko jest zmienną."
 
 #: ../../source/tutorial/about/rules/index.rst:20
 msgid "Everything is an object."
-msgstr ""
+msgstr "Wszystko jest obiektem."
 
 #: ../../source/tutorial/about/rules/index.rst:22
 msgid "Multiple inheritance."
-msgstr ""
+msgstr "Wielokrotne dziedziczenie."
 
 #: ../../source/tutorial/about/rules/index.rst:24
 msgid "There is no difference between a module, a class and a namespace."
-msgstr ""
+msgstr "Nie ma różnicy pomiędzy modułem, klasą i przestrzenią nazw."
 
 #: ../../source/tutorial/about/rules/index.rst:26
 msgid ""
 "No annotations and other additional syntax - everything is based on the "
 "basic syntax of the language."
-msgstr ""
+msgstr "Brak adnotacji i innych dodatkowych składni - wszystko jest oparte "
+       "na podstawowej składki języka."
 
 #: ../../source/tutorial/basics/builtin_methods/index.rst:2
 msgid "Built-in methods"
-msgstr ""
+msgstr "Wbudowane metody"
 
 #: ../../source/tutorial/basics/builtin_methods/index.rst:4
 msgid ""
@@ -137,23 +123,33 @@ msgid ""
 "function name, bracket opening ('('), arguments separated by the comma (',')"
 " and the bracket closing (')'). However with no arguments the bracket is not"
 " required."
-msgstr ""
+msgstr "W dalszych miejscach poradnika zdobędziesz pewną wiedzę o modułach i "
+       "metodach w Plezuro. Jednak już w tym momencie powinienieś wiedzieć jak działają "
+       "metody. Prosto mówiąc, to jest jak wywołanie funkcji. Zerowy argument "
+       "(zwany this - tym obiektem) jest dostępny poprzez słowo kluczowe 'this'. "
+       "Tak jak w przypadku funkcji, możesz używać słów kluczowych takich jak "
+       "'first', 'second', 'third', 'args'. Wywołując metodę, najpierw piszesz "
+       "zerowy argument (this), następnie kropkę ('.'), nazwę funkcji, otwarcie "
+       "nawiasu ('('), argumenty oddzielone przecinkiem (',') i w końcu "
+       "zamknięcie nawiasu (')'). Jednakże przy braku argumentów nawias nie "
+       "jest konieczny."
 
 #: ../../source/tutorial/basics/collections/index.rst:2
 msgid "Collections"
-msgstr ""
+msgstr "Kolekcje"
 
 #: ../../source/tutorial/basics/collections/index.rst:4
 msgid ""
 "One of the indispensable features of a programming language are the "
 "collections. Of course, Plezuro provides some sorts of it."
-msgstr ""
+msgstr "Jedną z nieodzownych możliwości języka programowania są kolekcje. "
+       "Oczywiście, Plezuro zapewnia niektóre z nich."
 
 #: ../../source/tutorial/basics/collections/index.rst:9
 #: ../../source/tutorial/basics/operators/index.rst:34
 #: ../../source/tutorial/basics/operators/index.rst:35
 msgid "List"
-msgstr ""
+msgstr "Lista (List)"
 
 #: ../../source/tutorial/basics/collections/index.rst:11
 msgid ""
@@ -164,21 +160,30 @@ msgid ""
 " also contain other lists. Moreover a list can contain a self-reference (it "
 "means one of its elements is a pointer to this list) because the lists are "
 "passed by reference to functions and to collections."
-msgstr ""
+msgstr "Podstawową z nich jest lista. Aby ją stworzyć, powinieneś użyć nawiasów "
+       "kwadratowych ('[', ']') oraz elementów oddzielonych przecinkiem (','). "
+       "Lista może zawierać obiekty różnych typów (tak jak lista w Pythonie, "
+       "Ruby, Javascripcie, PHP jak również List<Object> w Javie czy "
+       "List<object> w c♯). Z tego wynika że lista może zawierać nawet inne "
+       "listy. Ponadto lista może mieścić w sobie samo-referencję (to znaczy że "
+       "jeden z jej elementów jest wskaźniekiem na nią samą) ponieważ listy "
+       "są przekazywane przez referencję to funkcji oraz kolekcji."
 
 #: ../../source/tutorial/basics/collections/index.rst:24
 msgid "Set"
-msgstr ""
+msgstr "Zbiór (Set)"
 
 #: ../../source/tutorial/basics/collections/index.rst:26
 msgid ""
 "To create a set, you use dollar sign ('$') and brackets. This collections is"
 " like the mathematical set. Each value can be contained only once."
-msgstr ""
+msgstr "Aby utworzyć zbiór, możesz użyć znaku dolara ('$') oraz nawiasów. Ta "
+       "kolekcja zachowuje się jak zbiór matematyczny. Każda wartość może "
+       "wystąpić co najwyżej jeden raz."
 
 #: ../../source/tutorial/basics/collections/index.rst:34
 msgid "Dictionary"
-msgstr ""
+msgstr "Słownik (Dictionary)"
 
 #: ../../source/tutorial/basics/collections/index.rst:36
 msgid ""
@@ -188,11 +193,17 @@ msgid ""
 "and associative array in PHP or object in Javascript because in the "
 "dictionary the order of the items does not matter and generally it is stored"
 " using a binary tree. You write it with a hash sign ('#') and brackets."
-msgstr ""
+msgstr "W prostym ujęcie to zbiór par klucz-wartość. To tak jak dictionary w 
+       "Pythonie, hash w Ruby, Dictionary<object, object> w c♯ czy "
+       "Map<Object, Object> w Javie. Jednakże istnieje istotna różnica "
+       "pomiędzy słownikiem Plezuro a tablicą asocjacyjną w PHP czy obiektem "
+       "w Javascripcie gdyż w słowniku nie ma znaczenia kolejność elementów "
+       " i ogólnie jest przechowywany na drzewie binarnym. Możesz zapisać "
+       "słownik przy użyciu krzyżyka ('#') oraz nawiasów."
 
 #: ../../source/tutorial/basics/collections/index.rst:48
 msgid "Associative array"
-msgstr ""
+msgstr "Tablica asocjacyjna"
 
 #: ../../source/tutorial/basics/collections/index.rst:50
 msgid ""
@@ -200,17 +211,22 @@ msgid ""
 "version of Plezuro compiled to Javascript the main appliance of this "
 "collection is to pass Javascript objects to methods from libraries. You "
 "write it with a percent sign ('%') and brackets."
-msgstr ""
+msgstr "To jest jak tablica asocjacyjna w PHP czy też obiekt w Javascripcie. "
+       "W wersji Plezuro kompilowalnej do Javascripta główne zastosowanie tego "
+       "typu kolekcji to przekazywanie obiektów do metod z bibliotek "
+       "javascriptowych. Możesz to zapisać jako precent ('%') z nawiasami."
 
 #: ../../source/tutorial/basics/comments/index.rst:2
 msgid "Comments"
-msgstr ""
+msgstr "Komentarze"
 
 #: ../../source/tutorial/basics/comments/index.rst:4
 msgid ""
 "The comments are like in c++, Java, and c♯. You can comment one line using "
 "'//' or multiple lines using '/\\*' and '\\*/'."
-msgstr ""
+msgstr "Komentarze wyglądają tak jak w c++, Javie czy c♯. Możesz zakomentować "
+       "jedną linię, używając '//' lub wiele lini przy użyciu '/\\*' oraz "
+       "'\\*/."
 
 #: ../../source/tutorial/basics/conditions/index.rst:2
 msgid "Conditions"
@@ -223,11 +239,15 @@ msgid ""
 "that will be executed when this expression is true. It is just a method of "
 "the function type. Then you can use methods 'elif' and 'else' which are not "
 "required."
-msgstr ""
+msgstr "Na początku powinieneś napisać warunek (funkcję zwracającą wartość "
+       "boolowską). Następnie '.if' oraz w nawiasach i klamrach wyrażanie, "
+       "które będzie wykonywane jeśli początkowy warunek jest prawdziwy. To "
+       "po prostu metoda typu funkcja. Następnie możesz użyć metod 'elif' "
+       "oraz 'else', które to nie są wymagane."
 
 #: ../../source/tutorial/basics/exceptions/index.rst:2
 msgid "Exceptions"
-msgstr ""
+msgstr "Wyjątki"
 
 #: ../../source/tutorial/basics/exceptions/index.rst:4
 msgid ""
@@ -1135,6 +1155,716 @@ msgid ""
 "written in a not complicated manner. This is just a view from another site. "
 "You can read Plezuro scripts on Github and try to write something similar."
 msgstr ""
+
+#: ../../source/tutorial/about/how_to/index.rst:15
+msgid ""
+"Using a plezuro.jar (download from "
+"https://plezuro.herokuapp.com/downloads/plezuro.jar) executable you can "
+"compile a script from Plezuro to Javascript. It works for entire files, not "
+"a code embedded in HTML. You can use it within a browser, in the server side"
+" (using Node.js), for the mobile development (using Cordova) or any other "
+"technology that uses Javascript. Another important thing is to attach "
+"plezuro.js (download from "
+"https://plezuro.herokuapp.com/downloads/plezuro.js) library (in HTML for "
+"browser and Cordova or using 'require' for Node.js). There is an automated "
+"support for all the Javascript libraries because you can use all the global "
+"variables from the Javascript. A variable cannot contain the dollar sign in "
+"its name in contrary to the Javascript so using jQuery instead of a dollar "
+"sign you should use the variable jQuery or eventually ``eval('$')``."
+msgstr ""
+
+#: ../../source/tutorial/about/how_to/index.rst:28
+msgid "Basic usage of the compiler: ``plezuro.jar input.plez output.plez.js``"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/ajax/index.rst:2
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:13
+msgid "AJAX"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/ajax/index.rst:4
+msgid ""
+"AJAX stands for Asynchronous Javascript and XML. It is a set of web "
+"development techniques to create asynchronous web applications. Nonetheless "
+"XML is not necessary in AJAX, it can be any sort of data (JSON, CSV, HTML, "
+"CSS, images, Javascript). AJAX is almost always associated with a serwer-"
+"side programming (a server response dependent on the request). Technically "
+"it is always true because you send a request and a server in regard to it "
+"returns a response. However not always a script in a language such as PHP, "
+"Python or Ruby is needed. Server can also return some static data (ex. "
+"images) according to their path. The best example is the Apache 2 server."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/ajax/index.rst:14
+msgid ""
+"From a client-side developper point of view it enables the communication "
+"with the server without page reloading. For example you would like to store "
+"some date on the server for security reasons, check if a data provided by "
+"the user matches that on the server or download some content dynamically "
+"(HTML, CSS, images, other Javascripts) that would be enormous if downloaded "
+"fully."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/ajax/index.rst:21
+msgid ""
+"Probably the best way to make an AJAX request is using jQuery at reasons of "
+"browser compatibility and code readability."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/ajax/index.rst:0
+msgid "ajax/index.html"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/ajax/index.rst:0
+msgid "ajax/main.plez"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/angular/index.rst:2
+msgid "AngularJS"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/angular/index.rst:4
+msgid ""
+"AngularJS is a framework used mostly in single-page applications. It is a "
+"part of MEAN software stack:"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/angular/index.rst:7
+msgid "MongoDB - a database"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/angular/index.rst:8
+msgid "Express.js - a back-end framework"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/angular/index.rst:9
+msgid "AngularJS - a front-end framework"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/angular/index.rst:10
+msgid "Node.js - a back-end platform"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/angular/index.rst:12
+msgid ""
+"All of these four technologies are based on Javascript so they are enable to"
+" develop in Plezuro."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/angular/index.rst:15
+msgid ""
+"The examples below have origin from https://angularjs.org/ and later were "
+"adapted to Plezuro."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/angular/index.rst:0
+msgid "angular/index.html"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/angular/index.rst:0
+msgid "angular/todo.css"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/angular/index.rst:0
+msgid "angular/todo.plez"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/how_to/index.rst:0
+msgid "basic/index.html"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/how_to/index.rst:0
+msgid "basic/main.plez"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:2
+msgid "HTML DOM methods and events"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:4
+msgid ""
+"After previous chapters you are able to create any HTML document statically "
+"with ``doument.write``. But probably you wonder to create an interactive "
+"app. For example after button pressing an input will change his value."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:11
+msgid "How to get an element?"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:13
+msgid ""
+"You can use the standard Javascript methods in Plezuro. Eventually you can "
+"use some methods from external libraries such like jQuery."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:17
+msgid "**document.getElementById**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:19
+msgid ""
+"It returns the element with matching 'id' attribute. Remember if you include"
+" your script in the HEAD section, the elements are not loaded so you cannot "
+"immediately get any element, in this case you should use the proper event."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:24
+msgid "**document.getElementsByTagName**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:26
+msgid ""
+"It returns the collection of all the elements of the tag name specified as "
+"the first argument. For example ``document.getElementsByTagName('div')`` "
+"will return the collection of all divs in the document."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:31
+msgid "**document.getElementsByName**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:33
+msgid ""
+"The collection of all the elements with the value of 'name' attribute "
+"specified as the first argument."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:37
+msgid "**document.getElementsByClassName**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:39
+msgid ""
+"The collection of all the elements with the value of 'class' attribute "
+"specified as the first argument."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:43
+msgid "**document.getElementsByTagNameNS**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:45
+msgid ""
+"Similar to getElementsByTagName but the first argument specifies the name of"
+" the namespace and the second one the tag name. It is used rather in XML "
+"DOM."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:49
+msgid "**document.querySelector**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:51
+msgid ""
+"It returns the first element that matches the CSS selector in the first "
+"argument. For example ``document.querySelector('table button')`` will return"
+" the first button in the first table that contain a button."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:56
+msgid "**document.querySelectorAll**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:58
+msgid ""
+"It return the collection of all the elements that match the given CSS "
+"selector."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:63
+msgid "How to operate on elements?"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:65
+msgid "**innerHTML**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:67
+msgid ""
+"It is the simplest way to change the content of an element, it just inserts "
+"any HTML into the element. For example ``element['innerHTML'] = "
+"'<button>OK</button>'``."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:72
+msgid "**setAttribute**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:74
+msgid "For example ``element.setAttribute('name', 'age')``"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:77
+msgid "**style**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:79
+msgid ""
+"You can change the CSS style. The only difference between the CSS property "
+"name and the Plezuro property name is in Plezuro you must use the camelcase."
+" For example ``element['style']['backgroundColor'] = 'red'``"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:84
+msgid "**document.createElement**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:86
+msgid ""
+"You can create an element. The first argument specifies the tag name. For "
+"example, to create a div, you write ``document.createElement('div')``."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:90
+msgid "**document.appendChild**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:92
+msgid ""
+"When you have just created an element you can add it to another element "
+"either existing in the HTML DOM or not."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:96
+msgid "**document.removeChild**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:98
+msgid "You can remove an element specified as the first argument."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:101
+msgid "**document.replaceChild**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:103
+msgid ""
+"You can replace an element passed as the first argument to an element passed"
+" as the second argument."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:107
+msgid "**document.createTextNode**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:109
+msgid ""
+"You can create a text node with the value specified as the first argument "
+"and then append such a node to an element."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:115
+msgid "How to listen to en event?"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:117
+msgid ""
+"To provide some interaction it is useful to listen to the events. We can "
+"detect among others: a mouse click, a key pressing, a document being loaded,"
+" a document mutation, an object mutation, browser window resizing."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:121
+msgid ""
+"You can see the full list of events for Firefox on "
+"https://developer.mozilla.org/en-US/docs/Web/Events, or for any browser on "
+"http://www.w3schools.com/tags/ref_eventattributes.asp."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:125
+msgid "Let us enumerate the most important ones."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:128
+msgid "**onclick**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:130
+msgid ""
+"It fires after the mouse click (pressing and releasing the mouse button). "
+"For example ``element['onclick'] = { this['parentNode'].removeChild(this); "
+"null }``"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:134
+msgid "**onkeydown**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:136
+msgid "It fires after a key being pressed."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:139
+msgid "**onkeypress**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:141
+msgid "It fires after when a key is being pressed (even multiple times)."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:144
+msgid "**onkeyup**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:146
+msgid "It fires after a key being released."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:0
+msgid "dom_methods/index.html"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:0
+msgid "dom_methods/main.plez"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:2
+msgid "HTML elements"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:4
+msgid ""
+"In HTML programming (not each web browsing programming is HTML programming "
+"because you can use eventually Java applets, Adobe Flash or Silverlight "
+"which are deprecated technologies) almost all you see in the browser are the"
+" HTML elements. The exceptions include alerts and different sorts of info "
+"from browser."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:10
+msgid ""
+"This is a powerful tool. In the desktop application development in most of "
+"frameworks you cannot use such tool and it makes the front-end development "
+"really harder."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:17
+#: ../../source/tutorial/browser_programming/storage/index.rst:11
+msgid "HTML DOM"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:18
+msgid ""
+"It stands for HTML Document Object Model. It represents a tree of Objects."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:20
+msgid "**What is an HTML element?**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:22
+msgid ""
+"It can an atomic part of the view you see in the browser (ex. an input, a "
+"button, a span), as well something you cannot see (because it is hidden, it "
+"has the 0 size or it contains no text) or a tree of other elements."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:26
+msgid "**What is a tree?**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:28
+msgid ""
+"We can imagine an object tree like a real tree. Each element (node) is a "
+"place where one branch is divided to multiple branches (in a special case "
+"still one), a leaf (where the tree ends) or the begin of the tree (where it "
+"grows out of the ground)."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:33
+msgid "**Relations in a tree**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:35
+msgid "One element for another can be:"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:37
+msgid "child (in special case the first child)"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:38
+msgid "parent"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:39
+msgid "sibling (in special case the next sibling)"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:40
+msgid "ancestor"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:41
+msgid "offspring"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:42
+msgid "none of the above"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:44
+msgid ""
+"Let us notice a child is also an offspring, as well a parent is an ancestor."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:47
+msgid ""
+"If you just know same basics of HTML, you should know the outer element is "
+"HTML. In reality there is a child of the document which is the most outer "
+"element in the whole HTML DOM."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:52
+msgid "**Why is it so important?**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:54
+msgid ""
+"Knowing an element, you can operate on his children, siblings, parent. You "
+"can replace the children order, copy a subtree and so on."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:57
+msgid "**What Plezuro can do?**"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:59
+msgid "change HTML elements (ex. the text)"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:60
+msgid "add HTML elements"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:61
+msgid "remove HTML elements"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:62
+msgid "clone HTML elements"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:63
+msgid "change HTML attributes"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:64
+msgid "add HTML attributes"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:65
+msgid "remove HTML attributes"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:66
+msgid "change CSS styles"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:67
+msgid "create new HTML events"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:69
+msgid ""
+"It implies some additional features. For example cloning, removing and "
+"adding an element, you can move it."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:2
+msgid "jQuery"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:4
+msgid ""
+"jQuery is a powerful Javascript library which gives you all the browser "
+"features that are not included in the pure Javascript and which makes the "
+"code shorter and more readable."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:8
+msgid "The main features:"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:10
+msgid "DOM element selection"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:11
+msgid "DOM manipulation"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:12
+msgid "events"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:14
+msgid "control of the asynchronous processing"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:15
+msgid "extensibility"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:16
+msgid "multi-browser support"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:18
+msgid ""
+"Theoretically jQuery works in the same way in all the browsers. In reality "
+"some differences are possible, for example the selector uses the "
+"document.querySelectorAll which behaves a little bit differently depending "
+"on the browser."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:23
+msgid "To use this library in Plezuro, be aware of:"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:25
+msgid ""
+"The most common use in Javascript is based on the ``$`` variable. In Plezuro"
+" it breaks the rules of the variable naming so you can access to the jQuery "
+"with the ``jQuery`` variable or eventually using ``eval('$')``."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:28
+msgid ""
+"You must pass the proper variable as the first argument of ``jQuery`` "
+"function, not as the zero argument."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:30
+msgid ""
+"In Plezuro everything is an object but jQuery selector must be a true "
+"Javascript string, so you must invoke the ``toString`` method."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:0
+msgid "jQuery/index.html"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:0
+msgid "jQuery/main.plez"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:42
+msgid ""
+"Fortunately, there is a simpler way to call jQuery in Plezuro using a "
+"special binding. Then you use the ``_jQ`` function and the code looks in the"
+" following way:"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:0
+msgid "jQuery_binding/main.plez"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/output/index.rst:4
+msgid "You can use the standard Javascript ways to output:"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/output/index.rst:6
+msgid "printing into an alert box, using ``window.alert()``"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/output/index.rst:7
+msgid "printing into the HTML output using ``document.write()``"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/output/index.rst:8
+msgid "printing into an HTML element, using ``element.innerHTML=``"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/output/index.rst:9
+msgid "printing into the browser console, using ``console.log()``"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/output/index.rst:11
+msgid "However the recommended is the Plezuro way using ``dumpl`` method."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/output/index.rst:13
+msgid ""
+"It looks like Javascript but be aware ex. ``alert()`` without ``window`` "
+"will not work unless you pass the ``window`` variable as the zero argument. "
+"This is because the zero argument in Plezuro is treated like this object."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:2
+msgid "Storage"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:4
+msgid ""
+"In programming almost all the time you need to store some data. Part of it "
+"is more durable and other part less."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:7
+msgid "In web browser programming you can use the following types of storage:"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:9
+msgid "Durable unless the page is reloaded or closed:"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:12
+msgid "Javascript memory"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:14
+msgid "More durable:"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:16
+msgid "localStorage"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:17
+msgid "sessionStorage"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:18
+msgid "indexedDB"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:19
+msgid "cookies"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:21
+msgid ""
+"Naturally, in Plezuro you have the full access to all of them. Moreover "
+"there is easy memory sharing between Plezuro and Javascript with global "
+"variables or object fields (public as well private)."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:0
+msgid "storage/index.html"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:0
+msgid "storage/main.plez"
+msgstr ""
+
+#~ msgid ""
+#~ "Using a plezuro.jar (download from "
+#~ "https://plezuro.herokuapp.com/downloads/plezuro.jar) executable you can "
+#~ "compile a script from Plezuro to Javascript. It works for entire files, not "
+#~ "a code embedded in HTML. You can use it within a browser, in the server side"
+#~ " (using Node.js), for the mobile development (using Cordova) or any other "
+#~ "technology that uses Javascript. There is an automated support for all the "
+#~ "Javascript libraries because you can use all the global variables from the "
+#~ "Javascript. A variable cannot contain the dollar sign in its name in "
+#~ "contrary to the Javascript so using jQuery instead of a dollar sign you "
+#~ "should use the variable jQuery or eventually ```eval('$')```."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Basic usage of the compiler: ```plezuro.jar input.plez output.plez.js```"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "The action of an operator depends of the type of the first argument. Is "

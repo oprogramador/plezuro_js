@@ -253,7 +253,7 @@ msgid "deleting all generated output files"
 msgstr ""
 
 #: ../../source/implementation/scripts/index.rst:13
-#: ../../source/implementation/scripts/index.rst:42
+#: ../../source/implementation/scripts/index.rst:52
 msgid "scripts/clear.sh"
 msgstr ""
 
@@ -262,86 +262,67 @@ msgid "deploy_js.sh"
 msgstr ""
 
 #: ../../source/implementation/scripts/index.rst:16
-msgid ""
-"compiling single script (into 'bin' directory) for plezuro files, copying "
-"for other files, recursive running the same script for the directories"
-msgstr ""
-
-#: ../../source/implementation/scripts/index.rst:16
 msgid "scripts/deploy_js.sh src/plezuro/tests/1.plez"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:22
+#: ../../source/implementation/scripts/index.rst:25
 msgid "export_jar.sh"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:22
-msgid "Exporting .class files into single .jar"
-msgstr ""
-
-#: ../../source/implementation/scripts/index.rst:22
+#: ../../source/implementation/scripts/index.rst:25
 msgid "scripts/export_jar.sh"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:25
+#: ../../source/implementation/scripts/index.rst:28
 msgid "make.sh"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:25
-msgid ""
-"build.sh, export_jar.sh, copying .jar file into '/usr/bin/', make_js.sh"
-msgstr ""
-
-#: ../../source/implementation/scripts/index.rst:25
-#: ../../source/implementation/scripts/index.rst:44
+#: ../../source/implementation/scripts/index.rst:28
+#: ../../source/implementation/scripts/index.rst:54
 msgid "scripts/make.sh"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:29
+#: ../../source/implementation/scripts/index.rst:35
+#: ../../source/implementation/scripts/index.rst:37
 msgid "make_js.sh"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:29
-msgid ""
-"make_js_lib.sh, compiling all Plezuro scripts from 'src/plezuro' to 'bin/js'"
-msgstr ""
-
-#: ../../source/implementation/scripts/index.rst:29
+#: ../../source/implementation/scripts/index.rst:37
 msgid "scripts/make_js.sh"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:33
+#: ../../source/implementation/scripts/index.rst:43
 msgid "make_js_lib.sh"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:33
+#: ../../source/implementation/scripts/index.rst:43
 msgid "joining all Javascript libraries into bin/js/plezuro.js"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:33
+#: ../../source/implementation/scripts/index.rst:43
 msgid "scripts/make_js_lib.sh"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:36
+#: ../../source/implementation/scripts/index.rst:46
 msgid "test.sh"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:36
+#: ../../source/implementation/scripts/index.rst:46
 msgid "testing Plezuro scripts"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:36
 #: ../../source/implementation/scripts/index.rst:46
+#: ../../source/implementation/scripts/index.rst:56
 msgid "scripts/test.sh"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:39
+#: ../../source/implementation/scripts/index.rst:49
 msgid ""
 "As you can see, some of these scripts invoke others. So to do all you need, "
 "just run three of them:"
 msgstr ""
 
-#: ../../source/implementation/scripts/index.rst:48
+#: ../../source/implementation/scripts/index.rst:58
 msgid ""
 "These three are not combined into one at reason of not mixing their outputs."
 msgstr ""
@@ -389,3 +370,55 @@ msgid ""
 "In not Unix-like systems the Plezuro development is still possible, although"
 " you have to rewrite the automating scripts."
 msgstr ""
+
+#: ../../source/implementation/scripts/index.rst:16
+msgid "compiling single script (into 'bin' directory) for plezuro files,"
+msgstr ""
+
+#: ../../source/implementation/scripts/index.rst:20
+msgid "copying for other files,"
+msgstr ""
+
+#: ../../source/implementation/scripts/index.rst:22
+msgid "recursive running the same script for the directories"
+msgstr ""
+
+#: ../../source/implementation/scripts/index.rst:25
+msgid "exporting .class files into single .jar"
+msgstr ""
+
+#: ../../source/implementation/scripts/index.rst:28
+msgid "build.sh,"
+msgstr ""
+
+#: ../../source/implementation/scripts/index.rst:30
+msgid "export_jar.sh,"
+msgstr ""
+
+#: ../../source/implementation/scripts/index.rst:32
+msgid "copying .jar file into '/usr/bin/',"
+msgstr ""
+
+#: ../../source/implementation/scripts/index.rst:37
+msgid "make_js_lib.sh,"
+msgstr ""
+
+#: ../../source/implementation/scripts/index.rst:39
+msgid "compiling all Plezuro scripts from 'src/plezuro' to 'bin/js'"
+msgstr ""
+
+#~ msgid ""
+#~ "compiling single script (into 'bin' directory) for plezuro files, copying "
+#~ "for other files, recursive running the same script for the directories"
+#~ msgstr ""
+
+#~ msgid "Exporting .class files into single .jar"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "build.sh, export_jar.sh, copying .jar file into '/usr/bin/', make_js.sh"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "make_js_lib.sh, compiling all Plezuro scripts from 'src/plezuro' to 'bin/js'"
+#~ msgstr ""
