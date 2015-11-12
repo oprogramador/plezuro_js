@@ -1385,10 +1385,6 @@ msgstr ""
 msgid "**onkeypress**"
 msgstr ""
 
-#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:141
-msgid "It fires after when a key is being pressed (even multiple times)."
-msgstr ""
-
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:144
 msgid "**onkeyup**"
 msgstr ""
@@ -1428,11 +1424,6 @@ msgstr ""
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:17
 #: ../../source/tutorial/browser_programming/storage/index.rst:11
 msgid "HTML DOM"
-msgstr ""
-
-#: ../../source/tutorial/browser_programming/html_elements/index.rst:18
-msgid ""
-"It stands for HTML Document Object Model. It represents a tree of Objects."
 msgstr ""
 
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:20
@@ -1809,6 +1800,22 @@ msgid ""
 "as well the camelcase. For example ``element['style']['backgroundColor'] = "
 "'red'``"
 msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:141
+msgid "It fires when a key is being pressed (even multiple times)."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_elements/index.rst:18
+msgid ""
+"It stands for HTML Document Object Model. It represents a tree of objects."
+msgstr ""
+
+#~ msgid "It fires after when a key is being pressed (even multiple times)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It stands for HTML Document Object Model. It represents a tree of Objects."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "You can change the CSS style. The only difference between the CSS property "

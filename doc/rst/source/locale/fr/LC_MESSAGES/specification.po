@@ -252,12 +252,6 @@ msgstr ""
 msgid "The rule to match an operator:"
 msgstr ""
 
-#: ../../source/specification/operators/index.rst:6
-msgid ""
-"A single-argument operators (the operator at the left, the argument at the "
-"right) is one of the following:"
-msgstr ""
-
 #: ../../source/specification/operators/index.rst:9
 msgid "\"!\""
 msgstr ""
@@ -282,25 +276,12 @@ msgstr ""
 msgid "\"=>\""
 msgstr ""
 
-#: ../../source/specification/operators/index.rst:16
-msgid ""
-"A single-argument operators (the operator at the right) is one of the "
-"following:"
-msgstr ""
-
 #: ../../source/specification/operators/index.rst:19
 msgid "\"++\""
 msgstr ""
 
 #: ../../source/specification/operators/index.rst:20
 msgid "\"--\""
-msgstr ""
-
-#: ../../source/specification/operators/index.rst:22
-msgid ""
-"A double-argument operators (the first argument, the operator, the second "
-"argument; from the evaluated at the end to the evaluated at the begin) is "
-"one of the following:"
 msgstr ""
 
 #: ../../source/specification/operators/index.rst:26
@@ -481,14 +462,6 @@ msgstr ""
 
 #: ../../source/specification/symbols/index.rst:9
 msgid "The rules of a naming a variable:"
-msgstr ""
-
-#: ../../source/specification/symbols/index.rst:11
-msgid "The first character must be an ASCII char or the underscore ('_')."
-msgstr ""
-
-#: ../../source/specification/symbols/index.rst:12
-msgid "The next characters must be an ASCII char, the underscore or a digit."
 msgstr ""
 
 #: ../../source/specification/symbols/index.rst:17
@@ -696,26 +669,8 @@ msgstr ""
 msgid "Whitespaces and comments"
 msgstr ""
 
-#: ../../source/specification/whitespaces_and_comments/index.rst:4
-msgid ""
-"The comments behave like they were replaced by a single space. So the code "
-"inside is not executed. Neither are the whitespaces executed. Though they "
-"have a little impact on the code: it is impossible to insert a comment (nor "
-"a whitespace) inside the symbol (variable) name; the only possibility is to "
-"insert comments between multiple tokens;"
-msgstr ""
-
 #: ../../source/specification/expressions/index.rst:2
 msgid "Expressions"
-msgstr ""
-
-#: ../../source/specification/expressions/index.rst:4
-msgid ""
-"An expression is a single command separated with the ``;`` operator. "
-"Although it can be multiple instructions (ex. ``x = y = 2 + 4``). What does "
-"it mean exactly? From the Plezuro's point of view the expression is an "
-"atomic instuction but from the CPU's (or virtual and even purely theoretical"
-" CPU) point of view one expression can contain multiple instructions."
 msgstr ""
 
 #: ../../source/specification/functions/index.rst:2
@@ -771,15 +726,6 @@ msgstr ""
 
 #: ../../source/specification/functions/index.rst:26
 msgid "Methods"
-msgstr ""
-
-#: ../../source/specification/functions/index.rst:28
-msgid ""
-"A method works in the same way as a function. The only difference is the "
-"object (variable before the dot sign is passed as a zero argument and the "
-"next arguments are numbered from 1. In method calling when there is no "
-"arguments (except for this object) the bracket after method name is not "
-"required."
 msgstr ""
 
 #: ../../source/specification/functions/index.rst:36
@@ -1020,10 +966,6 @@ msgid "OperatorAfterOperatorException"
 msgstr ""
 
 #: ../../source/specification/syntax_errors/index.rst:40
-msgid "an operator after another one with some exceptions"
-msgstr ""
-
-#: ../../source/specification/syntax_errors/index.rst:40
 msgid "2 + * 5"
 msgstr ""
 
@@ -1050,3 +992,111 @@ msgstr ""
 #: ../../source/specification/syntax_errors/index.rst:45
 msgid "3 + *"
 msgstr ""
+
+#: ../../source/specification/expressions/index.rst:4
+msgid ""
+"An expression is a single command separated with the ``;`` operator. "
+"Although it can be multiple instructions (ex. ``x = y = 2 + 4``). What does "
+"it mean exactly? From the Plezuro's point of view the expression is an "
+"atomic instuction but from the CPU's (even purely theoretical CPU) point of "
+"view one expression can contain multiple instructions."
+msgstr ""
+
+#: ../../source/specification/functions/index.rst:28
+msgid ""
+"A method works in the same way as a function. The only difference is the "
+"object (variable before the dot sign) is passed as a zero argument and the "
+"next arguments are numbered from 1. In method calling when there is no "
+"arguments (except for this object) the bracket after method name is not "
+"required."
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:6
+msgid ""
+"A single-argument operator (the operator at the left, the argument at the "
+"right) is one of the following:"
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:16
+msgid ""
+"A single-argument operator (the operator at the right) is one of the "
+"following:"
+msgstr ""
+
+#: ../../source/specification/operators/index.rst:22
+msgid ""
+"A double-argument operator (the zero argument, the operator, the first "
+"argument; from the evaluated at the end to the evaluated at the begin) is "
+"one of the following:"
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:11
+msgid "The first character must be an ASCII letter or the underscore ('_')."
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:12
+msgid ""
+"The next characters must be an ASCII letter, the underscore or a digit."
+msgstr ""
+
+#: ../../source/specification/syntax_errors/index.rst:40
+msgid "an operator after another one (although there are exceptions)"
+msgstr ""
+
+#: ../../source/specification/whitespaces_and_comments/index.rst:4
+msgid ""
+"The comments behave like they were replaced by a single space. So the code "
+"inside is not executed. Neither are the whitespaces executed. Though they "
+"have a little impact on the code: it is impossible to insert a comment (nor "
+"a whitespace) inside the symbol (variable) name; the only possibility is to "
+"insert comments between multiple tokens."
+msgstr ""
+
+#~ msgid ""
+#~ "A single-argument operators (the operator at the left, the argument at the "
+#~ "right) is one of the following:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A single-argument operators (the operator at the right) is one of the "
+#~ "following:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A double-argument operators (the first argument, the operator, the second "
+#~ "argument; from the evaluated at the end to the evaluated at the begin) is "
+#~ "one of the following:"
+#~ msgstr ""
+
+#~ msgid "The first character must be an ASCII char or the underscore ('_')."
+#~ msgstr ""
+
+#~ msgid "The next characters must be an ASCII char, the underscore or a digit."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The comments behave like they were replaced by a single space. So the code "
+#~ "inside is not executed. Neither are the whitespaces executed. Though they "
+#~ "have a little impact on the code: it is impossible to insert a comment (nor "
+#~ "a whitespace) inside the symbol (variable) name; the only possibility is to "
+#~ "insert comments between multiple tokens;"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An expression is a single command separated with the ``;`` operator. "
+#~ "Although it can be multiple instructions (ex. ``x = y = 2 + 4``). What does "
+#~ "it mean exactly? From the Plezuro's point of view the expression is an "
+#~ "atomic instuction but from the CPU's (or virtual and even purely theoretical"
+#~ " CPU) point of view one expression can contain multiple instructions."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A method works in the same way as a function. The only difference is the "
+#~ "object (variable before the dot sign is passed as a zero argument and the "
+#~ "next arguments are numbered from 1. In method calling when there is no "
+#~ "arguments (except for this object) the bracket after method name is not "
+#~ "required."
+#~ msgstr ""
+
+#~ msgid "an operator after another one with some exceptions"
+#~ msgstr ""
