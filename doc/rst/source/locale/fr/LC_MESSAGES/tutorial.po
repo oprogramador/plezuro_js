@@ -1810,6 +1810,32 @@ msgid ""
 "It stands for HTML Document Object Model. It represents a tree of objects."
 msgstr ""
 
+#: ../../source/tutorial/about/origin/index.rst:9
+msgid "Useful materials"
+msgstr ""
+
+#: ../../source/tutorial/about/origin/index.rst:13
+msgid "https://github.com/oprogramador/plezuro_js"
+msgstr ""
+
+#: ../../source/tutorial/about/origin/index.rst:15
+msgid "Official website:"
+msgstr ""
+
+#: ../../source/tutorial/about/origin/index.rst:11
+msgid "On Github:"
+msgstr ""
+
+#: ../../source/tutorial/about/origin/index.rst:17
+msgid "https://plezuro.herokuapp.com"
+msgstr ""
+
+#~ msgid "https://plezuro.herokuapp.com://plezuro.herokuapp.com/"
+#~ msgstr ""
+
+#~ msgid "On github:"
+#~ msgstr ""
+
 #~ msgid "It fires after when a key is being pressed (even multiple times)."
 #~ msgstr ""
 

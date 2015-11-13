@@ -21,7 +21,7 @@ msgstr "Plezuro to język skryptowy"
 
 #: ../../source/index.rst:13
 msgid "The main version is compiled to Javascript."
-msgstr "Główna wersja jest kompilowalna do Javascripta."
+msgstr "Główna wersja jest kompilowana do Javascripta."
 
 #~ msgid "Contents:"
 #~ msgstr ""
