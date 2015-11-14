@@ -13,7 +13,7 @@ example is the Apache 2 server.
 
 From a client-side
 developper point of view it enables the communication with the server without
-page reloading. For example you would like to store some date on the server for
+page reloading. For example you would like to store some data on the server for
 security reasons, check if a data provided by the user matches that on the
 server or download some content dynamically (HTML, CSS, images, other Javascripts) that
 would be enormous if downloaded fully.

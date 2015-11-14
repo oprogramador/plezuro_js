@@ -97,10 +97,6 @@ msgid ""
 "Javascript. All the other classes inherit from the InvalidTokenException."
 msgstr ""
 
-#: ../../source/implementation/compiler/token/index.rst:2
-msgid "Package Token"
-msgstr ""
-
 #: ../../source/implementation/compiler/token/index.rst:4
 msgid ""
 "This is the set of all the tokens and subtokens of Plezuro with their "
@@ -160,20 +156,12 @@ msgstr ""
 msgid "Writing output to the file."
 msgstr ""
 
-#: ../../source/implementation/general_algorithm/index.rst:18
-msgid "Binding output language (currenty Javascript) libraries"
-msgstr ""
-
 #: ../../source/implementation/index.rst:2
 msgid "Implementation"
 msgstr ""
 
 #: ../../source/implementation/index.rst:4
 msgid "This is documentation of the mainstream Plezuro implementation."
-msgstr ""
-
-#: ../../source/implementation/index.rst:6
-msgid "For whom is it?"
 msgstr ""
 
 #: ../../source/implementation/index.rst:8
@@ -406,6 +394,27 @@ msgstr ""
 #: ../../source/implementation/scripts/index.rst:39
 msgid "compiling all Plezuro scripts from 'src/plezuro' to 'bin/js'"
 msgstr ""
+
+#: ../../source/implementation/index.rst:6
+msgid "**For whom is it?**"
+msgstr ""
+
+#: ../../source/implementation/general_algorithm/index.rst:18
+msgid "Binding output language (currenty Javascript) libraries."
+msgstr ""
+
+#: ../../source/implementation/compiler/token/index.rst:2
+msgid "Package token"
+msgstr ""
+
+#~ msgid "Package Token"
+#~ msgstr ""
+
+#~ msgid "Binding output language (currenty Javascript) libraries"
+#~ msgstr ""
+
+#~ msgid "For whom is it?"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "compiling single script (into 'bin' directory) for plezuro files, copying "

@@ -5,10 +5,10 @@ This is the formal specification of the Plezuro programming language. The
 purpose is to define the rules that have to be implemented in any version of the
 language.
 
-For whom is it?
+**For whom is it?**
 
 This is for developpers who would like to implement other version of Plezuro, a
-library, extension as well to standard users who want to improve their
+library, an extension as well to standard users who want to improve their
 knowledge. The tutorial is more for learning and simple understanding but
 the specification is more for knowing exactly how Plezuro applications should
 behave and therefore how compilers and interpreters should behave.

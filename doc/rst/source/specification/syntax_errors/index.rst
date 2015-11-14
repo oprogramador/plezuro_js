@@ -1,8 +1,8 @@
 Syntax errors
 =============
 
-Because of very simple syntax there are very few syntax errors. Even
-conditionals and loops are created with methods invoking so syntax errors are
+Because of the very simple syntax there are very few syntax errors. Even
+conditionals and loops are created with the methods invoking so syntax errors are
 possible to occur where the tokens does not match in a proper way.
 
 

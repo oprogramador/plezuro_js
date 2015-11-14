@@ -29,7 +29,8 @@ msgstr "Klasy:"
 msgid ""
 "Engine - It handles the arguments of the compiler. For each pair input file "
 "- output files it invokes the Parser."
-msgstr "Engine - obsługuje argumenty kompilatora. Dla każdej pary plik źródłowy - "
+msgstr ""
+"Engine - obsługuje argumenty kompilatora. Dla każdej pary plik źródłowy - "
 "plik wynikowy wywołuje Parser."
 
 #: ../../source/implementation/compiler/engine/index.rst:10
@@ -37,14 +38,17 @@ msgid ""
 "Parser - It reads the input, handles the situation of an empty file, invokes"
 " the Tokenizer, it invokes the basic operations for each token and finally "
 "it writes to the output."
-msgstr "Parser - czyta wejście, wychwytuje sytuacją z pustym plikiem, wywołuje Tokenizer "
-"wywołuje podstawowe operacje na każdym tokenie i ostatecznie zapisuje na wyjście."
+msgstr ""
+"Parser - czyta wejście, wychwytuje sytuację z pustym plikiem, wywołuje "
+"Tokenizer, wywołuje podstawowe operacje na każdym tokenie i ostatecznie "
+"zapisuje na wyjście."
 
 #: ../../source/implementation/compiler/engine/index.rst:13
 msgid ""
 "Tokenizer - It divides the code into tokens by conditions given in token "
 "classes."
-msgstr "Tokenizer- dzieli kod na tokeny według warunków danych w klasach tokenów."
+msgstr ""
+"Tokenizer- dzieli kod na tokeny według warunków danych w klasach tokenów."
 
 #: ../../source/implementation/compiler/engine/index.rst:15
 msgid "Validator - It detects all the possible syntax errors."
@@ -70,12 +74,13 @@ msgstr "mondo.engine - jądra kompilatora"
 msgid ""
 "mondo.invalidToken - the exception classes combined with syntax errors and "
 "their binding to the output language"
-msgstr "mondo.invalidToken - klasy wyjątków związanych z błędami składniowymi "
-"i ich wiązanie z językiem wynikowym"
+msgstr ""
+"mondo.invalidToken - klasy wyjątków związanych z błędami składniowymi i ich "
+"wiązanie z językiem wynikowym"
 
 #: ../../source/implementation/compiler/index.rst:11
 msgid "mondo.main - the main class and function"
-msgstr "mondo.mian - główna klasa i funkcja"
+msgstr "mondo.main - główna klasa i funkcja"
 
 #: ../../source/implementation/compiler/index.rst:12
 msgid ""
@@ -88,10 +93,11 @@ msgid ""
 " other hand mondo.token and mondo.invalidToken are dependent. So if you want"
 " to write a compiler from Plezuro to other language than Javascript, you "
 "should change only the packages mondo.token and mondo.invalidToken."
-msgstr "mondo.main i mondo.engine są niezależna od języka wynikowego, natomiast "
-"mondo.token oraz mondo.invalidToken są zależne. Zatem jeśli chcesz napisać kompilator "
-"Plezuro to innego języka niż Javascript, powinieneś zmienić jedynie pakiety "
-"mondo.token oraz mondo.invalidToken."
+msgstr ""
+"mondo.main i mondo.engine są niezależne od języka wynikowego, natomiast "
+"mondo.token oraz mondo.invalidToken są zależne. Zatem jeśli chcesz napisać "
+"kompilator Plezuro to innego języka niż Javascript, powinieneś zmienić "
+"jedynie pakiety mondo.token oraz mondo.invalidToken."
 
 #: ../../source/implementation/compiler/invalidToken/index.rst:2
 msgid "Package invalidToken"
@@ -101,19 +107,17 @@ msgstr "Pakiet invalidToken"
 msgid ""
 "This is the set off all exception classes. It includes their mapping to the "
 "Javascript. All the other classes inherit from the InvalidTokenException."
-msgstr "To zbiór wszystkich klas wyjątków. Zawiera ich mapowanie do Javascripta. "
+msgstr ""
+"To zbiór wszystkich klas wyjątków. Zawiera ich mapowanie do Javascripta. "
 "Wszystkie pozostałe klasy dziedziczą po InvalidTokenException."
-
-#: ../../source/implementation/compiler/token/index.rst:2
-msgid "Package Token"
-msgstr "Pakiet Token"
 
 #: ../../source/implementation/compiler/token/index.rst:4
 msgid ""
 "This is the set of all the tokens and subtokens of Plezuro with their "
 "translation to Javascript."
-msgstr "To zbiór wszystkich tokenów wraz z subtokenami występujących w Plezuro "
-"oraz ich translacja do Javascripta."
+msgstr ""
+"To zbiór wszystkich tokenów wraz z subtokenami występujących w Plezuro oraz "
+"ich translacja do Javascripta."
 
 #: ../../source/implementation/general_algorithm/index.rst:2
 msgid "General algorithm"
@@ -129,11 +133,12 @@ msgstr "Kompilacja"
 
 #: ../../source/implementation/general_algorithm/index.rst:7
 msgid "Reading the script."
-msgstr "Wczytanie skryptu"
+msgstr "Wczytanie skryptu."
 
 #: ../../source/implementation/general_algorithm/index.rst:8
 msgid "Checking if the script is not empty (otherwise it return null)."
-msgstr "Sprawdzenie czy skrypt nie jest pusty (w przeciwnym razie zwraca null)."
+msgstr ""
+"Sprawdzenie czy skrypt nie jest pusty (w przeciwnym razie zwraca null)."
 
 #: ../../source/implementation/general_algorithm/index.rst:9
 msgid "Division of the code into the lines."
@@ -149,13 +154,14 @@ msgstr "linie są dzielone na tokeny"
 
 #: ../../source/implementation/general_algorithm/index.rst:13
 msgid "except of multiline tokens which can expand to multiple lines"
-msgstr "z wyjątkiem tokenów wieloliniowych, które mogę się rozciągać "
-"na wiele linii"
+msgstr ""
+"z wyjątkiem tokenów wieloliniowych, które mogą się rozciągać na wiele linii"
 
 #: ../../source/implementation/general_algorithm/index.rst:14
 msgid ""
 "Eventual changing of token types (ex. from basic ones to its subtokens)."
-msgstr "Ewentualna zmiana typów tokenów (np. z podstawowych do ich subtokenów)."
+msgstr ""
+"Ewentualna zmiana typów tokenów (np. z podstawowych do ich subtokenów)."
 
 #: ../../source/implementation/general_algorithm/index.rst:15
 msgid "Validation - detecting of syntax errors by the tokens order."
@@ -169,30 +175,23 @@ msgstr "Konwersja tokenów Plezuro to tokenów języka wynikowego."
 msgid "Writing output to the file."
 msgstr "Zapis wyjścia do pliku."
 
-#: ../../source/implementation/general_algorithm/index.rst:18
-msgid "Binding output language (currenty Javascript) libraries"
-msgstr "Wiązanie bibliotek z języka wynikowego (obecnie Javascript)"
-
 #: ../../source/implementation/index.rst:2
 msgid "Implementation"
 msgstr "Implementacja"
 
 #: ../../source/implementation/index.rst:4
 msgid "This is documentation of the mainstream Plezuro implementation."
-msgstr "To jest dokumentacja głównej wersji Plezuro."
-
-#: ../../source/implementation/index.rst:6
-msgid "For whom is it?"
-msgstr "Dla kogo to jest?"
+msgstr "To jest dokumentacja implementacji głównej wersji Plezuro."
 
 #: ../../source/implementation/index.rst:8
 msgid ""
 "This is for developers who want to write extensions for the language, as "
 "well for them who want to write their own implementation (for obtaining the "
 "exact knowledge how it works and how to create a compiler in a simple way)."
-msgstr "Dla programistów zamierzających pisać rozszerzenia do języka oraz do tych, "
-"którzy chcą stworzyć ich własne implementacje (dla otrzymania dokładnej wiedzy "
-"jak to działa i jak napisać kompilator w prosty sposób).
+msgstr ""
+"Dla programistów zamierzających pisać rozszerzenia do języka oraz do tych, "
+"którzy chcą stworzyć ich własne implementacje (dla otrzymania dokładnej "
+"wiedzy jak to działa i jak napisać kompilator w prosty sposób)"
 
 #: ../../source/implementation/main_parts/index.rst:2
 msgid "Main parts"
@@ -206,21 +205,25 @@ msgstr "Kod źródłowy jest podzielony na następujące części:"
 msgid ""
 "node_modules - external libraries providing functionalities above the "
 "standard Javascript"
-msgstr "node_modules - zewnętrzne biblioteki dające funkcjonalności większe "
-"niż standardowy Javascript"
+msgstr ""
+"node_modules - zewnętrzne biblioteki dające funkcjonalności większe niż "
+"standardowy Javascript"
 
 #: ../../source/implementation/main_parts/index.rst:8
 msgid "scripts - automated scripts to compiling, running and testing Plezuro"
-msgstr "scripts - automatyzujące skrypty do kompilowania, uruchamiania i testowania Plezuro"
+msgstr ""
+"scripts - automatyzujące skrypty do kompilowania, uruchamiania i testowania "
+"Plezuro"
 
 #: ../../source/implementation/main_parts/index.rst:9
 msgid "src/java - source code of the compiler in Java:"
-msgstr "src/java - kod źródłowy kompilator w Javie:"
+msgstr "src/java - kod źródłowy kompilatora w Javie:"
 
 #: ../../source/implementation/main_parts/index.rst:10
 msgid ""
 "src/js - Javascript libraries providing Plezuro capabilities for Javascript"
-msgstr "src/js - biblioteki Javascript dające możliwośc Plezuro do Javascripta"
+msgstr ""
+"src/js - biblioteki Javascript dające możliwości Plezuro do Javascripta"
 
 #: ../../source/implementation/scripts/index.rst:2
 msgid "Scripts"
@@ -230,7 +233,9 @@ msgstr "Skrypty"
 msgid ""
 "In the 'scripts' directory there are utilities for compilation, running and "
 "testing Plezuro."
-msgstr "W folderze 'scripts' są narzędzia do kompilacji, uruchamiania i testowania Plezuro"
+msgstr ""
+"W folderze 'scripts' są narzędzia do kompilacji, uruchamiania i testowania "
+"Plezuro"
 
 #: ../../source/implementation/scripts/index.rst:8
 msgid "Name"
@@ -332,7 +337,8 @@ msgstr ""
 msgid ""
 "As you can see, some of these scripts invoke others. So to do all you need, "
 "just run three of them:"
-msgstr "Jak widzisz, niektóre ze skryptów wywołują inne. Zatem aby zrobić wszystko, "
+msgstr ""
+"Jak widzisz, niektóre ze skryptów wywołują inne. Zatem aby zrobić wszystko, "
 "czego potrzebujesz, po prostu uruchom trzy z nich:"
 
 #: ../../source/implementation/scripts/index.rst:58
@@ -348,8 +354,9 @@ msgstr "Narzędzia"
 msgid ""
 "The basic tool is the Java 1.8. However in the future it is scheduled a "
 "compiler implemented in Plezuro."
-msgstr "Podstawowym narzędziem jest Java 1.8. Aczkolwiek w przysłości jest zaplanowany "
-"kompilator zaimplementowany w Plezuro."
+msgstr ""
+"Podstawowym narzędziem jest Java 1.8. Aczkolwiek w przysłości jest "
+"zaplanowany kompilator zaimplementowany w Plezuro."
 
 #: ../../source/implementation/tools/index.rst:7
 msgid "To fully utilize the source of Plezuro, you need:"
@@ -383,16 +390,18 @@ msgstr ""
 msgid ""
 "In not Unix-like systems the Plezuro development is still possible, although"
 " you have to rewrite the automating scripts."
-msgstr "W system nie-unixowych rozwijanie Plezuro jest nadal możliwe, chociaż "
+msgstr ""
+"W systemach nie-unixowych rozwijanie Plezuro jest nadal możliwe, chociaż "
 "trzeba będzie wtedy przepisać skrypty automatyzujące."
 
 #: ../../source/implementation/scripts/index.rst:16
 msgid "compiling single script (into 'bin' directory) for plezuro files,"
-msgstr "kompilowanie pojedynczego skryptu (do folderu 'bin') dla plików Plezuro,"
+msgstr ""
+"kompilowanie pojedynczego skryptu (do folderu 'bin') dla plików Plezuro,"
 
 #: ../../source/implementation/scripts/index.rst:20
 msgid "copying for other files,"
-msgstr "kopiowanie dla pozostałych plików"
+msgstr "kopiowanie dla pozostałych plików,"
 
 #: ../../source/implementation/scripts/index.rst:22
 msgid "recursive running the same script for the directories"
@@ -422,18 +431,14 @@ msgstr ""
 msgid "compiling all Plezuro scripts from 'src/plezuro' to 'bin/js'"
 msgstr "kompilowanie skryptów Plezuro z 'src/plezuro' do 'bin/js'"
 
-#~ msgid ""
-#~ "compiling single script (into 'bin' directory) for plezuro files, copying "
-#~ "for other files, recursive running the same script for the directories"
-#~ msgstr ""
+#: ../../source/implementation/index.rst:6
+msgid "**For whom is it?**"
+msgstr "**Dla kogo to jest?**"
 
-#~ msgid "Exporting .class files into single .jar"
-#~ msgstr ""
+#: ../../source/implementation/general_algorithm/index.rst:18
+msgid "Binding output language (currenty Javascript) libraries."
+msgstr "Wiązanie bibliotek z języka wynikowego (obecnie Javascript)."
 
-#~ msgid ""
-#~ "build.sh, export_jar.sh, copying .jar file into '/usr/bin/', make_js.sh"
-#~ msgstr ""
-
-#~ msgid ""
-#~ "make_js_lib.sh, compiling all Plezuro scripts from 'src/plezuro' to 'bin/js'"
-#~ msgstr ""
+#: ../../source/implementation/compiler/token/index.rst:2
+msgid "Package token"
+msgstr "Pakiet token"

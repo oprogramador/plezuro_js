@@ -1,7 +1,7 @@
 HTML elements
 =============
 
-In HTML programming (not each web browsing programming is HTML programming
+In HTML programming (not each web browsew programming is HTML programming
 because you can use eventually Java applets, Adobe Flash or
 Silverlight which are deprecated technologies) almost all you see in the
 browser are the HTML elements. The exceptions include alerts and different sorts
@@ -19,7 +19,7 @@ It stands for HTML Document Object Model. It represents a tree of objects.
 
 **What is an HTML element?**
 
-It can an atomic part of the view you see in the browser (ex. an input, a
+It can be an atomic part of the view you see in the browser (ex. an input, a
 button, a span), as well something you cannot see (because it is hidden, it has
 the 0 size or it contains no text) or a tree of other elements.
 

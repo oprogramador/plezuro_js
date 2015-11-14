@@ -548,13 +548,6 @@ msgid ""
 "to generate registration links, local or web addreses and so on."
 msgstr ""
 
-#: ../../source/tutorial/basics/random/index.rst:9
-msgid ""
-"In Plezuro it is quite easy. You do not have to invoke any function or "
-"method (however later it is compiled to a method invokation). Just write the"
-" keyword 'rand'."
-msgstr ""
-
 #: ../../source/tutorial/basics/variables/index.rst:2
 msgid "Variables"
 msgstr ""
@@ -1006,10 +999,6 @@ msgstr ""
 msgid ""
 "As you just know, Plezuro is compiled to Javascript. So we can write "
 "applications runned in the web browser (client-side web apps)."
-msgstr ""
-
-#: ../../source/tutorial/browser_programming/index.rst:7
-msgid "What should you know first?"
 msgstr ""
 
 #: ../../source/tutorial/browser_programming/index.rst:9
@@ -1829,6 +1818,27 @@ msgstr ""
 #: ../../source/tutorial/about/origin/index.rst:17
 msgid "https://plezuro.herokuapp.com"
 msgstr ""
+
+#: ../../source/tutorial/basics/random/index.rst:9
+msgid ""
+"In Plezuro it is quite easy. You do not have to invoke any function or "
+"method (however later it is compiled to a method invokation). Just write the"
+" keyword 'rand' and you will obtain a number from the uniform distribution "
+"between 0 and 1."
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/index.rst:7
+msgid "**What should you know first?**"
+msgstr ""
+
+#~ msgid "What should you know first?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In Plezuro it is quite easy. You do not have to invoke any function or "
+#~ "method (however later it is compiled to a method invokation). Just write the"
+#~ " keyword 'rand'."
+#~ msgstr ""
 
 #~ msgid "https://plezuro.herokuapp.com://plezuro.herokuapp.com/"
 #~ msgstr ""

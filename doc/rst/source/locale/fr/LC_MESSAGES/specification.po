@@ -738,10 +738,6 @@ msgid ""
 "arguments (the access in the same way) and they return a value."
 msgstr ""
 
-#: ../../source/specification/index.rst:8
-msgid "For whom is it?"
-msgstr ""
-
 #: ../../source/specification/index.rst:10
 msgid ""
 "This is for developpers who would like to implement other version of "
@@ -1051,6 +1047,13 @@ msgid ""
 "a whitespace) inside the symbol (variable) name; the only possibility is to "
 "insert comments between multiple tokens."
 msgstr ""
+
+#: ../../source/specification/index.rst:8
+msgid "**For whom is it?**"
+msgstr ""
+
+#~ msgid "For whom is it?"
+#~ msgstr ""
 
 #~ msgid ""
 #~ "A single-argument operators (the operator at the left, the argument at the "

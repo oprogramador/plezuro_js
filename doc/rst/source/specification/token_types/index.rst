@@ -3,7 +3,7 @@ Token types
 
 The first step of the compilation is the tokenization.
 
-Plezuro has the following token types (the order matters, when regex or condition of multiple tokens matches
+Plezuro has the following token types (the order matters, when regex or condition of multiple tokens matches,
 the first of them wins):
 
 ======================  ============================================================================= =====================

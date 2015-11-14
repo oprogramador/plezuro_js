@@ -4,7 +4,7 @@ Web browser programming
 As you just know, Plezuro is compiled to Javascript. So we can write
 applications runned in the web browser (client-side web apps).
 
-What should you know first?
+**What should you know first?**
 
 To be able to develop web apps in Plezuro, you should know HTML and CSS (at
 least the basics).

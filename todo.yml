@@ -40,6 +40,7 @@ todo:
         elif: yes
         else: yes
         if: yes
+        boolean_as_arg_not_function: no
     doc:
         edit_on_github: no
         ortographic_check: no

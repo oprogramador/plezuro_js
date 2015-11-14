@@ -26,9 +26,9 @@ Methods
 =======
 
 A method works in the same way as a function. The only difference is the object
-(variable before the dot sign) is passed as a zero argument and the next
+(variable before the dot sign) is passed as the zero argument and the next
 arguments are numbered from 1. In method calling when there is no arguments
-(except for this object) the bracket after method name is not required.
+(except for this object) the bracket after the method name is not required.
 
 
 =======

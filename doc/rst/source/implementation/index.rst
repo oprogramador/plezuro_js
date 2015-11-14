@@ -3,7 +3,7 @@ Implementation
 
 This is documentation of the mainstream Plezuro implementation.
 
-For whom is it?
+**For whom is it?**
 
 This is for developers who want to write extensions for the language, as well
 for them who want to write their own implementation (for obtaining the exact

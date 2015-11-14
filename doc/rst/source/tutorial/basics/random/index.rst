@@ -8,6 +8,7 @@ and so on.
 
 In Plezuro it is quite easy. You do not have to invoke any function
 or method (however later it is compiled to a method invokation).
-Just write the keyword 'rand'.
+Just write the 'rand' keyword and you will obtain a number from the uniform
+distribution between 0 and 1.
 
 .. literalinclude:: ../../../../../../src/plezuro/doc/rand.plez

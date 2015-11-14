@@ -38,5 +38,5 @@ Duck typing
 
 Everywhere is duck typing. It means it is possible to call a method with given
 name from an object if such a method exists in its module (directly or
-inherited). Moreover objects can be passed as zero argument to methods from
+inherited). Moreover objects can be passed as the zero argument to methods from
 totally different modules.

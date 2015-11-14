@@ -8,7 +8,7 @@ You can use the standard Javascript ways to output:
 * printing into an HTML element, using ``element.innerHTML=``
 * printing into the browser console, using ``console.log()``
 
-However the recommended is the Plezuro way using ``dumpl`` method.
+However recommended is the Plezuro way using ``dumpl`` method.
 
 It looks like Javascript but be aware ex. ``alert()`` without
 ``window`` will not work unless you pass the ``window`` variable as the zero

@@ -33,8 +33,8 @@ String
 
 It is a sequence of unicode characters of any length (the only limit is the
 memory reserved for the application). The delimiter of the string is either
-single (''') or double ('"') quote. The special characters within the string
-must be escaped with the backslash ('\').
+single ``'`` or double ``"`` quote. The special characters within the string
+must be escaped with the backslash ``\``.
 
 List of special characters:
 

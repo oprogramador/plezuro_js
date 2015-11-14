@@ -3,7 +3,7 @@ HTML DOM methods and events
 
 After previous chapters you are able to create any HTML document statically with
 ``doument.write``. But probably you wonder to create an interactive app. For
-example after button pressing an input will change his value.
+example after button pressing an input will change its value.
 
 
 ======================
@@ -55,7 +55,7 @@ first button in the first table that contain a button.
 
 **document.querySelectorAll**
 
-It return the collection of all the elements that match the given CSS selector.
+It returns the collection of all the elements that match to the given CSS selector.
 
 
 ===========================

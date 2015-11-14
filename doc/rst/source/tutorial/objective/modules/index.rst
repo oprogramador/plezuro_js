@@ -2,7 +2,7 @@ Modules
 =======
 
 Modules are in the same time classes and namespaces. You can use a module to create an object,
-you can use in statically (like static fields and methods in Java) and you can assign other
+you can use it statically (like static fields and methods in Java) and you can assign other
 modules as static fields creating namespaces. Of course you can create multiple classes in the
 same source file, however it is recommended to write exactly one module in one file.
 
@@ -12,6 +12,6 @@ which is an associative array containing module name (field 'name'), module name
 from which our module inherits the methods. There are also some other fields that you can
 pass.
 
-You can create an object of a module using method 'new'.
+You can create an object of a module using the 'new' method.
 
 .. literalinclude:: ../../../../../../src/plezuro/doc/modules.plez
