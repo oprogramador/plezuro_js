@@ -215,18 +215,6 @@ msgstr ""
 msgid "0xa4f"
 msgstr ""
 
-#: ../../source/specification/constant_tokens/index.rst:34
-msgid ""
-"It is a sequence of unicode characters of any length (the only limit is the "
-"memory reserved for the application). The delimiter of the string is either "
-"single (''') or double ('\"') quote. The special characters within the "
-"string must be escaped with the backslash ('\\')."
-msgstr ""
-"To zbiór znaków unicode dowolnej długości (jedyny limit to pamięć "
-"zarezerwowana dla aplikacji). Znakiem ograniczającym string jest albo "
-"pojedynczy apostrof ``'`` albo cudzysłów ``\"``. Znaki specjalne wewnątrz "
-"stringa muszą być zapisane za pomocą backslasha ``\\``."
-
 #: ../../source/specification/constant_tokens/index.rst:39
 msgid "List of special characters:"
 msgstr "Lista znaków specjalnych"
@@ -477,46 +465,17 @@ msgstr ""
 "trait, interfejs itd.). W Plezuro wszystko jest zmienną, więc każdy symbol "
 "oznacza zmienną."
 
-#: ../../source/specification/symbols/index.rst:9
-msgid "The rules of a naming a variable:"
-msgstr "Reguły nazewnictwa zmiennych:"
-
 #: ../../source/specification/symbols/index.rst:17
 msgid "Declaration"
 msgstr "Deklaracja"
-
-#: ../../source/specification/symbols/index.rst:19
-msgid ""
-"Eeach symbol must be declared at the first use in the source file. The "
-"declaration contains the dollar sign ('$') and the name of the symbol."
-msgstr ""
-"Każdy symbol musi być zadeklarowany przy pierwszym użyciu w pliku źródłowym."
-" Deklaracja zawiera znak dolara ``$`` a następnie nazwę symbolu."
 
 #: ../../source/specification/symbols/index.rst:25
 msgid "Class fields"
 msgstr "Pola klasy"
 
-#: ../../source/specification/symbols/index.rst:27
-msgid ""
-"Class field (or module field) contains the name of the module the double "
-"colon ('::') and the name of the field (the same rules like for the symbol)."
-msgstr ""
-"Pole klasy (inaczej pole modułu) zawiera w swej składni nazwę modułu, "
-"podwójny dwukropek ``::`` oraz nazwę pola (tutaj te same zasady jak w "
-"przypadku symbolu)."
-
 #: ../../source/specification/symbols/index.rst:33
 msgid "Object fields"
 msgstr "Pola obiektu"
-
-#: ../../source/specification/symbols/index.rst:35
-msgid ""
-"Object field (or module field) contains the at character ('@') and the name "
-"of the field (the same rules like for the symbol)."
-msgstr ""
-"Pole obiektu (lub pole modułu) zawiera znak małpy ``@`` i nazwę pola (te "
-"same zasady jak w przypadku symbolu)"
 
 #: ../../source/specification/token_types/index.rst:2
 msgid "Token types"
@@ -525,14 +484,6 @@ msgstr "Typy tokenów"
 #: ../../source/specification/token_types/index.rst:4
 msgid "The first step of the compilation is the tokenization."
 msgstr "Pierwszym etapem kompilacji jest tokenizacja."
-
-#: ../../source/specification/token_types/index.rst:6
-msgid ""
-"Plezuro has the following token types (the order matters, when regex or "
-"condition of multiple tokens matches the first of them wins):"
-msgstr ""
-"Plezuro posiada następujące typy tokenów (kolejność ma znaczenie, kiedy "
-"regex lub warunek wielu tokenów pasuje, pierwszy z nich wygrywa):"
 
 #: ../../source/specification/token_types/index.rst:10
 msgid "Type"
@@ -776,21 +727,6 @@ msgstr ""
 "Nawet skrypty zachowują się w ten sam sposób co funkcja. Biorą argumenty "
 "(dostęp w ten sam sposób) i zwracają wartość."
 
-#: ../../source/specification/index.rst:10
-msgid ""
-"This is for developpers who would like to implement other version of "
-"Plezuro, a library, extension as well to standard users who want to improve "
-"their knowledge. The tutorial is more for learning and simple understanding "
-"but the specification is more for knowing exactly how Plezuro applications "
-"should behave and therefore how compilers and interpreters should behave."
-msgstr ""
-"Dla programistów, którzy chcieliby zaimplementować inną wersję Plezuro, "
-"bibliotekę, rozszerzenie jak również dla standardowych użytkowników, którzy "
-"pragną poszerzyć swoją wiedzę. Przewodnik jest bardziej dla nauki i prostego"
-" zrozumienia, zaś specyfikacja bardziej dla dokładnej wiedzy jak aplikacje w"
-" Plezuro powinny się zachowywać i co za tym idzie, jak kompilatory i "
-"interpretatory powinny działać."
-
 #: ../../source/specification/index.rst:16
 msgid ""
 "Nonetheless the code is the best way to define exactly the behavior. So each"
@@ -801,19 +737,11 @@ msgstr ""
 " Zatem każda wersja Plezuro musi przejść pozytywnie wszystkie testy "
 "automatyczne napisane dla głównej wersji."
 
-#: ../../source/specification/magick_constants/index.rst:2
+#: ../../source/specification/magic_constants/index.rst:2
 msgid "Magic constants"
 msgstr "Magiczne stałe"
 
-#: ../../source/specification/magick_constants/index.rst:4
-msgid ""
-"Eeach compiler (and even interpreter) of Plezuro must provide the following "
-"magick constants:"
-msgstr ""
-"Każdy kompilator (a także intepretator) Plezuro, musi obsłużyć następujące "
-"magiczne stałe: "
-
-#: ../../source/specification/magick_constants/index.rst:6
+#: ../../source/specification/magic_constants/index.rst:6
 msgid ""
 "__pos__ - the horizontal position in a line (counting from 0, it is position"
 " where the token begins)"
@@ -821,19 +749,19 @@ msgstr ""
 "__pos__  - pozioma pozycja w linii (licząc od 0, to pozycja gdzie zaczyna "
 "się słowo kluczowe)"
 
-#: ../../source/specification/magick_constants/index.rst:9
+#: ../../source/specification/magic_constants/index.rst:9
 msgid "__line__ - the line number in a source file (counting from 0)"
 msgstr "__line__ - numer linii w pliku źródłowym (licząc od 0)"
 
-#: ../../source/specification/magick_constants/index.rst:11
+#: ../../source/specification/magic_constants/index.rst:11
 msgid "__file__ - the name of the source file"
 msgstr "__file__ - nazwa pliku źródłowego"
 
-#: ../../source/specification/magick_constants/index.rst:13
+#: ../../source/specification/magic_constants/index.rst:13
 msgid "__dir__ - the real directory of the source file"
 msgstr "__dir__ - pełny folder pliku źródłowego"
 
-#: ../../source/specification/magick_constants/index.rst:15
+#: ../../source/specification/magic_constants/index.rst:15
 msgid ""
 "It is recommended to replace these keywords with constant strings in the "
 "output code. There is no recommendation in the intermediate code. __dir__ "
@@ -850,7 +778,7 @@ msgstr ""
 "musi zawierać prawidłową pełną ścieżkę unixową (np. "
 "'/home/user/programming/something/project/../../plezuro/my_plezuro_project')."
 
-#: ../../source/specification/magick_constants/index.rst:22
+#: ../../source/specification/magic_constants/index.rst:22
 msgid ""
 "Even for not Unix systems the path must be in the Unix notation (with "
 "slashes)."
@@ -883,7 +811,8 @@ msgid ""
 "Always after an object creation the constructor is called. Its name is "
 "'init'."
 msgstr ""
-"Zawsze po stworzeniu obiektu konstruktor jest wywołany. Jego nazwa to 'init'."
+"Zawsze po stworzeniu obiektu konstruktor jest wywołany. Jego nazwa to "
+"'init'."
 
 #: ../../source/specification/modules/index.rst:18
 msgid "Inheritance"
@@ -923,32 +852,9 @@ msgstr ""
 msgid "Duck typing"
 msgstr ""
 
-#: ../../source/specification/modules/index.rst:39
-msgid ""
-"Everywhere is duck typing. It means it is possible to call a method with "
-"given name from an object if such a method exists in its module (directly or"
-" inherited). Moreover objects can be passed as zero argument to methods from"
-" totally different modules."
-msgstr ""
-"Wszędzie występuje duck typing. To znaczy, że da się wywołać metodę z daną "
-"nazwą z obiektu, jeśli taka metoda istnieje w jego module (bezpośrednio lub "
-"jest odziedziczona). Ponadto obiekty mogą być przekazywane jako zerowy "
-"argument do metod z zupełnie niezależnych modułów."
-
 #: ../../source/specification/syntax_errors/index.rst:2
 msgid "Syntax errors"
 msgstr "Błędy składniowe"
-
-#: ../../source/specification/syntax_errors/index.rst:4
-msgid ""
-"Because of very simple syntax there are very few syntax errors. Even "
-"conditionals and loops are created with methods invoking so syntax errors "
-"are possible to occur where the tokens does not match in a proper way."
-msgstr ""
-"Z powodu bardzo prostej składni jest bardzo mało typów błędów składniowych. "
-"Nawet instrukcje warunkowe i pętle są tworzone jako wywołania metod, więc "
-"błędy składniowe mogą wystąpić jedynie, gdy tokeny nie są ułożone w "
-"odpowiedni sposób."
 
 #: ../../source/specification/syntax_errors/index.rst:11
 msgid "How to handle syntax errors?"
@@ -1076,33 +982,6 @@ msgstr "stały token po innym stałym tokenie"
 msgid "3 + *"
 msgstr ""
 
-#: ../../source/specification/expressions/index.rst:4
-msgid ""
-"An expression is a single command separated with the ``;`` operator. "
-"Although it can be multiple instructions (ex. ``x = y = 2 + 4``). What does "
-"it mean exactly? From the Plezuro's point of view the expression is an "
-"atomic instuction but from the CPU's (even purely theoretical CPU) point of "
-"view one expression can contain multiple instructions."
-msgstr ""
-"Wyrażenie to pojedyncza komenda oddzielona średnikiem ``;``. Chociaż może "
-"być wiele instrukcji (np. ``x = y = 2 + 4``). Co to znaczy dokładnie? Z "
-"punktu widzenia Plezuro, wyrażenie jest najmniejszą, niepodzielną instrukcją,"
-" ale z punktu widzenia CPU (lub nawet czysto matematycznego CPU) jedno "
-"wyrażenie może zawierać wiele instrukcji."
-
-#: ../../source/specification/functions/index.rst:28
-msgid ""
-"A method works in the same way as a function. The only difference is the "
-"object (variable before the dot sign) is passed as a zero argument and the "
-"next arguments are numbered from 1. In method calling when there is no "
-"arguments (except for this object) the bracket after method name is not "
-"required."
-msgstr ""
-"Metoda działa w ten sam sposób co funkcja. Jedyna różnica to to, że obiekt "
-"(zmienna przed kropką) jest przekazany jako zerowy argument, a następne "
-"argumenty są numerowane od 1. W wywołaniu metody, kiedy nie ma argumentów (za"
-" wyjątkiem obiektu this), nawias po nazwie metody nie jest wymagany."
-
 #: ../../source/specification/operators/index.rst:6
 msgid ""
 "A single-argument operator (the operator at the left, the argument at the "
@@ -1125,19 +1004,20 @@ msgid ""
 "argument; from the evaluated at the end to the evaluated at the begin) is "
 "one of the following:"
 msgstr ""
-"Dwuaargumentowy operator (zerowy argument, operator, pierwszy argument, kolejność od "
-"tych wykonywanych na samym końcu do tych samym początku) jest jednym z:"
+"Dwuaargumentowy operator (zerowy argument, operator, pierwszy argument, "
+"kolejność od tych wykonywanych na samym końcu do tych samym początku) jest "
+"jednym z:"
 
 #: ../../source/specification/symbols/index.rst:11
 msgid "The first character must be an ASCII letter or the underscore ('_')."
-msgstr ""
-"Pierwszy znak musi być literą z kodu ASCII, lub podkreśleniem ``_``."
+msgstr "Pierwszy znak musi być literą z kodu ASCII, lub podkreśleniem ``_``."
 
 #: ../../source/specification/symbols/index.rst:12
 msgid ""
 "The next characters must be an ASCII letter, the underscore or a digit."
 msgstr ""
-"Każdy z następnych znaków musi być literą z kodu ASCII, cyfrą lub podkreśleniem ``_``."
+"Każdy z następnych znaków musi być literą z kodu ASCII, cyfrą lub "
+"podkreśleniem ``_``."
 
 #: ../../source/specification/syntax_errors/index.rst:40
 msgid "an operator after another one (although there are exceptions)"
@@ -1151,12 +1031,137 @@ msgid ""
 "a whitespace) inside the symbol (variable) name; the only possibility is to "
 "insert comments between multiple tokens."
 msgstr ""
-"Komentarze zachowują się tak, jak by były zastąpione pojedynczą spacją. Zatem "
-"kod wewnątrz nie jest wykonywany. Tak samo białe znaki nie są wykonywane. "
-"Chociaż mają minimalny wpływ na kod: nie można wstawić komentarza (ani "
-"białego znaku wewnątrz nazwy symbolu (zmiennej); jedyna możliwość to "
-"wstawiać komentarze pomiędzy różnymi tokenami."
+"Komentarze zachowują się tak, jak by były zastąpione pojedynczą spacją. "
+"Zatem kod wewnątrz nie jest wykonywany. Tak samo białe znaki nie są "
+"wykonywane. Chociaż mają minimalny wpływ na kod: nie można wstawić "
+"komentarza (ani białego znaku wewnątrz nazwy symbolu (zmiennej); jedyna "
+"możliwość to wstawiać komentarze pomiędzy różnymi tokenami."
 
 #: ../../source/specification/index.rst:8
 msgid "**For whom is it?**"
 msgstr "**Dla kogo to jest?**"
+
+#: ../../source/specification/constant_tokens/index.rst:34
+msgid ""
+"It is a sequence of unicode characters of any length (the only limit is the "
+"memory reserved for the application). The delimiter of the string is either "
+"single ``'`` or double ``\"`` quote. The special characters within the "
+"string must be escaped with the backslash ``\\``."
+msgstr ""
+"To zbiór znaków unicode dowolnej długości (jedyny limit to pamięć "
+"zarezerwowana dla aplikacji). Znakiem ograniczającym string jest albo "
+"pojedynczy apostrof ``'`` albo cudzysłów ``\"``. Znaki specjalne wewnątrz "
+"stringa muszą być zapisane za pomocą backslasha ``\\``."
+
+#: ../../source/specification/expressions/index.rst:4
+msgid ""
+"An expression is a single command separated with the ``;`` operator. "
+"Although it can be multiple instructions (ex. ``x = y = 2 + 4``). What does "
+"it mean exactly? From the Plezuro point of view the expression is an atomic "
+"instruction but from the CPU's (even purely theoretical CPU) point of view "
+"one expression can contain multiple instructions."
+msgstr ""
+"Wyrażenie to pojedyncza komenda oddzielona średnikiem ``;``. Chociaż może "
+"być wiele instrukcji (np. ``x = y = 2 + 4``). Co to znaczy dokładnie? Z "
+"punktu widzenia Plezuro, wyrażenie jest najmniejszą, niepodzielną "
+"instrukcją, ale z punktu widzenia CPU (lub nawet czysto matematycznego CPU) "
+"jedno wyrażenie może zawierać wiele instrukcji."
+
+#: ../../source/specification/functions/index.rst:28
+msgid ""
+"A method works in the same way as a function. The only difference is the "
+"object (variable before the dot sign) is passed as the zero argument and the"
+" next arguments are numbered from 1. In method calling when there is no "
+"arguments (except for this object) the bracket after the method name is not "
+"required."
+msgstr ""
+"Metoda działa w ten sam sposób co funkcja. Jedyna różnica to to, że obiekt "
+"(zmienna przed kropką) jest przekazany jako zerowy argument, a następne "
+"argumenty są numerowane od 1. W wywołaniu metody, kiedy nie ma argumentów "
+"(za wyjątkiem obiektu this), nawias po nazwie metody nie jest wymagany."
+
+#: ../../source/specification/index.rst:10
+msgid ""
+"This is for developpers who would like to implement other version of "
+"Plezuro, a library, an extension as well to standard users who want to "
+"improve their knowledge. The tutorial is more for learning and simple "
+"understanding but the specification is more for knowing exactly how Plezuro "
+"applications should behave and therefore how compilers and interpreters "
+"should behave."
+msgstr ""
+"Dla programistów, którzy chcieliby zaimplementować inną wersję Plezuro, "
+"bibliotekę, rozszerzenie jak również dla standardowych użytkowników, którzy "
+"pragną poszerzyć swoją wiedzę. Przewodnik jest bardziej dla nauki i prostego"
+" zrozumienia, zaś specyfikacja bardziej dla dokładnej wiedzy jak aplikacje w"
+" Plezuro powinny się zachowywać i co za tym idzie, jak kompilatory i "
+"interpretatory powinny działać."
+
+#: ../../source/specification/modules/index.rst:39
+msgid ""
+"Everywhere is duck typing. It means it is possible to call a method with "
+"given name from an object if such a method exists in its module (directly or"
+" inherited). Moreover objects can be passed as the zero argument to methods "
+"from totally different modules."
+msgstr ""
+"Wszędzie występuje duck typing. To znaczy, że da się wywołać metodę z daną "
+"nazwą z obiektu, jeśli taka metoda istnieje w jego module (bezpośrednio lub "
+"jest odziedziczona). Ponadto obiekty mogą być przekazywane jako zerowy "
+"argument do metod z zupełnie niezależnych modułów."
+
+#: ../../source/specification/symbols/index.rst:9
+msgid "The rules of the variable naming:"
+msgstr ""
+
+#: ../../source/specification/symbols/index.rst:19
+msgid ""
+"Eeach symbol must be declared at the first use in the source file. The "
+"declaration contains the dollar sign ``$`` and the name of the symbol."
+msgstr ""
+"Każdy symbol musi być zadeklarowany przy pierwszym użyciu w pliku źródłowym."
+" Deklaracja zawiera znak dolara ``$`` a następnie nazwę symbolu."
+
+#: ../../source/specification/symbols/index.rst:27
+msgid ""
+"Class field (or module field) contains the name of the module, the double "
+"colon ``::`` and the name of the field (the same rules like for the symbol)."
+msgstr ""
+"Pole klasy (inaczej pole modułu) zawiera w swej składni nazwę modułu, "
+"podwójny dwukropek ``::`` oraz nazwę pola (tutaj te same zasady jak w "
+"przypadku symbolu)."
+
+#: ../../source/specification/symbols/index.rst:35
+msgid ""
+"Object field (or module field) contains the at character ``@`` and the name "
+"of the field (the same rules like for the symbol)."
+msgstr ""
+"Pole klasy (inaczej pole modułu) zawiera w swej składni nazwę modułu, "
+"podwójny dwukropek ``::`` oraz nazwę pola (tutaj te same zasady jak w "
+"przypadku symbolu)."
+
+#: ../../source/specification/syntax_errors/index.rst:4
+msgid ""
+"Because of the very simple syntax there are very few syntax errors. Even "
+"conditionals and loops are created with the methods invoking so syntax "
+"errors are possible to occur where the tokens does not match in a proper "
+"way."
+msgstr ""
+"Z powodu bardzo prostej składni jest bardzo mało typów błędów składniowych. "
+"Nawet instrukcje warunkowe i pętle są tworzone jako wywołania metod, więc "
+"błędy składniowe mogą wystąpić jedynie, gdy tokeny nie są ułożone w "
+"odpowiedni sposób."
+
+#: ../../source/specification/token_types/index.rst:6
+msgid ""
+"Plezuro has the following token types (the order matters, when regex or "
+"condition of multiple tokens matches, the first of them wins):"
+msgstr ""
+"Plezuro posiada następujące typy tokenów (kolejność ma znaczenie, kiedy "
+"regex lub warunek wielu tokenów pasuje, pierwszy z nich wygrywa):"
+
+#: ../../source/specification/magic_constants/index.rst:4
+msgid ""
+"Each compiler (and even interpreter) of Plezuro must provide the following "
+"magic constants:"
+msgstr ""
+"Każdy kompilator (a także intepretator) Plezuro, musi obsłużyć następujące "
+"magiczne stałe: "

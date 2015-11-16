@@ -121,7 +121,7 @@ todo:
     lodash_using: no
     loop:
         iterate_with_key: no
-    magick_constants: yes
+    magic_constants: yes
     metaprogramming: no
     method:
         call_js_method: yes

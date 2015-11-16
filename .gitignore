@@ -3,4 +3,5 @@
 bin
 doc/rst/build
 doc/rst/deploy
+doc/rst/website
 NERD_tree_*

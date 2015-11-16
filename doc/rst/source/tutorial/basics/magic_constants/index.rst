@@ -1,11 +1,11 @@
-Magick constants
+Magic constants
 ================
 
-Similar to PHP and Ruby, Plezuro has the magick constants. What is it and
+Similar to PHP and Ruby, Plezuro has the magic constants. What is it and
 why to use it? It is something a little bit like a variable and a little bit
 like a constant. Its value depends on the place where it is used.
 
-So we have the following magick constants:
+So we have the following magic constants:
 
 * __pos__ - the horizontal position in a line (counting from 0, it is position
   where the keyword begins)
@@ -16,4 +16,4 @@ So we have the following magick constants:
 
 * __dir__ - the real directory of the source file
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/magick_constants.plez
+.. literalinclude:: ../../../../../../src/plezuro/doc/magic_constants.plez

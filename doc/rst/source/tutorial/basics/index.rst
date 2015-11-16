@@ -17,5 +17,5 @@ Basics
   loops/index
   import/index
   random/index
-  magick_constants/index
+  magic_constants/index
   exceptions/index

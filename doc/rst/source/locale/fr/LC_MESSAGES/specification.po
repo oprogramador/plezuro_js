@@ -209,14 +209,6 @@ msgstr ""
 msgid "0xa4f"
 msgstr ""
 
-#: ../../source/specification/constant_tokens/index.rst:34
-msgid ""
-"It is a sequence of unicode characters of any length (the only limit is the "
-"memory reserved for the application). The delimiter of the string is either "
-"single (''') or double ('\"') quote. The special characters within the "
-"string must be escaped with the backslash ('\\')."
-msgstr ""
-
 #: ../../source/specification/constant_tokens/index.rst:39
 msgid "List of special characters:"
 msgstr ""
@@ -460,38 +452,16 @@ msgid ""
 "so each symbol represents a variable."
 msgstr ""
 
-#: ../../source/specification/symbols/index.rst:9
-msgid "The rules of a naming a variable:"
-msgstr ""
-
 #: ../../source/specification/symbols/index.rst:17
 msgid "Declaration"
-msgstr ""
-
-#: ../../source/specification/symbols/index.rst:19
-msgid ""
-"Eeach symbol must be declared at the first use in the source file. The "
-"declaration contains the dollar sign ('$') and the name of the symbol."
 msgstr ""
 
 #: ../../source/specification/symbols/index.rst:25
 msgid "Class fields"
 msgstr ""
 
-#: ../../source/specification/symbols/index.rst:27
-msgid ""
-"Class field (or module field) contains the name of the module the double "
-"colon ('::') and the name of the field (the same rules like for the symbol)."
-msgstr ""
-
 #: ../../source/specification/symbols/index.rst:33
 msgid "Object fields"
-msgstr ""
-
-#: ../../source/specification/symbols/index.rst:35
-msgid ""
-"Object field (or module field) contains the at character ('@') and the name "
-"of the field (the same rules like for the symbol)."
 msgstr ""
 
 #: ../../source/specification/token_types/index.rst:2
@@ -500,12 +470,6 @@ msgstr ""
 
 #: ../../source/specification/token_types/index.rst:4
 msgid "The first step of the compilation is the tokenization."
-msgstr ""
-
-#: ../../source/specification/token_types/index.rst:6
-msgid ""
-"Plezuro has the following token types (the order matters, when regex or "
-"condition of multiple tokens matches the first of them wins):"
 msgstr ""
 
 #: ../../source/specification/token_types/index.rst:10
@@ -738,15 +702,6 @@ msgid ""
 "arguments (the access in the same way) and they return a value."
 msgstr ""
 
-#: ../../source/specification/index.rst:10
-msgid ""
-"This is for developpers who would like to implement other version of "
-"Plezuro, a library, extension as well to standard users who want to improve "
-"their knowledge. The tutorial is more for learning and simple understanding "
-"but the specification is more for knowing exactly how Plezuro applications "
-"should behave and therefore how compilers and interpreters should behave."
-msgstr ""
-
 #: ../../source/specification/index.rst:16
 msgid ""
 "Nonetheless the code is the best way to define exactly the behavior. So each"
@@ -754,35 +709,29 @@ msgid ""
 "mainstream implementation."
 msgstr ""
 
-#: ../../source/specification/magick_constants/index.rst:2
+#: ../../source/specification/magic_constants/index.rst:2
 msgid "Magic constants"
 msgstr ""
 
-#: ../../source/specification/magick_constants/index.rst:4
-msgid ""
-"Eeach compiler (and even interpreter) of Plezuro must provide the following "
-"magick constants:"
-msgstr ""
-
-#: ../../source/specification/magick_constants/index.rst:6
+#: ../../source/specification/magic_constants/index.rst:6
 msgid ""
 "__pos__ - the horizontal position in a line (counting from 0, it is position"
 " where the token begins)"
 msgstr ""
 
-#: ../../source/specification/magick_constants/index.rst:9
+#: ../../source/specification/magic_constants/index.rst:9
 msgid "__line__ - the line number in a source file (counting from 0)"
 msgstr ""
 
-#: ../../source/specification/magick_constants/index.rst:11
+#: ../../source/specification/magic_constants/index.rst:11
 msgid "__file__ - the name of the source file"
 msgstr ""
 
-#: ../../source/specification/magick_constants/index.rst:13
+#: ../../source/specification/magic_constants/index.rst:13
 msgid "__dir__ - the real directory of the source file"
 msgstr ""
 
-#: ../../source/specification/magick_constants/index.rst:15
+#: ../../source/specification/magic_constants/index.rst:15
 msgid ""
 "It is recommended to replace these keywords with constant strings in the "
 "output code. There is no recommendation in the intermediate code. __dir__ "
@@ -793,7 +742,7 @@ msgid ""
 "'/home/user/programming/something/project/../../plezuro/my_plezuro_project')."
 msgstr ""
 
-#: ../../source/specification/magick_constants/index.rst:22
+#: ../../source/specification/magic_constants/index.rst:22
 msgid ""
 "Even for not Unix systems the path must be in the Unix notation (with "
 "slashes)."
@@ -850,23 +799,8 @@ msgstr ""
 msgid "Duck typing"
 msgstr ""
 
-#: ../../source/specification/modules/index.rst:39
-msgid ""
-"Everywhere is duck typing. It means it is possible to call a method with "
-"given name from an object if such a method exists in its module (directly or"
-" inherited). Moreover objects can be passed as zero argument to methods from"
-" totally different modules."
-msgstr ""
-
 #: ../../source/specification/syntax_errors/index.rst:2
 msgid "Syntax errors"
-msgstr ""
-
-#: ../../source/specification/syntax_errors/index.rst:4
-msgid ""
-"Because of very simple syntax there are very few syntax errors. Even "
-"conditionals and loops are created with methods invoking so syntax errors "
-"are possible to occur where the tokens does not match in a proper way."
 msgstr ""
 
 #: ../../source/specification/syntax_errors/index.rst:11
@@ -989,24 +923,6 @@ msgstr ""
 msgid "3 + *"
 msgstr ""
 
-#: ../../source/specification/expressions/index.rst:4
-msgid ""
-"An expression is a single command separated with the ``;`` operator. "
-"Although it can be multiple instructions (ex. ``x = y = 2 + 4``). What does "
-"it mean exactly? From the Plezuro's point of view the expression is an "
-"atomic instuction but from the CPU's (even purely theoretical CPU) point of "
-"view one expression can contain multiple instructions."
-msgstr ""
-
-#: ../../source/specification/functions/index.rst:28
-msgid ""
-"A method works in the same way as a function. The only difference is the "
-"object (variable before the dot sign) is passed as a zero argument and the "
-"next arguments are numbered from 1. In method calling when there is no "
-"arguments (except for this object) the bracket after method name is not "
-"required."
-msgstr ""
-
 #: ../../source/specification/operators/index.rst:6
 msgid ""
 "A single-argument operator (the operator at the left, the argument at the "
@@ -1052,54 +968,88 @@ msgstr ""
 msgid "**For whom is it?**"
 msgstr ""
 
-#~ msgid "For whom is it?"
-#~ msgstr ""
+#: ../../source/specification/constant_tokens/index.rst:34
+msgid ""
+"It is a sequence of unicode characters of any length (the only limit is the "
+"memory reserved for the application). The delimiter of the string is either "
+"single ``'`` or double ``\"`` quote. The special characters within the "
+"string must be escaped with the backslash ``\\``."
+msgstr ""
 
-#~ msgid ""
-#~ "A single-argument operators (the operator at the left, the argument at the "
-#~ "right) is one of the following:"
-#~ msgstr ""
+#: ../../source/specification/expressions/index.rst:4
+msgid ""
+"An expression is a single command separated with the ``;`` operator. "
+"Although it can be multiple instructions (ex. ``x = y = 2 + 4``). What does "
+"it mean exactly? From the Plezuro point of view the expression is an atomic "
+"instruction but from the CPU's (even purely theoretical CPU) point of view "
+"one expression can contain multiple instructions."
+msgstr ""
 
-#~ msgid ""
-#~ "A single-argument operators (the operator at the right) is one of the "
-#~ "following:"
-#~ msgstr ""
+#: ../../source/specification/functions/index.rst:28
+msgid ""
+"A method works in the same way as a function. The only difference is the "
+"object (variable before the dot sign) is passed as the zero argument and the"
+" next arguments are numbered from 1. In method calling when there is no "
+"arguments (except for this object) the bracket after the method name is not "
+"required."
+msgstr ""
 
-#~ msgid ""
-#~ "A double-argument operators (the first argument, the operator, the second "
-#~ "argument; from the evaluated at the end to the evaluated at the begin) is "
-#~ "one of the following:"
-#~ msgstr ""
+#: ../../source/specification/index.rst:10
+msgid ""
+"This is for developpers who would like to implement other version of "
+"Plezuro, a library, an extension as well to standard users who want to "
+"improve their knowledge. The tutorial is more for learning and simple "
+"understanding but the specification is more for knowing exactly how Plezuro "
+"applications should behave and therefore how compilers and interpreters "
+"should behave."
+msgstr ""
 
-#~ msgid "The first character must be an ASCII char or the underscore ('_')."
-#~ msgstr ""
+#: ../../source/specification/modules/index.rst:39
+msgid ""
+"Everywhere is duck typing. It means it is possible to call a method with "
+"given name from an object if such a method exists in its module (directly or"
+" inherited). Moreover objects can be passed as the zero argument to methods "
+"from totally different modules."
+msgstr ""
 
-#~ msgid "The next characters must be an ASCII char, the underscore or a digit."
-#~ msgstr ""
+#: ../../source/specification/symbols/index.rst:9
+msgid "The rules of the variable naming:"
+msgstr ""
 
-#~ msgid ""
-#~ "The comments behave like they were replaced by a single space. So the code "
-#~ "inside is not executed. Neither are the whitespaces executed. Though they "
-#~ "have a little impact on the code: it is impossible to insert a comment (nor "
-#~ "a whitespace) inside the symbol (variable) name; the only possibility is to "
-#~ "insert comments between multiple tokens;"
-#~ msgstr ""
+#: ../../source/specification/symbols/index.rst:19
+msgid ""
+"Eeach symbol must be declared at the first use in the source file. The "
+"declaration contains the dollar sign ``$`` and the name of the symbol."
+msgstr ""
 
-#~ msgid ""
-#~ "An expression is a single command separated with the ``;`` operator. "
-#~ "Although it can be multiple instructions (ex. ``x = y = 2 + 4``). What does "
-#~ "it mean exactly? From the Plezuro's point of view the expression is an "
-#~ "atomic instuction but from the CPU's (or virtual and even purely theoretical"
-#~ " CPU) point of view one expression can contain multiple instructions."
-#~ msgstr ""
+#: ../../source/specification/symbols/index.rst:27
+msgid ""
+"Class field (or module field) contains the name of the module, the double "
+"colon ``::`` and the name of the field (the same rules like for the symbol)."
+msgstr ""
 
-#~ msgid ""
-#~ "A method works in the same way as a function. The only difference is the "
-#~ "object (variable before the dot sign is passed as a zero argument and the "
-#~ "next arguments are numbered from 1. In method calling when there is no "
-#~ "arguments (except for this object) the bracket after method name is not "
-#~ "required."
-#~ msgstr ""
+#: ../../source/specification/symbols/index.rst:35
+msgid ""
+"Object field (or module field) contains the at character ``@`` and the name "
+"of the field (the same rules like for the symbol)."
+msgstr ""
 
-#~ msgid "an operator after another one with some exceptions"
-#~ msgstr ""
+#: ../../source/specification/syntax_errors/index.rst:4
+msgid ""
+"Because of the very simple syntax there are very few syntax errors. Even "
+"conditionals and loops are created with the methods invoking so syntax "
+"errors are possible to occur where the tokens does not match in a proper "
+"way."
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:6
+msgid ""
+"Plezuro has the following token types (the order matters, when regex or "
+"condition of multiple tokens matches, the first of them wins):"
+msgstr ""
+
+#: ../../source/specification/magic_constants/index.rst:4
+msgid ""
+"Each compiler (and even interpreter) of Plezuro must provide the following "
+"magic constants:"
+msgstr ""

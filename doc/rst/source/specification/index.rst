@@ -32,5 +32,5 @@ implementation.
   variables/index
   expressions/index
   functions/index
-  magick_constants/index
+  magic_constants/index
   modules/index

@@ -1,7 +1,7 @@
 Magic constants
 ===============
 
-Eeach compiler (and even interpreter) of Plezuro must provide the following magick constants:
+Each compiler (and even interpreter) of Plezuro must provide the following magic constants:
 
 * __pos__ - the horizontal position in a line (counting from 0, it is position
   where the token begins)

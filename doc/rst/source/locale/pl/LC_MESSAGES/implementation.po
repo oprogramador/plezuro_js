@@ -103,14 +103,6 @@ msgstr ""
 msgid "Package invalidToken"
 msgstr "Pakiet invalidToken"
 
-#: ../../source/implementation/compiler/invalidToken/index.rst:4
-msgid ""
-"This is the set off all exception classes. It includes their mapping to the "
-"Javascript. All the other classes inherit from the InvalidTokenException."
-msgstr ""
-"To zbiór wszystkich klas wyjątków. Zawiera ich mapowanie do Javascripta. "
-"Wszystkie pozostałe klasy dziedziczą po InvalidTokenException."
-
 #: ../../source/implementation/compiler/token/index.rst:4
 msgid ""
 "This is the set of all the tokens and subtokens of Plezuro with their "
@@ -127,51 +119,46 @@ msgstr "Ogólny algorytm"
 msgid "We can specify the main parts of the algorithm:"
 msgstr "Możemy określić główne części algorytmu:"
 
-#: ../../source/implementation/general_algorithm/index.rst:16
+#: ../../source/implementation/general_algorithm/index.rst:6
 msgid "Compiling"
 msgstr "Kompilacja"
 
-#: ../../source/implementation/general_algorithm/index.rst:7
+#: ../../source/implementation/general_algorithm/index.rst:8
 msgid "Reading the script."
 msgstr "Wczytanie skryptu."
 
-#: ../../source/implementation/general_algorithm/index.rst:8
-msgid "Checking if the script is not empty (otherwise it return null)."
-msgstr ""
-"Sprawdzenie czy skrypt nie jest pusty (w przeciwnym razie zwraca null)."
-
-#: ../../source/implementation/general_algorithm/index.rst:9
+#: ../../source/implementation/general_algorithm/index.rst:10
 msgid "Division of the code into the lines."
 msgstr "Podział kodu na linie."
 
-#: ../../source/implementation/general_algorithm/index.rst:10
+#: ../../source/implementation/general_algorithm/index.rst:11
 msgid "Tokenization:"
 msgstr "Tokenizacja:"
 
-#: ../../source/implementation/general_algorithm/index.rst:12
+#: ../../source/implementation/general_algorithm/index.rst:13
 msgid "lines are divided into tokens"
 msgstr "linie są dzielone na tokeny"
 
-#: ../../source/implementation/general_algorithm/index.rst:13
+#: ../../source/implementation/general_algorithm/index.rst:14
 msgid "except of multiline tokens which can expand to multiple lines"
 msgstr ""
 "z wyjątkiem tokenów wieloliniowych, które mogą się rozciągać na wiele linii"
 
-#: ../../source/implementation/general_algorithm/index.rst:14
+#: ../../source/implementation/general_algorithm/index.rst:16
 msgid ""
 "Eventual changing of token types (ex. from basic ones to its subtokens)."
 msgstr ""
 "Ewentualna zmiana typów tokenów (np. z podstawowych do ich subtokenów)."
 
-#: ../../source/implementation/general_algorithm/index.rst:15
+#: ../../source/implementation/general_algorithm/index.rst:17
 msgid "Validation - detecting of syntax errors by the tokens order."
 msgstr "Walidacja - wykrycie błędów składniowych, badając kolejność tokenów."
 
-#: ../../source/implementation/general_algorithm/index.rst:16
+#: ../../source/implementation/general_algorithm/index.rst:18
 msgid "Converting of Plezuro tokens into the output language tokens."
 msgstr "Konwersja tokenów Plezuro to tokenów języka wynikowego."
 
-#: ../../source/implementation/general_algorithm/index.rst:17
+#: ../../source/implementation/general_algorithm/index.rst:19
 msgid "Writing output to the file."
 msgstr "Zapis wyjścia do pliku."
 
@@ -435,10 +422,23 @@ msgstr "kompilowanie skryptów Plezuro z 'src/plezuro' do 'bin/js'"
 msgid "**For whom is it?**"
 msgstr "**Dla kogo to jest?**"
 
-#: ../../source/implementation/general_algorithm/index.rst:18
+#: ../../source/implementation/general_algorithm/index.rst:21
 msgid "Binding output language (currenty Javascript) libraries."
 msgstr "Wiązanie bibliotek z języka wynikowego (obecnie Javascript)."
 
 #: ../../source/implementation/compiler/token/index.rst:2
 msgid "Package token"
 msgstr "Pakiet token"
+
+#: ../../source/implementation/compiler/invalidToken/index.rst:4
+msgid ""
+"This is the set of all exception classes. It includes their mapping to the "
+"Javascript. All the other classes inherit from the InvalidTokenException."
+msgstr ""
+"To zbiór wszystkich klas wyjątków. Zawiera ich mapowanie do Javascripta. "
+"Wszystkie pozostałe klasy dziedziczą po InvalidTokenException."
+
+#: ../../source/implementation/general_algorithm/index.rst:9
+msgid "Checking if the script is not empty (otherwise it returns null)."
+msgstr ""
+"Sprawdzenie czy skrypt nie jest pusty (w przeciwnym razie zwraca null)."

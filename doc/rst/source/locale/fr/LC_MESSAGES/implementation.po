@@ -91,12 +91,6 @@ msgstr ""
 msgid "Package invalidToken"
 msgstr ""
 
-#: ../../source/implementation/compiler/invalidToken/index.rst:4
-msgid ""
-"This is the set off all exception classes. It includes their mapping to the "
-"Javascript. All the other classes inherit from the InvalidTokenException."
-msgstr ""
-
 #: ../../source/implementation/compiler/token/index.rst:4
 msgid ""
 "This is the set of all the tokens and subtokens of Plezuro with their "
@@ -111,48 +105,44 @@ msgstr ""
 msgid "We can specify the main parts of the algorithm:"
 msgstr ""
 
-#: ../../source/implementation/general_algorithm/index.rst:16
+#: ../../source/implementation/general_algorithm/index.rst:6
 msgid "Compiling"
 msgstr ""
 
-#: ../../source/implementation/general_algorithm/index.rst:7
+#: ../../source/implementation/general_algorithm/index.rst:8
 msgid "Reading the script."
 msgstr ""
 
-#: ../../source/implementation/general_algorithm/index.rst:8
-msgid "Checking if the script is not empty (otherwise it return null)."
-msgstr ""
-
-#: ../../source/implementation/general_algorithm/index.rst:9
+#: ../../source/implementation/general_algorithm/index.rst:10
 msgid "Division of the code into the lines."
 msgstr ""
 
-#: ../../source/implementation/general_algorithm/index.rst:10
+#: ../../source/implementation/general_algorithm/index.rst:11
 msgid "Tokenization:"
 msgstr ""
 
-#: ../../source/implementation/general_algorithm/index.rst:12
+#: ../../source/implementation/general_algorithm/index.rst:13
 msgid "lines are divided into tokens"
 msgstr ""
 
-#: ../../source/implementation/general_algorithm/index.rst:13
+#: ../../source/implementation/general_algorithm/index.rst:14
 msgid "except of multiline tokens which can expand to multiple lines"
 msgstr ""
 
-#: ../../source/implementation/general_algorithm/index.rst:14
+#: ../../source/implementation/general_algorithm/index.rst:16
 msgid ""
 "Eventual changing of token types (ex. from basic ones to its subtokens)."
 msgstr ""
 
-#: ../../source/implementation/general_algorithm/index.rst:15
+#: ../../source/implementation/general_algorithm/index.rst:17
 msgid "Validation - detecting of syntax errors by the tokens order."
 msgstr ""
 
-#: ../../source/implementation/general_algorithm/index.rst:16
+#: ../../source/implementation/general_algorithm/index.rst:18
 msgid "Converting of Plezuro tokens into the output language tokens."
 msgstr ""
 
-#: ../../source/implementation/general_algorithm/index.rst:17
+#: ../../source/implementation/general_algorithm/index.rst:19
 msgid "Writing output to the file."
 msgstr ""
 
@@ -399,13 +389,31 @@ msgstr ""
 msgid "**For whom is it?**"
 msgstr ""
 
-#: ../../source/implementation/general_algorithm/index.rst:18
+#: ../../source/implementation/general_algorithm/index.rst:21
 msgid "Binding output language (currenty Javascript) libraries."
 msgstr ""
 
 #: ../../source/implementation/compiler/token/index.rst:2
 msgid "Package token"
 msgstr ""
+
+#: ../../source/implementation/compiler/invalidToken/index.rst:4
+msgid ""
+"This is the set of all exception classes. It includes their mapping to the "
+"Javascript. All the other classes inherit from the InvalidTokenException."
+msgstr ""
+
+#: ../../source/implementation/general_algorithm/index.rst:9
+msgid "Checking if the script is not empty (otherwise it returns null)."
+msgstr ""
+
+#~ msgid ""
+#~ "This is the set off all exception classes. It includes their mapping to the "
+#~ "Javascript. All the other classes inherit from the InvalidTokenException."
+#~ msgstr ""
+
+#~ msgid "Checking if the script is not empty (otherwise it return null)."
+#~ msgstr ""
 
 #~ msgid "Package Token"
 #~ msgstr ""

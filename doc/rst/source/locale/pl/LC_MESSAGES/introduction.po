@@ -199,6 +199,3 @@ msgid ""
 "No annotations and other additional syntax - everything is based on the "
 "basic syntax of the language."
 msgstr ""
-
-#~ msgid "This is basics."
-#~ msgstr ""

@@ -22,30 +22,3 @@ msgstr "Plezuro to język skryptowy"
 #: ../../source/index.rst:13
 msgid "The main version is compiled to Javascript."
 msgstr "Główna wersja jest kompilowana do Javascripta."
-
-#~ msgid "Contents:"
-#~ msgstr ""
-
-#~ msgid "Indices and tables"
-#~ msgstr "Indeksy i tablice"
-
-#~ msgid ":ref:`genindex`"
-#~ msgstr ""
-
-#~ msgid ":ref:`modindex`"
-#~ msgstr ""
-
-#~ msgid ":ref:`search`"
-#~ msgstr ""
-
-#~ msgid "*test*"
-#~ msgstr ""
-
-#~ msgid "**blabla**"
-#~ msgstr ""
-
-#~ msgid "1.ml"
-#~ msgstr ""
-
-#~ msgid "Its main version is compiled to Javascript."
-#~ msgstr "Główna wersja jest kompilowalna do Javascripta."
