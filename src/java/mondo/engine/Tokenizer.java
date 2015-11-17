@@ -39,6 +39,7 @@ import mondo.token.WhiteSpaceToken;
 import mondo.token.OperatorToken;
 import mondo.token.SymbolToken;
 import mondo.token.StringToken;
+import mondo.token.RegexToken;
 import mondo.token.BracketToken;
 import mondo.token.CommentToken;
 import mondo.token.MultiLineCommentToken;
@@ -48,6 +49,7 @@ public class Tokenizer extends AbstractTokenizer {
     private List<Token> tokenTypes = new ArrayList<Token>() {{
         add(new CommentToken());
         add(new MultiLineCommentToken());
+        add(new RegexToken());
         add(new BracketToken());
         add(new NumberToken());
         add(new DeclarationToken());

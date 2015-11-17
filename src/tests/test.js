@@ -228,3 +228,6 @@ a = '../../bin/js/tests/43.plez.js'.import();
 assert.strictEqual(a[0].length, 32);
 assert.strictEqual(a[1].length, 10);
 assert.strictEqual(a[2].length, 56);
+
+a = '../../bin/js/tests/45.plez.js'.import();
+assert.strictEqual(JSON.stringify(a), '["\\\\","a\\\\","\\\\b","c\\\\d","e\\t","e\'fg","\\\\","\\t","o\\\\","\\\\r","s\\"s"]');

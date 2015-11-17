@@ -11,6 +11,8 @@ todo:
         prepend_return: no
         return_value: no
         'method called rand, this, first...': no
+        "infinite loop with: 'gh-kk =~ r'[a-z]'": no
+        backslash_at_end_of_string: no
     collections:
         associative_array: yes
         dictionary: yes

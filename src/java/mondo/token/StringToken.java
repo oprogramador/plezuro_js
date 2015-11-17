@@ -33,7 +33,7 @@ public class StringToken extends Token {
     }
 
     public String getRegex() {
-        return "('')|('.*?[^\\\\]')|(\"\")|(\".*?[^\\\\]\")";
+        return "('')|('.*?([^\\\\]|(\\\\\\\\))')|(\"\")|(\".*?([^\\\\]|(\\\\\\\\))\")";
     }
 
     protected void doConvert(ITokenizer tokenizer) {

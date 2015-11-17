@@ -1,0 +1,12 @@
+$x = r'[a-z]';
+$b = x =~ 'abc';
+$b1 = 'dfg' =~ x;
+$res = [x, b, b1];
+res << 'gh-kk' =~ r'[a-z]'
+    << 'gh-kk' =~ r'^[a-z]$'
+    << 'gh-kk' =~ r'^[a-z]+-[a-z]+$'
+    << 'gh-kk' =~ r'^[a-z]{2}-[a-z]{2}$'
+    << 'gh-kko' =~ r'^[a-z]{2}-[a-z]{2}$'
+    << '\\' =~ r'a'
+;
+res

@@ -21,3 +21,8 @@ Array.prototype['*'] = function(x) {
     }
     return result;
 }
+
+Array.prototype['<<'] = function(x) {
+    this.push(x);
+    return this;
+}
