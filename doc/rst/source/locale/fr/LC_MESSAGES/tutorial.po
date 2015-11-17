@@ -217,12 +217,6 @@ msgid ""
 "iterates as long as the function returns true."
 msgstr ""
 
-#: ../../source/tutorial/basics/magic_constants/index.rst:10
-msgid ""
-"__pos__ - the horizontal position in a line (counting from 0, it is position"
-" where the keyword begins)"
-msgstr ""
-
 #: ../../source/tutorial/basics/magic_constants/index.rst:13
 msgid "__line__ - the line number in a source file (counting from 0)"
 msgstr ""
@@ -252,17 +246,6 @@ msgstr ""
 
 #: ../../source/tutorial/basics/operators/index.rst:52
 msgid "single-argument operators (the operator at the right)"
-msgstr ""
-
-#: ../../source/tutorial/basics/random/index.rst:2
-msgid "Random numbers"
-msgstr ""
-
-#: ../../source/tutorial/basics/random/index.rst:4
-msgid ""
-"In computing it is useful for many purposes to generate random numbers. For "
-"example, when you write a computer player to a game or in a web application "
-"to generate registration links, local or web addreses and so on."
 msgstr ""
 
 #: ../../source/tutorial/basics/variables/index.rst:2
@@ -1625,14 +1608,6 @@ msgstr ""
 msgid "``:``"
 msgstr ""
 
-#: ../../source/tutorial/basics/random/index.rst:9
-msgid ""
-"In Plezuro it is quite easy. You do not have to invoke any function or "
-"method (however later it is compiled to a method invokation). Just write the"
-" 'rand' keyword and you will obtain a number from the uniform distribution "
-"between 0 and 1."
-msgstr ""
-
 #: ../../source/tutorial/basics/variables/index.rst:4
 msgid ""
 "Probably the most basic feature of a programing language are the variables. "
@@ -1827,3 +1802,76 @@ msgstr ""
 #: ../../source/tutorial/basics/magic_constants/index.rst:8
 msgid "So we have the following magic constants:"
 msgstr ""
+
+#: ../../source/tutorial/basics/hello_world/index.rst:2
+msgid "Hello world"
+msgstr ""
+
+#: ../../source/tutorial/basics/hello_world/index.rst:4
+msgid ""
+"'Hello world' in computing means the simpler application in a specific "
+"programming language. It shows generally how a language looks."
+msgstr ""
+
+#: ../../source/tutorial/basics/hello_world/index.rst:7
+msgid ""
+"There are several ways in Plezuro to write it. It is a scripting language so"
+" there is required no main function nor class. The simpler script just "
+"returns a value. You can also use the 'dumpl' method for printing to a "
+"buffer (in most cases the console)."
+msgstr ""
+
+#: ../../source/tutorial/basics/magic_constants/index.rst:10
+msgid ""
+"__pos__ - the horizontal position in a line (counting from 0, it is the "
+"position where the keyword begins)"
+msgstr ""
+
+#: ../../source/tutorial/basics/random/index.rst:2
+msgid "Random"
+msgstr ""
+
+#: ../../source/tutorial/basics/random/index.rst:4
+msgid ""
+"In computing it is useful for many purposes to generate random numbers and "
+"random strings. For example, when you write a computer player to a game or "
+"in a web application to generate registration links, local or web addresses "
+"and so on."
+msgstr ""
+
+#: ../../source/tutorial/basics/random/index.rst:10
+msgid ""
+"In Plezuro it is quite easy. For a random number you do not have to invoke "
+"any function or method (however later it is compiled to a method "
+"invocation). Just write the 'rand' keyword and you will obtain a number from"
+" the uniform distribution between 0 and 1."
+msgstr ""
+
+#: ../../source/tutorial/basics/random/index.rst:15
+msgid ""
+"To generate a random string, use ``String.rand``. The first parameter "
+"specifies the length of the result, its default value is 32. The result is "
+"composed from letters, digits and underscores."
+msgstr ""
+
+#~ msgid ""
+#~ "To generate a random string, use `String.rand`. The first parameter "
+#~ "specifies the length of the result, its default value is 32. The result is "
+#~ "composed from letters, digits and underscores."
+#~ msgstr ""
+
+#~ msgid "Random numbers"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In computing it is useful for many purposes to generate random numbers. For "
+#~ "example, when you write a computer player to a game or in a web application "
+#~ "to generate registration links, local or web addreses and so on."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In Plezuro it is quite easy. You do not have to invoke any function or "
+#~ "method (however later it is compiled to a method invokation). Just write the"
+#~ " 'rand' keyword and you will obtain a number from the uniform distribution "
+#~ "between 0 and 1."
+#~ msgstr ""

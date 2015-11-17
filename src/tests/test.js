@@ -223,3 +223,8 @@ assert.strictEqual(JSON.stringify(a), '[32,32]');
 
 a = '../../bin/js/tests/42.plez.js'.import();
 assert.strictEqual(a, false);
+
+a = '../../bin/js/tests/43.plez.js'.import();
+assert.strictEqual(a[0].length, 32);
+assert.strictEqual(a[1].length, 10);
+assert.strictEqual(a[2].length, 56);

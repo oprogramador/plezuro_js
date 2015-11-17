@@ -75,6 +75,9 @@ public class SymbolToken extends Token {
 
     protected void doConvert(ITokenizer tokenizer) {
         insertBracketAfterEventually(tokenizer);
+        tokenizer.resetToThis();
+        Token previous = tokenizer.getPreviousNotBlank();
+        if(previous != null && previous.getOriginalText() == ".") return;
         try {
             text = functionMap.get(originalText).apply(originalText);
         } catch(NullPointerException e) {

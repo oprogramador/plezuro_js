@@ -246,14 +246,6 @@ msgstr ""
 "warunkową. Wykonanie pętli zależy od wartości zwróconej przez tę funkcję. "
 "Zatem iteracje przebiegają tak długo, dopóki funkcja zwraca wartość true."
 
-#: ../../source/tutorial/basics/magic_constants/index.rst:10
-msgid ""
-"__pos__ - the horizontal position in a line (counting from 0, it is position"
-" where the keyword begins)"
-msgstr ""
-"__pos__ - poziome położenie w obrębie linii (licząc od 0, to pozycja gdzie "
-"słowo kluczowe zaczyna się)"
-
 #: ../../source/tutorial/basics/magic_constants/index.rst:13
 msgid "__line__ - the line number in a source file (counting from 0)"
 msgstr "__line__ - numer linii w pliku źródłowym (licząc od 0)"
@@ -284,20 +276,6 @@ msgstr "jednoargumentowe operatory (operator po lewej, argument po prawej)"
 #: ../../source/tutorial/basics/operators/index.rst:52
 msgid "single-argument operators (the operator at the right)"
 msgstr "jednoargumentowe operatory (operator po prawej stronie)"
-
-#: ../../source/tutorial/basics/random/index.rst:2
-msgid "Random numbers"
-msgstr "Losowe liczby"
-
-#: ../../source/tutorial/basics/random/index.rst:4
-msgid ""
-"In computing it is useful for many purposes to generate random numbers. For "
-"example, when you write a computer player to a game or in a web application "
-"to generate registration links, local or web addreses and so on."
-msgstr ""
-"W programowaniu jest użyteczne w wielu przypadkach generowanie liczb "
-"losowych. Np. kiedy tworzysz gracza komputerowego w jakiejś grze czy "
-"generujesz linki rejestracyjne w aplikacji webowej i tak dalej."
 
 #: ../../source/tutorial/basics/variables/index.rst:2
 msgid "Variables"
@@ -713,7 +691,7 @@ msgstr "**Dla kogo to jest?**"
 
 #: ../../source/tutorial/index.rst:20
 msgid "Other useful materials"
-msgstr "**Inne przydatne matetiały**"
+msgstr "**Inne przydatne materiały**"
 
 #: ../../source/tutorial/index.rst:22
 msgid ""
@@ -1540,7 +1518,7 @@ msgid ""
 msgstr ""
 "Obecnie główna wersja Plezuro jest kompilowana do Javascripta. W przyszłości"
 " jest planowane kompilowanie do innych języków (prawdopodobnie C, C♯, Java, "
-"Python, Ruby i PHP, eventualnie Lisp i Fortran). Istnieje również wersja "
+"Python, Ruby i PHP, ewentualnie Lisp i Fortran). Istnieje również wersja "
 "interpretowana zaimplementowana w C♯, która jednak nie jest dłużej "
 "rozwijana. Tamta wersja nie jest w pełni zgodna z główną wersją Plezuro. To "
 "coś na kształt prototypu końcowego produktu."
@@ -1913,18 +1891,6 @@ msgstr ""
 msgid "``:``"
 msgstr ""
 
-#: ../../source/tutorial/basics/random/index.rst:9
-msgid ""
-"In Plezuro it is quite easy. You do not have to invoke any function or "
-"method (however later it is compiled to a method invokation). Just write the"
-" 'rand' keyword and you will obtain a number from the uniform distribution "
-"between 0 and 1."
-msgstr ""
-"W Plezuro to bardzo proste. Nie musisz wywoływać żadnej funkcji czy metody "
-"(jednak później jest to kompilowane do kodu z wywołaniem metody). Po prostu "
-"wystarczy napisać słowo kluczowe `rand` i otrzymasz liczbę z równomiernego "
-"rozkładu między 0 a 1."
-
 #: ../../source/tutorial/basics/variables/index.rst:4
 msgid ""
 "Probably the most basic feature of a programing language are the variables. "
@@ -2220,3 +2186,73 @@ msgstr ""
 #: ../../source/tutorial/basics/magic_constants/index.rst:8
 msgid "So we have the following magic constants:"
 msgstr "Zatem mamy następujące magiczne stałe:"
+
+#: ../../source/tutorial/basics/hello_world/index.rst:2
+msgid "Hello world"
+msgstr ""
+
+#: ../../source/tutorial/basics/hello_world/index.rst:4
+msgid ""
+"'Hello world' in computing means the simpler application in a specific "
+"programming language. It shows generally how a language looks."
+msgstr ""
+"'Hello world' (Witaj świecie) w programowaniu oznacza najprostszą aplikację "
+"w konkretnym języku programowania. Pokazuje to jak ogólnie wygląda dany "
+"język."
+
+#: ../../source/tutorial/basics/hello_world/index.rst:7
+msgid ""
+"There are several ways in Plezuro to write it. It is a scripting language so"
+" there is required no main function nor class. The simpler script just "
+"returns a value. You can also use the 'dumpl' method for printing to a "
+"buffer (in most cases the console)."
+msgstr ""
+"Istnieje kilka sposobów w Plezuro na napisanie czegoś takiego. Jest to język"
+" skryptowy, więc nie jest wymagana żadna główna funkcja ani klasa. "
+"Najprostszy skrypt po prostu zwraca wartość. Można również użyć metody "
+"'dumpl' do zapisu do bufora (najczęściej jest to konsola)."
+
+#: ../../source/tutorial/basics/magic_constants/index.rst:10
+msgid ""
+"__pos__ - the horizontal position in a line (counting from 0, it is the "
+"position where the keyword begins)"
+msgstr ""
+"__pos__ - poziome położenie w obrębie linii (licząc od 0, to pozycja gdzie "
+"słowo kluczowe zaczyna się)"
+
+#: ../../source/tutorial/basics/random/index.rst:2
+msgid "Random"
+msgstr "Losowanie (random)"
+
+#: ../../source/tutorial/basics/random/index.rst:4
+msgid ""
+"In computing it is useful for many purposes to generate random numbers and "
+"random strings. For example, when you write a computer player to a game or "
+"in a web application to generate registration links, local or web addresses "
+"and so on."
+msgstr ""
+"W programowaniu jest użyteczne w wielu przypadkach generowanie liczb oraz "
+"tekstów losowych. Np. kiedy tworzysz gracza komputerowego w jakiejś grze, czy"
+" generujesz linki rejestracyjne w aplikacji webowej i tak dalej."
+
+#: ../../source/tutorial/basics/random/index.rst:10
+msgid ""
+"In Plezuro it is quite easy. For a random number you do not have to invoke "
+"any function or method (however later it is compiled to a method "
+"invocation). Just write the 'rand' keyword and you will obtain a number from"
+" the uniform distribution between 0 and 1."
+msgstr ""
+"W Plezuro to bardzo proste. W przypadku losowej liczby, nie musisz wywoływać"
+" żadnej funkcji czy metody (jednak później jest to kompilowane do kodu z "
+"wywołaniem metody). Po prostu wystarczy napisać słowo kluczowe `rand` i "
+"otrzymasz liczbę z równomiernego rozkładu między 0 a 1."
+
+#: ../../source/tutorial/basics/random/index.rst:15
+msgid ""
+"To generate a random string, use ``String.rand``. The first parameter "
+"specifies the length of the result, its default value is 32. The result is "
+"composed from letters, digits and underscores."
+msgstr ""
+"Aby wygenerować losowy ciąg znaków, użyj ``String.rand``. Pierwszy argument "
+"określa długość wynikowego ciągu, domyślna wartość to 32. Wynik jest "
+"zbudowany z liter, cyfr i podkreślenia."

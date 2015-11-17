@@ -3,4 +3,6 @@ $b = rand * a + rand;
 $f = {
   rand * this
 };
-[a, b, f(20), rand]
+$c = String.rand;
+$d = String.rand(200);
+[a, b, c, d, f(20), rand]

@@ -10,6 +10,7 @@ todo:
         method_call_and_square_bracket: yes
         prepend_return: no
         return_value: no
+        'method called rand, this, first...': no
     collections:
         associative_array: yes
         dictionary: yes
@@ -172,7 +173,7 @@ todo:
         json: yes
     shell: no
     stdlib:
-        randstr: no
+        randstr: yes
         string:
             - interpolation: no
     tests:

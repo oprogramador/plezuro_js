@@ -51,3 +51,13 @@ String.prototype['*'] = function(x) {
 String.prototype.len = function(x) {
     return this.length;
 }
+
+String.rand = function(n) {
+    if(typeof n === 'undefined') n = 32;
+    var template = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_';
+    var result = '';
+    for(var i = 0; i < n; i++) {
+        result += template[Math.floor(Math.random() * template.length)];
+    }
+    return result;
+}

@@ -7,6 +7,7 @@ Basics
   :titlesonly:
   :maxdepth: 1
 
+  hello_world/index
   variables/index
   comments/index
   functions/index

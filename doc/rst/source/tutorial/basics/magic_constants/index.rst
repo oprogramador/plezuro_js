@@ -7,7 +7,7 @@ like a constant. Its value depends on the place where it is used.
 
 So we have the following magic constants:
 
-* __pos__ - the horizontal position in a line (counting from 0, it is position
+* __pos__ - the horizontal position in a line (counting from 0, it is the position
   where the keyword begins)
 
 * __line__ - the line number in a source file (counting from 0)
