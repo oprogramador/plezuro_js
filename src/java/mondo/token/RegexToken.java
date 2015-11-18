@@ -33,10 +33,13 @@ public class RegexToken extends Token {
     }
 
     public String getRegex() {
-        return "r(('')|('.*?[^\\\\]')|(\"\")|(\".*?[^\\\\]\"))";
+        return "r(('([^']|(''))*')|(\"([^\"]|(\"\"))*\"))";
     }
 
     protected void doConvert(ITokenizer tokenizer) {
-        setText( "/" + getOriginalText().substring( 2, getOriginalText().length()-1 ) + "/" );
+        String result = getOriginalText().substring( 2, getOriginalText().length()-1 ).replaceAll("\\", "\\\\");
+        if(result.charAt(1) == '\'') result = result.replaceAll("''", "'");
+        else result = result.replaceAll("\"\"", "\"");
+        setText( "/" + result + "/" );
     }
 }

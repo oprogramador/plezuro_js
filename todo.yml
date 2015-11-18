@@ -12,7 +12,7 @@ todo:
         return_value: no
         'method called rand, this, first...': no
         "infinite loop with: 'gh-kk =~ r'[a-z]'": no
-        backslash_at_end_of_string: no
+        backslash_at_end_of_string: yes
     collections:
         associative_array: yes
         dictionary: yes
