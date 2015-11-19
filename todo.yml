@@ -7,11 +7,10 @@ todo:
         assign_negative: no
         at_the_end_of_script_multiline_comment_and_value: no
         minus_after_bracket_opening: no
-        method_call_and_square_bracket: yes
         prepend_return: no
-        return_value: no
-        'method called rand, this, first...': no
-        "infinite loop with: 'gh-kk =~ r'[a-z]'": no
+        return_value: yes
+        'method called rand, this, first...': yes
+        "infinite loop with: 'gh-kk =~ r'[a-z]'": yes
         backslash_at_end_of_string: yes
     collections:
         associative_array: yes
@@ -178,10 +177,13 @@ todo:
     stdlib:
         randstr: yes
         string:
-            - interpolation: no
+            interpolation: no
+        function:
+            time_counter: no
     tests:
         independent_from_user_path: yes
         iron_plezuro_scripts: no
+        performance: no
         remote: no
     todo_import:
       iron_plezuro: no

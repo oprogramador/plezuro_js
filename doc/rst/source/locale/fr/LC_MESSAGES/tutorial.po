@@ -168,13 +168,6 @@ msgstr ""
 msgid "Functions"
 msgstr ""
 
-#: ../../source/tutorial/basics/functions/index.rst:9
-msgid ""
-"You can return a value with 'return' keyword. When in function execution no "
-"previous value has been returned, it returns the value of the last statement"
-" (like in Ruby)."
-msgstr ""
-
 #: ../../source/tutorial/basics/import/index.rst:2
 msgid "Import"
 msgstr ""
@@ -1897,6 +1890,21 @@ msgid ""
 "the case of a double quote inside double quotes (ex. ``r\"ab\"\"cd\"``, "
 "``r'ef''gh'``)."
 msgstr ""
+
+#: ../../source/tutorial/basics/functions/index.rst:9
+msgid ""
+"The function returns the value of the last statement (like in Ruby). There "
+"is no ``return`` keyword."
+msgstr ""
+
+#~ msgid "The function returns the value of the last statement (like in Ruby)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You can return a value with 'return' keyword. When in function execution no "
+#~ "previous value has been returned, it returns the value of the last statement"
+#~ " (like in Ruby)."
+#~ msgstr ""
 
 #~ msgid ""
 #~ "The syntax is the following: ``r`` and the text in single or double quotes. "

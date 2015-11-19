@@ -179,16 +179,6 @@ msgstr ""
 msgid "Functions"
 msgstr "Funkcje"
 
-#: ../../source/tutorial/basics/functions/index.rst:9
-msgid ""
-"You can return a value with 'return' keyword. When in function execution no "
-"previous value has been returned, it returns the value of the last statement"
-" (like in Ruby)."
-msgstr ""
-"Można zwracać wartość przy użyciu słowa kluczowego 'return'. Kiedy w "
-"wykonaniu funkcji dotychczas nie zwrócono żadnej wartości, jest zwracana "
-"wartość ostatniego wyrażenia (tak jak w Ruby)."
-
 #: ../../source/tutorial/basics/import/index.rst:2
 msgid "Import"
 msgstr "Import"
@@ -2268,10 +2258,10 @@ msgid ""
 "different ways. It can sound a little bit complicated but it often makes "
 "hard problems easy."
 msgstr ""
-"Poza programowanie imperatywnym (tak jak to jest w Plezuro, istnieją również"
-" inne paradygmaty programowania. To oznacza, że możesz wykonać tę samą "
-"czynność na przeróżne sposoby. Może wydaje się to nieco skomplikowane, ale "
-"to często sprawia, że trudne problemy stają się łatwymi."
+"Poza programowaniem imperatywnym (tak jak to jest w Plezuro, istnieją "
+"również inne paradygmaty programowania. To oznacza, że możesz wykonać tę "
+"samą czynność na przeróżne sposoby. Może wydaje się to nieco skomplikowane, "
+"ale to często sprawia, że trudne problemy stają się łatwymi."
 
 #: ../../source/tutorial/basics/regex/index.rst:8
 msgid ""
@@ -2321,3 +2311,10 @@ msgstr ""
 "cudzysłowem. W przypadku apostrofów umieszczonymi pomiędzy apostrofami "
 "napisz je dwukrotnie, to samo w przypadku cudzysłowu pomiędzy cudzysłowami "
 "(np. ``r\"ab\"\"cd\"``, ``r'ef''gh'``)."
+
+#: ../../source/tutorial/basics/functions/index.rst:9
+msgid ""
+"The function returns the value of the last statement (like in Ruby). There "
+"is no ``return`` keyword."
+msgstr "Funkcja zwraca wartość wartość ostatniego wyrażenia (tak jak w Ruby). "
+"Nie istnieje natomiast słowo kluczowe ``return``."

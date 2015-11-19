@@ -138,7 +138,7 @@ public class Tokenizer extends AbstractTokenizer {
                         break;
                     }
                 }
-                if(oldIndex == index && index != lines.get(i).length()-1) {
+                if(oldIndex == index) {
                     throw InvalidTokenException.create(NonExistentTokenException.class, file.getAbsolutePath(), i, index);
                 }
             }
