@@ -37,9 +37,11 @@ public class RegexToken extends Token {
     }
 
     protected void doConvert(ITokenizer tokenizer) {
-        String result = getOriginalText().substring( 2, getOriginalText().length()-1 ).replaceAll("\\", "\\\\");
-        if(result.charAt(1) == '\'') result = result.replaceAll("''", "'");
-        else result = result.replaceAll("\"\"", "\"");
-        setText( "/" + result + "/" );
+        String result = getOriginalText().substring( 2, getOriginalText().length()-1 )
+            .replaceAll("\\\\", "\\\\\\\\")
+            .replaceAll("('')|'", "\\\\'")
+            .replaceAll("(\"\")|\"", "\\\\\"")
+            ;
+        setText( "new RegExp(\"" + result + "\")" );
     }
 }

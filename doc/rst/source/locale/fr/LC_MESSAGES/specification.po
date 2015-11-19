@@ -504,108 +504,104 @@ msgstr ""
 msgid "/\\*a comment\\*/"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:14
+#: ../../source/specification/token_types/index.rst:15
 msgid "bracket"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:14
+#: ../../source/specification/token_types/index.rst:15
 msgid "\\\\[\\|\\\\]|\\\\(\\|\\\\)|\\\\{\\|\\\\}\\|(#\\\\()\\|(\\\\$\\\\()\\|(%\\\\()"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:14
+#: ../../source/specification/token_types/index.rst:15
 msgid "{this + first}"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:15
+#: ../../source/specification/token_types/index.rst:16
 msgid "number"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:15
+#: ../../source/specification/token_types/index.rst:16
 msgid ""
 "'^(0x[0-9a-f]+)|(0b[01]+)|(0[0-7]+)|([0-9]+(\\.[0-9]+)?(e[\\+\\-]?[0-9]+)?)$'"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:15
+#: ../../source/specification/token_types/index.rst:16
 msgid "23.45e56"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:16
+#: ../../source/specification/token_types/index.rst:17
 msgid "declaration"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:16
+#: ../../source/specification/token_types/index.rst:17
 msgid "\\\\$[A-Za-z\\_]+[A-Za-z_0-9]*"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:16
+#: ../../source/specification/token_types/index.rst:17
 msgid "$aVariable"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:17
+#: ../../source/specification/token_types/index.rst:18
 msgid "class field"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:17
+#: ../../source/specification/token_types/index.rst:18
 msgid "[A-Za-z\\_]+[A-Za-z_0-9]*::[A-Za-z\\_]+[A-Za-z_0-9]*"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:17
+#: ../../source/specification/token_types/index.rst:18
 msgid "Person::totalNr"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:18
+#: ../../source/specification/token_types/index.rst:19
 msgid "object field"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:18
+#: ../../source/specification/token_types/index.rst:19
 msgid "@[A-Za-z\\_]+[A-Za-z_0-9]*"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:18
+#: ../../source/specification/token_types/index.rst:19
 msgid "@name"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:19
+#: ../../source/specification/token_types/index.rst:20
 msgid "whitespace"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:19
+#: ../../source/specification/token_types/index.rst:20
 msgid "[ \\\\\\t]+"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:20
+#: ../../source/specification/token_types/index.rst:21
 msgid "operator"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:20
+#: ../../source/specification/token_types/index.rst:21
 msgid "one of defined char sequences"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:20
+#: ../../source/specification/token_types/index.rst:21
 msgid "\\+"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:21
+#: ../../source/specification/token_types/index.rst:22
 msgid "symbol"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:21
+#: ../../source/specification/token_types/index.rst:22
 msgid "[A-Za-z\\_]+[A-Za-z_0-9]*"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:21
+#: ../../source/specification/token_types/index.rst:22
 msgid "aVariable"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:22
+#: ../../source/specification/token_types/index.rst:23
 msgid "string"
 msgstr ""
 
-#: ../../source/specification/token_types/index.rst:22
-msgid "\"('')|('.*?[^\\\\\\\\]')|(\\\"\\\")|(\\\".*?[^\\\\\\\\]\\\")"
-msgstr ""
-
-#: ../../source/specification/token_types/index.rst:22
+#: ../../source/specification/token_types/index.rst:23
 msgid "'a text'"
 msgstr ""
 
@@ -1053,3 +1049,22 @@ msgid ""
 "Each compiler (and even interpreter) of Plezuro must provide the following "
 "magic constants:"
 msgstr ""
+
+#: ../../source/specification/token_types/index.rst:14
+msgid "regex"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:14
+msgid "r(('([^']|(''))*')|(\\\"([^\\\"]|(\\\"\\\"))*\\\"))"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:14
+msgid "r'[a-k]'"
+msgstr ""
+
+#: ../../source/specification/token_types/index.rst:23
+msgid "('')|('.*?([^\\\\\\\\]|(\\\\\\\\\\\\\\\\))')|(\\\"\\\")|(\\\".*?([^\\\\\\\\]|(\\\\\\\\\\\\\\\\))\\\")"
+msgstr ""
+
+#~ msgid "\"('')|('.*?[^\\\\\\\\]')|(\\\"\\\")|(\\\".*?[^\\\\\\\\]\\\")"
+#~ msgstr ""

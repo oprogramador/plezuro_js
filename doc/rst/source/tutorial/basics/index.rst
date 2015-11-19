@@ -18,5 +18,6 @@ Basics
   loops/index
   import/index
   random/index
+  regex/index
   magic_constants/index
   exceptions/index

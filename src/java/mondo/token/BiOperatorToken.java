@@ -124,6 +124,7 @@ public class BiOperatorToken extends OperatorToken {
         add("|");
         add("&");
         add("=~");
+        add("!~");
         add("+");
         add("-");
         add("%");

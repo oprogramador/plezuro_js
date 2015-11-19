@@ -52,6 +52,10 @@ String.prototype["=~"] = function(x) {
     return x.test(this);
 }
 
+String.prototype["!~"] = function(x) {
+    return !x.test(this);
+}
+
 String.prototype.len = function(x) {
     return this.length;
 }

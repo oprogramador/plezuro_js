@@ -1854,6 +1854,64 @@ msgid ""
 "composed from letters, digits and underscores."
 msgstr ""
 
+#: ../../source/tutorial/basics/regex/index.rst:2
+msgid "Regex"
+msgstr ""
+
+#: ../../source/tutorial/basics/regex/index.rst:4
+msgid ""
+"Beside of imperative programming (as it is in Plezuro), there exist also "
+"other programming paradigms. It means you can do the same staff in totally "
+"different ways. It can sound a little bit complicated but it often makes "
+"hard problems easy."
+msgstr ""
+
+#: ../../source/tutorial/basics/regex/index.rst:8
+msgid ""
+"One of these paradigms is the regex (regular expression). It looks like a "
+"normal text but there are included some special characters which can mean "
+"one of multiple characters, a repetition of a string and so on. It is really"
+" useful for web forms validation (ex. postcode, name, date)."
+msgstr ""
+
+#: ../../source/tutorial/basics/regex/index.rst:12
+msgid ""
+"Dependently on the engine, regular expressions behave in different ways. "
+"Currently Plezuro uses predefined regex engines so in the version compiled "
+"to Javascript the rules are the same as in Javascript. You can learn it from"
+" http://www.w3schools.com/jsref/jsref_obj_regexp.asp ."
+msgstr ""
+
+#: ../../source/tutorial/basics/regex/index.rst:20
+msgid ""
+"For testing a regex (checking if a string matches to a specific regex), use "
+"the ``=~`` operator. (The order does not matter, either string - operator - "
+"regex or regex - operator - string.) There exists also an operator which "
+"negates it ``!~``."
+msgstr ""
+
+#: ../../source/tutorial/basics/regex/index.rst:16
+msgid ""
+"The syntax is the following: ``r`` and the text in single or double quotes. "
+"For a single quote inside the single quotes, write it twice and the same in "
+"the case of a double quote inside double quotes (ex. ``r\"ab\"\"cd\"``, "
+"``r'ef''gh'``)."
+msgstr ""
+
+#~ msgid ""
+#~ "The syntax is the following: ``r`` and the text in single or double quotes. "
+#~ "For a single quote inside the single quotes, write it twice and the same in "
+#~ "case of a double quote inside double quotes (ex. ``r\"ab\"\"cd\"``, "
+#~ "``r'ef''gh'``)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For testing a regex (checking if a string matches to a specific regex), use "
+#~ "the ``=~`` operator. (The order does not matter, either string - operator - "
+#~ "regex or regex - operator - string). There exists also an operator which "
+#~ "negates it ``!~``."
+#~ msgstr ""
+
 #~ msgid ""
 #~ "To generate a random string, use `String.rand`. The first parameter "
 #~ "specifies the length of the result, its default value is 32. The result is "

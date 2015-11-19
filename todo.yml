@@ -124,6 +124,7 @@ todo:
     lodash_using: no
     loop:
         iterate_with_key: no
+        double_iteration: no
     magic_constants: yes
     metaprogramming: no
     method:
@@ -191,4 +192,4 @@ todo:
         hex: yes
         oct: yes
         scientific_notation: yes
-      regex: no
+      regex: yes

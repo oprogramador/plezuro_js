@@ -1,0 +1,26 @@
+$x = r'[a-z]';
+$b = x =~ 'abc';
+$b1 = 'dfg' =~ x;
+$b2 = 'dfg' !~ x;
+$b3 = x !~ 'xxx';
+$res = [x, b, b1, b2, b3];
+res << 'gh-kk' =~ r'[a-z]'                // true
+    << 'gh-kk' =~ r'^[a-z]$'              // false
+    << 'gh-kk' =~ r'^[a-z]+-[a-z]+$'      // true
+    << 'gh-kk' =~ r'^[a-z]{2}-[a-z]{2}$'  // true
+    << 'gh-kko' =~ r'^[a-z]{2}-[a-z]{2}$' // false
+    << '\\' =~ r'^\\$'                    // true
+    << '\\' =~ r'\\'                      // true
+    << '\\' =~ r"\\"                      // true
+    << '0+9' =~ r"^[0-9]\+[0-9]$"         // true
+    << '0+97' =~ r"^[0-9]\+[0-9]$"        // false
+    << 'a"k' =~ r"^a""k"                  // true
+    << 'ak' =~ r"^a""k"                   // false
+    << 'a"k' =~ r'^a""k'                  // true
+    << 'a"k' =~ r'^a"k'                   // true
+    << "a'k" =~ r'^a''k'                  // true
+    << "ak" =~ r'^a''k'                   // false
+    << "a'k" =~ r"^a''k"                  // true
+    << "a'k" =~ r"^a'k"                   // true
+;
+res

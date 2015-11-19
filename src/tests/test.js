@@ -229,5 +229,9 @@ assert.strictEqual(a[0].length, 32);
 assert.strictEqual(a[1].length, 10);
 assert.strictEqual(a[2].length, 56);
 
+a = '../../bin/js/tests/44.plez.js'.import();
+assert.strictEqual(a[0].toString(), '/[a-z]/');
+assert.strictEqual(JSON.stringify(a), '[{},true,true,false,true,false,true,false,true,true,false,true,true,true,true,false,true,false,true,true,true,false,true,true]');
+
 a = '../../bin/js/tests/45.plez.js'.import();
 assert.strictEqual(JSON.stringify(a), '["\\\\","a\\\\","\\\\b","c\\\\d","e\\t","e\'fg","\\\\","\\t","o\\\\","\\\\r","s\\"s"]');
