@@ -185,6 +185,7 @@ todo:
         iron_plezuro_scripts: no
         performance: no
         remote: no
+        web: no
     todo_import:
       iron_plezuro: no
     types:

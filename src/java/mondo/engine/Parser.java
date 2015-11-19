@@ -35,6 +35,8 @@ import java.nio.charset.Charset;
 
 import mondo.invalidToken.InvalidTokenException;
 import mondo.token.Token;
+import mondo.token.NumberToken;
+import mondo.token.IOpen;
 
 public class Parser {
     private List<String> lines;
@@ -91,6 +93,14 @@ public class Parser {
         this(filename, null);
     }
 
+    private void eventuallyAddHelpTokens(Tokenizer tokenizer) {
+        for(Token token = tokenizer.hardReset(); token != null; token = tokenizer.hardNext()) {
+            if(!token.getOriginalText().equals("-")) continue;
+            Token previous = tokenizer.getPreviousNotBlank();
+            if(previous == null || previous instanceof IOpen || previous.isDelimiter()) tokenizer.insertAfter(new NumberToken().setText("0"));
+        }
+    }
+
     public Parser(String filename, String outFilename) throws IOException {
         this.filename = filename;
         this.outFilename = outFilename;
@@ -99,6 +109,7 @@ public class Parser {
             tokenizer = new Tokenizer(new File(filename), lines);
             eventuallyChangeTokenType(tokenizer);
             new Validator(tokenizer);
+            eventuallyAddHelpTokens(tokenizer);
             convert();
             writeToFile();
         } catch(InvalidTokenException e) {

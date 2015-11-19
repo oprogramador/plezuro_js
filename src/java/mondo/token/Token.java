@@ -40,6 +40,10 @@ public abstract class Token implements Cloneable {
         throw new UnsupportedOperationException();
     }
 
+    public boolean isDelimiter() {
+        return false;
+    }
+
     protected String getRegex() {
         throw new UnsupportedOperationException();
     }
@@ -135,7 +139,12 @@ public abstract class Token implements Cloneable {
         return Pattern.compile(getRegex());
     }
 
-    public Token find(List<String> lines, int lineNr, int index) {
+    protected boolean isPossibleAfterPrevious(Token previousToken) {
+        return true;
+    }
+
+    public Token find(Token previousToken, List<String> lines, int lineNr, int index) {
+        if(!isPossibleAfterPrevious(previousToken)) return null;
         try {
             return findFromRegex(lines, lineNr, index);
         } catch(UnsupportedOperationException e) {

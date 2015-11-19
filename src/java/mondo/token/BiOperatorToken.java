@@ -44,6 +44,15 @@ public class BiOperatorToken extends OperatorToken {
         return tokensAllowedAtBegin.contains(originalText);
     }
 
+    public boolean isDelimiter() {
+        return delimiterTokens.contains(getOriginalText());
+    }
+
+    private static Set<String> delimiterTokens = new HashSet<String>() {{
+        add(";");
+        add(",");
+    }};
+
     private static Set<String> tokensAllowedAtBegin = new HashSet<String>() {{
         add("+");
         add("-");	

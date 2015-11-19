@@ -130,7 +130,7 @@ public class Tokenizer extends AbstractTokenizer {
             while(index < lines.get(i).length()) {
                 int oldIndex = index;
                 for(Token tokenType: tokenTypes) {
-                    Token token = tokenType.setFile(file).find(lines, i, index);
+                    Token token = tokenType.setFile(file).find(tokens.size() > 0 ? tokens.get(tokens.size() - 1) : null, lines, i, index);
                     if(token != null) {
                         index = token.getEndX() + 1;
                         i = token.getEndLineNr();
