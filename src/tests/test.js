@@ -266,6 +266,9 @@ try {
 
     a = '../../bin/js/tests/49.plez.js'.import();
     assert.strictEqual(JSON.stringify(a), '[-22,-1,2,-40]');
+
+    a = '../../bin/js/tests/50.plez.js'.import();
+    assert.strictEqual(JSON.stringify(a), '[91,34,11,3,5,20,100,6]');
 } catch(e) {
     if(e.constructor.name === 'AssertionError') throw e;
     console.log(e.constructor.name);

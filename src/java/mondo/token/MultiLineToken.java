@@ -51,19 +51,24 @@ public abstract class MultiLineToken extends Token {
         boolean result = matcher.find(index);
         if(result && matcher.start() == index) {
             String tokenText = lines.get(lineNr).substring(matcher.start(), matcher.end());
-            for(lineNr++; lineNr < lines.size(); lineNr++) {
+            matcher = getEndPattern().matcher(tokenText);
+            result = matcher.find(0);
+            if(result) {
+                tokenText = tokenText.substring(matcher.start(), matcher.end());
+            }
+            else for(lineNr++; lineNr < lines.size(); lineNr++) {
                 matcher = getEndPattern().matcher(lines.get(lineNr));
-                result = matcher.find(index);
+                result = matcher.find(lineNr == begLineNr ? index : 0);
                 if(result) {
-                    tokenText += "\n"+lines.get(lineNr).substring(matcher.start(), matcher.end());
+                    tokenText += "\t"+lines.get(lineNr).substring(matcher.start(), matcher.end());
                     break;
                 } else {
-                    tokenText += "\n"+lines.get(lineNr);
+                    tokenText += "\t"+lines.get(lineNr);
                 }
             }
             Token token = ((MultiLineToken)((Token)clone())
-                    .setBegX(matcher.start())
-                    .setEndX(matcher.end() - 1)
+                    .setBegX(index)
+                    .setEndX(begLineNr == lineNr ? index + matcher.end() - matcher.start() - 1 : matcher.end() - 1)
                     .setOriginalText(tokenText)
                     .setText(tokenText)
                     .setLineNr(begLineNr))

@@ -4,9 +4,8 @@ todo:
         node: no
         web: no
     bugs:
-        assign_negative: no
-        at_the_end_of_script_multiline_comment_and_value: no
-        minus_after_bracket_opening: no
+        at_the_end_of_script_multiline_comment_and_value: yes
+        minus_after_bracket_opening: yes
         prepend_return: no
         return_value: yes
         'method called rand, this, first...': yes
@@ -43,6 +42,7 @@ todo:
         else: yes
         if: yes
         boolean_as_arg_not_function: no
+    declaration_checking: no
     doc:
         edit_on_github: no
         ortographic_check: no

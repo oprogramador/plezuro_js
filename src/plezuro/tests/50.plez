@@ -1,0 +1,41 @@
+$f = {
+    /*
+  wwwwwyyy
+blabla
+aabb*/ 1 +  90
+};
+$g = {
+  /*abcd*/34
+};
+$h = {
+  2+/*oo*/9
+};
+$i = {
+  /**/3
+};
+$j = {
+  2 + 
+  //
+  3
+};
+$k = {
+  $x = 20;
+  /*
+  abc
+  def
+  ghi
+  */
+  x
+};
+$l = {
+  /*aa oo
+  pp*/k()*j()
+};
+$m = {
+  /*
+   * a function
+   * that
+   * returns something
+   */this*3
+};
+[f(), g(), h(), i(), j(), k(), l(), m(2)]
