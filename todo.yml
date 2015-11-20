@@ -6,7 +6,7 @@ todo:
     bugs:
         at_the_end_of_script_multiline_comment_and_value: yes
         minus_after_bracket_opening: yes
-        prepend_return: no
+        prepend_return: yes
         return_value: yes
         'method called rand, this, first...': yes
         "infinite loop with: 'gh-kk =~ r'[a-z]'": yes
