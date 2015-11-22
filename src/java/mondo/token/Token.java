@@ -127,6 +127,7 @@ public abstract class Token implements Cloneable {
 
     public Token setOriginalText(String value) {
         originalText = value;
+        text = value;
         return this;
     }
 

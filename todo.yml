@@ -42,6 +42,7 @@ todo:
         else: yes
         if: yes
         boolean_as_arg_not_function: no
+    convert_to_pure_types_recursively: no
     declaration_checking: no
     doc:
         edit_on_github: no
@@ -172,7 +173,8 @@ todo:
         uni:
             left: no
     serialization:
-        json: yes
+        json:
+            own: no
     shell: no
     stdlib:
         randstr: yes

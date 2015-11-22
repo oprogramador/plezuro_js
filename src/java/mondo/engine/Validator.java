@@ -90,7 +90,7 @@ public class Validator {
         for(Token token = tokenizer.hardReset(); token != null; ) {
             Token next = tokenizer.getNextNotBlank();
             if(next == null) return;
-            if(token instanceof BiOperatorToken && next instanceof IClose) {
+            if(token instanceof BiOperatorToken && !token.isDelimiter() && next instanceof IClose) {
                 throw InvalidTokenException.create(OperatorBeforeBracketCloseException.class, next.getFullFilename(), next.getLineNr(), next.getBegX());
             }
             token = next;

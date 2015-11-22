@@ -269,6 +269,16 @@ try {
 
     a = '../../bin/js/tests/50.plez.js'.import();
     assert.strictEqual(JSON.stringify(a), '[91,34,11,3,5,20,100,6]');
+
+    a = '../../bin/js/tests/51.plez.js'.import();
+    assert.strictEqual(JSON.stringify(a), '[4,"oioioioioioioioioi",[2,9,31],{}]');
+    assert.strictEqual(a[3].constructor.name, 'Null');
+
+    a = '../../bin/js/tests/52.plez.js'.import();
+    assert.strictEqual(a.constructor.name, 'Null');
+
+    a = '../../bin/js/tests/53.plez.js'.import();
+    assert.strictEqual(a.constructor.name, 'Null');
 } catch(e) {
     if(e.constructor.name === 'AssertionError') throw e;
     console.log(e.constructor.name);
