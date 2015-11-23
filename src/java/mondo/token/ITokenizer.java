@@ -39,4 +39,5 @@ public interface ITokenizer {
     Token getMatchingCloseBracket();
     Token getNextAtSameBracketLevel();
     void replaceToken(Token token);
+    List<Token> getLastGroup();
 }

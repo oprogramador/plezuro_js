@@ -182,6 +182,10 @@ todo:
             interpolation: no
         function:
             time_counter: no
+        object:
+            clonse: no
+        list:
+            sort: no
     tests:
         independent_from_user_path: yes
         iron_plezuro_scripts: no

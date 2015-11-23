@@ -61,7 +61,7 @@ public class SymbolToken extends Token {
     private boolean insertBracketAfterEventually(ITokenizer tokenizer) {
         tokenizer.resetToThis();
         Token previous = tokenizer.getPreviousNotBlank();
-        if(previous == null || previous.getText() != OperatorToken.getOperatorDot().getText()) return false;
+        if(previous == null || !previous.getText().equals(OperatorToken.getOperatorDot().getText())) return false;
 
         tokenizer.resetToThis();
         Token next = tokenizer.getNextNotBlank();

@@ -74,6 +74,12 @@ public class Parser {
         }
     }
 
+    private void preConvert() {
+        for(Token token = tokenizer.hardReset(); token != null; token = tokenizer.hardNext()) {
+            token.preConvert(tokenizer);
+        }
+    }
+
     private void convert() {
         for(Token token = tokenizer.hardReset(); token != null; token = tokenizer.hardNext()) {
             token.convert(tokenizer);
@@ -102,6 +108,7 @@ public class Parser {
             eventuallyChangeTokenType(tokenizer);
             new Validator(tokenizer);
             new Helper(tokenizer);
+            preConvert();
             convert();
             writeToFile();
         } catch(InvalidTokenException e) {

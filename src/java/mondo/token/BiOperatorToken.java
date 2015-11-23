@@ -58,6 +58,18 @@ public class BiOperatorToken extends OperatorToken {
         add("-");	
     }};
 
+    private static Set<String> compositeOperators = new HashSet<String>() {{
+        add("+=");
+        add("-=");
+        add("*=");
+        add("/=");
+        add("^=");
+        add("&=");
+        add("|=");
+        add("%=");
+        add(".=");
+    }};
+
     private static Set<String> arithmeticTokens = new HashSet<String>() {{
         add("+");
         add("-");	
@@ -142,6 +154,21 @@ public class BiOperatorToken extends OperatorToken {
         add("^");
         add("..");
     }};
+
+    void replaceComposeOperator(ITokenizer tokenizer) {
+        String operator = tokenizer.getCurrent().getOriginalText();
+        operator = operator.substring(0, operator.length() - 1);
+        tokenizer.getCurrent().setText("=");
+        tokenizer.getPreviousNotBlank();
+        List<Token> group = tokenizer.getLastGroup();
+        tokenizer.resetToThis();
+        for(Token token: group) tokenizer.insertAfter(token);
+        tokenizer.insertAfter(new BiOperatorToken().setOriginalText(operator));
+    }
+
+    public void preConvert(ITokenizer tokenizer) {
+        if(compositeOperators.contains(tokenizer.getCurrent().getOriginalText())) replaceComposeOperator(tokenizer);
+    }
 
     protected void matchOperatorMethod(ITokenizer tokenizer) {
         if(!operatorsToOverload.contains(tokenizer.getCurrent().getOriginalText())) return;

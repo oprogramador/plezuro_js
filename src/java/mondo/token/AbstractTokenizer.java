@@ -22,8 +22,10 @@
 package mondo.token;
 
 import java.util.List;
+import java.util.ArrayList;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Collections;
 
 public abstract class AbstractTokenizer implements ITokenizer {
     protected boolean finished;
@@ -100,5 +102,21 @@ public abstract class AbstractTokenizer implements ITokenizer {
             if(counter == 0) return token;
         }
         return null;
+    }
+
+    public List<Token> getLastGroup() {
+        int counter = 0;
+        List<Token> result = new ArrayList<Token>();
+        for(Token token = getCurrent(); token != null; token = getPreviousNotBlank()) {
+            result.add((Token)token.clone());
+            if(token instanceof IClose) counter++;
+            else if(token instanceof IOpen) counter--;
+            if(counter == 0) break;
+        }
+        Token previous = getPreviousNotBlank();
+        if(previous instanceof SymbolToken) result.add((Token)previous.clone());
+        Collections.reverse(result);
+
+        return result;
     }
 }

@@ -279,6 +279,9 @@ try {
 
     a = '../../bin/js/tests/53.plez.js'.import();
     assert.strictEqual(a.constructor.name, 'Null');
+
+    a = '../../bin/js/tests/54.plez.js'.import();
+    assert.strictEqual(JSON.stringify(a), '[[12,90,93,24],[-3,2,22,31,999]]');
 } catch(e) {
     if(e.constructor.name === 'AssertionError') throw e;
     console.log(e.constructor.name);

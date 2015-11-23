@@ -52,6 +52,9 @@ public abstract class Token implements Cloneable {
         throw new UnsupportedOperationException();
     }
 
+    public void preConvert(ITokenizer tokenizer) {
+    }
+
     public final void convert(ITokenizer tokenizer) {
         if(tokenizer.isFinished()) return;
         if(getOriginalText() != null && getText().equals(getOriginalText())) doConvert(tokenizer);
