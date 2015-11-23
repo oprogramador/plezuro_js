@@ -32,6 +32,18 @@ import java.util.TreeMap;
 import java.util.function.Function;
 
 public class BiOperatorToken extends OperatorToken {
+    private int order = -1;
+
+    public BiOperatorToken setOrder(int value) {
+        order = value;
+        return this;
+    }
+
+    public int getOrder() {
+        if(order != -1) return order;
+        return operatorOrder.get(getOriginalText());
+    }
+
     protected List<String> getOnlyPossibleTokens() {
         return possibleTokens;
     }
@@ -79,6 +91,10 @@ public class BiOperatorToken extends OperatorToken {
         add("^");
         add(".");
     }};
+
+    private static int getOrderMaxNumber() {
+        return possibleTokens.size() * 2;
+    }
 
     private static List<String> possibleTokens = new ArrayList<String>() {{
         add(";");
@@ -163,7 +179,7 @@ public class BiOperatorToken extends OperatorToken {
         List<Token> group = tokenizer.getLastGroup();
         tokenizer.resetToThis();
         for(Token token: group) tokenizer.insertAfter(token);
-        tokenizer.insertAfter(new BiOperatorToken().setOriginalText(operator));
+        tokenizer.insertAfter(((BiOperatorToken)new BiOperatorToken().setOriginalText(operator)).setOrder(getOrder()));
     }
 
     public void preConvert(ITokenizer tokenizer) {
@@ -173,11 +189,11 @@ public class BiOperatorToken extends OperatorToken {
     protected void matchOperatorMethod(ITokenizer tokenizer) {
         if(!operatorsToOverload.contains(tokenizer.getCurrent().getOriginalText())) return;
 
-        Integer myOrder = operatorOrder.get(tokenizer.getCurrent().getOriginalText());
+        Integer myOrder = ((BiOperatorToken)tokenizer.getCurrent()).getOrder();
         tokenizer.getCurrent().setText("['"+tokenizer.getCurrent().getOriginalText()+"'](");
         for(Token token = tokenizer.getNextAtSameBracketLevel(); token != null; token = tokenizer.getNextAtSameBracketLevel()) {
             try {
-                if(token instanceof IClose || (token instanceof BiOperatorToken && operatorOrder.get(token.getOriginalText()) <= myOrder)) {
+                if(token instanceof IClose || (token instanceof BiOperatorToken && ((BiOperatorToken)token).getOrder() <= myOrder)) {
                     tokenizer.insertBefore(BracketToken.getOperatorBracketClose());
                     return;
                 }
