@@ -1897,6 +1897,13 @@ msgid ""
 "is no ``return`` keyword."
 msgstr ""
 
+#: ../../source/tutorial/basics/loops/index.rst:20
+msgid ""
+"Next one is 'each'. It is used to iterate a list. In the inner function the "
+"zero argument is the index of the current element and the first one is the "
+"element."
+msgstr ""
+
 #~ msgid "The function returns the value of the last statement (like in Ruby)."
 #~ msgstr ""
 

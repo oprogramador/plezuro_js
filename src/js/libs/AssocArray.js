@@ -1,6 +1,6 @@
-function AssocArray(args) {
-    for(var i = 0; i < args.length - 1; i += 2) {
-        this[args[i]] = args[i+1];
+function AssocArray() {
+    for(var i = 0; i < arguments.length; i ++) {
+        this[arguments[i].key] = arguments[i].value;
     }
 }
 

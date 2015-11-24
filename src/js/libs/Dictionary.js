@@ -1,7 +1,7 @@
-function Dictionary(args) {
+function Dictionary() {
     var list = []; 
-    for(var i = 0; i < args.length - 1; i += 2) {
-        list.push([args[i], args[i+1]]);
+    for(var i = 0; i < arguments.length; i ++) {
+        list.push([arguments[i].key, arguments[i].value]);
     }
     return Map.apply(this, [list]);
 }

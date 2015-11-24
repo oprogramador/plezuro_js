@@ -16,3 +16,8 @@ of the loop depends on the value returned by this function. So it iterates as lo
 function returns true.
 
 .. literalinclude:: ../../../../../../src/plezuro/doc/do.plez
+
+Next one is 'each'. It is used to iterate a list. In the inner function the zero argument
+is the index of the current element and the first one is the element.
+
+.. literalinclude:: ../../../../../../src/plezuro/doc/each.plez

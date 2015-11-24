@@ -148,7 +148,6 @@ public class BiOperatorToken extends OperatorToken {
     }
 
     private static Map<String, Function<String,String>> functionMap = new HashMap<String, Function<String,String>>() {{
-        put(":", (String x) -> ",");
     }};
 
     protected Map<String, Function<String,String>> getFunctionMap() {
@@ -169,6 +168,8 @@ public class BiOperatorToken extends OperatorToken {
         add("/");
         add("^");
         add("..");
+        add(":");	
+        add("?");	
     }};
 
     void replaceComposeOperator(ITokenizer tokenizer) {

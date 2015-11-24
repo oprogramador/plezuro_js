@@ -5,7 +5,7 @@ Array.prototype.len = function(x) {
 Array.prototype.each = function(f) {
     var res;
     for(var i = 0; i < this.length; i++) {
-        res = f(this[i]);
+        res = f.call(i, this[i]);
     }
     return res;
 }

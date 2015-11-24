@@ -77,15 +77,11 @@ public class BracketToken extends Token {
     }
 
     private static String matchDictionary(ITokenizer tokenizer) {
-        tokenizer.getMatchingCloseBracket();
-        tokenizer.insertBefore(new BracketToken().setText("]"));
-        return "new Dictionary([";
+        return "new Dictionary(";
     }
 
     private static String matchAssociativeArray(ITokenizer tokenizer) {
-        tokenizer.getMatchingCloseBracket();
-        tokenizer.insertBefore(new BracketToken().setText("]"));
-        return "new AssocArray([";
+        return "new AssocArray(";
     }
 
     private static String matchFunctionBegin(ITokenizer tokenizer) {

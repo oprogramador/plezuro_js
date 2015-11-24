@@ -56,6 +56,10 @@ Object.prototype.remove = function(x) {
     delete this[x];
 }
 
+Object.prototype[':'] = function(x) {
+    return new Pair(this, x);
+}
+
 Object.isNull = function(x) {
     return x === null;
 }

@@ -10,7 +10,7 @@ $Animal = Module.create(%(
         '~': {
             @age++
         },
-        '+', {
+        '+': {
             @age += first
         }
     )

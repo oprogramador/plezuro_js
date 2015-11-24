@@ -121,10 +121,13 @@ todo:
         relative_path: no
         script_args: yes
         static: no
+    lock_with_key: no
     lodash_using: no
     loop:
         iterate_with_key: no
         double_iteration: no
+        each: no
+        times: no
     magic_constants: yes
     metaprogramming: no
     method:
@@ -133,7 +136,10 @@ todo:
         class:
             access_modifier: no
             constructor: yes
-            getter_setter: no
+            getter_setter:
+                getter: no
+                setter: no
+                constraints: no
             inheritance:
               basic_object: yes
               dynamic: no
