@@ -16,6 +16,7 @@ Basics
   operators/index
   conditions/index
   loops/index
+  range/index
   import/index
   random/index
   regex/index

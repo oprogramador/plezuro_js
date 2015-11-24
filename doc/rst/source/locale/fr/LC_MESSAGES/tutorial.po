@@ -194,22 +194,6 @@ msgid ""
 "type."
 msgstr ""
 
-#: ../../source/tutorial/basics/loops/index.rst:6
-msgid ""
-"One of the loops provided in Plezuro is 'while'. At the beginning you write "
-"a function which returned value determines if the function being the first "
-"argument of the 'while' method is executed. After the first iteration the "
-"conditional function is executed again. Execution of the first argument "
-"function depends on the value from conditional function and so on."
-msgstr ""
-
-#: ../../source/tutorial/basics/loops/index.rst:14
-msgid ""
-"Another maybe simpler loop is 'do'. You write the conditional function. The "
-"execution of the loop depends on the value returned by this function. So it "
-"iterates as long as the function returns true."
-msgstr ""
-
 #: ../../source/tutorial/basics/magic_constants/index.rst:13
 msgid "__line__ - the line number in a source file (counting from 0)"
 msgstr ""
@@ -227,17 +211,17 @@ msgstr ""
 msgid "Operators"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:41
+#: ../../source/tutorial/basics/operators/index.rst:55
 msgid "Complete list of the operators:"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:43
+#: ../../source/tutorial/basics/operators/index.rst:57
 msgid ""
 "single-argument operators (the operator at the left, the argument at the "
 "right)"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:52
+#: ../../source/tutorial/basics/operators/index.rst:66
 msgid "single-argument operators (the operator at the right)"
 msgstr ""
 
@@ -428,43 +412,11 @@ msgid "Number"
 msgstr ""
 
 #: ../../source/tutorial/basics/operators/index.rst:26
-#: ../../source/tutorial/basics/operators/index.rst:32
-#: ../../source/tutorial/basics/operators/index.rst:34
-msgid "\\+"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:26
 msgid "addition"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:26
-msgid "1+4"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:26
-msgid "5"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:27
-msgid "\\-"
 msgstr ""
 
 #: ../../source/tutorial/basics/operators/index.rst:27
 msgid "subtraction"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:27
-msgid "4-7"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:27
-msgid "-3"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:28
-#: ../../source/tutorial/basics/operators/index.rst:33
-#: ../../source/tutorial/basics/operators/index.rst:35
-msgid "\\*"
 msgstr ""
 
 #: ../../source/tutorial/basics/operators/index.rst:28
@@ -473,60 +425,16 @@ msgstr ""
 msgid "multiplication"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:28
-msgid "8.5*2"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:28
-msgid "17"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:29
-msgid "/"
-msgstr ""
-
 #: ../../source/tutorial/basics/operators/index.rst:29
 msgid "division"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:29
-msgid "1/4"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:29
-msgid "0.25"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:30
-msgid "^"
 msgstr ""
 
 #: ../../source/tutorial/basics/operators/index.rst:30
 msgid "power"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:30
-msgid "4^3"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:30
-msgid "64"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:31
-msgid "%"
-msgstr ""
-
 #: ../../source/tutorial/basics/operators/index.rst:31
 msgid "modulo"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:31
-msgid "7%3"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:31
-msgid "1"
 msgstr ""
 
 #: ../../source/tutorial/basics/operators/index.rst:32
@@ -537,38 +445,6 @@ msgstr ""
 #: ../../source/tutorial/basics/operators/index.rst:32
 #: ../../source/tutorial/basics/operators/index.rst:34
 msgid "concatenation"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:32
-msgid "'a'+'b'"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:32
-msgid "'ab'"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:33
-msgid "'a'\\*3"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:33
-msgid "'aaa'"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:34
-msgid "[2,3]+[1]"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:34
-msgid "[2,3,1]"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:35
-msgid "[2,3]*2"
-msgstr ""
-
-#: ../../source/tutorial/basics/operators/index.rst:35
-msgid "[2,3,2,3]"
 msgstr ""
 
 #: ../../source/tutorial/browser_programming/how_to/index.rst:4
@@ -1268,7 +1144,7 @@ msgid ""
 " result than 4 so it is not recommended to change it in abundance)."
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:57
+#: ../../source/tutorial/basics/operators/index.rst:71
 msgid ""
 "double-argument operators (the zero argument, the operator, the first "
 "argument; from the evaluated at the end to the evaluated at the begin)"
@@ -1408,196 +1284,214 @@ msgid ""
 " put the semicolon. In such a case it would be a syntax error."
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:45
+#: ../../source/tutorial/basics/operators/index.rst:59
 msgid "``!``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:46
+#: ../../source/tutorial/basics/operators/index.rst:60
 msgid "``&&``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:47
+#: ../../source/tutorial/basics/operators/index.rst:61
 msgid "``**``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:48
+#: ../../source/tutorial/basics/operators/index.rst:62
 msgid "``#``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:49
+#: ../../source/tutorial/basics/operators/index.rst:63
 msgid "``~``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:50
+#: ../../source/tutorial/basics/operators/index.rst:64
 msgid "``=>``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:54
+#: ../../source/tutorial/basics/operators/index.rst:68
 msgid "``++``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:55
+#: ../../source/tutorial/basics/operators/index.rst:69
 msgid "``--``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:60
+#: ../../source/tutorial/basics/operators/index.rst:74
 msgid "``;``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:61
+#: ../../source/tutorial/basics/operators/index.rst:75
 msgid "``,``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:62
+#: ../../source/tutorial/basics/operators/index.rst:76
 msgid "``:=``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:63
-#: ../../source/tutorial/basics/operators/index.rst:67
+#: ../../source/tutorial/basics/operators/index.rst:77
+#: ../../source/tutorial/basics/operators/index.rst:81
 msgid "``=``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:64
+#: ../../source/tutorial/basics/operators/index.rst:45
+#: ../../source/tutorial/basics/operators/index.rst:78
 msgid "``+=``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:65
+#: ../../source/tutorial/basics/operators/index.rst:46
+#: ../../source/tutorial/basics/operators/index.rst:79
 msgid "``-=``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:66
+#: ../../source/tutorial/basics/operators/index.rst:47
+#: ../../source/tutorial/basics/operators/index.rst:80
 msgid "``*=``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:68
+#: ../../source/tutorial/basics/operators/index.rst:49
+#: ../../source/tutorial/basics/operators/index.rst:82
 msgid "``^=``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:69
+#: ../../source/tutorial/basics/operators/index.rst:50
+#: ../../source/tutorial/basics/operators/index.rst:83
 msgid "``&=``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:70
+#: ../../source/tutorial/basics/operators/index.rst:51
+#: ../../source/tutorial/basics/operators/index.rst:84
 msgid "``|=``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:71
+#: ../../source/tutorial/basics/operators/index.rst:52
+#: ../../source/tutorial/basics/operators/index.rst:85
 msgid "``%=``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:72
+#: ../../source/tutorial/basics/operators/index.rst:53
+#: ../../source/tutorial/basics/operators/index.rst:86
 msgid "``.=``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:73
+#: ../../source/tutorial/basics/operators/index.rst:87
 msgid "``~~``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:74
+#: ../../source/tutorial/basics/operators/index.rst:88
 msgid "``<->``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:75
+#: ../../source/tutorial/basics/operators/index.rst:89
 msgid "``<<``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:76
+#: ../../source/tutorial/basics/operators/index.rst:90
 msgid "``>>``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:77
+#: ../../source/tutorial/basics/operators/index.rst:91
 msgid "``?``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:78
+#: ../../source/tutorial/basics/operators/index.rst:92
 msgid "``|``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:79
+#: ../../source/tutorial/basics/operators/index.rst:93
 msgid "``&``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:80
+#: ../../source/tutorial/basics/operators/index.rst:94
 msgid "``<=>``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:81
+#: ../../source/tutorial/basics/operators/index.rst:95
 msgid "``>=``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:82
+#: ../../source/tutorial/basics/operators/index.rst:96
 msgid "``>``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:83
+#: ../../source/tutorial/basics/operators/index.rst:97
 msgid "``<=``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:84
+#: ../../source/tutorial/basics/operators/index.rst:98
 msgid "``<``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:85
+#: ../../source/tutorial/basics/operators/index.rst:99
 msgid "``!=``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:86
+#: ../../source/tutorial/basics/operators/index.rst:100
 msgid "``==``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:87
+#: ../../source/tutorial/basics/operators/index.rst:101
 msgid "``!==``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:88
+#: ../../source/tutorial/basics/operators/index.rst:102
 msgid "``===``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:89
+#: ../../source/tutorial/basics/operators/index.rst:103
 msgid "``=~``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:90
+#: ../../source/tutorial/basics/operators/index.rst:104
 msgid "``!~``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:91
+#: ../../source/tutorial/basics/operators/index.rst:26
+#: ../../source/tutorial/basics/operators/index.rst:32
+#: ../../source/tutorial/basics/operators/index.rst:34
+#: ../../source/tutorial/basics/operators/index.rst:105
 msgid "``+``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:92
+#: ../../source/tutorial/basics/operators/index.rst:27
+#: ../../source/tutorial/basics/operators/index.rst:106
 msgid "``-``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:93
+#: ../../source/tutorial/basics/operators/index.rst:31
+#: ../../source/tutorial/basics/operators/index.rst:107
 msgid "``%``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:94
+#: ../../source/tutorial/basics/operators/index.rst:28
+#: ../../source/tutorial/basics/operators/index.rst:33
+#: ../../source/tutorial/basics/operators/index.rst:35
+#: ../../source/tutorial/basics/operators/index.rst:108
 msgid "``*``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:95
+#: ../../source/tutorial/basics/operators/index.rst:29
+#: ../../source/tutorial/basics/operators/index.rst:109
 msgid "``/``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:96
+#: ../../source/tutorial/basics/operators/index.rst:30
+#: ../../source/tutorial/basics/operators/index.rst:110
 msgid "``^``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:97
+#: ../../source/tutorial/basics/operators/index.rst:111
 msgid "``^^``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:98
+#: ../../source/tutorial/basics/operators/index.rst:112
 msgid "``.``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:99
+#: ../../source/tutorial/basics/operators/index.rst:113
 msgid "``..``"
 msgstr ""
 
-#: ../../source/tutorial/basics/operators/index.rst:100
+#: ../../source/tutorial/basics/operators/index.rst:114
 msgid "``:``"
 msgstr ""
 
@@ -1897,12 +1791,274 @@ msgid ""
 "is no ``return`` keyword."
 msgstr ""
 
-#: ../../source/tutorial/basics/loops/index.rst:20
-msgid ""
-"Next one is 'each'. It is used to iterate a list. In the inner function the "
-"zero argument is the index of the current element and the first one is the "
-"element."
+#: ../../source/tutorial/basics/operators/index.rst:26
+msgid "``1+4``"
 msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:26
+msgid "``5``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:27
+msgid "``4-7``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:27
+msgid "``-3``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:28
+msgid "``8.5*2``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:28
+msgid "``17``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:29
+msgid "``1/4``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:29
+msgid "``0.25``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:30
+msgid "``4^3``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:30
+msgid "``64``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:31
+msgid "``7%3``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:31
+msgid "``1``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:32
+msgid "``'a'+'b'``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:32
+msgid "``'ab'``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:33
+msgid "``'a'\\*3``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:33
+msgid "``'aaa'``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:34
+msgid "``[2,3]+[1]``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:34
+msgid "``[2,3,1]``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:35
+msgid "``[2,3]*2``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:35
+msgid "``[2,3,2,3]``"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:40
+msgid ""
+"There are also some composite operators which are a syntactic sugar, ex. ``a"
+" += b`` means ``a = a + b``."
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:43
+msgid "Complete list of composite operators:"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:48
+msgid "``/=``"
+msgstr ""
+
+#: ../../source/tutorial/basics/conditions/index.rst:10
+msgid ""
+"There is moreover another possibility. You can use two operators: ``:`` "
+"which create a pair and ``?`` which dependently on a boolean value on the "
+"left side returns the key or the value of a pair on the right side. In other"
+" languages it is one operator ``? :`` but Plezuro does not have operators "
+"divided into two separate tokens."
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:8
+msgid "while"
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:10
+msgid ""
+"At the beginning you write a function which returned value determines if the"
+" function being the first argument of the 'while' method is executed. After "
+"the first iteration the conditional function is executed again. Execution of"
+" the first argument function depends on the value from conditional function "
+"and so on."
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:20
+msgid "do"
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:22
+msgid ""
+"You write the conditional function. The execution of the loop depends on the"
+" value returned by this function. So it iterates as long as the function "
+"returns true."
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:30
+msgid "each"
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:32
+msgid ""
+"It is used to iterate a list. In the inner function the zero argument is the"
+" index of the current element and the first one is the element."
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:39
+msgid "foreach"
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:41
+msgid ""
+"The zero argument is the function and the next ones are lists (number of "
+"arguments is unlimited). In each iteration the arguments of the inner "
+"function are constructed from the index and the elements of these lists at "
+"the position of the index. The iteration lasts until we go to the last "
+"element of the longest list. If one from the lists has finished, we obtain "
+"the ``null`` value at the appropriate place."
+msgstr ""
+
+#: ../../source/tutorial/basics/range/index.rst:2
+msgid "Range"
+msgstr ""
+
+#: ../../source/tutorial/basics/range/index.rst:4
+msgid ""
+"To simple iteration over numbers in an arithmetic sequence, Plezuro provides"
+" a useful tool which is the range. To create a range, you use the ``..`` "
+"operator. So you can write the begin number, ``..`` and the end number or "
+"eventually the begin number, ``..``, the step number, ``..`` and the end "
+"number."
+msgstr ""
+
+#: ../../source/tutorial/basics/range/index.rst:9
+msgid ""
+"It exists ``each`` method which iterates the range. In the inner function "
+"the zero argument is the index (natural number starting from 0) and the "
+"first argument is a number from the range."
+msgstr ""
+
+#~ msgid ""
+#~ "One of the loops provided in Plezuro is 'while'. At the beginning you write "
+#~ "a function which returned value determines if the function being the first "
+#~ "argument of the 'while' method is executed. After the first iteration the "
+#~ "conditional function is executed again. Execution of the first argument "
+#~ "function depends on the value from conditional function and so on."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Another maybe simpler loop is 'do'. You write the conditional function. The "
+#~ "execution of the loop depends on the value returned by this function. So it "
+#~ "iterates as long as the function returns true."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Next one is 'each'. It is used to iterate a list. In the inner function the "
+#~ "zero argument is the index of the current element and the first one is the "
+#~ "element."
+#~ msgstr ""
+
+#~ msgid "\\+"
+#~ msgstr ""
+
+#~ msgid "1+4"
+#~ msgstr ""
+
+#~ msgid "5"
+#~ msgstr ""
+
+#~ msgid "\\-"
+#~ msgstr ""
+
+#~ msgid "4-7"
+#~ msgstr ""
+
+#~ msgid "-3"
+#~ msgstr ""
+
+#~ msgid "\\*"
+#~ msgstr ""
+
+#~ msgid "8.5*2"
+#~ msgstr ""
+
+#~ msgid "17"
+#~ msgstr ""
+
+#~ msgid "/"
+#~ msgstr ""
+
+#~ msgid "1/4"
+#~ msgstr ""
+
+#~ msgid "0.25"
+#~ msgstr ""
+
+#~ msgid "^"
+#~ msgstr ""
+
+#~ msgid "4^3"
+#~ msgstr ""
+
+#~ msgid "64"
+#~ msgstr ""
+
+#~ msgid "%"
+#~ msgstr ""
+
+#~ msgid "7%3"
+#~ msgstr ""
+
+#~ msgid "1"
+#~ msgstr ""
+
+#~ msgid "'a'+'b'"
+#~ msgstr ""
+
+#~ msgid "'ab'"
+#~ msgstr ""
+
+#~ msgid "'a'\\*3"
+#~ msgstr ""
+
+#~ msgid "'aaa'"
+#~ msgstr ""
+
+#~ msgid "[2,3]+[1]"
+#~ msgstr ""
+
+#~ msgid "[2,3,1]"
+#~ msgstr ""
+
+#~ msgid "[2,3]*2"
+#~ msgstr ""
+
+#~ msgid "[2,3,2,3]"
+#~ msgstr ""
 
 #~ msgid "The function returns the value of the last statement (like in Ruby)."
 #~ msgstr ""

@@ -288,6 +288,12 @@ try {
 
     a = '../../bin/js/tests/56.plez.js'.import();
     assert.strictEqual(a, 'ba');
+
+    a = '../../bin/js/tests/57.plez.js'.import();
+    assert.strictEqual(JSON.stringify(a), '[[19,22,5],[[0,2,90,0,{},4],[1,9,11,{},{},2],[2,{},30,{},{},{}]]]');
+
+    a = '../../bin/js/tests/58.plez.js'.import();
+    assert.strictEqual(JSON.stringify(a), '[[[0,1],[1,8],[2,15],[3,22],[4,29]],[[0,1],[1,2],[2,3],[3,4]]]');
 } catch(e) {
     if(e.constructor.name === 'AssertionError') throw e;
     console.log(e.constructor.name);

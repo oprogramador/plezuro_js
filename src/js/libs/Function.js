@@ -2,6 +2,22 @@ function BooleanOper(value) {
     this.value = value;
 }
 
+Function.prototype.forEach = function() {
+    var res;
+    for(var i = 0; ; i++) {
+        var shouldBreak = true;
+        var args = []
+        for(var k = 0; k < arguments.length; k++) {
+            if(i < arguments[k].length) shouldBreak = false;
+            args.push(i < arguments[k].length ? arguments[k][i] : new Null());
+        }
+        if(shouldBreak) break;
+
+        res = this.apply(i, args);
+    }
+    return res;
+}
+
 Function.prototype.if = function(cmd) {
     var result = this() === true;
     if(result) cmd();

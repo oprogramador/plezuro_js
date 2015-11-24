@@ -46,3 +46,7 @@ Number.prototype['%'] = function(x) {
 Number.prototype['^'] = function(x) {
     return Math.pow(this, x);
 }
+
+Number.prototype['..'] = function(x) {
+    return new Range(this, x);
+}

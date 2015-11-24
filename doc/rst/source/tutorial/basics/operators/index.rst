@@ -20,23 +20,37 @@ is not recommended to change it in abundance).
 
 Generally we can specify some main actions of the operators (ex. for numbers and strings).
 
-====================== ========== ================ ========= ==========
-Type of left argument  Operator   Action           Example   Result
-====================== ========== ================ ========= ==========
-Number                 \+         addition         1+4       5
-Number                 \-         subtraction      4-7       -3
-Number                 \*         multiplication   8.5*2     17
-Number                 /          division         1/4       0.25
-Number                 ^          power            4^3       64
-Number                 %          modulo           7%3       1
-String                 \+         concatenation    'a'+'b'   'ab'
-String                 \*         multiplication   'a'\*3    'aaa'
-List                   \+         concatenation    [2,3]+[1] [2,3,1]
-List                   \*         multiplication   [2,3]*2   [2,3,2,3]
-====================== ========== ================ ========= ==========
+====================== ========== ================ =============== ==============
+Type of left argument  Operator   Action           Example         Result
+====================== ========== ================ =============== ==============
+Number                 ``+``      addition         ``1+4``         ``5``
+Number                 ``-``      subtraction      ``4-7``         ``-3``
+Number                 ``*``      multiplication   ``8.5*2``       ``17``
+Number                 ``/``      division         ``1/4``         ``0.25``
+Number                 ``^``      power            ``4^3``         ``64``
+Number                 ``%``      modulo           ``7%3``         ``1``
+String                 ``+``      concatenation    ``'a'+'b'``     ``'ab'``
+String                 ``*``      multiplication   ``'a'\*3``      ``'aaa'``
+List                   ``+``      concatenation    ``[2,3]+[1]``   ``[2,3,1]``
+List                   ``*``      multiplication   ``[2,3]*2``     ``[2,3,2,3]``
+====================== ========== ================ =============== ==============
 
 .. literalinclude:: ../../../../../../src/plezuro/doc/operators.plez
 
+There are also some composite operators which are a syntactic sugar, ex. ``a += b`` means
+``a = a + b``.
+
+Complete list of composite operators:
+
+* ``+=``
+* ``-=``
+* ``*=``
+* ``/=``
+* ``^=``
+* ``&=``
+* ``|=``
+* ``%=``
+* ``.=``
 
 Complete list of the operators:
 
