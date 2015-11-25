@@ -1,0 +1,3 @@
+{
+  this * 2 + first
+}.time(9, 3)

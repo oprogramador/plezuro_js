@@ -1,0 +1,5 @@
+$f = {
+  this * 2 + first
+};
+$res = f.time(9, 3);
+[res.time, res.result]

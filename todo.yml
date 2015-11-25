@@ -189,12 +189,11 @@ todo:
         function:
             time_counter: no
         object:
-            clonse: no
+            clone: no
         list:
             sort: no
     tests:
         independent_from_user_path: yes
-        iron_plezuro_scripts: no
         performance: no
         remote: no
         web: no
@@ -208,3 +207,4 @@ todo:
         oct: yes
         scientific_notation: yes
       regex: yes
+    node_modules_to_plezuro_js: no

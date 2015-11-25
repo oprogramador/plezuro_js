@@ -58,3 +58,12 @@ Function.prototype.try = function(callback) {
         callback.call(e);
     }
 }
+
+Function.prototype.time = function() {
+    var args = arguments.toArray();
+    var that = args.shift();
+    var time = performance.now();
+    var result = this.apply(that, args);
+    time = performance.now() - time;
+    return {result: function(){ return result; }, time: function(){ return time * 0.001; }};
+}

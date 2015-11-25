@@ -1962,6 +1962,25 @@ msgid ""
 "first argument is a number from the range."
 msgstr ""
 
+#: ../../source/tutorial/basics/functions/index.rst:13
+msgid ""
+"To count the execution time of a function, use method 'time'. The arguments "
+"passed to this method are next passed to the function (first argument "
+"becomes zero argument, second argument becomes first and so on)."
+msgstr ""
+
+#: ../../source/tutorial/basics/functions/index.rst:17
+msgid "It returns an object with fields:"
+msgstr ""
+
+#: ../../source/tutorial/basics/functions/index.rst:19
+msgid "``result`` - value returned by the function"
+msgstr ""
+
+#: ../../source/tutorial/basics/functions/index.rst:20
+msgid "``time`` - execution time in seconds"
+msgstr ""
+
 #~ msgid ""
 #~ "One of the loops provided in Plezuro is 'while'. At the beginning you write "
 #~ "a function which returned value determines if the function being the first "

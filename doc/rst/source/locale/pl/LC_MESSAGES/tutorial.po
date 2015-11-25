@@ -2391,12 +2391,37 @@ msgid ""
 "operator. So you can write the begin number, ``..`` and the end number or "
 "eventually the begin number, ``..``, the step number, ``..`` and the end "
 "number."
-msgstr "Do prostej iteracji w ciągu arytmetycznym, Plezuro daje nam użyteczne "
-"narzędzia, którym jest przedział. Aby go stworzyć, należy użyć operatora ``..`` "
+msgstr ""
+"Do prostej iteracji w ciągu arytmetycznym, Plezuro daje nam użyteczne "
+"narzędzia, którym jest przedział. Aby go stworzyć, należy użyć operatora "
+"``..`` "
 
 #: ../../source/tutorial/basics/range/index.rst:9
 msgid ""
 "It exists ``each`` method which iterates the range. In the inner function "
 "the zero argument is the index (natural number starting from 0) and the "
 "first argument is a number from the range."
-msgstr ""
+msgstr "Istnieje metoda ``each``, która iteruje przedział. W wewnętrznej funkcji "
+"zerowy argument to indeks (liczba naturalna licząc od 0) a pierwszy argument "
+" to obecna liczba z tego przedziału."
+
+#: ../../source/tutorial/basics/functions/index.rst:13
+msgid ""
+"To count the execution time of a function, use method 'time'. The arguments "
+"passed to this method are next passed to the function (first argument "
+"becomes zero argument, second argument becomes first and so on)."
+msgstr "Aby zliczyć czas wykonywania funkcji, użyj metody 'time'. Argumenty "
+"przekazane to tej oto metody są następnie przekazywane do funkcji (pierwszy "
+"argument staje się zerowym, drugi pierwszym itd.)."
+
+#: ../../source/tutorial/basics/functions/index.rst:17
+msgid "It returns an object with fields:"
+msgstr "Zwraca to obiekt z metodami: "
+
+#: ../../source/tutorial/basics/functions/index.rst:19
+msgid "``result`` - value returned by the function"
+msgstr "``result`` - wartość zwrócona przez funkcję"
+
+#: ../../source/tutorial/basics/functions/index.rst:20
+msgid "``time`` - execution time in seconds"
+msgstr "``time`` - czas wykonywania w sekundach"
