@@ -3,14 +3,7 @@ todo:
         cordova: no
         node: no
         web: no
-    bugs:
-        at_the_end_of_script_multiline_comment_and_value: yes
-        minus_after_bracket_opening: yes
-        prepend_return: yes
-        return_value: yes
-        'method called rand, this, first...': yes
-        "infinite loop with: 'gh-kk =~ r'[a-z]'": yes
-        backslash_at_end_of_string: yes
+    bugs_fixes: yes
     collections:
         associative_array: yes
         dictionary: yes
@@ -41,71 +34,26 @@ todo:
         elif: yes
         else: yes
         if: yes
-        boolean_as_arg_not_function: no
     convert_to_pure_types_recursively: no
     declaration_checking: no
     doc:
         edit_on_github: no
         ortographic_check: no
         parts:
-            contributing_to_doc: no
             dev_specification: yes
             specification: yes
             std_lib: no
             tutorial:
                 installation: yes
                 rules: yes
-                regex: no
         unicode: yes
         webpage:
             docs: yes
             jar: yes
     easy_multiple_callback: no
-    error_checking:
-        after_bracket_close_only_operator_or_bracket_close:
-            done: yes
-            examples:
-                fail:
-                    - ')2'
-                    - ']"w"'
-        after_bracket_open_no_operator_excluding_begin_operators:
-            done: yes
-            examples:
-                correct:
-                    - '(-'
-                    - '{+'
-                fail:
-                    - '(/'
-                    - '[*'
-        before_bracket_close_no_operator:
-            done: yes
-            examples:
-                fail:
-                    - '+)'
-        open_and_close_brackets_stack:
-            done: yes
-            examples:
-                fail:
-                    - '(['
-                    - '())'
-        operator_after_operator:
-            done: yes
-            examples:
-                correct:
-                    - '=-'
-                    - ';+'
-                    - '>-'
-                fail:
-                    - '+-'
-        value_after_value:
-            done: yes
-            examples:
-                fail:
-                    - '2 1'
-                    - '21"op"'
+    syntax_error_checking: yes
     exception:
         custom: yes
-    file_io: no
     function:
       args:
         static_typing: no
@@ -136,6 +84,7 @@ todo:
         class:
             access_modifier: no
             constructor: yes
+            easy_notation_in_one_file: no
             getter_setter:
                 getter: no
                 setter: no
@@ -187,7 +136,7 @@ todo:
         string:
             interpolation: no
         function:
-            time_counter: no
+            time_counter: yes
         object:
             clone: no
         list:
