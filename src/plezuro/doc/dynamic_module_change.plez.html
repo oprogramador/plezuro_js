@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/pierre_copy/programming/java/plezuro_js/src/plezuro/doc/dynamic_module_change.plez.html</title>
+<meta name="Generator" content="Vim/7.4">
+<meta name="plugin-version" content="vim7.4_v1">
+<meta name="syntax" content="plezuro">
+<meta name="settings" content="use_css,pre_wrap,no_foldcolumn,expand_tabs,prevent_copy=">
+<meta name="colorscheme" content="elflord">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #ffffff; background-color: #000000; }
+body { font-family: monospace; color: #ffffff; background-color: #000000; }
+* { font-size: 1em; }
+.Constant { color: #ff40ff; font-weight: bold; }
+.Statement { color: #ffff00; font-weight: bold; }
+.Identifier { color: #00ffff; font-weight: bold; }
+-->
+</style>
+
+<script type='text/javascript'>
+<!--
+
+-->
+</script>
+</head>
+<body>
+<pre id='vimCodeElement'>
+<span class="Statement">$Person</span> = <span class="Identifier">Module</span>.create(%(
+    <span class="Constant">'name'</span>: <span class="Constant">'Person'</span>,
+    <span class="Constant">'methods'</span>: %(
+        <span class="Constant">'do'</span> : {
+            <span class="Identifier">@a</span> * <span class="Constant">2</span> + <span class="Identifier">first</span>
+        }
+    )
+));
+<span class="Statement">$Student</span> = <span class="Identifier">Module</span>.create(%(
+    <span class="Constant">'name'</span>: <span class="Constant">'Student'</span>,
+    <span class="Constant">'parents'</span>: [<span class="Identifier">Person</span>]
+));
+<span class="Identifier">student</span> = <span class="Identifier">Student</span>.new(%(<span class="Constant">'a'</span>: <span class="Constant">90</span>));
+<span class="Statement">$x</span> = <span class="Identifier">student</span>.do(<span class="Constant">1</span>, <span class="Constant">3</span>, <span class="Constant">4</span>);
+<span class="Identifier">Person</span>.addMethod(<span class="Constant">'say'</span>, {
+    <span class="Constant">'person a='</span>+<span class="Identifier">this</span>[<span class="Constant">'fields'</span>][<span class="Constant">'a'</span>]
+});
+<span class="Statement">$y</span> = <span class="Identifier">student</span>.say;
+<span class="Identifier">Student</span>.addMethod(<span class="Constant">'say'</span>, {
+    <span class="Constant">'student a='</span>+<span class="Identifier">this</span>[<span class="Constant">'fields'</span>][<span class="Constant">'a'</span>]
+});
+<span class="Statement">$z</span> = <span class="Identifier">student</span>.say;
+<span class="Identifier">Person</span>.addMethod(<span class="Constant">'say'</span>, {
+    <span class="Constant">'person2 a='</span>+<span class="Identifier">this</span>[<span class="Constant">'fields'</span>][<span class="Constant">'a'</span>]
+});
+<span class="Statement">$z1</span> = <span class="Identifier">student</span>.say;
+<span class="Identifier">Student</span>.removeMethod(<span class="Constant">'say'</span>);
+<span class="Statement">$z2</span> = <span class="Identifier">student</span>.say;
+<span class="Identifier">Person</span>.removeMethod(<span class="Constant">'say'</span>);
+<span class="Statement">$msg</span>;
+{
+    <span class="Identifier">student</span>.say
+}.try({
+    <span class="Identifier">msg</span> = <span class="Identifier">this</span>[<span class="Constant">'message'</span>]
+});
+[<span class="Identifier">x</span>, <span class="Identifier">y</span>, <span class="Identifier">z</span>, <span class="Identifier">z1</span>, <span class="Identifier">z2</span>, <span class="Identifier">msg</span>]
+
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->

@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>~/pierre_copy/programming/java/plezuro_js/src/plezuro/doc/inheritance.plez.html</title>
+<meta name="Generator" content="Vim/7.4">
+<meta name="plugin-version" content="vim7.4_v1">
+<meta name="syntax" content="plezuro">
+<meta name="settings" content="use_css,pre_wrap,no_foldcolumn,expand_tabs,prevent_copy=">
+<meta name="colorscheme" content="none">
+<style type="text/css">
+<!--
+pre { white-space: pre-wrap; font-family: monospace; color: #ffffff; background-color: #000000; }
+body { font-family: monospace; color: #ffffff; background-color: #000000; }
+* { font-size: 1em; }
+.String { color: #ffff00; }
+.Statement { color: #ffff00; font-weight: bold; }
+.Constant { color: #ff40ff; font-weight: bold; }
+.Identifier { color: #00ffff; font-weight: bold; }
+-->
+</style>
+
+<script type='text/javascript'>
+<!--
+
+-->
+</script>
+</head>
+<body>
+<pre id='vimCodeElement'>
+<span class="Statement">$Animals</span> = <span class="Identifier">Module</span>.create(%(
+    <span class="String">'name'</span>: <span class="String">'Animals'</span>
+));
+<span class="Statement">$Animal</span> = <span class="Identifier">Module</span>.create(%(
+    <span class="String">'name'</span>: <span class="String">'Animal'</span>,
+    <span class="String">'namespace'</span>: <span class="Identifier">Animals</span>,
+    <span class="String">'staticFields'</span>: %(
+        <span class="String">'nr'</span>: <span class="Constant">0</span>
+    ),
+    <span class="String">'methods'</span>: %(
+        <span class="String">'init'</span>: {
+            <span class="Identifier">Animal</span>::<span class="Identifier">nr</span>++;
+            <span class="Identifier">@age</span> = <span class="Constant">0</span>
+        },
+        <span class="String">'say'</span>: {
+            <span class="String">'I am '</span>+<span class="Identifier">@age</span>
+        },
+        <span class="String">'older'</span>: {
+            <span class="Identifier">@age</span>++
+        }
+    )
+));
+<span class="Statement">$Dog</span> = <span class="Identifier">Module</span>.create(%(
+    <span class="String">'name'</span>: <span class="String">'Dog'</span>,
+    <span class="String">'parents'</span>: [<span class="Identifier">Animal</span>],
+    <span class="String">'namespace'</span>: <span class="Identifier">Animals</span>,
+    <span class="String">'methods'</span>: %(
+        <span class="String">'types'</span>: {
+            [<span class="String">'a'</span>, <span class="String">'b'</span>, <span class="String">'c'</span>]
+        },
+        <span class="String">'say'</span>: {
+            <span class="Identifier">Animal</span>::<span class="Identifier">say</span>(<span class="Identifier">this</span>)+<span class="String">', dog'</span>
+        }
+    )
+));
+<span class="Statement">$dog</span> = <span class="Identifier">Dog</span>.new;
+[<span class="Identifier">Animals</span>::<span class="Identifier">Dog</span>[<span class="String">'className'</span>], <span class="Identifier">Animals</span>::<span class="Identifier">Animal</span>[<span class="String">'className'</span>], <span class="Identifier">Animal</span>::<span class="Identifier">nr</span>, <span class="Identifier">dog</span>.types[<span class="Constant">0</span>], <span class="Identifier">dog</span>.say]
+</pre>
+</body>
+</html>
+<!-- vim: set foldmethod=manual : -->
