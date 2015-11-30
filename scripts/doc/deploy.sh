@@ -1,6 +1,6 @@
 cd $(dirname $(realpath $0))
 set -e
-langs=(en fr pl)
+langs=(en pl)
 cd ../../doc/rst
 rm -rf deploy
 cp -r website deploy
