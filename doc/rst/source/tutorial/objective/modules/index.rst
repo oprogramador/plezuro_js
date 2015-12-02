@@ -14,4 +14,4 @@ pass.
 
 You can create an object of a module using the 'new' method.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/modules.plez
+include_vim(../../../plezuro_html/doc/modules.plez)

@@ -13,7 +13,7 @@ method is executed. After the first iteration the conditional function is execut
 Execution of the first argument function depends on the value from conditional function
 and so on.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/loop.plez
+include_vim(../../../plezuro_html/doc/loop.plez)
 
 ==
 do
@@ -23,7 +23,7 @@ You write the conditional function. The execution
 of the loop depends on the value returned by this function. So it iterates as long as the
 function returns true.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/do.plez
+include_vim(../../../plezuro_html/doc/do.plez)
 
 ====
 each
@@ -32,7 +32,7 @@ each
 It is used to iterate a list. In the inner function the zero argument
 is the index of the current element and the first one is the element.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/each.plez
+include_vim(../../../plezuro_html/doc/each.plez)
 
 =======
 foreach
@@ -45,4 +45,4 @@ of the index. The iteration lasts until we
 go to the last element of the longest list. If one from the lists has finished, we obtain
 the ``null`` value at the appropriate place.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/forEach.plez
+include_vim(../../../plezuro_html/doc/forEach.plez)

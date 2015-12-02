@@ -26,4 +26,4 @@ Be aware that when you have an inner function (ex. a loop), the keyword 'this' h
 It is the zero argument of the inner function. In the same way the object fields
 work.
 
-include_vim(../../../../../../src/plezuro/doc/objects_and_methods.plez.html)
+include_vim(../../../plezuro_html/doc/objects_and_methods.plez)

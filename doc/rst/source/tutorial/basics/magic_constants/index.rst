@@ -16,4 +16,4 @@ So we have the following magic constants:
 
 * __dir__ - the real directory of the source file
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/magic_constants.plez
+include_vim(../../../plezuro_html/doc/magic_constants.plez)

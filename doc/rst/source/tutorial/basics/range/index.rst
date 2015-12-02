@@ -10,4 +10,4 @@ It exists ``each`` method which iterates the range. In the inner function
 the zero argument is the index (natural number starting from 0) and the first
 argument is a number from the range.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/range.plez
+include_vim(../../../plezuro_html/doc/range.plez)

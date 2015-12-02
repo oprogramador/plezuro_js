@@ -27,5 +27,5 @@ object fields (public as well private).
   :language: html
   :caption: storage/index.html
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/web/storage/main.plez
-  :caption: storage/main.plez
+storage/main.plez
+include_vim(../../../plezuro_html/doc/web/storage/main.plez)

@@ -35,13 +35,13 @@ To use this library in Plezuro, be aware of:
   :language: html
   :caption: jQuery/index.html
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/web/jQuery/main.plez
-  :caption: jQuery/main.plez
+jQuery/main.plez
+include_vim(../../../plezuro_html/doc/web/jQuery/main.plez)
 
 
 Fortunately, there is a simpler way to call jQuery in Plezuro using a special
 binding. Then you use the ``_jQ`` function and the code looks in the following
 way:
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/web/jQuery_binding/main.plez
-  :caption: jQuery_binding/main.plez
+jQuery_binding/main.plez
+include_vim(../../../plezuro_html/doc/web/jQuery_binding/main.plez)

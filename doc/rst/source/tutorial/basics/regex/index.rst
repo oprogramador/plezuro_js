@@ -21,4 +21,4 @@ For testing a regex (checking if a string matches to a specific regex), use the 
 (The order does not matter, either string - operator - regex or regex - operator - string.)
 There exists also an operator which negates it ``!~``.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/regex.plez
+include_vim(../../../plezuro_html/doc/regex.plez)

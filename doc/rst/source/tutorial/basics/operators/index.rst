@@ -35,7 +35,7 @@ List                   ``+``      concatenation    ``[2,3]+[1]``   ``[2,3,1]``
 List                   ``*``      multiplication   ``[2,3]*2``     ``[2,3,2,3]``
 ====================== ========== ================ =============== ==============
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/operators.plez
+include_vim(../../../plezuro_html/doc/operators.plez)
 
 There are also some composite operators which are a syntactic sugar, ex. ``a += b`` means
 ``a = a + b``.

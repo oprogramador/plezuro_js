@@ -6,4 +6,4 @@ a static way with static fields and methods. You have to remember that the
 static fields and methods are not inherited. Each static field or method is
 binded strictly with one module.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/static_module.plez
+include_vim(../../../plezuro_html/doc/static_module.plez)

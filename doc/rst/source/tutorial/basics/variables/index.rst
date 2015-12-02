@@ -44,4 +44,4 @@ So a variable can change its type in the runtime. For example at the first it is
 a number, then a list and finally a function.
 
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/variables.plez
+include_vim(../../../plezuro_html/doc/variables.plez)

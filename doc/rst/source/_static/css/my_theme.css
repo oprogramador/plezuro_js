@@ -19,3 +19,7 @@ img.logo {
 .myclass-a {
     background-color: yellow;
 }
+
+iframe.plezuro_source {
+    width: 100%;
+}

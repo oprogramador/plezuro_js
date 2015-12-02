@@ -9,6 +9,6 @@ there is required no main function nor class. The simpler script just returns a
 value. You can also use the 'dumpl' method for printing to a buffer (in most
 cases the console).
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/hello.plez
+include_vim(../../../plezuro_html/doc/hello.plez)
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/hello2.plez
+include_vim(../../../plezuro_html/doc/hello2.plez)

@@ -16,7 +16,7 @@ can also contain other lists. Moreover a list can contain a self-reference (it
 means one of its elements is a pointer to this list) because the lists are passed
 by reference to functions and to collections.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/list.plez
+include_vim(../../../plezuro_html/doc/list.plez)
 
 
 ===
@@ -26,7 +26,7 @@ Set
 To create a set, you use dollar sign ``$`` and brackets.
 This collections is like the mathematical set. Each value can be contained only once.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/set.plez
+include_vim(../../../plezuro_html/doc/set.plez)
 
 
 ==========
@@ -40,7 +40,7 @@ dictionary and associative array in PHP or object in Javascript because in the
 dictionary the order of the items does not matter and generally it is stored
 using a binary tree. You write it with a hash sign ``#`` and brackets.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/dict.plez
+include_vim(../../../plezuro_html/doc/dict.plez)
 
 
 =================
@@ -51,4 +51,4 @@ It is like the associative array in PHP or object in Javascript. In the version 
 compiled to Javascript the main appliance of this collection is to pass Javascript objects
 to methods from libraries. You write it with a percent sign ``%`` and brackets.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/assoc_array.plez
+include_vim(../../../plezuro_html/doc/assoc_array.plez)

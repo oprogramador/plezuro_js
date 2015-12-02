@@ -24,5 +24,5 @@ adapted to Plezuro.
   :language: css
   :caption: angular/todo.css
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/web/angular/todo.plez
-  :caption: angular/todo.plez
+angular/todo.plez
+include_vim(../../../plezuro_html/doc/web/angular/todo.plez)

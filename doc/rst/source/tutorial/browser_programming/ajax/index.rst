@@ -26,5 +26,5 @@ browser compatibility and code readability.
   :language: html
   :caption: ajax/index.html
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/web/ajax/main.plez
-  :caption: ajax/main.plez
+ajax/main.plez
+include_vim(../../../plezuro_html/doc/web/ajax/main.plez)

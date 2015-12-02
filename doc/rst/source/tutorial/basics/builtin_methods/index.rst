@@ -10,4 +10,4 @@ the dot ``.``, function name, bracket opening ``(``, arguments separated by the 
 ``,`` and the bracket closing ``)``. However with no arguments the bracket is not
 required.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/builtin_methods.plez
+include_vim(../../../plezuro_html/doc/builtin_methods.plez)

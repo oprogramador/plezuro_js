@@ -25,4 +25,4 @@ any explicit parents it inherits from the BasicModule so in such a situation
 the constructor of the BasicModule is called - it creates the fields of the object
 from the associative array which is passed as the first argument.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/constructor.plez
+include_vim(../../../plezuro_html/doc/constructor.plez)

@@ -7,3 +7,7 @@ for lang in ${langs[@]}; do
     make -e BUILDDIR="build/$lang" SPHINXOPTS="-D language='$lang'" html
     make -e BUILDDIR="build/$lang" SPHINXOPTS="-D language='$lang'" latexpdf
 done
+cd -
+cd ../..
+scripts/doc/make_plezuro_html.sh
+scripts/doc/insert_iframe.sh

@@ -15,4 +15,4 @@ It looks like Javascript but be aware ex. ``alert()`` without
 argument. This is because the zero argument in Plezuro is treated like this
 object.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/web/output/main.plez
+include_vim(../../../plezuro_html/doc/web/output/main.plez)

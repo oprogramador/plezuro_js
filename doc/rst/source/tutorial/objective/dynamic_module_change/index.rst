@@ -21,4 +21,4 @@ It is even possible to remove a method. Nonetheless do not do it without any rea
 use the method 'removeMethod'.
 
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/dynamic_module_change.plez
+include_vim(../../../plezuro_html/doc/dynamic_module_change.plez)

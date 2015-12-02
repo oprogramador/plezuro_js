@@ -150,5 +150,5 @@ It fires after a key being released.
   :language: html
   :caption: dom_methods/index.html
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/web/dom_methods/main.plez
-  :caption: dom_methods/main.plez
+dom_methods/main.plez
+include_vim(../../../plezuro_html/doc/web/dom_methods/main.plez)

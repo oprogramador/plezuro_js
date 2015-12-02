@@ -10,4 +10,4 @@ Scope
 The declaration determines the scope of a variable. It is possible to hide a
 variable with another variable with the same name.
 
-.. literalinclude:: ../../../../../src/plezuro/doc/scope.plez
+include_vim(../../plezuro_html/doc/scope.plez)

@@ -35,4 +35,4 @@ duck typing. You write a parent module name, the double colon ``::``, the method
 name and the 'this' keyword as the zero argument.
 
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/inheritance.plez
+include_vim(../../../plezuro_html/doc/inheritance.plez)

@@ -10,5 +10,5 @@ include the plezuro.js library.
   :language: html
   :caption: basic/index.html
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/web/basic/main.plez
-  :caption: basic/main.plez
+basic/main.plez
+include_vim(../../../plezuro_html/doc/web/basic/main.plez)

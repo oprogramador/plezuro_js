@@ -8,7 +8,7 @@ using the keyword 'args'.
 
 The function returns the value of the last statement (like in Ruby). There is no ``return`` keyword.
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/function.plez
+include_vim(../../../plezuro_html/doc/function.plez)
 
 To count the execution time of a function, use method 'time'. The arguments passed to this method
 are next passed to the function (first argument becomes zero argument, second argument becomes first
@@ -19,4 +19,4 @@ It returns an object with fields:
 * ``result`` - value returned by the function
 * ``time`` - execution time in seconds
 
-.. literalinclude:: ../../../../../../src/plezuro/doc/function_time.plez
+include_vim(../../../plezuro_html/doc/function_time.plez)
