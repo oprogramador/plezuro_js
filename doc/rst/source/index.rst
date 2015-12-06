@@ -12,7 +12,7 @@ Plezuro is a scripting language.
 
 The main version is compiled to Javascript.
 
-.. literalinclude:: ../../../src/plezuro/doc/basic.plez
+include_vim(plezuro_html/doc/basic.plez)
 
 
 .. toctree::

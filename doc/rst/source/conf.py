@@ -223,6 +223,8 @@ latex_elements = {
     'babel': '\\usepackage[polish]{babel}',
     'preamble': u'''
     \\usepackage{newunicodechar}
+    \\usepackage{pdfpages}
+    \\usepackage{grffile}
     \\newunicodechar{♯}{$\sharp$}
     '''
 }
