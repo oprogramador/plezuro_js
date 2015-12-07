@@ -11,18 +11,16 @@ todo:
         native:
             map: yes
             set: yes
-        range: no
+        range: yes
         set: yes
         tuple:
             index: no
             key: no
-    compare_with_array: no
     compiler:
       c: no
       csharp: no
       java: no
       js:
-        include_js_lib: no
         options:
             beautify: no
             no_comment: no
@@ -35,9 +33,10 @@ todo:
         else: yes
         if: yes
     convert_to_pure_types_recursively: no
+    debug:
+        browser: no
     declaration_checking: no
     doc:
-        edit_on_github: no
         ortographic_check: no
         parts:
             dev_specification: yes
@@ -61,9 +60,11 @@ todo:
       env_separation: no
     highlighting:
         docs:
-            sphinx: no
+            sphinx: yes
         IDE:
-            vim: no
+            vim: yes
+            atom: no
+            'notepad++': no
     import:
         dynamic: yes
         relative_path: no
@@ -73,8 +74,8 @@ todo:
     lodash_using: no
     loop:
         iterate_with_key: no
-        double_iteration: no
-        each: no
+        double_iteration: yes
+        each: yes
         times: no
     magic_constants: yes
     metaprogramming: no
@@ -97,7 +98,7 @@ todo:
               doc: no
               examples:
                 list:
-                  concat_operator: no
+                  concat_operator: yes
                 object:
                   encode: no
                   freeze: no
@@ -105,8 +106,8 @@ todo:
               permissions:
                 modify: no
                 only_info: no
-            operators: no
-            parent_method_call: no
+            operators: yes
+            parent_method_call: yes
             static:
               constructor: no
               methods: no
@@ -121,16 +122,18 @@ todo:
     node_modules_to_plezuro_js: no
     operators:
         basic: yes
-        '? :': no
+        '? :': yes
         dot_equal: no
         identity_comparison: no
-        joint: no
+        joint: yes
         uni:
             left: no
     serialization:
         json:
             own: no
     shell: no
+    sort:
+        by_object_value: no
     stdlib:
         randstr: yes
         string:

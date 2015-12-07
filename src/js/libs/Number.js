@@ -7,6 +7,14 @@ Number.prototype.randStr = function() {
     return res;
 }
 
+Number.prototype.times = function(f) {
+    var result;
+    for(var i = 0; i < this; i++) {
+        result = f.call(i);
+    }
+    return result;
+}
+
 Number.prototype.sin = function() {
     return Math.sin(this);
 }

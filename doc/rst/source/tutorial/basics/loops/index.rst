@@ -46,3 +46,13 @@ go to the last element of the longest list. If one from the lists has finished, 
 the ``null`` value at the appropriate place.
 
 include_vim(../../../plezuro_html/doc/forEach.plez)
+
+=====
+times
+=====
+
+Use it when you want to repeat a procedure for specific number of times. It is simpler
+than other loops. The zero argument is the number (of times) and the first one is the
+function which obtains the iteration number starting from 0 as its zero argument.
+
+include_vim(../../../plezuro_html/doc/times.plez)

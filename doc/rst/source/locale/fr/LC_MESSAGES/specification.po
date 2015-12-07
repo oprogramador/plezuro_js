@@ -1066,5 +1066,9 @@ msgstr ""
 msgid "('')|('.*?([^\\\\\\\\]|(\\\\\\\\\\\\\\\\))')|(\\\"\\\")|(\\\".*?([^\\\\\\\\]|(\\\\\\\\\\\\\\\\))\\\")"
 msgstr ""
 
+#: ../../source/specification/variables/index.rst:13
+msgid "include_vim(../../plezuro_html/doc/scope.plez)"
+msgstr ""
+
 #~ msgid "\"('')|('.*?[^\\\\\\\\]')|(\\\"\\\")|(\\\".*?[^\\\\\\\\]\\\")"
 #~ msgstr ""

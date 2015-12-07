@@ -607,10 +607,6 @@ msgstr ""
 msgid "ajax/index.html"
 msgstr ""
 
-#: ../../source/tutorial/browser_programming/ajax/index.rst:0
-msgid "ajax/main.plez"
-msgstr ""
-
 #: ../../source/tutorial/browser_programming/angular/index.rst:2
 msgid "AngularJS"
 msgstr ""
@@ -663,16 +659,8 @@ msgstr ""
 msgid "angular/todo.css"
 msgstr ""
 
-#: ../../source/tutorial/browser_programming/angular/index.rst:0
-msgid "angular/todo.plez"
-msgstr ""
-
 #: ../../source/tutorial/browser_programming/how_to/index.rst:0
 msgid "basic/index.html"
-msgstr ""
-
-#: ../../source/tutorial/browser_programming/how_to/index.rst:0
-msgid "basic/main.plez"
 msgstr ""
 
 #: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:2
@@ -923,10 +911,6 @@ msgstr "Jest wywoływany po puszczeniu klawisza."
 msgid "dom_methods/index.html"
 msgstr ""
 
-#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:0
-msgid "dom_methods/main.plez"
-msgstr ""
-
 #: ../../source/tutorial/browser_programming/html_elements/index.rst:2
 msgid "HTML elements"
 msgstr "Elementy HTML"
@@ -1168,10 +1152,6 @@ msgstr ""
 msgid "jQuery/index.html"
 msgstr ""
 
-#: ../../source/tutorial/browser_programming/jQuery/index.rst:0
-msgid "jQuery/main.plez"
-msgstr ""
-
 #: ../../source/tutorial/browser_programming/jQuery/index.rst:42
 msgid ""
 "Fortunately, there is a simpler way to call jQuery in Plezuro using a "
@@ -1181,10 +1161,6 @@ msgstr ""
 "Na szczęście, istnieje prostszy sposób na wywołanie jQuery w Plezuro przy "
 "użyciu specjalnego połączenia. Wystarczy użyć funkcji ``_jQ`` i wtedy kod "
 "wygląda w następujący sposób:"
-
-#: ../../source/tutorial/browser_programming/jQuery/index.rst:0
-msgid "jQuery_binding/main.plez"
-msgstr ""
 
 #: ../../source/tutorial/browser_programming/output/index.rst:4
 msgid "You can use the standard Javascript ways to output:"
@@ -1276,10 +1252,6 @@ msgstr ""
 
 #: ../../source/tutorial/browser_programming/storage/index.rst:0
 msgid "storage/index.html"
-msgstr ""
-
-#: ../../source/tutorial/browser_programming/storage/index.rst:0
-msgid "storage/main.plez"
 msgstr ""
 
 #: ../../source/tutorial/about/how_to/index.rst:15
@@ -2401,16 +2373,18 @@ msgid ""
 "It exists ``each`` method which iterates the range. In the inner function "
 "the zero argument is the index (natural number starting from 0) and the "
 "first argument is a number from the range."
-msgstr "Istnieje metoda ``each``, która iteruje przedział. W wewnętrznej funkcji "
-"zerowy argument to indeks (liczba naturalna licząc od 0) a pierwszy argument "
-" to obecna liczba z tego przedziału."
+msgstr ""
+"Istnieje metoda ``each``, która iteruje przedział. W wewnętrznej funkcji "
+"zerowy argument to indeks (liczba naturalna licząc od 0) a pierwszy argument"
+"  to obecna liczba z tego przedziału."
 
 #: ../../source/tutorial/basics/functions/index.rst:13
 msgid ""
 "To count the execution time of a function, use method 'time'. The arguments "
 "passed to this method are next passed to the function (first argument "
 "becomes zero argument, second argument becomes first and so on)."
-msgstr "Aby zliczyć czas wykonywania funkcji, użyj metody 'time'. Argumenty "
+msgstr ""
+"Aby zliczyć czas wykonywania funkcji, użyj metody 'time'. Argumenty "
 "przekazane to tej oto metody są następnie przekazywane do funkcji (pierwszy "
 "argument staje się zerowym, drugi pierwszym itd.)."
 
@@ -2425,3 +2399,191 @@ msgstr "``result`` - wartość zwrócona przez funkcję"
 #: ../../source/tutorial/basics/functions/index.rst:20
 msgid "``time`` - execution time in seconds"
 msgstr "``time`` - czas wykonywania w sekundach"
+
+#: ../../source/tutorial/basics/builtin_methods/index.rst:13
+msgid "include_vim(../../../plezuro_html/doc/builtin_methods.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:19
+msgid "include_vim(../../../plezuro_html/doc/list.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:29
+msgid "include_vim(../../../plezuro_html/doc/set.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:43
+msgid "include_vim(../../../plezuro_html/doc/dict.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/collections/index.rst:54
+msgid "include_vim(../../../plezuro_html/doc/assoc_array.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/comments/index.rst:7
+msgid "include_vim(../../../plezuro_html/doc/comments.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/conditions/index.rst:8
+msgid "include_vim(../../../plezuro_html/doc/conditions.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/conditions/index.rst:14
+msgid "include_vim(../../../plezuro_html/doc/simple_conditions.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/exceptions/index.rst:9
+msgid "include_vim(../../../plezuro_html/doc/exception.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/functions/index.rst:11
+msgid "include_vim(../../../plezuro_html/doc/function.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/functions/index.rst:22
+msgid "include_vim(../../../plezuro_html/doc/function_time.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/hello_world/index.rst:12
+msgid "include_vim(../../../plezuro_html/doc/hello.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/hello_world/index.rst:14
+msgid "include_vim(../../../plezuro_html/doc/hello2.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/import/index.rst:8
+msgid "include_vim(../../../plezuro_html/doc/import.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:16
+msgid "include_vim(../../../plezuro_html/doc/loop.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:26
+msgid "include_vim(../../../plezuro_html/doc/do.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:35
+msgid "include_vim(../../../plezuro_html/doc/each.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:48
+msgid "include_vim(../../../plezuro_html/doc/forEach.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:52
+msgid "times"
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:58
+msgid "include_vim(../../../plezuro_html/doc/times.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/magic_constants/index.rst:19
+msgid "include_vim(../../../plezuro_html/doc/magic_constants.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/operators/index.rst:38
+msgid "include_vim(../../../plezuro_html/doc/operators.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/random/index.rst:19
+msgid "include_vim(../../../plezuro_html/doc/rand.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/range/index.rst:13
+msgid "include_vim(../../../plezuro_html/doc/range.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/regex/index.rst:24
+msgid "include_vim(../../../plezuro_html/doc/regex.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/variables/index.rst:47
+msgid "include_vim(../../../plezuro_html/doc/variables.plez)"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/ajax/index.rst:29
+msgid ""
+"ajax/main.plez include_vim(../../../plezuro_html/doc/web/ajax/main.plez)"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/angular/index.rst:27
+msgid ""
+"angular/todo.plez "
+"include_vim(../../../plezuro_html/doc/web/angular/todo.plez)"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/how_to/index.rst:13
+msgid ""
+"basic/main.plez include_vim(../../../plezuro_html/doc/web/basic/main.plez)"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/html_dom_methods/index.rst:153
+msgid ""
+"dom_methods/main.plez "
+"include_vim(../../../plezuro_html/doc/web/dom_methods/main.plez)"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:38
+msgid ""
+"jQuery/main.plez include_vim(../../../plezuro_html/doc/web/jQuery/main.plez)"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/jQuery/index.rst:46
+msgid ""
+"jQuery_binding/main.plez "
+"include_vim(../../../plezuro_html/doc/web/jQuery_binding/main.plez)"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/output/index.rst:18
+msgid "include_vim(../../../plezuro_html/doc/web/output/main.plez)"
+msgstr ""
+
+#: ../../source/tutorial/browser_programming/storage/index.rst:30
+msgid ""
+"storage/main.plez "
+"include_vim(../../../plezuro_html/doc/web/storage/main.plez)"
+msgstr ""
+
+#: ../../source/tutorial/objective/constructor/index.rst:28
+msgid "include_vim(../../../plezuro_html/doc/constructor.plez)"
+msgstr ""
+
+#: ../../source/tutorial/objective/dynamic_module_change/index.rst:24
+msgid "include_vim(../../../plezuro_html/doc/dynamic_module_change.plez)"
+msgstr ""
+
+#: ../../source/tutorial/objective/inheritance/index.rst:38
+msgid "include_vim(../../../plezuro_html/doc/inheritance.plez)"
+msgstr ""
+
+#: ../../source/tutorial/objective/modules/index.rst:17
+msgid "include_vim(../../../plezuro_html/doc/modules.plez)"
+msgstr ""
+
+#: ../../source/tutorial/objective/objects_and_methods/index.rst:29
+msgid "include_vim(../../../plezuro_html/doc/objects_and_methods.plez)"
+msgstr ""
+
+#: ../../source/tutorial/objective/operators/index.rst:7
+msgid "include_vim(../../../plezuro_html/doc/object_operator.plez)"
+msgstr ""
+
+#: ../../source/tutorial/objective/static_fields_and_methods/index.rst:9
+msgid "include_vim(../../../plezuro_html/doc/static_module.plez)"
+msgstr ""
+
+#: ../../source/tutorial/basics/loops/index.rst:54
+#, fuzzy
+msgid ""
+"Use it when you want to repeat a procedure for specific number of times. It "
+"is simpler than other loops. The zero argument is the number (of times) and "
+"the first one is the function which obtains the iteration number starting "
+"from 0 as its zero argument."
+msgstr ""
+"Jest to używane w przypadku potrzeby wykonania pewnej procedury określoną "
+"liczbę razy. To prostsze od pozostałych pętli. Zerowy argument to liczba "
+"(razy), zaś pierwszy to funkcja, która to przyjmuje licznik iteracji "
+"startujący od zera jako swój zerowy argument."

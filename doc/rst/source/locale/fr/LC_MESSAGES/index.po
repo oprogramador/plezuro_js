@@ -23,6 +23,10 @@ msgstr ""
 msgid "The main version is compiled to Javascript."
 msgstr ""
 
+#: ../../source/index.rst:15
+msgid "include_vim(plezuro_html/doc/basic.plez)"
+msgstr ""
+
 #~ msgid "Contents:"
 #~ msgstr ""
 

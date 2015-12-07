@@ -1177,3 +1177,7 @@ msgstr ""
 #: ../../source/specification/token_types/index.rst:23
 msgid "('')|('.*?([^\\\\\\\\]|(\\\\\\\\\\\\\\\\))')|(\\\"\\\")|(\\\".*?([^\\\\\\\\]|(\\\\\\\\\\\\\\\\))\\\")"
 msgstr ""
+
+#: ../../source/specification/variables/index.rst:13
+msgid "include_vim(../../plezuro_html/doc/scope.plez)"
+msgstr ""

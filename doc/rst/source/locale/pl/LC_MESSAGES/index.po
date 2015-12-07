@@ -22,3 +22,7 @@ msgstr "Plezuro to język skryptowy"
 #: ../../source/index.rst:13
 msgid "The main version is compiled to Javascript."
 msgstr "Główna wersja jest kompilowana do Javascripta."
+
+#: ../../source/index.rst:15
+msgid "include_vim(plezuro_html/doc/basic.plez)"
+msgstr ""
