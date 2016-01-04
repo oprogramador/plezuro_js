@@ -2576,7 +2576,6 @@ msgid "include_vim(../../../plezuro_html/doc/static_module.plez)"
 msgstr ""
 
 #: ../../source/tutorial/basics/loops/index.rst:54
-#, fuzzy
 msgid ""
 "Use it when you want to repeat a procedure for specific number of times. It "
 "is simpler than other loops. The zero argument is the number (of times) and "

@@ -342,7 +342,7 @@ msgid ""
 "The basic tool is the Java 1.8. However in the future it is scheduled a "
 "compiler implemented in Plezuro."
 msgstr ""
-"Podstawowym narzędziem jest Java 1.8. Aczkolwiek w przysłości jest "
+"Podstawowym narzędziem jest Java 1.8. Aczkolwiek w przyszłości jest "
 "zaplanowany kompilator zaimplementowany w Plezuro."
 
 #: ../../source/implementation/tools/index.rst:7
@@ -359,7 +359,7 @@ msgstr ""
 
 #: ../../source/implementation/tools/index.rst:11
 msgid "A Unix-like operating system."
-msgstr "Unix-podobny system opercyjny."
+msgstr "Unix-podobny system operacyjny."
 
 #: ../../source/implementation/tools/index.rst:12
 msgid "Realpath"

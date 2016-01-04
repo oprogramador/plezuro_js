@@ -49,6 +49,7 @@ todo:
         webpage:
             docs: yes
             jar: yes
+            fork_me_on_github: no
     easy_multiple_callback: no
     syntax_error_checking: yes
     exception:
@@ -76,7 +77,7 @@ todo:
         iterate_with_key: no
         double_iteration: yes
         each: yes
-        times: no
+        times: yes
     magic_constants: yes
     metaprogramming: no
     method:
