@@ -1,0 +1,14 @@
+$a = [];
+a << true | true;
+a << true | false;
+a << false | true;
+a << false | false;
+a << true & true;
+a << true & false;
+a << false & true;
+a << false & false;
+b = [];
+b << (3 < 9) | (11 < [3][0]);
+b << (3 < 9) & (11 < [3][0]);
+b << (4 < 11) & ('a' < 'b');
+[a, b]

@@ -3,7 +3,9 @@ todo:
         cordova: no
         node: no
         web: no
-    bugs_fixes: yes
+    bugs:
+        times_multiline: no
+        'assignment at the end of if': no
     collections:
         associative_array: yes
         dictionary: yes
@@ -160,4 +162,3 @@ todo:
         oct: yes
         scientific_notation: yes
       regex: yes
-    node_modules_to_plezuro_js: no

@@ -302,6 +302,9 @@ try {
 
     a = '../../bin/js/tests/60.plez.js'.import();
     assert.strictEqual(JSON.stringify(a), '[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]');
+
+    a = '../../bin/js/tests/61.plez.js'.import();
+    assert.strictEqual(JSON.stringify(a), '[[true,true,true,false,true,false,false,false],[true,false,true]]');
 } catch(e) {
     if(e.constructor.name === 'AssertionError') throw e;
     console.log(e.constructor.name);
