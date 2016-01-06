@@ -65,5 +65,5 @@ Function.prototype.time = function() {
     var time = performance.now();
     var result = this.apply(that, args);
     time = performance.now() - time;
-    return {result: function(){ return result; }, time: function(){ return time * 0.001; }};
+    return {result: function(){ return result; }, time: function(){ return time; }};
 }

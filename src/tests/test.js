@@ -297,8 +297,8 @@ try {
 
     a = '../../bin/js/tests/59.plez.js'.import();
     assert.strictEqual(a.result(), 21);
-    assert.ok(a.time() < 1e-6);
-    assert.ok(a.time() > 1e-10);
+    assert.ok(a.time() < 1e-3);
+    assert.ok(a.time() > 1e-7);
 
     a = '../../bin/js/tests/60.plez.js'.import();
     assert.strictEqual(JSON.stringify(a), '[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]');

@@ -74,6 +74,7 @@ todo:
         relative_path: no
         script_args: yes
         static: no
+    interpreter: no
     lock_with_key: no
     lodash_using: no
     loop:
