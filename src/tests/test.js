@@ -18,7 +18,8 @@ try {
     assert.ok(a >= 0);
 
     a = '../../bin/js/tests/6.plez.js'.import();
-    assert.equal(JSON.stringify(a), '[[1,3,20,3],{"abc":21,"oo":[2,3]}]');
+    assert.equal(JSON.stringify(Array.from(a[0])), '[1,3,20,3]');
+    assert.equal(JSON.stringify(a[1]), '{"abc":21,"oo":[2,3]}');
 
     a = '../../bin/js/tests/7.plez.js'.import();
     assert.equal(JSON.stringify(a), '[["xx","oo","pp"],null]');
@@ -163,7 +164,7 @@ try {
     assert.strictEqual(JSON.stringify(a), '[181,"person a=90","student a=90","student a=90"]');
 
     a = '../../bin/js/tests/obj3.plez.js'.import();
-    assert.strictEqual(JSON.stringify(a), '[181,"person a=90","student a=90","student a=90","person2 a=90","Object #<AssocArray> has no method \'say\'"]');
+    assert.strictEqual(JSON.stringify(a), '[181,"person a=90","student a=90","student a=90","person2 a=90","student.say is not a function"]');
 
     a = '../../bin/js/tests/31.plez.js'.import();
     assert.strictEqual(a.class().name, 'Null');
@@ -308,6 +309,7 @@ try {
 } catch(e) {
     if(e.constructor.name === 'AssertionError') throw e;
     console.log(e.constructor.name);
+    console.log(e.stack);
     console.log(e.getFilename());
     console.log(e.getLineNr());
     console.log(e.getPosition());
