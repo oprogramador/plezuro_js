@@ -1,0 +1,26 @@
+{
+  "name": "plezuro_js",
+  "version": "1.0.0",
+  "description": "This is Plezuro programming language.",
+  "dependencies": {
+    "bindings": "^1.2.1",
+    "collections": "^5.0.2",
+    "microtime": "^2.1.1",
+    "nan": "^2.3.5",
+    "weak-map": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "scripts/test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oprogramador/plezuro_js.git"
+  },
+  "author": "Piotr Sroczkowski",
+  "license": "GNU/GPL",
+  "bugs": {
+    "url": "https://github.com/oprogramador/plezuro_js/issues"
+  },
+  "homepage": "https://github.com/oprogramador/plezuro_js#readme"
+}
