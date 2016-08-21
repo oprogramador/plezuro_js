@@ -41,7 +41,7 @@ public class BiOperatorToken extends OperatorToken {
 
     public int getOrder() {
         if(order != -1) return order;
-        return operatorOrder.get(getOriginalText());
+        return operatorOrder.get(originalText);
     }
 
     protected List<String> getOnlyPossibleTokens() {
@@ -57,7 +57,7 @@ public class BiOperatorToken extends OperatorToken {
     }
 
     public boolean isDelimiter() {
-        return delimiterTokens.contains(getOriginalText());
+        return delimiterTokens.contains(originalText);
     }
 
     private static Set<String> delimiterTokens = new HashSet<String>() {{
