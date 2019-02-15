@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "This is Plezuro programming language.",
   "dependencies": {
-    "bindings": "^1.2.1",
-    "collections": "^5.0.2",
-    "microtime": "^2.1.1",
-    "nan": "^2.3.5",
+    "bindings": "^1.4.0",
+    "collections": "^5.1.8",
+    "microtime": "^2.1.9",
+    "nan": "^2.12.1",
     "weak-map": "^1.0.5"
   },
   "devDependencies": {},
