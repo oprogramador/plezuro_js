@@ -1,5 +1,5 @@
-This is Plezuro programming language.
+This is the Plezuro programming language.
 
-Currenty it is compiled to JavaScript.
+Currently, it is compiled into JavaScript.
 
 Documentation: https://plezuro.herokuapp.com/
